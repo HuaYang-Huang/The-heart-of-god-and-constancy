@@ -1,0 +1,210 @@
+{
+    "type": "ItemTurret",
+    "outlineColor": "20202CFF",
+    "description" : "中期的炮塔，性价比很好，伤害防御不错",
+    "name": "渺茫",
+    "size": 3,
+    "armor": 45,
+    "health": 7760,
+    "range": 380,
+    "reload": 5.5,
+    "targetAir": true,
+    "targetGround":true,
+    "recoil": 2,
+    "rotateSpeed": 5.5,
+    "moveWhileCharging": false,
+    "shake": 15,
+    "shootWarmupSpeed": 0.08,
+    "minWarmup": 0.03,
+    "research":{
+    "parent": "GH-跃光",
+    "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "科技发展地"
+			}
+	    ],
+    "requirements": [
+      "copper/4905",
+      "lead/5900",
+      "graphite/1405",
+      "silicon/2480",
+      "titanium/2450",
+      "thorium/2695",
+      "beryllium/1300",
+      "tungsten/1200",
+      "棱镜/1225",
+      "潜铁板/2200",
+      "无遏板/3200",
+      "合化电晶/2100"
+    ]
+    },
+    "requirements": [
+    "copper/105",
+    "lead/310",
+    "graphite/85",
+    "silicon/215",
+    "titanium/80",
+    "thorium/150",
+    "beryllium/135",
+    "tungsten/90",
+    "棱镜/115",
+    "潜铁板/100",
+    "无遏板/45",
+    "合化电晶/290"
+    ],
+    "shoot": {
+    "firstShotDelay": 5,
+                "shots": 2,
+                "shotDelay":0,
+                "type":"ShootBarrel",
+	            "barrels":[
+        6,1,0,
+        -6,1,0
+        ]
+    },
+    "drawer": {
+    "type": "drawTurret",
+    "basePrefix": "GH-",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "colorTo": "69E0C7FF",
+        "color": "69E0C700",
+        "progress": "warmup",
+        "blending": "additive",
+        "layerOffset": 0.002,
+        "moveY": 0,
+        "outline": false,
+        "suffix": "-glow"
+      },{
+        "type": "RegionPart",
+        "progress": "warmup",
+        "moveY": 0,
+        "outlineLayerOffset": 0.001,
+        "suffix": "-body"
+      },{
+        "type": "RegionPart",
+        "mirror": true,
+        "under": true,
+        "progress": "warmup",
+        "moves": [
+      {
+            "type": "PartMove",
+            "progress": "recoil",
+            "rot": -11
+      }
+        ],
+        "layerOffset": -0.001,
+        "moveRot": -3,
+        "moveY": -1,
+        "moveX": 0,
+        "x": 0,
+        "suffix": "-wing"
+      },{
+        "type": "RegionPart",
+        "mirror": true,
+        "under": true,
+        "progress": "warmup",
+        "layerOffset": -0.002,
+        "moveRot": -25,
+        "moveY": -1,
+        "moveX": 3,
+        "x": 0,
+        "moves": [
+        {
+            "type": "PartMove",
+            "progress": "recoil",
+            "Y": 1,
+            "X": 3,
+            "rot": -15
+            }
+        ],
+        "suffix": "-wing-back"
+            }
+        ]
+    },
+    "shootSound": "matter",
+    "chargeSound": "grinding",
+    "ammoTypes": {
+        "合化电晶": {
+        "type": "BasicBulletType",
+        "hitSoundVolume": 2,
+        "hitSound": "largeExplosion",
+        "scaleLife": true,
+        "trailChance": 1,
+        "trailParam": 1,
+        "trailLength": 10,
+        "trailWidth": 2,
+        "trailColor": "69E0C7FF",
+        "statusDuration": 150,
+        "status": "1级变质麻痹",
+        "absorbable": false,
+        "splashDamage": 155,
+        "damage": 285,
+        "collides": false,
+        "scaledSplashDamage": true,
+        "splashDamageRadius": 65,
+        "height": 10,
+        "width": 10,
+        "spin": 0,
+        "hitShake": 12,
+        "speed": 7.5,
+        "hitSize": 30,
+        "lifetime": 250,
+        "buildingDamageMultiplier": 0.7,
+        "shrinkX": 0,
+        "shrinkY": 0,
+        "frontColor": "69E0C7FF",
+        "backColor": "69E0C7FF",
+        "hitEffect":{
+        "type": "MultiEffect",
+	    "effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 7,
+        "sizeFrom": 6,
+        "sizeTo": 0,
+        "length": 50,
+        "lifetime": 45,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF",
+        "cone": 360
+    }
+        ]
+            },
+        "shootEffect":{
+        "type": "MultiEffect",
+	    "effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 5,
+        "sizeFrom": 3,
+        "sizeTo": 0,
+        "length": 20,
+        "lifetime": 15,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF",
+        "cone": 30
+    }
+        ]
+            },
+        "despawnEffect": "none",
+        "smokeEffect":"none"
+        }
+    },
+    "consumes": {
+        "power": 10,
+        "coolant": {
+			"amount": 0.3,
+			"optional": true
+		}
+    },
+    "category": "turret"
+}

@@ -1,0 +1,68 @@
+{
+	"type": "PowerTurret",
+	"size": 4,
+	"name":"洒水器",
+	"description":"消防炮塔",
+	"rotateSpeed":0.00,
+	"health": 5880,
+	"reload":25,
+	"armor":70,
+	"range": 350,
+	"inaccuracy": 0,
+	"targetAir" : true, 
+	"targetGround" : true,
+	"shootCone" : 360,
+	"shootY": 0,
+	"shootSound" : "none",
+	"hasPower" : true,
+	"outlineColor": "20202CFF",
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+		    {
+		"type":"DrawTurret",
+	    "basePrefix":"GH-S-"
+	        },{
+				"type": "DrawRegion",
+				"suffix": "-rotate",
+				"spinSprite": true,
+				"rotateSpeed": 0.8
+			},
+		"DrawDefault"
+		]
+	},
+	"shoot": {
+    "type": "ShootSpread",
+    "shots": 360,
+    "spread": 6
+    },
+	"shootType" : {
+	    "type": "LiquidBulletType",
+        "damage": 5.0,
+        "lifetime": 80,
+        "knockback": 0.0,
+        "liquid": "合冷水",
+        "speed":7,
+        "puddleSize":15,
+        "orbSize":15,
+        "statusDuration":600,
+	    "status":"wet"
+	},
+	"consumes": {
+       "power": 1.0
+    },
+	"requirements": [
+		"silicon/50",
+		"copper/150",
+		"lead/105",
+		"graphite/75",
+		"metaglass/110",
+		"titanium/45",
+		"thorium/45",
+		"beryllium/45",
+		"tungsten/30",
+		"棱镜/20"
+		],
+	"category": "turret",
+	"research": "GH-光荣"
+}

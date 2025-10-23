@@ -1,0 +1,109 @@
+{
+    "type": "PowerTurret",
+    "outlineColor": "20202CFF",
+    "description" : "距离远，伤害高，但缺点是攻速缓慢",
+    "size": 4,
+    "armor": 65,
+    "name": "自杀",
+    "health": 12000,
+    "range": 710,
+    "reload": 355.0,
+    "targetAir": true,
+    "targetGround":true,
+    "recoil": 2,
+    "rotateSpeed": 5.5,
+    "shake": 15,
+    "shootY": -0.9,
+    "research":{
+    "parent": "GH-跃光",
+    "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "科技发展地"
+			}
+		],
+    "requirements": [
+      "copper/52000",
+      "lead/45000",
+      "graphite/25000",
+      "silicon/19900",
+      "titanium/18500",
+      "thorium/1595",
+      "beryllium/8900",
+      "tungsten/15200",
+      "棱镜/6825",
+      "钢化棱镜/4500",
+      "粒子核心/5500",
+      "无子核心/3550",
+      "潜铁板/10200",
+      "无遏板/9200",
+      "合化电晶/10000"
+    ]
+    },
+    "requirements": [
+    "copper/580",
+    "lead/610",
+    "graphite/155",
+    "silicon/485",
+    "titanium/500",
+    "thorium/500",
+    "beryllium/655",
+    "tungsten/800",
+    "棱镜/455",
+    "钢化棱镜/250",
+    "粒子核心/300",
+    "无子核心/200",
+    "潜铁板/250",
+    "无遏板/155",
+    "合化电晶/590"
+    ],
+    "drawer": {
+    "type": "drawTurret",
+    "basePrefix": "GH-"
+    },
+    "shootType": {
+        "type": "PointBulletType",
+		"trailSpacing": 10,
+		"trailEffect": {
+			"type": "MultiEffect",
+		"effects": [
+			{
+		"type": "ParticleEffect",
+		"particles": 1,
+		"length": 0,
+		"baseLength": 1,
+		"lifetime": 19.5,
+		"line": true,
+		"randLength": false,
+		"lenFrom": 9.0,
+		"lenTo": 9.0,
+		"strokeFrom": 2.8,
+		"strokeTo": 2.8,
+		"colorFrom": "69E0C7FF",
+		"colorTo": "69E0C7FF",
+		"cone": 0
+		}
+			]
+		},
+		"lifetime": 30,
+		"speed": 20,
+		"damage":3285,
+	    "splashDamageRadius": 32,
+		"splashDamage": 2400,
+		"chargeEffect":"none",
+        "statusDuration": 150,
+        "status": "2级变质麻痹",
+        "hitEffect": "none",
+        "shootEffect": "none",
+        "despawnEffect": "none",
+        "smokeEffect":"none"
+    },
+    "consumes": {
+        "power": 55,
+        "coolant": {
+			"amount": 0.3,
+			"optional": true
+		}
+    },
+    "category": "turret"
+}

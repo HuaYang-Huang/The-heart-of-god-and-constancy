@@ -1,0 +1,154 @@
+{
+    "type": "ContinuousTurret",
+    "size": 3,
+    "name": "崩溃",
+    "description": "喷火伤害高，而且拥有效果",
+    "outlineColor": "20202CFF",
+    "health": 8000,
+    "armor": 65,
+    "reload": 300,
+    "range": 290,
+    "shootSound": "torch",
+    "consumes": {
+    "power": 10
+    },
+    "coolant": {
+    "type": "ConsumeLiquid",
+    "liquid": "water",
+    "amount": 0.8
+    },
+    "coolantMultiplier": 2,
+    "loopSound": "beam",
+    "drawer": {
+    "type": "drawTurret",
+    "basePrefix": "GH-"
+    },
+    "loopSoundVolume": 6.5,
+    "hasLiquids": true,
+    "liquidCapacity": 400,
+    "shootY": 14,
+    "heatColor": "69E0C7FF",
+    "update": true,
+    "hasPower": true,
+    "shootEffect": {
+    "type": "WaveEffect",
+    "lifetime": 20,
+    "sizeFrom": 0,
+    "sizeTo": 80,
+    "strokeFrom": 8,
+    "strokeTo": 0,
+    "colorFrom": "69E0C7FF",
+    "colorTo": "69E0C7FF"
+    },
+    "shake": 3,
+    "recoil": 1,
+    "rotateSpeed": 1.5,
+    "shootType": {
+    "type": "ContinuousFlameBulletType",
+    "colors": [
+        "69E0C7FF",
+        "69E0C7FF",
+        "69E0C7FF",
+        "69E0C7FF"
+    ],
+    "damage": 86,
+    "flareWidth": 6,
+    "flareLength": 18,
+    "flareColor": "69E0C7FF",
+    "width": 6,
+    "lifetime": 105,
+    "divisions": 20,
+    "length": 320,
+    "status": "2级变质麻痹",
+    "statusDuration": 300,
+    "hitEffect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 8,
+        "lifetime": 25,
+        "length": 65,
+        "cone": -360,
+        "lenFrom": 7,
+        "lenTo": 1,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+    },
+        "lightning": 1,
+        "lightningDamage": 85,
+        "lightningCone": 65,
+        "lightningLengthRand": 2,
+        "lightningLength": 3,
+        "lightningType": {
+        "type": "ContinuousFlameBulletType",
+        "colors": [
+        "69E0C7FF",
+        "69E0C7FF",
+        "69E0C7FF",
+        "69E0C7FF"
+        ],
+        "damage": 5,
+        "width": 4,
+        "divisions": 45,
+        "length": 30,
+        "lifetime": 25,
+        "hitEffect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 8,
+        "lifetime": 25,
+        "length": 65,
+        "cone": -360,
+        "lenFrom": 7,
+        "lenTo": 1,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+      },
+        "drawFlare": true,
+        "status": "2级变质麻痹",
+        "statusDuration": 300
+    },
+        "drawSize": 660
+    },
+    "research":{
+    "parent": "GH-突光",
+    "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "科技发展地"
+			}
+		],
+    "requirements": [
+      "copper/2905",
+      "lead/1900",
+      "graphite/3405",
+      "silicon/3480",
+      "titanium/5450",
+      "thorium/5995",
+      "beryllium/3970",
+      "tungsten/4200",
+      "棱镜/3025",
+      "粒子核心/5555",
+      "钢化棱镜/1815",
+      "潜铁板/1000",
+      "无遏板/900",
+      "合化电晶/4800"
+    ]
+    },
+    "requirements": [
+    "copper/505",
+    "lead/10",
+    "graphite/225",
+    "silicon/215",
+    "titanium/320",
+    "thorium/410",
+    "beryllium/335",
+    "tungsten/290",
+    "棱镜/415",
+    "粒子核心/55",
+    "钢化棱镜/85",
+    "潜铁板/250",
+    "无遏板/115",
+    "合化电晶/420"
+    ],
+    "category": "turret"
+}

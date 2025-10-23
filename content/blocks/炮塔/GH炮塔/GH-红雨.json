@@ -1,0 +1,503 @@
+{
+    "name":"红雨",
+    "description":"[red]下雨了，你觉得这雨真的很美吗？",
+    "type": "ItemTurret",
+    "squareSprite": false,
+    "outlineColor": "34353EFF",
+    "size": 3,
+    "health": 10000,
+    "cooldownTime": 500,
+    "reload": 20,
+    "itemCapacity": 30
+    "velocityRnd": 25.0,
+    "range": 720,
+    "rotateSpeed": 1.1,
+    "shootY": 0,
+    "shake": 2,
+    "targetGround": true,
+    "consumeAmmoOnce": true,
+    "loopSound": "hongyv",
+    "loopSoundVolume": 3.5,
+    "recoil": 0,
+    "recoils": 5,
+    "inaccuracy": 40,
+    "consumes": {
+    "coolant": {
+    "amount": 0.1,
+    "optional": true
+        }
+    },
+
+    "drawer": {
+    "type": "drawTurret",
+    "basePrefix": "GH-",
+    "parts": [
+    {
+        "type": "RegionPart",
+        "outline": true,
+        "moveY": 0,
+        "suffix": "-top"
+    },{
+    "type": "RegionPart",
+    "x": 19.50,
+    "y": 14.25,
+    "suffix": "-wing3",
+    "mirror":true,
+    "outline": true,
+    "under": true,
+    "progress": "recoil"
+    },{
+    "type": "RegionPart",
+    "x": 22.50,
+    "y": -3.50,
+    "suffix": "-wing2",
+    "mirror":true,
+    "outline": true,
+    "under": true,
+    "progress": "recoil"
+    },{
+    "type": "RegionPart",
+    "x": 14.25,
+    "y": -8.50,
+    "suffix": "-wing1",
+    "mirror":true,
+    "outline": true,
+    "under": true,
+    "recoilIndex": 0,
+    "progress": "recoil"
+    }
+        ]
+    },
+    "shootSound": "none",
+    "consumes": {
+    "power": 150
+    },
+    "shoot": {
+        "type": "ShootMulti",
+    "source": {
+    "type": "ShootBarrel"
+    "barrels": [
+    0,18,0,
+    12.5,32,0,
+    -12.5,32,0,
+    23,22,0,
+    -23,22,0
+        ]
+    },
+    "dest": [
+        {
+    "type": "ShootPattern",
+    "shots": 3
+        }
+    ]
+        },
+        "research":{
+    "parent": "GH-崩溃",
+    "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "科技发展地"
+			},{
+				"type": "SectorComplete",
+				"preset": "环境管理地"
+			}
+	    ],
+    "requirements": [
+    "carbide/35000",
+    "plastanium/25000",
+    "phase-fabric/20000",
+    "surge-alloy/80000",
+    "粒子核心/20000",
+    "无子核心/10000",
+    "神子智慧核心/5000",
+    "钢化棱镜/6500",
+    "潜合铁金板/8880",
+    "远古废料/58000"
+        ]
+    },
+    "requirements": [
+    "carbide/750",
+    "plastanium/6550",
+    "phase-fabric/4000",
+    "surge-alloy/5000",
+    "粒子核心/10000",
+    "无子核心/3800",
+    "神子智慧核心/580",
+    "钢化棱镜/1500",
+    "潜合铁金板/850",
+    "远古废料/3680"
+    ],
+        "ammoTypes" : {
+        "粒子核心": {
+        "type": "basicBulletType",
+        "spawnUnit": "神恒之心-红雨导弹1",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "backColor":"FFFFFFFF",	
+        "frontColor":"FFFFFFFF",
+	    "trailColor":"FFFFFFFF",
+	    "smokeEffect":"none",
+	    "shootEffect": {
+            "type": "MultiEffect",
+	        "effects": [
+	{
+    "type": "ParticleEffect",
+    "particles": 15,
+    "length": 40,
+    "lifetime": 35,
+    "line": false,
+    "cone": 25,
+    "sizeFrom": 3,
+    "sizeTo": 3,
+    "colorFrom": "8DD5D5FF",
+    "colorTo": "8DD5D500"
+    }
+        ]
+    }
+        },"无子核心": {
+        "type": "basicBulletType",
+        "spawnUnit": "神恒之心-红雨导弹2",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "backColor":"FFFFFFFF",	
+        "frontColor":"FFFFFFFF",
+	    "trailColor":"FFFFFFFF",
+	    "smokeEffect":"none",
+	    "shootEffect": {
+            "type": "MultiEffect",
+	        "effects": [
+	{
+    "type": "ParticleEffect",
+    "particles": 15,
+    "length": 40,
+    "lifetime": 35,
+    "line": false,
+    "cone": 25,
+    "sizeFrom": 3,
+    "sizeTo": 3,
+    "colorFrom": "9372BFFF",
+    "colorTo": "9372BF00"
+    }
+        ]
+    }
+        },"神子智慧核心": {
+        "type": "basicBulletType",
+        "spawnUnit": "神恒之心-红雨导弹3",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "backColor":"FFFFFFFF",	
+        "frontColor":"FFFFFFFF",
+	    "trailColor":"FFFFFFFF",
+	    "smokeEffect":"none",
+	    "shootEffect": {
+            "type": "MultiEffect",
+	        "effects": [
+	{
+    "type": "ParticleEffect",
+    "particles": 15,
+    "length": 40,
+    "lifetime": 35,
+    "line": false,
+    "cone": 25,
+    "sizeFrom": 3,
+    "sizeTo": 3,
+    "colorFrom": "D89BD9FF",
+    "colorTo": "D89BD900"
+    }
+        ]
+    }
+        },"合化电晶": {
+        "type": "basicBulletType",
+        "spawnUnit": "神恒之心-红雨导弹4",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "backColor":"FFFFFFFF",	
+        "frontColor":"FFFFFFFF",
+	    "trailColor":"FFFFFFFF",
+	    "smokeEffect":"none",
+	    "shootEffect": {
+            "type": "MultiEffect",
+	        "effects": [
+	{
+    "type": "ParticleEffect",
+    "particles": 15,
+    "length": 40,
+    "lifetime": 35,
+    "line": false,
+    "cone": 25,
+    "sizeFrom": 3,
+    "sizeTo": 3,
+    "colorFrom": "69E0C7FF",
+    "colorTo": "69E0C700"
+    }
+        ]
+    }
+        },"恒金板": {
+        "type": "basicBulletType",
+        "spawnUnit": "神恒之心-红雨导弹5",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "backColor":"FFFFFFFF",	
+        "frontColor":"FFFFFFFF",
+	    "trailColor":"FFFFFFFF",
+	    "smokeEffect":"none",
+	    "shootEffect": {
+            "type": "MultiEffect",
+	        "effects": [
+	{
+    "type": "ParticleEffect",
+    "particles": 15,
+    "length": 40,
+    "lifetime": 35,
+    "line": false,
+    "cone": 25,
+    "sizeFrom": 3,
+    "sizeTo": 3,
+    "colorFrom": "69E0C7FF",
+    "colorTo": "69E0C700"
+    }
+        ]
+    }
+        },"强化曼合金钢": {
+        "type": "basicBulletType",
+        "spawnUnit": "神恒之心-红雨导弹6",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "backColor":"FFFFFFFF",	
+        "frontColor":"FFFFFFFF",
+	    "trailColor":"FFFFFFFF",
+	    "smokeEffect":"none",
+	    "shootEffect": {
+            "type": "MultiEffect",
+	        "effects": [
+	{
+    "type": "ParticleEffect",
+    "particles": 15,
+    "length": 40,
+    "lifetime": 35,
+    "line": false,
+    "cone": 25,
+    "sizeFrom": 3,
+    "sizeTo": 3,
+    "colorFrom": "FCF387FF",
+    "colorTo": "FCF38700"
+    }
+        ]
+    }
+        },"远古废料": {
+        "type": "basicBulletType",
+        "spawnUnit": "神恒之心-红雨导弹7",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "backColor":"FFFFFFFF",	
+        "frontColor":"FFFFFFFF",
+	    "trailColor":"FFFFFFFF",
+	    "smokeEffect":"none",
+	    "shootEffect": {
+            "type": "MultiEffect",
+	        "effects": [
+	{
+    "type": "ParticleEffect",
+    "particles": 15,
+    "length": 40,
+    "lifetime": 35,
+    "line": false,
+    "cone": 25,
+    "sizeFrom": 3,
+    "sizeTo": 3,
+    "colorFrom": "F3E979FF",
+    "colorTo": "F3E97900"
+    }
+        ]
+    }
+        },"无恒锭": {
+        "type": "basicBulletType",
+        "spawnUnit": "神恒之心-红雨导弹8",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "reloadMultiplier":0.30,
+        "backColor":"FFFFFFFF",	
+        "frontColor":"FFFFFFFF",
+	    "trailColor":"FFFFFFFF",
+	    "smokeEffect":"none",
+	    "shootEffect": {
+            "type": "MultiEffect",
+	        "effects": [
+	{
+    "type": "ParticleEffect",
+    "particles": 15,
+    "length": 40,
+    "lifetime": 35,
+    "line": false,
+    "cone": 25,
+    "sizeFrom": 3,
+    "sizeTo": 3,
+    "colorFrom": "F6F6F6FF",
+    "colorTo": "F6F6F600"
+    }
+        ]
+    }
+        },"carbide": {
+        "type": "basicBulletType",
+        "spawnUnit": "神恒之心-红雨导弹9",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "backColor":"FFFFFFFF",	
+        "frontColor":"FFFFFFFF",
+	    "trailColor":"FFFFFFFF",
+	    "smokeEffect":"none",
+	    "shootEffect": {
+            "type": "MultiEffect",
+	        "effects": [
+	{
+    "type": "ParticleEffect",
+    "particles": 15,
+    "length": 40,
+    "lifetime": 35,
+    "line": false,
+    "cone": 25,
+    "sizeFrom": 3,
+    "sizeTo": 3,
+    "colorFrom": "C9A5C8FF",
+    "colorTo": "C9A5C800"
+    }
+        ]
+    }
+        },"phase-fabric": {
+        "type": "basicBulletType",
+        "spawnUnit": "神恒之心-红雨导弹10",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "reloadMultiplier":0.30,
+        "backColor":"FFFFFFFF",	
+        "frontColor":"FFFFFFFF",
+	    "trailColor":"FFFFFFFF",
+	    "smokeEffect":"none",
+	    "shootEffect": {
+            "type": "MultiEffect",
+	        "effects": [
+	{
+    "type": "ParticleEffect",
+    "particles": 15,
+    "length": 40,
+    "lifetime": 35,
+    "line": false,
+    "cone": 25,
+    "sizeFrom": 3,
+    "sizeTo": 3,
+    "colorFrom": "FFF3D6FF",
+    "colorTo": "FFF3D600"
+    }
+        ]
+    }
+        },"surge-alloy": {
+        "type": "basicBulletType",
+        "spawnUnit": "神恒之心-红雨导弹12",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "reloadMultiplier":2.80,
+        "backColor":"FFFFFFFF",	
+        "frontColor":"FFFFFFFF",
+	    "trailColor":"FFFFFFFF",
+	    "smokeEffect":"none",
+	    "shootEffect": {
+            "type": "MultiEffect",
+	        "effects": [
+	{
+    "type": "ParticleEffect",
+    "particles": 15,
+    "length": 40,
+    "lifetime": 35,
+    "line": false,
+    "cone": 25,
+    "sizeFrom": 3,
+    "sizeTo": 3,
+    "colorFrom": "FCF387FF",
+    "colorTo": "FCF38700"
+    }
+        ]
+    }
+        },"thorium": {
+        "type": "basicBulletType",
+        "spawnUnit": "神恒之心-红雨导弹13",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "backColor":"FFFFFFFF",	
+        "frontColor":"FFFFFFFF",
+	    "trailColor":"FFFFFFFF",
+	    "smokeEffect":"none",
+	    "shootEffect": {
+            "type": "MultiEffect",
+	        "effects": [
+	{
+    "type": "ParticleEffect",
+    "particles": 15,
+    "length": 40,
+    "lifetime": 35,
+    "line": false,
+    "cone": 25,
+    "sizeFrom": 3,
+    "sizeTo": 3,
+    "colorFrom": "F9A3C7FF",
+    "colorTo": "F9A3C700"
+    }
+        ]
+    }
+        },"无能神核心": {
+        "type": "basicBulletType",
+        "spawnUnit": "神恒之心-红雨导弹14",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "reloadMultiplier":0.55,
+        "backColor":"FFFFFFFF",	
+        "frontColor":"FFFFFFFF",
+	    "trailColor":"FFFFFFFF",
+	    "smokeEffect":"none",
+	    "shootEffect": {
+            "type": "MultiEffect",
+	        "effects": [
+	{
+    "type": "ParticleEffect",
+    "particles": 15,
+    "length": 40,
+    "lifetime": 35,
+    "line": false,
+    "cone": 25,
+    "sizeFrom": 3,
+    "sizeTo": 3,
+    "colorFrom": "7A5E9FFF",
+    "colorTo": "7A5E9F00"
+    }
+        ]
+    }
+        }
+	}
+    "category": "turret",
+    "research": "duo"
+}

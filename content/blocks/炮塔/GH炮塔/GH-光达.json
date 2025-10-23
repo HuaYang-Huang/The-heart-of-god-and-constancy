@@ -1,0 +1,107 @@
+{
+	"type": "PowerTurret",
+	"playerControllable": true,
+	"name": "光达",
+	"health": 2300,
+	"outlineColor": "20202CFF",
+	"description":"扫描敌人或入侵者",
+	"size": 3,
+	"reload": 30,
+	"targetGround": true,
+	"targetAir": true,
+	"range": 600,
+	"inaccuracy": 0,
+	"rotateSpeed": 0,
+	"shootSound": "none",
+	"canOverdrive": false,
+	"customShadow": false,
+	"recoil": 0,
+	"shootY": 0,
+	"shootCone": 360,
+	"ammoUseEffect": "none",
+	
+	"requirements": [
+	"copper/175",
+	"lead/100",
+	"graphite/35",
+	"silicon/45",
+	"titanium/20",
+	"合化电晶/15",
+	"棱镜/10"
+	],
+	"category": "turret",
+	"research": {
+    "parent": "GH-跃光",
+    "requirements": [
+    "copper/1800",
+	"lead/1980",
+	"graphite/1000",
+	"silicon/1000",
+	"titanium/850",
+	"合化电晶/285",
+	"棱镜/500"
+    ]
+    },
+    
+	"consumes": {
+		"power": 1.5
+	},
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+		{
+		    "type": "DrawTurret",
+				"parts": [
+			{
+        "type":"ShapePart",
+        "y": 0,
+        "x": 0,
+        "color":"69E0C7FF",
+        "mirror": false,
+        "circle":true,
+        "hollow":true,
+        "stroke":0,
+        "strokeTo":8.0,
+        "radius":600,
+        "radiusTo": 600,
+        "layer": 110
+        }
+			]
+		},
+		"DrawDefault",
+			{
+				"type": "DrawRegion",
+				"suffix": "-1",
+				"spinSprite": true,
+				"rotateSpeed": 0.8
+			}
+		]
+	},
+	"shootType": {
+		"type": "BasicBulletType",
+		"shootEffect":"none",
+		"damage": 0,
+		"speed": 0,
+		"instantDisappear": true,
+		"ammoMultiplier": 1,
+		"splashDamageRadius": 600,
+		"splashDamage": 25,
+		"buildingDamageMultiplier": 0,
+		"status":"雷达警告",
+        "statusDuration": 300,
+		"hitEffect": "none",
+		"despawnEffect": {
+		"type": "ParticleEffect",
+	    "particles": 1,
+	    "lifetime": 20,
+	    "spin":0,
+	    "region":"神恒之心-empty-rhombus",
+	    "sizeFrom": 0,
+	    "sizeTo": 50.0,
+	    "colorFrom": "69E0C7FF",
+	    "colorTo": "69E0C7FF",
+	    "cone":360
+		},
+		"smokeEffect":"none"
+	}
+}

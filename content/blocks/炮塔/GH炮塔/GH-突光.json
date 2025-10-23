@@ -1,0 +1,96 @@
+{
+    "name":"突光",
+    "description":"激光，一种奇妙的武器",
+    "type": "ContinuousTurret",
+    "squareSprite": false,
+    "outlineColor": "20202CFF",
+    "size": 3,
+    "health": 2500,
+    "reload": 70,
+    "range": 420,
+    "rotateSpeed": 3.5,
+    "shootY": 4,
+    
+    "research": {
+    "parent": "GH-光荣",
+    "objectives": [
+    "GH-光达"
+    ],
+    "requirements": [
+    "copper/2000",
+    "lead/2500",
+    "graphite/3000",
+    "metaglass/1890",
+    "oxide/1105",
+    "thorium/1800",
+    "titanium/1800",
+    "silicon/2900",
+    "钢化棱镜/890",
+    "棱镜/1000",
+    "潜铁板/1455",
+    "无遏板/890",
+    "粒子核心/485"
+    ]
+    },
+    
+    "drawer": {
+    "type": "drawTurret",
+    "basePrefix": "GH-"
+    },
+    "shootSound": "laser",
+    "consumes": {
+    "power": 3
+    },
+    "shootType": {
+    "type": "PointLaserBulletType",
+    "status": "freezing",
+    "damage": 100,
+    "drawSize": 1500,
+    "beamEffect": {
+    "type": "multiEffect",
+        "effects": [
+        {
+        "type": "ParticleEffect",
+        "particles": 6,
+        "length": 40,
+        "lifetime": 56,
+        "interp": "circleOut",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF",
+        "sizeFrom": 3.5,
+        "sizeTo": 0
+        },{
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 5,
+        "lifetime": 55,
+        "length": 75,
+        "cone": -360,
+        "lenFrom": 8,
+        "lenTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+            }
+        ]
+    },
+    "splashDamageRadius": 40,
+    "splashDamage": 10,
+    "color": "69E0C7FF"
+    },
+    "requirements": [
+    "copper/250",
+    "lead/50",
+    "graphite/110",
+    "metaglass/70",
+    "oxide/45",
+    "thorium/70",
+    "titanium/70",
+    "silicon/230",
+    "钢化棱镜/15",
+    "棱镜/30",
+    "潜铁板/15",
+    "无遏板/20",
+    "粒子核心/10"
+    ],
+    "category": "turret"
+}

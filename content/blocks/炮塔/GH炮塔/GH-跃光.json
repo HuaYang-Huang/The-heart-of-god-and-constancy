@@ -1,0 +1,667 @@
+{
+    "type":"itemTurret",
+    "name":"跃光",
+    "category":"turret",
+    "outlineColor": "20202CFF",
+    "size":2,
+    "description" : "走到了危险区内，说明你被狙击了",
+    "range":680,
+    "health":2300,
+    "inaccuracy":0.00,
+    "rotateSpeed":2.20,
+    "armor":23,
+    "reload":200,
+   	"targetAir":true,
+	"targetGround":true,
+	
+	"research": {
+    "parent": "GH-守子核心",
+    "requirements": [
+    "copper/785",
+	"lead/500",
+	"graphite/305",
+	"silicon/400",
+	"titanium/250",
+	"thorium/265",
+	"beryllium/100",
+	"tungsten/200",
+	"棱镜/125",
+	"潜铁板/200",
+	"无遏板/300"
+    ]
+    },
+	"requirements": [
+	"copper/225",
+	"lead/200",
+	"graphite/105",
+	"silicon/195",
+	"titanium/110",
+	"thorium/85",
+	"beryllium/55",
+	"tungsten/30",
+	"棱镜/45",
+	"潜铁板/50",
+	"无遏板/50"
+	],
+	"consumes": {
+        "power": 5.5,
+        "coolant": {
+			"amount": 0.3,
+			"optional": true
+		}
+    },
+	    "drawer":{
+	"type":"DrawTurret",
+	"basePrefix":"GH-",
+	    "parts":[
+	{
+	"type":"RegionPart",
+    "mirror":true,
+    "under":true,
+    "x":5.5,"y":-1.5,
+    "suffix":"-1",
+    "layer":90,
+    "moveX":1,
+    "moveY":-2,
+    "moveRot":-45
+	}
+	    ]
+	},
+	
+	        "ammoTypes" : {
+	    "beryllium":{
+	"type": "BasicBulletType",
+	"speed":30,
+    "height": 9,
+    "width": 9,
+	"damage":220,
+	"splashDamageRadius": 60.00,
+    "splashDamage": 100.00,
+	"inaccuracy":0,
+	"lifetime": 50,
+	"reloadMultiplier":2.0,
+	
+	"trailParam": 4,
+    "trailLength": 25,
+    "trailWidth": 2,
+    "trailColor": "92DD7EFF",
+    "backColor": "92DD7EFF",
+    "frontColor": "92DD7EFF",
+    
+        "shootEffect":{
+        "type": "MultiEffect",
+	    "effects": [
+	{
+        "type": "ParticleEffect",
+        "particles": 8,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "length": 50,
+        "lifetime": 60,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "92DD7EFF",
+        "colorTo": "92DD7EFF",
+        "cone": 20
+    },{
+        "type": "WaveEffect",
+        "lifetime": 15,
+        "sizeFrom": 0,
+        "sizeTo": 15,
+        "strokeFrom": 5,
+        "strokeTo": 0,
+        "colorFrom": "92DD7EFF",
+        "colorTo": "92DD7EFF"
+    }
+	    ]
+	        },
+	
+	    "hitEffect":{
+        "type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "ParticleEffect",
+        "particles": 15,
+        "length": 70,
+        "lifetime": 20,
+        "line": true,
+        "cone": 360,
+        "lenFrom": 15,
+        "lenTo": 0,
+        "strokeFrom": 5,
+        "strokeTo": 0,
+        "colorFrom": "92DD7EFF",
+        "colorTo": "92DD7EFF"
+	},{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "lifetime": 20,
+        "length": 0,
+        "interp": "swingIn",
+        "spin": 0,
+        "region": "神恒之心-bigstar",
+        "sizeFrom": 35,
+        "sizeTo": 0,
+        "colorFrom": "92DD7EFF",
+        "colorTo": "92DD7EFF"   
+    }
+	    ]
+	        }
+	    },"tungsten":{
+	"type": "BasicBulletType",
+	"speed":30,
+    "height": 9,
+    "width": 9,
+	"damage":450,
+	"splashDamageRadius": 85.00,
+    "splashDamage": 230.00,
+	"inaccuracy":0,
+	"lifetime": 50,
+	"reloadMultiplier":0.85,
+	
+	"trailParam": 4,
+    "trailLength": 25,
+    "trailWidth": 2,
+    "trailColor": "A0B0C8FF",
+    "backColor": "A0B0C8FF",
+    "frontColor": "A0B0C8FF",
+    
+        "shootEffect":{
+        "type": "MultiEffect",
+	    "effects": [
+	{
+        "type": "ParticleEffect",
+        "particles": 8,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "length": 50,
+        "lifetime": 60,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "A0B0C8FF",
+        "colorTo": "A0B0C8FF",
+        "cone": 20
+    },{
+        "type": "WaveEffect",
+        "lifetime": 15,
+        "sizeFrom": 0,
+        "sizeTo": 15,
+        "strokeFrom": 5,
+        "strokeTo": 0,
+        "colorFrom": "A0B0C8FF",
+        "colorTo": "A0B0C8FF"
+    }
+	    ]
+	        },
+	
+	    "hitEffect":{
+        "type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "ParticleEffect",
+        "particles": 15,
+        "length": 70,
+        "lifetime": 20,
+        "line": true,
+        "cone": 360,
+        "lenFrom": 15,
+        "lenTo": 0,
+        "strokeFrom": 5,
+        "strokeTo": 0,
+        "colorFrom": "A0B0C8FF",
+        "colorTo": "A0B0C8FF"
+	},{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "lifetime": 20,
+        "length": 0,
+        "interp": "swingIn",
+        "spin": 0,
+        "region": "神恒之心-bigstar",
+        "sizeFrom": 35,
+        "sizeTo": 0,
+        "colorFrom": "A0B0C8FF",
+        "colorTo": "A0B0C8FF"   
+    }
+	    ]
+	        }
+	    },"thorium":{
+	"type": "BasicBulletType",
+	"speed":30,
+    "height": 9,
+    "width": 9,
+	"damage":300,
+	"splashDamageRadius": 185.00,
+    "splashDamage": 180.00,
+	"inaccuracy":0,
+	"lifetime": 50,
+	"reloadMultiplier":1.25,
+	
+	"status":"corroded",
+    "statusDuration": 300,
+    
+	"trailParam": 4,
+    "trailLength": 25,
+    "trailWidth": 2,
+    "trailColor": "F9A3C7FF",
+    "backColor": "F9A3C7FF",
+    "frontColor": "F9A3C7FF",
+    
+        "shootEffect":{
+        "type": "MultiEffect",
+	    "effects": [
+	{
+        "type": "ParticleEffect",
+        "particles": 8,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "length": 50,
+        "lifetime": 60,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "F9A3C7FF",
+        "colorTo": "F9A3C7FF",
+        "cone": 20
+    },{
+        "type": "WaveEffect",
+        "lifetime": 15,
+        "sizeFrom": 0,
+        "sizeTo": 15,
+        "strokeFrom": 5,
+        "strokeTo": 0,
+        "colorFrom": "F9A3C7FF",
+        "colorTo": "F9A3C7FF"
+    }
+	    ]
+	        },
+	
+	    "hitEffect":{
+        "type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "ParticleEffect",
+        "particles": 15,
+        "length": 70,
+        "lifetime": 20,
+        "line": true,
+        "cone": 360,
+        "lenFrom": 15,
+        "lenTo": 0,
+        "strokeFrom": 5,
+        "strokeTo": 0,
+        "colorFrom": "F9A3C7FF",
+        "colorTo": "F9A3C7FF"
+	},{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "lifetime": 20,
+        "length": 0,
+        "interp": "swingIn",
+        "spin": 0,
+        "region": "神恒之心-bigstar",
+        "sizeFrom": 35,
+        "sizeTo": 0,
+        "colorFrom": "F9A3C7FF",
+        "colorTo": "F9A3C7FF"   
+    }
+	    ]
+	        }
+	    },"surge-alloy":{
+	"type": "BasicBulletType",
+	"speed":30,
+    "height": 9,
+    "width": 9,
+	"damage":285,
+	"splashDamageRadius": 115.00,
+    "splashDamage": 190.00,
+	"inaccuracy":0,
+	"lifetime": 50,
+	"reloadMultiplier":1.5,
+	
+	"lightningDamage":280,
+	"lightning":7,
+    "lightningLength":15,
+	"status":"shocked",
+    "statusDuration": 300,
+    
+	"trailParam": 4,
+    "trailLength": 25,
+    "trailWidth": 2,
+    "trailColor": "FCF387FF",
+    "backColor": "FCF387FF",
+    "frontColor": "FCF387FF",
+    
+        "shootEffect":{
+        "type": "MultiEffect",
+	    "effects": [
+	{
+        "type": "ParticleEffect",
+        "particles": 8,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "length": 50,
+        "lifetime": 60,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "FCF387FF",
+        "colorTo": "FCF387FF",
+        "cone": 20
+    },{
+        "type": "WaveEffect",
+        "lifetime": 15,
+        "sizeFrom": 0,
+        "sizeTo": 15,
+        "strokeFrom": 5,
+        "strokeTo": 0,
+        "colorFrom": "FCF387FF",
+        "colorTo": "FCF387FF"
+    }
+	    ]
+	        },
+	
+	    "hitEffect":{
+        "type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "ParticleEffect",
+        "particles": 15,
+        "length": 70,
+        "lifetime": 20,
+        "line": true,
+        "cone": 360,
+        "lenFrom": 15,
+        "lenTo": 0,
+        "strokeFrom": 5,
+        "strokeTo": 0,
+        "colorFrom": "FCF387FF",
+        "colorTo": "FCF387FF"
+	},{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "lifetime": 20,
+        "length": 0,
+        "interp": "swingIn",
+        "spin": 0,
+        "region": "神恒之心-bigstar",
+        "sizeFrom": 35,
+        "sizeTo": 0,
+        "colorFrom": "FCF387FF",
+        "colorTo": "FCF387FF"   
+    }
+	    ]
+	        }
+	    },"carbide":{
+	"type": "BasicBulletType",
+	"speed":50,
+    "height": 9,
+    "width": 9,
+	"damage":570,
+	"splashDamageRadius": 205.00,
+    "splashDamage": 190.00,
+	"inaccuracy":0,
+	"lifetime": 50,
+	"reloadMultiplier":1.0,
+	
+	"status":"unmoving",
+    "statusDuration": 300,
+    
+	"trailParam": 4,
+    "trailLength": 25,
+    "trailWidth": 2,
+    "trailColor": "C9A5C8FF",
+    "backColor": "C9A5C8FF",
+    "frontColor": "C9A5C8FF",
+    
+        "shootEffect":{
+        "type": "MultiEffect",
+	    "effects": [
+	{
+        "type": "ParticleEffect",
+        "particles": 8,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "length": 50,
+        "lifetime": 60,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "C9A5C8FF",
+        "colorTo": "C9A5C8FF",
+        "cone": 20
+    },{
+        "type": "WaveEffect",
+        "lifetime": 15,
+        "sizeFrom": 0,
+        "sizeTo": 15,
+        "strokeFrom": 5,
+        "strokeTo": 0,
+        "colorFrom": "C9A5C8FF",
+        "colorTo": "C9A5C8FF"
+    }
+	    ]
+	        },
+	
+	    "hitEffect":{
+        "type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "ParticleEffect",
+        "particles": 15,
+        "length": 70,
+        "lifetime": 20,
+        "line": true,
+        "cone": 360,
+        "lenFrom": 15,
+        "lenTo": 0,
+        "strokeFrom": 5,
+        "strokeTo": 0,
+        "colorFrom": "C9A5C8FF",
+        "colorTo": "C9A5C8FF"
+	},{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "lifetime": 20,
+        "length": 0,
+        "interp": "swingIn",
+        "spin": 0,
+        "region": "神恒之心-bigstar",
+        "sizeFrom": 35,
+        "sizeTo": 0,
+        "colorFrom": "C9A5C8FF",
+        "colorTo": "C9A5C8FF"   
+    }
+	    ]
+	        },
+	    "fragBullets": 7,
+        "fragBullet": {
+        "type": "pointBulletType",
+        "damage": 0,
+        "splashDamageRadius": 95.00,
+        "splashDamage": 310.00,
+        "speed": 30,
+        "lifetime": 10,
+        
+        "trailEffect":"none",
+        
+        "hitEffect":{
+        "type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "WaveEffect",
+        "lifetime": 75,
+        "sizeFrom": 0,
+        "sizeTo": 50,
+        "strokeFrom": 5,
+        "strokeTo": 0,
+        "colorFrom": "C9A5C8FF",
+        "colorTo": "C9A5C8FF"
+	},{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "lifetime": 10,
+        "length": 0,
+        "interp": "swingIn",
+        "spin": 0,
+        "region": "神恒之心-bigstar",
+        "sizeFrom": 15,
+        "sizeTo": 0,
+        "colorFrom": "C9A5C8FF",
+        "colorTo": "C9A5C8FF"   
+    }
+	    ]
+	        }
+    }
+	    },"合化电晶": {
+	"type": "BasicBulletType",
+	"speed":55,
+    "height": 18,
+    "width": 18,
+	"damage":285,
+	"splashDamageRadius": 285.00,
+    "splashDamage": 350.00,
+	"inaccuracy":0,
+	"lifetime": 45,
+	"reloadMultiplier":1.0,
+	
+	"status":"2级变质麻痹",
+    "statusDuration": 300,
+    
+	"trailParam": 4,
+    "trailLength": 25,
+    "trailWidth": 2,
+    "trailColor": "69E0C7FF",
+    "backColor": "69E0C7FF",
+    "frontColor": "69E0C7FF",
+    
+        "shootEffect":{
+        "type": "MultiEffect",
+	    "effects": [
+	{
+        "type": "ParticleEffect",
+        "particles": 8,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "length": 50,
+        "lifetime": 60,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF",
+        "cone": 20
+    },{
+        "type": "WaveEffect",
+        "lifetime": 15,
+        "sizeFrom": 0,
+        "sizeTo": 15,
+        "strokeFrom": 5,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+    }
+	    ]
+	        },
+	
+	    "hitEffect":{
+        "type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "ParticleEffect",
+        "particles": 15,
+        "length": 70,
+        "lifetime": 20,
+        "line": true,
+        "cone": 360,
+        "lenFrom": 15,
+        "lenTo": 0,
+        "strokeFrom": 5,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+	},{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "lifetime": 20,
+        "length": 0,
+        "interp": "swingIn",
+        "spin": 0,
+        "region": "神恒之心-bigstar",
+        "sizeFrom": 35,
+        "sizeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"   
+    },{
+        "type": "ParticleEffect",
+        "particles": 25,
+        "sizeFrom": 20,
+        "sizeTo": 0,
+        "length": 155,
+        "lifetime": 150,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF",
+        "cone": 360
+    }
+	    ]
+	        },
+	    "fragBullets": 12,
+        "fragBullet": {
+        "type": "pointBulletType",
+        "damage": 115,
+        "splashDamageRadius": 95.00,
+        "splashDamage": 180.00,
+        "speed": 12.5,
+        "lifetime": 23,
+        
+        "trailEffect":"none",
+        
+        "hitEffect":{
+        "type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "WaveEffect",
+        "lifetime": 75,
+        "sizeFrom": 0,
+        "sizeTo": 50,
+        "strokeFrom": 5,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+	},{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "lifetime": 10,
+        "length": 0,
+        "interp": "swingIn",
+        "spin": 0,
+        "region": "神恒之心-bigstar",
+        "sizeFrom": 15,
+        "sizeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"   
+    },{
+        "type": "ParticleEffect",
+        "particles": 18,
+        "sizeFrom": 12,
+        "sizeTo": 0,
+        "length": 95,
+        "lifetime": 120,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF",
+        "cone": 360
+    }
+	    ]
+	        }
+    }
+	    }
+	}
+}
