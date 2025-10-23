@@ -1,0 +1,12 @@
+{
+  "alwaysUnlocked":"true",
+  "name":"合化晶液",
+  "description":"闪亮的颜色，里面丰富的有机能量但可燃后果什么",
+  "color":"69E0C7FF",
+  "temperature":0.00,
+  "heatCapacity":1500.0,
+  "viscosity":0.45,
+  "flammability":1.08,
+  "explosiveness":10.0,
+  "research":"合化电晶"
+}

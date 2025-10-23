@@ -1,1 +1,12 @@
-
+{
+  "alwaysUnlocked":"true",
+  "name":"H-次数液",
+  "description":"液体制作麻烦，不过还好有液体厂帮助",
+  "color":"6633cc",
+  "temperature":-5.00,
+  "heatCapacity":255.8,
+  "viscosity":0.15,
+  "flammability":0,
+  "explosiveness":0,
+  "research":"无恒锭"
+}

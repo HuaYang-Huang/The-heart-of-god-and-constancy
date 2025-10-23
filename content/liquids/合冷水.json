@@ -1,0 +1,13 @@
+{
+  "alwaysUnlocked":"true",
+  "name":"合冷水",
+  "description":"经过合化晶液处理冷冻形成合冷水",
+  "color":"95CBFCFF",
+  "temperature":-30.00,
+  "heatCapacity":50.0,
+  "viscosity":0.55,
+  "flammability":0,
+  "explosiveness":0,
+  "coolant": true,
+  "research":"合化晶液"
+}
