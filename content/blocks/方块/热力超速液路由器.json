@@ -1,0 +1,19 @@
+{
+	"type":"LiquidRouter",
+	"category":"liquid",
+    "name":"热力超速液路由器",
+    "description":"互相结合的",
+	"requirements":[
+	"钢化棱镜/4",
+    "无遏板/2",
+    "无子核心/1"
+	],
+	"health": 447800,
+    "armor": 4850,
+	"liquidCapacity":68600,
+	"solid":false,
+	"underBullets":true,
+	"liquidPadding":35,
+	"liquidPressure":100,
+	"research": "热力超速液管"
+}

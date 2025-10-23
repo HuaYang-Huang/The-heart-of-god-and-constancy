@@ -1,0 +1,109 @@
+{
+	"name": "荷兰电池",
+	"health": 10000,
+	"armor": 125,
+	"requirements": [
+		"lead/80",
+		"metaglass/100",
+		"棱镜/95",
+		"粒子核心/35",
+		"surge-alloy/20"
+	],
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawPower",
+				"emptyLightColor": "000000FF",
+				"fullLightColor": "36B79BFF"
+			},{
+				"type": "DrawRegion",
+				"suffix": "-top"
+			}
+		]
+	},
+	"destroyBullet": {
+		"type": "BasicBulletType",
+		"instantDisappear": true,
+		"collides": false,
+		"hittable": false,
+		"absorbable": false,
+		"hitSound": "plasmaboom",
+		"width": 16,
+		"height": 16,
+		"sprite": "circle-bullet",
+		"shrinkY": 0,
+		"hitShake": 8,
+		"backColor": "69E0C7FF",
+		"frontColor": "69E0C7FF",
+		"hitEffect": {
+			"type": "MultiEffect",
+			"effects": [
+				{
+					"type": "WrapEffect",
+					"effect": "dynamicSpikes",
+					"color": "69E0C7FF",
+					"rotation": 160
+				},{
+					"type": "ParticleEffect",
+					"particles": 20,
+					"sizeFrom": 10,
+					"sizeTo": 0,
+					"length": 160,
+					"baseLength": 0,
+					"lifetime": 35,
+					"colorFrom": "69E0C7FF",
+					"colorTo": "69E0C7FF"
+				},{
+					"type": "WaveEffect",
+					"lifetime": 30,
+					"sizeFrom": 0,
+					"sizeTo": 160,
+					"strokeFrom": 11,
+					"strokeTo": 0,
+					"colorFrom": "69E0C7FF",
+					"colorTo": "69E0C7FF"
+				},{
+					"type": "WaveEffect",
+					"lifetime": 10,
+					"sizeFrom": 1,
+					"sizeTo": 78,
+					"strokeFrom": 8,
+					"strokeTo": 0,
+					"colorFrom": "69E0C7FF",
+					"colorTo": "69E0C7FF"
+				}
+			]
+		},
+		"despawnEffect": {
+			"type": "ParticleEffect",
+			"particles": 13,
+			"line": true,
+			"strokeFrom": 6,
+			"strokeTo": 0,
+			"lenFrom": 200,
+			"lenTo": 0,
+			"length": 1,
+			"baseLength": 3,
+			"lifetime": 22,
+			"colorFrom": "69E0C7FF",
+			"colorTo": "69E0C7FF"
+		},
+		"lightningDamage": 1780,
+		"lightning": 13,
+		"lightningLength": 34,
+		"lightningLengthRand": 12,
+		"lightningColor": "69E0C7FF",
+		"status": "2级变质麻痹",
+		"statusDuration": 360,
+		"splashDamageRadius": 180,
+		"splashDamage": 8500
+	        },
+		"consumes":{
+		"powerBuffered":450000
+		    },
+	"size": 3,
+	"type": "Battery",
+	"category": "power"
+}

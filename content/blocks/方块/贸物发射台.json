@@ -1,0 +1,56 @@
+{
+    "type" : "LaunchPad",
+    "name" : "贸物发射台",
+    "description" : "发射2500个物品",
+    "health": 16100,
+    "size" : 6,
+    "itemCapacity" : 2500,
+    "launchTime" : 200,
+    "hasPower" : true,
+    "consumes" : {
+        "power" : 20.0
+    },
+    "requirements": [
+        "copper/805",
+        "lead/700",
+        "thorium/450",
+        "titanium/450",
+        "silicon/500",
+        "plastanium/350",
+        "beryllium/510",
+        "oxide/350",
+        "tungsten/600",
+		"潜铁板/410",
+		"潜合铁金板/200",
+		"无遏板/290",
+		"钢化棱镜/225",
+		"棱镜/250",
+		"合化电晶/105",
+		"粒子核心/215",
+		"无子核心/105"
+    ],
+    "category" : "effect",
+    "research": {
+    "parent": "运输驱动器",
+    "requirements": [
+        "copper/7805",
+        "lead/5900",
+        "thorium/4550",
+        "titanium/5450",
+        "silicon/8500",
+        "plastanium/7350",
+        "beryllium/8210",
+        "oxide/7650",
+        "tungsten/9600",
+		"潜铁板/5310",
+		"潜合铁金板/3300",
+		"无遏板/5090",
+		"钢化棱镜/3125",
+		"棱镜/2500",
+		"合化电晶/2205",
+		"粒子核心/3115",
+		"无子核心/1580"
+        ]
+    },
+    "buildVisibility" : "campaignOnly"
+}

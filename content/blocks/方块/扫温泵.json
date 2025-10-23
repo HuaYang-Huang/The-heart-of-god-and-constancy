@@ -1,0 +1,22 @@
+{
+	"type": "Pump",
+	"name": "扫温泵",
+	"description": "?????",
+	"size": 4,
+	"health": 2240,
+	"liquidCapacity": 2000,
+	"hasLiquids": true,
+	"pumpAmount": 12,
+	"consumes": {
+	"power":7.5
+	},
+	"requirements": [
+		{"item": "copper", "amount": 620},
+		{"item": "metaglass", "amount": 380},
+		{"item": "silicon", "amount": 420},
+		{"item": "plastanium", "amount": 150},
+		{"item": "surge-alloy", "amount": 75}
+	],
+	"category": "liquid",
+	"research": "impulse-pump"
+}

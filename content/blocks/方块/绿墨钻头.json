@@ -1,0 +1,32 @@
+{
+	"name": "绿墨钻头",
+	"description": "?????",
+	"type": "SolidPump",
+	"health": 1250,
+	"size": 3,
+	"floating":true,
+	"baseExplosiveness":60,
+	"rotateSpeed":6,
+	"warmupSpeed":0.12,
+	"itemCapacity": 20,
+	"liquidCapacity": 1000,  
+	"canOverdrive": false,
+	"hasItems": true,
+	"consumes": {
+	"power":3.2
+	},
+	"result":"oil",
+	"pumpAmount": 3.8,
+    "baseEfficiency": 5.5,
+    "attribute": "oil",
+	"requirements": [
+		{ "item": "copper", "amount": 580 },
+		{ "item": "titanium", "amount": 225 },
+		{ "item": "silicon", "amount": 190 },
+		{ "item": "thorium", "amount": 310  },
+		{ "item": "lead", "amount": 440  },
+		{"item": "metaglass", "amount" : 120  }
+	],
+	"category": "production",
+	"research": "oil-extractor"
+}

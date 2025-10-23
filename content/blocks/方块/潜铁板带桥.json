@@ -1,0 +1,16 @@
+{
+	"type": "BufferedItemBridge",
+	"name": "潜铁板带桥",
+	"description": "?????",
+	"health": 1200,
+	"range": 10,
+    "speed":0.5,
+	"bufferCapacity": 20,
+	"transportTime": 0,
+	"requirements": [
+		"plastanium/2",
+		"潜铁板/1"
+	],
+	"category": "distribution",
+	"research": "phase-conveyor"
+}

@@ -1,0 +1,99 @@
+{ 
+    "name":"神力修复器",
+    "type":"MendProjector",
+    "description":"是一个优秀的机器\n下面的都是飞机欢呼",
+    "reload":20,
+    "range":250,
+    "healPercent":3000,
+    "phaseBoost":15,
+    "canOverdrive" : false,
+    "consumes": {
+		"power": 65.5,
+		"items":{
+		    "items": [
+	    {
+	        "item":"phase-fabric","amount":1
+	        }
+	],
+	"booster":true,
+	"optional":true
+		}
+	},
+    "health":2700,
+    "size":4,
+    "buildCostMultiplier":3,
+    "destroyBullet":{ 
+	"type":"BasicBulletType",
+	"width": 30,
+	"height":30,
+	"hitShake": 6,
+	"damage":80,
+	"sprite":"circle-bullet",  
+    "shrinkY":0,
+    "speed":0,
+    "lifetime":90,
+    "collides":false,
+	"despawnEffect":{
+	"type": "WaveEffect",
+    "lifetime": 23,
+    "sizeFrom": 4,"sizeTo": 160,
+    "strokeFrom":6,"strokeTo":0,
+    "colorFrom":"97FFA8FF",
+    "colorTo": "97FFA8FF"
+    },
+    "hitEffect":"none",
+    "frontColor":"FFFFFF",
+    "backColor":"97FFA8FF",
+	"shootEffect":"none",
+	"smokeEffect":"none",
+    "fragLifeMin":1,
+    "fragBullets":50,
+	"fragBullet":{
+  "type":"BasicBulletType",
+	"height": 15,"width":8,
+	"damage":-20,
+    "shrinkY":0,
+    "absorbable":false,
+	"homingPower":0.08,
+    "homingRange": 300, 
+	"speed":5,"lifetime":300,
+    "collidesTeam":true,
+	"status":"electrified",
+	"statusDuration":600,
+    "frontColor":"97FFA8FF",	
+    "backColor":"97FFA8FF",
+    "trailLength":6,
+	"trailWidth":2,
+    "trailColor":"97FFA8FF", 
+    "shootEffect":"none",
+    "smokeEffect": "none",
+	"hitSound":"none",
+	"despawnEffect":{
+	"type": "WaveEffect",
+    "lifetime": 13,
+    "sizeFrom": 2,"sizeTo": 15,
+    "strokeFrom":6,"strokeTo":0,
+    "colorFrom":"97FFA8FF",
+    "colorTo": "97FFA8FF"
+    },
+	"hitEffect":{
+	"type": "WaveEffect",
+    "lifetime": 13,
+    "sizeFrom": 2,"sizeTo": 15,
+    "strokeFrom":6,"strokeTo":0,
+    "colorFrom":"97FFA8FF",
+    "colorTo": "97FFA8FF"
+    }
+    }
+    },
+    "requirements":[
+        "graphite/800",
+        "copper/2505",
+        "lead/2400",
+        "titanium/3500",
+        "silicon/2100",
+        "metaglass/1000"
+       ],
+    "category": "effect",
+    "research":"mend-projector"
+}

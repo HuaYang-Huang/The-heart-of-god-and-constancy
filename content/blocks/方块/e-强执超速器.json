@@ -1,0 +1,31 @@
+{
+	"name": "强执超速器",
+	"description": "增强比原来速度快一些",
+	"type": "OverdriveProjector",
+	"health": 950,
+	"size": 3,
+	"range":170,
+	"hasBoost":true,
+    "speedBoostPhase": 2.5,
+	"useTime": 600,
+	"phaseRangeBoost": 85,
+	"speedBoost": 2.5,
+    "consumes": {
+		"power":3,
+		"items":{
+			"items":[
+                "phase-fabric/1"
+			],
+                "booster":true,
+			    "optional": true
+		}
+	},
+	"requirements": [
+		"beryllium/185",
+        "graphite/105",
+        "silicon/160",
+        "oxide/85"
+	],
+	"category": "effect",
+	"research":"regen-projector"
+}

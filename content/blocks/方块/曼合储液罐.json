@@ -1,0 +1,21 @@
+{
+	"type":"LiquidRouter",
+	"name":"曼合储液罐",
+	"description":"违背了物理定律的储液罐",
+	"size": 3,
+	"health": 850000,
+	"armor":4580,
+	"liquidCapacity": 3600000,
+	"absorbLasers":true,
+	"requirements": [
+		"lead/1000",
+		"metaglass/1000",
+		"plastanium/550",
+		"钢化棱镜/700",
+		"棱镜/1250",
+		"无遏板/120",
+		"合化电晶/50"
+	],
+	"category": "liquid",
+	"research":"氧化物改化机"
+}

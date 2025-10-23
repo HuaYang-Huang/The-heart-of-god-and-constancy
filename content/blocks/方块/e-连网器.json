@@ -1,0 +1,13 @@
+{
+    "type": "PowerNode",
+    "name": "连网器",
+    "description":"?????",
+    "category": "power",
+    "size" : 1,
+    "requirements": [
+        "beryllium/2"
+    ],
+    "maxNodes": 10,
+    "laserRange": 10,
+    "research" : "beam-node"
+}

@@ -1,0 +1,21 @@
+{
+    "type": "StorageBlock",
+    "name": "速子仓库",
+    "description": "?????",
+    "health": 8000,
+    "itemCapacity": 12500,
+    "hasItems": true,
+    "size": 6,
+    "requirements": [
+        {"item": "lead", "amount":350},
+        {"item": "graphite","amount":250},
+        {"item": "silicon","amount":170},
+        {"item": "titanium","amount":310},
+        {"item": "thorium","amount":320},
+        {"item": "潜铁板","amount":150},
+        {"item": "潜合铁金板","amount":25}
+     ],
+    "category": "effect",
+    "research": "增体仓库"
+
+}

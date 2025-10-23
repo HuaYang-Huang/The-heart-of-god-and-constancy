@@ -1,0 +1,53 @@
+{
+    "type": "MassDriver",
+    "name": "运输驱动器",
+    "description": "运输5000个物品",
+    "requirements": [
+        "copper/335",
+        "lead/215",
+        "thorium/110",
+        "titanium/110",
+        "silicon/400",
+        "plastanium/250",
+        "beryllium/210",
+        "oxide/45",
+        "tungsten/100",
+		"潜铁板/310",
+		"潜合铁金板/100",
+		"无遏板/150",
+		"钢化棱镜/75",
+		"合化电晶/45",
+		"粒子核心/115",
+		"无子核心/35"
+    ],
+    "size":6,
+    "rotateSpeed":3.2,
+    "health" : 17000,
+    "itemCapacity": 5000,
+    "range": 2880,
+    "bulletSpeed": 8,
+    "consumes": {
+        "power": 55
+    },
+    "research": {
+    "parent": "无遏型电桥",
+    "requirements": [
+        "copper/3350",
+        "lead/2150",
+        "thorium/3110",
+        "titanium/3110",
+        "silicon/4400",
+        "plastanium/3250",
+        "beryllium/5210",
+        "oxide/2645",
+        "tungsten/4100",
+		"潜铁板/3310",
+		"潜合铁金板/1100",
+		"无遏板/2550",
+		"钢化棱镜/1575",
+		"合化电晶/2245",
+		"粒子核心/1915",
+		"无子核心/835"
+        ]
+    }
+}

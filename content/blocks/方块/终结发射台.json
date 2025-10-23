@@ -1,0 +1,27 @@
+{
+    "type" : "LaunchPad",
+    "name" : "终结发射台",
+    "description" : "为了后期",
+    "health": 15800,
+    "size" : 5,
+    "itemCapacity" : 1000,
+    "launchTime" : 150,
+    "hasPower" : true,
+    "consumes" : {
+        "power" : 8.5
+    },
+    "requirements" :[
+        { "item": "plastanium", "amount":585},
+        { "item": "copper", "amount":1220},
+        { "item": "lead", "amount":1050},
+        { "item": "silicon", "amount":980},
+        { "item": "graphite", "amount":695},
+        { "item": "titanium", "amount":750},
+        { "item": "thorium", "amount":835},
+        { "item": "surge-alloy", "amount":420},
+        { "item": "metaglass", "amount":660}
+    ],
+    "category" : "effect",
+    "research" : "launch-pad",
+    "buildVisibility" : "campaignOnly"
+}

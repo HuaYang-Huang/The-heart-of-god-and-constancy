@@ -1,0 +1,18 @@
+{
+    "type": "PowerNode",
+    "name": "电力网",
+    "category": "power",
+    "description":"比原版强一些",
+    "size" : 4,
+    "requirements": [
+        "copper/350",
+        "lead/300",
+        "silicon/210",
+        "graphite/285",
+        "titanium/385",
+        "thorium/505"
+    ],
+    "maxNodes": 30,
+    "laserRange": 130,
+    "research" : "power-node-large"
+}

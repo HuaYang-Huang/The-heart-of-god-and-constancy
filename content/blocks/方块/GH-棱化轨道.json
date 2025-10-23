@@ -1,0 +1,24 @@
+{
+	"type": "Duct",
+	"category": "distribution",
+	"name": "棱化轨道",
+	"description": "向前运输物品",
+
+	"alwaysUnlocked":true,
+	"research": {
+	"parent": "GH-守子核心"
+	},
+
+	"requirements": [
+	"棱镜/1",
+	"silicon/1"
+	],
+
+	"size":1,
+	"health":1050,
+	"solid":false,
+	"underBullets":true,
+	"speed": 2,
+	"itemCapacity":1,
+	"armor":25
+}

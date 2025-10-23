@@ -1,0 +1,17 @@
+{
+  "type": "Conduit",
+  "name":"热力超速液管",
+  "description":"[purple]那一刻，它改变了旗舰/机甲的一生",
+  "health": 447800,
+  "armor": 4850,
+  "leaks": false,
+  "liquidPressure": 20,
+  "liquidCapacity": 6000,
+  "requirements": [
+    "钢化棱镜/1",
+    "无遏板/1",
+    "无子核心/1"
+  ],
+  "research": "GH-棱化轨道",
+  "category": "liquid"
+}

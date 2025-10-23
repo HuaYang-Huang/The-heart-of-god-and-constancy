@@ -1,0 +1,18 @@
+{
+    "type": "Radar",
+    "name": "窥视之眼",
+    "description": "探索未知迷雾，范围越大",
+    "category": "effect",
+    "size" :2,
+    "requirements": [
+        "beryllium/25",
+        "graphite/65",
+        "silicon/70"
+    ],
+    "consumes": {
+	"power":1.5
+	},
+    "outlineColor":"4a4b53",
+    "research" : "radar",
+    "fogRadius":100
+}

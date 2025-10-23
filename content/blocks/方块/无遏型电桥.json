@@ -1,0 +1,22 @@
+{
+	"type": "BufferedItemBridge",
+	"name": "无遏型电桥",
+	"description": "?????",
+	"health": 2350,
+	"range": 35,
+    "speed":0.1,
+	"bufferCapacity": 30,
+	"transportTime": 0,
+	"hasPower": true,
+    "pulse":true,
+	"consumes": {
+	"power": 0.0167
+	},
+	"requirements": [
+		"plastanium/5",
+		"潜铁板/5",
+		"无遏板/1"
+	],
+	"category": "distribution",	
+	"research": "GH-守子核心"
+}

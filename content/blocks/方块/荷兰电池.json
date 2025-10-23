@@ -1,0 +1,108 @@
+{
+	"name": "荷兰电池",
+	"health": 4500,
+	"armor": 100,
+	"requirements": [
+		"lead/20",
+		"metaglass/20",
+		"棱镜/10",
+		"粒子核心/5"
+	],
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawPower",
+				"emptyLightColor": "000000FF",
+				"fullLightColor": "36B79BFF"
+			},{
+				"type": "DrawRegion",
+				"suffix": "-top"
+			}
+		]
+	},
+	"destroyBullet": {
+		"type": "BasicBulletType",
+		"instantDisappear": true,
+		"collides": false,
+		"hittable": false,
+		"absorbable": false,
+		"hitSound": "plasmaboom",
+		"width": 16,
+		"height": 16,
+		"sprite": "circle-bullet",
+		"shrinkY": 0,
+		"hitShake": 8,
+		"backColor": "69E0C7FF",
+		"frontColor": "69E0C7FF",
+		"hitEffect": {
+			"type": "MultiEffect",
+			"effects": [
+				{
+					"type": "WrapEffect",
+					"effect": "dynamicSpikes",
+					"color": "69E0C7FF",
+					"rotation": 160
+				},{
+					"type": "ParticleEffect",
+					"particles": 20,
+					"sizeFrom": 10,
+					"sizeTo": 0,
+					"length": 160,
+					"baseLength": 0,
+					"lifetime": 35,
+					"colorFrom": "69E0C7FF",
+					"colorTo": "69E0C7FF"
+				},{
+					"type": "WaveEffect",
+					"lifetime": 30,
+					"sizeFrom": 0,
+					"sizeTo": 160,
+					"strokeFrom": 11,
+					"strokeTo": 0,
+					"colorFrom": "69E0C7FF",
+					"colorTo": "69E0C7FF"
+				},{
+					"type": "WaveEffect",
+					"lifetime": 10,
+					"sizeFrom": 1,
+					"sizeTo": 78,
+					"strokeFrom": 8,
+					"strokeTo": 0,
+					"colorFrom": "69E0C7FF",
+					"colorTo": "69E0C7FF"
+				}
+			]
+		},
+		"despawnEffect": {
+			"type": "ParticleEffect",
+			"particles": 13,
+			"line": true,
+			"strokeFrom": 6,
+			"strokeTo": 0,
+			"lenFrom": 200,
+			"lenTo": 0,
+			"length": 1,
+			"baseLength": 3,
+			"lifetime": 22,
+			"colorFrom": "69E0C7FF",
+			"colorTo": "69E0C7FF"
+		},
+		"lightningDamage": 350,
+		"lightning": 6,
+		"lightningLength": 27,
+		"lightningLengthRand": 10,
+		"lightningColor": "69E0C7FF",
+		"status": "1级变质麻痹",
+		"statusDuration": 360,
+		"splashDamageRadius": 150,
+		"splashDamage": 1000
+	        },
+		"consumes":{
+		"powerBuffered":10000
+		    },
+	"size": 1,
+	"type": "Battery",
+	"category": "power"
+}

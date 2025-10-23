@@ -1,0 +1,22 @@
+{
+    "type": "MassDriver",
+    "name": "芯心驱动器",
+    "description": "运输物品",
+    "requirements": [
+        "beryllium/265",
+        "graphite/240",
+        "silicon/200",
+        "tungsten/185",
+        "oxide/105"
+    ],
+    "size":2,
+    "rotateSpeed":1.2,
+    "health" : 1200,
+    "itemCapacity": 100,
+    "range":440,
+    "bulletSpeed": 15,
+    "consumes": {
+        "power": 2.5
+    },
+    "research":"duct-bridge"
+}

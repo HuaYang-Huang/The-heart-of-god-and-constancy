@@ -1,0 +1,23 @@
+{
+	"type": "Pump",
+	"name": "大强化泵",
+	"description": "?????",
+	"squareSprite": false,
+	"size": 3,
+	"health": 3200,
+	"liquidCapacity": 1000,
+	"hasLiquids": true,
+	"pumpAmount": 2,
+	"consumes": {
+	"power":1
+	},
+	"requirements": [
+		{"item": "beryllium", "amount": 95},
+		{"item": "graphite", "amount": 120},
+		{"item": "oxide", "amount": 30},
+		{"item": "silicon", "amount": 140},
+		{"item": "tungsten", "amount": 55}
+	],
+	"category": "liquid",
+	"research": "reinforced-pump"
+}

@@ -1,0 +1,71 @@
+{
+	"name": "弧光钻头",
+	"description": "物质解构与重组，最强钻头",
+	"type": "BurstDrill",
+	"size": 4,
+	"tier": 10000,
+	"drillTime": 1,
+		"buildCostMultiplier": 20,
+		"itemCapacity" : 5000,
+	"rotateSpeed": 20,
+	"arrowOffset" : 0,
+            "arrowSpacing" : 2,
+            "arrows" : 1,
+	"drawRim":true,
+	"hardnessDrillMultiplier": 0,
+    "drawMineItem": true,
+	"warmupSpeed": 0.1,
+	"requirements": [
+		{ "item": "copper", "amount": 800 },
+		{ "item": "lead", "amount": 600 },
+		{ "item": "graphite", "amount": 450 },
+		{ "item": "silicon", "amount": 700 },
+		{ "item": "thorium", "amount": 500 },
+		{ "item": "surge-alloy", "amount": 180 },
+		{ "item": "plastanium", "amount": 250 },
+		{ "item": "titanium", "amount": 350 },
+		{ "item": "phase-fabric", "amount": 280 },
+		{ "item": "潜铁板", "amount": 280 },
+		{ "item": "潜合铁金板", "amount": 125 },
+		{ "item": "无遏板", "amount": 100 },
+		{ "item": "粒子核心", "amount": 55 },
+		{ "item": "无子核心", "amount": 25 }
+		],
+		"consumes": {
+		"power": 100,
+		"liquid": {
+			"liquid": "water", 
+			"amount": 0.5,
+			"booster": true,
+			"optional": true
+		}
+	},
+	"drillEffect": {
+	"type": "MultiEffect",
+      "effects": [
+        {
+          "type": "WaveEffect",
+          "lifetime": 5,
+          "sizeFrom": 0,
+          "sizeTo": 20,
+          "strokeFrom":3,
+          "strokeTo":2,
+         "colorFrom": "9B61FFFF",
+    "colorTo": "9B61FFFF"
+        },
+          {
+            "type": "ParticleEffect",
+            "particles": 10,
+            "length": 60,
+            "lifetime": 6,
+            "sizeFrom": 4,
+            "sizeTo": 4,
+            "colorFrom": "656565",
+           "colorTo": "65656500"
+          }
+        ]
+        },
+	"liquidBoostIntensity":0.5,
+	"category": "production",
+	"research": "GH-守子核心"
+}

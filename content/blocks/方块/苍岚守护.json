@@ -1,0 +1,37 @@
+{
+	"type":"ForceProjector",
+	"name":"苍岚守护",
+	"description":"人如其名",
+	"health":10000,
+	"size":4,
+	"radius":120,
+	"canOverdrive": true,
+	"shieldHealth": 500000,
+	"phaseUseTime":30,
+	"phaseRadiusBoost":500,
+	"cooldownNormal":10,
+	"cooldownLiquid":10,
+	"cooldownBrokenBase":5,
+	"consumes":{
+		"power":100,
+		"items":{
+			"items":[
+				{"item":"无子核心","amount":1}
+			],
+			"booster":true,
+			"optional": true
+		}
+	},
+	"requirements":[
+	    "copper/1500",
+        "lead/3000",
+        "silicon/2500",
+        "graphite/1055",
+        "titanium/855",
+        "thorium/1000",
+        "phase-fabric/455",
+        "surge-alloy/350"
+	],
+	"research":"神力修复器",
+	"category": "effect"
+	}

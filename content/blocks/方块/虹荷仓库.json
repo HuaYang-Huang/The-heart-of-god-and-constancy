@@ -1,0 +1,25 @@
+{
+    "type": "StorageBlock",
+    "name": "虹荷仓库",
+    "description": "?????",
+    "health": 285000,
+    "armor": 5680,
+    "itemCapacity": 100000,
+    "hasItems": true,
+    "size": 16,
+    "requirements": [
+        {"item": "silicon","amount":2500},
+        {"item": "titanium","amount":1500},
+        {"item": "thorium","amount":1850},
+        {"item": "潜铁板","amount":850},
+        {"item": "潜合铁金板","amount":455},
+        {"item": "棱镜","amount":600},
+        {"item": "surge-alloy","amount":500},
+        {"item": "phase-fabric","amount":400},
+        {"item": "plastanium","amount":320},
+        {"item": "无子核心","amount":250}
+     ],
+    "category": "effect",
+    "research": "神恒核心"
+
+}

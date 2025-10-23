@@ -1,0 +1,25 @@
+{
+    "type": "MassDriver",
+    "name": "幽波驱动引擎",
+    "description": "?????",
+    "requirements": [
+        { "item": "plastanium", "amount":320},
+        { "item": "phase-fabric", "amount": 180 },
+        { "item": "metaglass", "amount": 350 },
+        { "item": "silicon","amount":350},
+        { "item": "thorium","amount":620},
+        { "item": "lead","amount":1000},
+        { "item": "surge-alloy","amount":180},
+        { "item": "titanium","amount":580}
+    ],
+    "size":3,
+    "rotateSpeed":4.5,
+    "health" : 15200,
+    "itemCapacity": 1000,
+    "range": 2400,
+    "bulletSpeed": 60,
+    "consumes": {
+        "power": 8.6
+    },
+    "research":"mass-driver"
+}
