@@ -1,0 +1,69 @@
+{
+    "type": "UnitFactory",
+    "name": "帝华神兵工厂",
+    "category": "units",
+    "description":"?????",
+    "requirements": [
+        "copper/88800",
+        "lead/85000",
+        "silicon/98800",
+        "metaglass/68500",
+        "titanium/48560",
+        "thorium/48950",
+        "plastanium/58870",
+        "surge-alloy/37500",
+        "phase-fabric/58790"
+    ],
+    "health" : 15978000,
+    "armor":780,
+    "plans": [
+        {
+            "unit": "帝神-狐幽",
+            "time": 22450.00,
+            "requirements": [ 
+            "silicon/9900",
+            "lead/10000",
+            "copper/10000",
+            "titanium/8000",
+            "titanium/8000",
+            "surge-alloy/6500",
+            "phase-fabric/6500",
+            "metaglass/8700",
+            "plastanium/6800",
+            "棱镜/4850",
+            "潜合铁金板/5600",
+            "潜铁板/7560",
+            "无遏板/5580",
+            "粒子核心/4600",
+            "无子核心/3450",
+            "神子智慧核心/2150"
+            ]
+        },{
+            "unit": "帝神-极森",
+            "time": 21850.00,
+            "requirements": [ 
+            "silicon/9900",
+            "lead/10000",
+            "copper/10000",
+            "titanium/8000",
+            "titanium/8000",
+            "surge-alloy/6500",
+            "phase-fabric/6500",
+            "metaglass/8700",
+            "plastanium/6800",
+            "棱镜/4850",
+            "潜合铁金板/5600",
+            "潜铁板/7560",
+            "无遏板/5580",
+            "粒子核心/4600",
+            "无子核心/3450",
+            "神子智慧核心/2150"
+            ]
+        }
+    ],
+    "size": 16,
+    "consumes": {
+        "power": 85.95
+    },
+    "research": "㻰星兵工厂"
+}

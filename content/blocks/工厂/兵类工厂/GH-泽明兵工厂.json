@@ -1,0 +1,76 @@
+{
+    "type": "UnitFactory",
+    "name": "泽明兵工厂",
+    "category": "units",
+    "description":"[purple]做出了黑科技的秘密",
+    "research": {
+	"parent": "GH-守子核心",
+	"requirements": [
+	    "copper/500",
+        "lead/500",
+        "silicon/450",
+        "titanium/245"
+	    ]
+	},
+    "requirements": [
+        "copper/80",
+        "lead/80",
+        "silicon/100",
+        "titanium/45"
+    ],
+    "health" : 2200,
+    "armor":20,
+    "plans": [
+        {
+            "unit": "GH-梦子",
+            "time": 300.00,
+            "requirements": [ 
+            "silicon/30",
+            "无遏板/15",
+            "棱镜/20"
+            
+            ]
+        },{
+            "unit": "GH-复仇",
+            "time": 300.00,
+            "requirements": [ 
+            "silicon/30",
+            "潜铁板/20"
+            ]
+        },{
+            "unit": "GH-运气",
+            "time": 300.00,
+            "requirements": [ 
+            "silicon/30",
+            "潜铁板/15",
+            "棱镜/15"
+            ]
+        },{
+            "unit": "GH-蟒蛇",
+            "time": 300.00,
+            "requirements": [ 
+            "silicon/30",
+            "粒子核心/20",
+            "潜铁板/5"
+            ]
+        },{
+            "unit": "GH-坦荡",
+            "time": 300.00,
+            "requirements": [ 
+            "silicon/20",
+            "潜铁板/40",
+            "粒子核心/5"
+            ]
+        },{
+            "unit": "不死墙车",
+            "time": 60.00,
+            "requirements": [ 
+            "无恒锭/1"
+            ]
+        }
+    ],
+    "size": 3,
+    "consumes": {
+        "power": 3.50
+    }
+}

@@ -1,0 +1,29 @@
+{
+	"type": "UnitAssemblerModule",
+	"name": "育新升级器1级",
+	"description": "当放置到构造边界旁边时，增加输出等级，需要电力",
+	"category":"units",
+	"health": 850,
+	"regionSuffix": "-dark",
+	"armor":25,
+	"size": 1,
+	"tier": 1,
+    "research": {
+	"parent": "GH-泽明兵工厂",
+	"requirements": [
+	"tungsten/20",
+	"silicon/20",
+	"graphite/20",
+	"潜铁板/5"
+	    ]
+	},
+	"consumes": {
+	"power": 0.1
+	},
+	"requirements": [
+	"tungsten/20",
+	"silicon/20",
+	"graphite/20",
+	"潜铁板/5"
+	]
+}

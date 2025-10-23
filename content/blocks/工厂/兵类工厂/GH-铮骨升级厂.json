@@ -1,0 +1,55 @@
+{
+    "type":"Reconstructor",
+    "name": "铮骨升级厂",
+    "description":"将输入的T1机甲单位升级为T2机甲单位",
+	"category":"units",
+	"research": {
+	"parent": "GH-泽明兵工厂",
+	"requirements": [
+	"copper/5000",
+	"lead/5000",
+	"silicon/2800",
+	"thorium/1800",
+	"graphite/1100",
+	"titanium/1800",
+	"棱镜/1000",
+	"无遏板/850",
+	"潜铁板/750"
+	    ]
+	},
+	"requirements": [
+	"copper/180",
+	"lead/75",
+	"silicon/85",
+	"graphite/45",
+	"titanium/65",
+	"thorium/65",
+	"棱镜/85",
+	"无遏板/25",
+	"潜铁板/35"
+	],
+
+	"constructTime":300,
+ 	"health":2580,
+	"size":3,
+	"armor":60,
+
+	"consumes":{
+	"power":4.1666667,
+	"items": {
+	"items": [
+		"silicon/60",
+		"无遏板/50",
+		"潜铁板/65",
+		"棱镜/40"
+		]
+	}
+	},
+	"upgrades":[
+	["GH-梦子","GH-安逸"],
+	["GH-复仇","GH-荡波"],
+	["GH-运气","GH-幸运"],
+	["GH-蟒蛇","GH-锯光"],
+	["GH-坦荡","GH-震慑"]
+	]
+}

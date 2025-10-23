@@ -1,0 +1,25 @@
+{
+	"type": "PayloadRouter",
+	"category": "units",
+	"name": "大型强化载荷路由器",
+	"description": "配合传送T6单位送到随机地方",
+	"research": {
+	"parent": "e-大型强化载荷传送带",
+	"requirements": [
+	"tungsten/3200",
+	"graphite/2500",
+	"silicon/3400",
+	"oxide/450"
+	    ]
+	},
+	"requirements": [
+	"tungsten/20",
+	"graphite /10",
+	"silicon/20",
+	"oxide/5"
+	],
+	"size": 5,
+	"moveTime": 75.6,
+	"moveForce": 603,
+	"payloadLimit": 8
+}

@@ -1,0 +1,26 @@
+{
+    "type": "UnitFactory",
+    "name": "珲泽兵工厂",
+    "category": "units",
+    "description":"?????",
+    "requirements": [
+        "beryllium/200",
+        "silicon/125"
+    ],
+    "health" :1000,
+    "plans": [
+        {
+            "unit": "e-星夜",
+            "time": 600.00,
+            "requirements": [
+            "silicon/30",
+            "beryllium/45"
+            ]
+        }
+    ],
+    "size": 3,
+    "consumes": {
+        "power": 1.5
+    },
+    "research": "ship-refabricator"
+}

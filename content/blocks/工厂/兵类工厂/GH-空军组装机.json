@@ -1,0 +1,80 @@
+{
+    "type": "UnitAssembler",
+    "name": "空军组装机",
+    "description": "造空军单位",
+    "health": 2400,
+    "size": 3,
+    "armor":80,
+    "research": {
+	"parent": "GH-铮骨升级厂",
+	"objectives": [
+		{
+	"type": "SectorComplete",
+	"preset": "新的开始"
+		}
+	],
+	"requirements": [
+	"copper/5800",
+	"lead/5900",
+	"silicon/3600",
+	"thorium/4500",
+	"graphite/3500",
+	"titanium/2900",
+	"plastanium/280",
+	"surge-alloy/850",
+	"phase-fabric/360",
+	"棱镜/1500",
+	"无遏板/1000",
+	"潜铁板/1000",
+	"粒子核心/1880",
+	"无子核心/450",
+	"钢化棱镜/245"
+	    ]
+	},
+    "droneType": "GH-花廊",
+    "liquidCapacity": 300,
+    "consumes": {
+        "power": 5,
+        "liquid": {
+            "liquid": "water",
+            "amount": 0.9
+        }
+    },
+    "areaSize": 9,
+    "plans": [
+        {
+            "unit": "GH-伤痕",
+            "time": 600,
+            "requirements": [
+                "神恒之心-GH-梦子/1",
+                "神恒之心-GH-光荣/1",
+                "神恒之心-泰合大墙/3"
+            ]
+        },{
+            "unit": "GH-玖爱",
+            "time": 600,
+            "requirements": [
+                "神恒之心-GH-安逸/1",
+                "神恒之心-GH-跃光/1",
+                "神恒之心-强塑钢大墙/3"
+            ]
+        }
+    ],
+    "requirements": [
+        "graphite/100",
+        "surge-alloy/70",
+        "copper/340",
+        "lead/500",
+        "thorium/110",
+        "silicon/300",
+        "plastanium/20",
+        "phase-fabric/10",
+        "潜铁板/200",
+        "棱镜/25",
+        "无遏板/15",
+        "粒子核心/45",
+        "潜铁板/120"
+    ],
+    "category": "units",
+    "canOverdrive": false
+}

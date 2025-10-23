@@ -1,0 +1,53 @@
+{
+    "type": "UnitAssembler",
+    "name": "深瑂之婵",
+    "description": "[purple]神,不惧死亡,勇在前往.死在平地世界,无存不在的灰尘,活在渺小的世界里",
+    "health": 529000,
+    "size": 16,
+    "armor":1200,
+    "droneType": "GH-梅姐",
+    "liquidCapacity": 300,
+    "consumes": {
+        "power": 3800,
+        "liquid": {
+            "liquid": "H-次数液",
+            "amount": 0.5
+        }
+    },
+    "areaSize": 32,
+    "plans": [
+        {
+            "unit": "Ewiges_Paradies",
+            "time": 6000,
+            "requirements": [
+                "神恒之心-不死墙/50",
+                "神恒之心-无尽墙/100",
+                "神恒之心-强塑钢悍墙/85",
+                "神恒之心-泰合悍墙/85",
+                "神恒之心-布克悍墙/60"
+            ]
+        }
+    ],
+    "requirements": [
+        "graphite/8500",
+        "surge-alloy/6500",
+        "copper/13000",
+        "lead/10500",
+        "潜铁板/8000",
+        "thorium/10000",
+        "silicon/8300",
+        "plastanium/7500",
+        "phase-fabric/6800",
+        "潜合铁金板/4500",
+        "棱镜/6900",
+        "无遏板/7000",
+        "粒子核心/6550",
+        "无子核心/3500",
+        "神子智慧核心/2450",
+        "无恒锭/500",
+        "无能神核心/250"
+    ],
+    "category": "units",
+    "canOverdrive": false,
+    "research": "GH-铮骨升级厂"
+}

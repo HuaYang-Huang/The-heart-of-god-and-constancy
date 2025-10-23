@@ -1,1 +1,25 @@
+{
+	"type": "PayloadConveyor",
+	"category": "units",
+	"name": "大型强化载荷传送带",
+	"description": "用来传送T6单位",
 
+
+	"research": {
+	"parent": "reinforced-payload-conveyor",
+	"requirements": [
+	"tungsten/3000",
+	"graphite/5000",
+	"silicon/3000"
+	    ]
+	},
+	"requirements": [
+	"tungsten/20",
+	"graphite /10",
+	"silicon/20"
+	],
+	"size": 5,
+	"moveTime": 75.6,
+	"moveForce": 603,
+	"payloadLimit": 8
+}

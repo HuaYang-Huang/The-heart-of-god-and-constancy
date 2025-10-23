@@ -1,0 +1,72 @@
+{
+    "type": "UnitAssembler",
+    "name": "陆军组装机",
+    "description": "[purple]看来升级神话太远了...",
+    "health": 2400,
+    "size": 3,
+    "armor":80,
+    "droneType": "GH-花廊",
+    "liquidCapacity": 300,
+    "consumes": {
+        "power": 5,
+        "liquid": {
+            "liquid": "water",
+            "amount": 0.9
+        }
+    },
+    "areaSize": 9,
+    "plans": [
+        {
+            "unit": "GH-暴君",
+            "time": 600,
+            "requirements": [
+                "神恒之心-GH-坦荡/1",
+                "神恒之心-泰合墙/3",
+                "神恒之心-强塑钢墙/2"
+            ]
+        },{
+            "unit": "GH-电巢",
+            "time": 600,
+            "requirements": [
+                "神恒之心-GH-复仇/1",
+                "神恒之心-GH-光荣/1",
+                "神恒之心-强塑钢墙/5"
+            ]
+        }
+    ],
+    "requirements": [
+        "graphite/100",
+        "surge-alloy/70",
+        "copper/340",
+        "lead/3500",
+        "thorium/110",
+        "silicon/300",
+        "plastanium/20",
+        "phase-fabric/10",
+        "潜铁板/200",
+        "棱镜/25",
+        "无遏板/20",
+        "粒子核心/50",
+        "潜铁板/100"
+    ],
+    "research": {
+	"parent": "GH-泽明兵工厂",
+	"requirements": [
+	    "graphite/5800",
+        "surge-alloy/1200",
+        "copper/10000",
+        "lead/10000",
+        "thorium/9010",
+        "silicon/3950",
+        "plastanium/750",
+        "phase-fabric/6500",
+        "潜铁板/8000",
+        "棱镜/2500",
+        "无遏板/2000",
+        "粒子核心/5000",
+        "潜铁板/1000"
+	    ]
+	},
+    "category": "units",
+    "canOverdrive": false
+}
