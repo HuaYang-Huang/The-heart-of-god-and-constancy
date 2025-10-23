@@ -1,0 +1,211 @@
+{
+    "type": "GenericCrafter",
+    "name":"无恒管理器",
+    "description":"[purple]真正的时代已经来了......",
+    "health":75000,
+    "drawer": {
+    "type":"DrawMulti",
+    "drawers": [
+        {
+	"type" : "DrawRegion",
+	"suffix" : "-bottom"
+        },{
+	"type": "DrawLiquidRegion",
+	"drawLiquid": "合化晶液"
+	    },{
+	"type":"DrawDefault"
+        },{
+    "type": "DrawParticles",
+    "color": "69E0C7FF",
+    "alpha": 0.4,
+    "blending": "additive",
+    "particleSize": 5,
+    "reverse": true,
+    "particleRad": 23,
+    "particles": 22,
+    "fadeMargin": 1,
+    "rotateScl": 7,
+    "particleLife": 60
+        },{
+    "type": "DrawParticles",
+    "color": "69E0C7FF",
+    "alpha": 0.4,
+    "reverse": true,
+    "blending": "additive",
+    "particleSize": 6,
+    "particleRad": 12,
+    "particles": 22,
+    "fadeMargin": 1,
+    "rotateScl": 7,
+    "particleLife": 80
+        },{
+    "type": "DrawGlowRegion",
+    "color": "C099C8FF",
+    "glowScale": 8,
+    "glowIntensity": 1.2,
+    "suffix": "-glow"
+        }
+    ]
+},
+    "size": 6,
+    "hasPower": true,
+    "hasLiquids":true,
+    "hasItems": true,
+    "itemCapacity": 30,
+    "craftTime": 85,
+    "updateEffectChance": 0.05,
+    "updateEffect": "none",
+    "craftEffect": {
+    "type": "multiEffect",
+    "effects": [
+     {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 25,
+        "lifetime": 55,
+        "offset": 60,
+        "length": 120,
+        "cone": -360,
+        "strokeTo": 0,
+        "lightColor": "69E0C7FF",
+        "strokeFrom": 2.5,
+        "sizeFrom": 20,
+        "sizeTo": 20,
+        "colorFrom": "69E0C78E",
+        "colorTo": "69E0C78E"
+     },{
+        "type": "ExplosionEffect",
+        "waveColor": "69E0C7FF",
+        "sparkColor": "69E0C7FF",
+        "smokes": 30,
+        "smokeSize": 2.7,
+        "smokeSizeBase": 8.6,
+        "smokeRad": 66,
+        "waveLife": 30,
+        "waveStroke": 4.1,
+        "waveRad": 85,
+        "waveRadBase": 2.0,
+        "sparkLen": 7,
+        "sparks": 12
+     },{
+        "type": "ParticleEffect",
+        "particles": 10,
+        "offset": 70,
+        "length": 250,
+        "lifetime": 80,
+        "region": "神恒之心-star",
+        "sizeInterp": "pow5Out",
+        "interp": "pow3In",
+        "spin": 12,
+        "sizeFrom": 18,
+        "sizeTo": 1,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+     },{
+        "type": "ParticleEffect",
+        "particles": 10,
+        "offset": 70,
+        "length": 200,
+        "lifetime": 110,
+        "region": "神恒之心-star",
+        "sizeInterp": "pow5Out",
+        "interp": "pow3In",
+        "spin": 12,
+        "sizeFrom": 11,
+        "sizeTo": 1,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+     },{
+        "type": "ParticleEffect",
+        "particles": 10,
+        "offset": 70,
+        "length": 150,
+        "lifetime": 150,
+        "region": "神恒之心-star",
+        "sizeInterp": "pow5Out",
+        "interp": "pow3In",
+        "spin": 12,
+        "sizeFrom": 9,
+        "sizeTo": 1,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+     },{
+        "type": "ParticleEffect",
+        "particles": 10,
+        "offset": 70,
+        "length": 120,
+        "lifetime": 80,
+        "region": "神恒之心-star",
+        "sizeInterp": "pow5Out",
+        "interp": "pow3In",
+        "spin": 12,
+        "sizeFrom": 9,
+        "sizeTo": 1,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+     },{
+        "type": "WaveEffect",
+        "lifetime": 20,
+        "sizeFrom": 0,
+        "sizeTo": 60,
+        "interp": "pow5Out",
+        "strokeFrom": 10,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+     },{
+        "type": "WaveEffect",
+        "lifetime": 20,
+        "sizeFrom": 0,
+        "sizeTo": 40,
+        "interp": "pow5Out",
+        "strokeFrom": 6,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+        }
+    ]
+        },
+    "consumes": {
+    "power": 850,
+    "items": {
+        "items": [
+        "恒化泵壳/3",
+        "恒金板/5"
+        ]
+    },
+    "liquid":{
+        "liquid":"合化晶液",
+        "amount":1.0
+    }
+},
+    "requirements": [
+    "silicon/10000",
+    "棱镜/7800",
+    "钢化棱镜/9200",
+    "无遏板/7880",
+    "潜铁板/15000",
+    "潜合铁金板/10000",
+    "合化电晶/9950",
+    "粒子核心/55",
+    "无子核心/1880",
+    "无能神核心/8000",
+    "黑洞控制器/3750",
+    "恒化泵壳/2580",
+    "恒金板/3000"
+        ],
+    "category": "crafting",
+    "research": {
+    "parent": "恒金板制造机",
+    "objectives": [
+    "合化电晶制造机",
+    "黑洞控制器制造机",
+    "恒化泵壳制造机",
+    "强化曼合金钢制造机",
+    "神子智慧核心厂"
+        ]
+    },
+    "outputItems": [
+        "无恒锭/30"
+    ]
+}

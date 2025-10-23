@@ -1,0 +1,63 @@
+{
+    "name":"硅炼化器",
+    "description":"倒反天罡",
+    "type":"GenericCrafter",
+    "itemCapacity":60,
+    "health":5600,
+    "size":3,
+    "hasPower":true,
+    "hasItems":true,
+    "hasLiquids": false,
+    "liquidCapacity":0,
+    "craftTime":30,
+    "updateEffect":"none",
+    "craftEffect":"none",
+    "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+    {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+    },{
+        "type": "DrawDefault"
+    },{
+        "type": "DrawGlowRegion",
+        "color": "FCF387FF",
+        "glowScale": 35,
+        "glowIntensity": 1,
+        "suffix": "-glow"
+    }
+        ]
+    },
+    "requirements": [
+    "copper/1500",
+    "lead/1850",
+    "graphite/250",
+    "silicon/500",
+    "titanium/200",
+    "plastanium/30",
+    "thorium/1000",
+    "metaglass/305",
+    "surge-alloy/100",
+    "棱镜/40",
+    "钢化棱镜/10",
+    "无遏板/10",
+    "潜铁板/50",
+    "潜合铁金板/25",
+    "合化电晶/350",
+    "粒子核心/55"
+    ],
+    "category": "crafting",
+    "outputItems": [
+    "silicon/5"
+    ],
+    "consumes":{
+    "power":10.0,
+    "items": {
+    "items": [
+            "surge-alloy/2"
+        ]
+}
+    },
+    "research": "氧化物改化机"
+}

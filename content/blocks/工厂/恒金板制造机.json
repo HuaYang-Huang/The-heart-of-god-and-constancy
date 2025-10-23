@@ -1,0 +1,59 @@
+{
+    "type": "GenericCrafter",
+    "name":"恒金板制造机",
+    "description":"制造恒金板",
+    "health":8500,
+    "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+    {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+    },{
+        "type": "DrawMultiWeave",
+        "glowColor": "47CCAFFF"
+    },
+        "DrawWeave",
+    {
+        "type": "DrawDefault"
+    }
+    ]
+},
+  "size": 6,
+  "hasPower": true,
+  "hasItems": true,
+  "itemCapacity": 30,
+  "craftTime": 60,
+  "updateEffectChance": 0.03,
+  "craftEffect": "none",
+  "consumes": {
+    "power": 58.5,
+    "items": {
+      "items": [
+        "强化曼合金钢/2",
+        "恒化泵壳/2"
+      ]
+    }
+  },
+  "requirements": [
+    "silicon/1890",
+    "plastanium/1800",
+    "thorium/3080",
+    "metaglass/2100",
+    "phase-fabric/880",
+    "surge-alloy/3580",
+    "棱镜/1900",
+    "钢化棱镜/755",
+    "无遏板/1800",
+    "潜铁板/2600",
+    "潜合铁金板/1005",
+    "合化电晶/980",
+    "粒子核心/1000",
+    "无子核心/550"
+  ],
+  "category": "crafting",
+  "research": "恒化泵壳制造机",
+  "outputItems": [
+    "恒金板/3"
+  ]
+}

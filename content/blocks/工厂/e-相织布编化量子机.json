@@ -1,0 +1,87 @@
+{
+  "name":"相织布编化量子机",
+  "type":"HeatCrafter",
+  "description":"[purple]你用来这些干嘛？是不是来可以传送还是制造虫洞？啊？",
+  "itemCapacity":10000,
+  "health":50800,
+  "size":8,
+  "hasPower":true,
+  "hasItems":true,
+  "hasLiquids": true,
+  "liquidCapacity":600,
+  "heatRequirement":100,
+  "craftTime":120,
+  "updateEffect":"none",
+  "drawer": {
+        "type": "DrawMulti",
+	    "drawers": [
+		{
+			"type" : "DrawRegion",
+			"suffix" : "-bottom"
+		},
+		{
+		"type":"DrawLiquidTile",
+		"drawLiquid": "cyanogen"
+		},
+		{
+		    "type":"DrawSpikes",
+		    "color":"ffd59e",
+            "stroke":1.9,
+            "length": 7.4,
+            "radius":19.9,
+            "layers":2,
+            "amount":12,
+            "rotateSpeed":0.5,
+            "layerSpeed":-0.9
+		},
+		{
+        		"type":"DrawRegion",
+        		"suffix":"-weave-1",
+    		    "spinSprite":true,
+   		        "rotateSpeed":1.55
+   	    },
+		"DrawWeave",
+		"DrawHeatInput",
+		"DrawDefault",
+		{
+			"type": "DrawHeatInput",
+			"suffix": "-heat"
+		},
+		{
+        "type": "DrawGlowRegion",
+        "color": "ffd59e",
+        "glowScale": 50,
+        "glowIntensity": 1,
+        "suffix": "-glow1"
+        }
+    ]
+}
+    "consumes":{
+     "power":250.0,
+     "items": {
+     "items": [
+        "thorium/25",
+        "sand/30"
+     ]
+},
+
+            "liquid": {
+               "liquid":"cyanogen",
+               "amount": 1
+         }
+    },
+    "outputItem": "phase-fabric/1000",
+    "outputLiquid": "hydrogen/6",
+    "requirements": [
+        "beryllium/6000",
+		"graphite/800",
+		"silicon/21000",
+		"oxide/10000",
+		"tungsten/12000",
+		"surge-alloy/4000",
+		"phase-fabric/300",
+		"carbide/1500"
+    ],
+    "category": "crafting",
+    "research": "e-大型相织布合成机"
+}

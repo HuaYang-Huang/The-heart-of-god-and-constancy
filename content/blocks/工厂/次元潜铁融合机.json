@@ -1,0 +1,67 @@
+{
+    "name":"次元潜铁融合机",
+    "description":"融合形成两种潜铁板",
+    "type":"GenericCrafter",
+    "itemCapacity":60,
+    "health":5600,
+    "size":5,
+    "hasPower":true,
+    "hasItems":true,
+    "hasLiquids": false,
+    "liquidCapacity":0,
+    "craftTime":45,
+    "updateEffect":"none",
+    "craftEffect":"none",
+    "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+    {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+    },{
+        "type": "DrawDefault"
+    },{
+        "type": "DrawGlowRegion",
+        "color": "26866EFF",
+        "glowScale": 25,
+        "glowIntensity": 1,
+        "suffix": "-glow2"
+    },{
+        "type": "DrawGlowRegion",
+        "color": "D6B64DFF",
+        "glowScale": 40,
+        "glowIntensity": 3,
+        "suffix": "-glow1"
+    }
+        ]
+    },
+    "requirements": [
+    "silicon/2000",
+    "copper/2500",
+    "lead/2500",
+    "graphite/800",
+    "metaglass/405",
+    "titanium/1000",
+    "surge-alloy/680",
+    "无遏板/100",
+    "棱镜/200",
+    "潜铁板/310",
+    "潜合铁金板/100",
+    "粒子核心/250"
+    ],
+    "category": "crafting",
+    "outputItems": [
+    "潜铁板/3",
+    "潜合铁金板/2"
+    ],
+    "consumes":{
+    "power":100.0,
+    "items": {
+    "items": [
+            "silicon/3",
+            "surge-alloy/1"
+        ]
+}
+    },
+    "research": "钢化棱镜制造机",
+}

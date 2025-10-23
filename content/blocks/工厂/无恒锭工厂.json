@@ -1,0 +1,63 @@
+{
+	"type": "GenericCrafter",
+	"health": 25000,
+	"name": "无恒锭工厂",
+	"description": "?????",
+	"itemCapacity": 100,
+	"size": 5,
+	"craftTime": 85,
+	"updateEffect":"none",
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+			"DrawFlame"
+            ]
+    },
+	"consumes": {
+	"power": 9.5,
+	"items": {	"items": [
+	    "copper/10",
+	    "lead/10",
+		"graphite/10",
+		"silicon/10",
+		"metaglass/10",
+		"phase-fabric/10",
+		"plastanium/10",
+		"surge-alloy/10",
+		"titanium/10",
+		"thorium/10"
+		]
+		},
+            "liquid":{
+               "liquid":"cryofluid",
+               "amount":2,
+               "booster":false
+               }
+        },
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+        	"outputItem": {"item": "无恒锭", "amount": 5 },
+	"requirements": [
+        "copper/10000",
+	    "lead/1000",
+		"graphite/2800",
+		"silicon/5900",
+		"metaglass/3200",
+		"phase-fabric/2980",
+		"plastanium/4780",
+		"surge-alloy/3420",
+		"titanium/4600",
+		"thorium/4580",
+		"棱镜/2450",
+		"潜合铁金板/2980",
+		"潜铁板/3780",
+		"无遏板/2780",
+		"粒子核心/2880",
+		"无子核心/2250",
+		"神子智慧核心/1450"
+		],
+	"category": "crafting",
+	"research": "神子智慧核心厂"
+}

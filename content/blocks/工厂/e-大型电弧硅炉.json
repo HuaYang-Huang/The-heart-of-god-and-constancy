@@ -1,0 +1,58 @@
+{
+	"type": "GenericCrafter",
+	"name": "大型电弧硅炉",
+	"description":"?????",
+	"outputItem": "silicon/10",
+	"size": 4,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"squareSprite": false,
+	"craftTime": 45,
+	"itemCapacity": 100,
+	"drawer":{
+		"type":"DrawMulti",
+		"drawers":[
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type":"DrawCrucibleFlame",
+				"midColor":"7693e3",
+				"flameColor":"c4bdf3",
+				"flameRad":2.45,
+				"circleSpace":1,
+				"flameRadiusScl":16,
+				"flameRadiusMag":3,
+				"circleStroke":0.6,
+				"particles": 33,
+				"particleLife":107,
+				"particleRad":16,
+				"particleSize":2.68,
+				"rotateScl":1.7
+			},
+			"DrawDefault"
+			]
+	},
+	"craftEffect":"none",
+	"consumes": {
+	"power":5.5,
+	"items": {"items": 
+	    [
+	    "sand/2",
+	    "graphite/2"
+	    ] 
+	}
+},
+	"requirements": [
+		"beryllium/195",
+		"graphite/175",
+		"silicon/150",
+		"oxide/30",
+		"tungsten/100"
+	],
+	"ambientSound":"smelter",
+	"category": "crafting",
+	"research": "silicon-arc-furnace"
+}

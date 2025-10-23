@@ -1,0 +1,46 @@
+{
+  "name":"无子核心厂",
+  "type":"GenericCrafter",
+  "description":"?????",
+  "itemCapacity":30,
+  
+  "health":3500,
+  "size":2,
+  "hasPower":true,
+  "hasLiquids":false,
+  "hasItems":true,
+  
+  "craftTime":30,
+  "updateEffect":"none",
+  "drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+			"DrawFlame"
+            ]
+    },
+     "consumes":{
+     "power":2,
+     "items": {
+     "items": [
+            "粒子核心/1",
+            "silicon/2"
+        ]
+}
+  },
+  "outputItem":{"item":"无子核心","amount":1},
+    
+    "requirements": [
+        "copper/1000",
+        "lead/850",
+        "metaglass/205",
+        "silicon/220",
+        "titanium/385",
+        "thorium/600",
+        "棱镜/85",
+        "潜铁板/150",
+        "粒子核心/70"
+    ],
+    "category": "crafting",
+    "research": "粒子核心厂"
+}

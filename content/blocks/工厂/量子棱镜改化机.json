@@ -1,0 +1,97 @@
+{
+    "name":"量子棱镜改化机",
+    "description":"改化玻璃",
+    "type":"GenericCrafter",
+    "itemCapacity":60,
+    "health":38600,
+    "size":8,
+    "hasPower":true,
+    "hasItems":true,
+    "hasLiquids": true,
+    "liquidCapacity":120,
+    "craftTime":70,
+    "updateEffect":"none",
+    "craftEffect":"none",
+    "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+    {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+    },{
+			"type": "DrawLiquidRegion",
+			"drawLiquid": "cryofluid"
+		},{
+        "type": "DrawDefault"
+    },{
+        "type": "DrawGlowRegion",
+        "color": "B3A7FFFF",
+        "glowScale": 55,
+        "glowIntensity": 2,
+        "suffix": "-glow5"
+    },{
+        "type": "DrawGlowRegion",
+        "color": "A4B8C4FF",
+        "glowScale": 25,
+        "glowIntensity": 1,
+        "suffix": "-glow4"
+    },{
+        "type": "DrawGlowRegion",
+        "color": "87CEEBFF",
+        "glowScale": 10,
+        "glowIntensity": 4,
+        "suffix": "-glow3"
+    },{
+        "type": "DrawGlowRegion",
+        "color": "DFF2FCFF",
+        "glowScale": 85,
+        "glowIntensity": 1,
+        "suffix": "-glow2"
+    },{
+        "type": "DrawGlowRegion",
+        "color": "D89BD9FF",
+        "glowScale": 35,
+        "glowIntensity": 2,
+        "suffix": "-glow1"
+    }
+        ]
+    },
+    "requirements": [
+        "copper/10000",
+	    "lead/8600",
+		"graphite/5800",
+		"silicon/6900",
+		"metaglass/2200",
+		"phase-fabric/1850",
+		"plastanium/2780",
+		"surge-alloy/3820",
+		"titanium/3200",
+		"thorium/3880",
+		"棱镜/3800",
+		"潜合铁金板/1000",
+		"潜铁板/5780",
+		"无遏板/3000",
+		"粒子核心/1000",
+		"无子核心/550"
+    ],
+    "category": "crafting",
+    "research": "钢化棱镜制造机",
+    "outputItems": [
+    "棱镜/5",
+    "钢化棱镜/3",
+    "无遏板/3"
+    ],
+    "consumes":{
+    "power":135.0,
+    "items": {
+    "items": [
+            "lead/5",
+            "metaglass/2"
+        ]
+},
+    "liquid":{
+               "liquid":"合化晶液",
+               "amount":1.5
+         }
+    }
+}

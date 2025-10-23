@@ -1,0 +1,54 @@
+{
+	"type": "GenericCrafter",
+	"name": "大型电解机",
+	"description": "将水电解",
+	"health":1540,
+	"size":3,
+	"liquidCapacity":300,
+	"hasPower": true,
+	"rotate":true,
+    "craftTime": 7.2,
+    "regionRotated1":3,
+    "consumes": {
+		"power": 1.5,
+        "liquid": {"liquid":"water","amount":0.5,"booster":false}
+	},
+	"outputLiquids":[
+	{"liquid":"hydrogen","amount":1,"booster":false},
+	{"liquid":"ozone","amount":0.5,"booster":false}
+	],
+	"requirements": [
+		{ "item": "silicon", "amount": 150 },
+		{ "item": "graphite", "amount": 125 },
+		{ "item": "oxide", "amount": 40 },
+        { "item": "beryllium", "amount": 115 },
+        { "item": "tungsten", "amount": 50 }
+	],
+	"liquidOutputDirections":[1,3],
+	"drawer": {
+	    "type": "DrawMulti",
+	    "drawers": [
+		{
+		"type": "DrawRegion",
+		"suffix": "-bottom"
+		},
+		{
+		"type": "DrawLiquidTile",
+		"drawLiquid": "water"
+		},
+		{
+		"type": "DrawBubbles",
+		"color": "7693e3",
+		"sides": 10,
+		"recurrence": 3,
+		"spread": 6,
+		"radius": 1.5,
+		"amount": 20
+		},
+		"DrawRegion",
+		"DrawLiquidOutputs"
+		]
+	},
+    "category": "crafting",
+	"research": "electrolyzer"
+}

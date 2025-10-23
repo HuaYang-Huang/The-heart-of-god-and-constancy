@@ -1,0 +1,67 @@
+{
+    "type": "GenericCrafter",
+    "researchCostMultiplier": 2.5,
+    "description": "强化爆炸物混合器",
+    "name":"大型爆炸物混合器",
+    "health": 1100,
+    "size": 3,
+    "hasItems": true,
+    "craftTime": 60,
+    "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+    {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+    },{
+		"type":"DrawRegion",
+		"suffix":"-rotate",
+		"spinSprite":true,
+   		"rotateSpeed":1.25
+   	},{
+        "type": "DrawDefault"
+    }
+        ]
+    },
+    "hasPower": true,
+    "hasLiquids": false,
+    "updateEffect": "none",
+    "craftEffect": {
+    "type": "multiEffect",
+    "effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 4,
+        "length": 30,
+        "lifetime": 30,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "lightColor": "EB8778FF",
+        "colorFrom": "EB8778FF",
+        "colorTo": "EB8778FF",
+        "sizeFrom": 4.5,
+        "sizeTo": 4.5
+            }
+        ]
+    },
+    "consumes": {
+    "power": 0.70,
+    "items": [
+    "pyratite/2",
+    "spore-pod/2"
+        ]
+    },
+    "requirements": [
+    "copper/220",
+    "lead/180",
+    "graphite/140",
+    "metaglass/85",
+    "titanium/95",
+    "silicon/105"
+    ],
+    "outputItems": [
+    "blast-compound/3"
+    ],
+    "category": "crafting",
+    "research": "blast-mixer"
+}

@@ -1,0 +1,40 @@
+{
+	"type": "GenericCrafter",
+	"health": 360,
+	"name": "棱镜工厂",
+	"description": "?????",
+	"outputItem": {"item": "棱镜", "amount": 2	},
+	"itemCapacity": 10,
+	"size": 2,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 65,
+	"updateEffect":"none",
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+			"DrawFlame"
+            ]
+    },
+	"consumes": {
+	"power": 10.5,
+	"items": {	"items": [
+	{ "item": "metaglass", "amount": 3 }	]
+		},
+		"liquid":{
+               "liquid":"water",
+               "amount":0.4
+               }
+	},
+	"requirements": [
+		{ "item":"copper", "amount":100 },
+        { "item":"lead", "amount":95 },
+        { "item":"silicon", "amount":75 },
+        {"item":"titanium","amount":95},
+        {"item":"metaglass","amount":190}
+		],
+	"category": "crafting",
+	"research": "GH-守子核心"
+}

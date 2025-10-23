@@ -1,0 +1,64 @@
+{
+    "name":"大型氧化室",
+    "type": "HeatProducer",
+	"health": 1860,
+	"description": "?????",
+	"outputItem": {"item": "oxide", "amount": 3	},
+	"heatOutput": 15,
+	"liquidCapacity":120,
+	"itemCapacity": 30,
+	"regionRotated1": 2,
+	"size": 3,
+	"rotateDraw":false,
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+	"craftTime": 120,
+	"updateEffect":"none",
+	"consumes":{
+     "power":1,
+     "items": {
+       "items": [
+           {"item":"beryllium","amount":2}
+        ]
+},
+
+            "liquid":{
+               "liquid":"ozone",
+               "amount":0.05
+         }
+  },
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawLiquidRegion",
+				"drawLiquid": "ozone"
+			},
+			{
+				"type": "DrawGlowRegion",
+				"alpha": 1,
+				"glowScale": 5,
+				"color": "F37348FF"
+			},
+			"DrawDefault",
+			"DrawHeatOutput",
+			{
+				"type": "DrawHeatInput",
+				"suffix": "-heat"
+			}
+		]
+	},
+	"requirements": [
+		{ "item":"beryllium", "amount":175 },
+        { "item":"oxide", "amount":25 },
+        { "item":"silicon", "amount":215 },
+        {"item":"graphite","amount":155}
+		],
+	"category": "crafting",
+	"research": "oxidation-chamber"
+}

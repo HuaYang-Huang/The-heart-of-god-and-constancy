@@ -1,0 +1,141 @@
+{
+    "name":"碳化物改化坩埚",
+    "type": "HeatProducer",
+	"health": 85000,
+	"armor": 140,
+	"description": "[purple]生产这么多，到底是什么问题发生的...",
+	"heatOutput": 500,
+	"liquidCapacity":600,
+	"itemCapacity": 10000,
+	"regionRotated1": 2,
+	"size": 8,
+	"rotateDraw":false,
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+	"craftTime": 120,
+	"updateEffect":"none",
+	"outputLiquid": "cyanogen/5",
+    "outputItems": [
+        "carbide/1000",
+    ],
+	"consumes":{
+     "power":15,
+     "items": {
+       "items": [
+           "tungsten/25"
+        ]
+    },
+            "liquids":[
+            "slag/2",
+            "hydrogen/0.5"
+        ]
+    },
+    "craftEffect": {
+        "type": "multiEffect",
+        "effects": [
+    {
+    "type": "RadialEffect",
+    "effect": {
+    "type": "multiEffect",
+    "effects": [
+    "surgeCruciSmoke"
+        ]
+    },
+    "rotationOffset": 0,
+    "lengthOffset": 7,
+    "amount": 12
+    },{
+    "type": "RadialEffect",
+    "effect": {
+    "type": "multiEffect",
+    "effects": [
+    "surgeCruciSmoke"
+        ]
+    },
+    "rotationOffset": 45,
+    "lengthOffset": 6.7,
+    "amount": 12
+    },{
+        "type": "ParticleEffect",
+        "particles": 8,
+        "length": 15,
+        "lifetime": 30,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "lightColor": "FECA80FF",
+        "colorFrom": "FECA80FF",
+        "colorTo": "FECA80FF",
+        "sizeFrom": 4.5,
+        "sizeTo": 0
+            }
+        ]
+    },
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawLiquidRegion",
+				"drawLiquid": "slag"
+			},
+			{
+                "type": "DrawPistons",
+                "sides": 4,
+                "sinScl": 2.3,
+                "sideOffset": 6,
+                "sinMag": 7.5
+            },
+            {
+                "type": "DrawPistons",
+                "suffix": "-pistoon",
+                "sides": 4,
+                "sinScl": 2.3,
+                "sideOffset": -5,
+                "sinMag": 7.5
+            },
+            {
+                "type": "DrawPistons",
+                "suffix": "-pistooon",
+                "sides": 4,
+                "sinScl": 2.3,
+                "sideOffset": -5,
+                "sinMag": 7.5
+            },
+            {
+        		"type":"DrawRegion",
+        		"suffix":"-rotate",
+    		    "spinSprite":true,
+   		        "rotateSpeed":1.55
+   	        },
+			"DrawDefault",
+			"DrawHeatOutput",
+			{
+                "type": "DrawGlowRegion",
+                "color": "FECA80FF",
+                "glowScale": 35,
+                "glowIntensity": 1,
+                "suffix": "-glow1"
+            },
+            {
+				"type": "DrawHeatInput",
+				"suffix": "-heat"
+			}
+		]
+	},
+	"requirements": [
+		"beryllium/66000",
+		"graphite/11000",
+		"silicon/12000",
+		"oxide/8000",
+		"tungsten/10000",
+		"surge-alloy/2500",
+		"phase-fabric/1200",
+		"carbide/900"
+		],
+	"category": "crafting",
+	"research": "e-大型碳化物坩埚"
+}

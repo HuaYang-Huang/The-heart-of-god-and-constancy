@@ -1,0 +1,49 @@
+{
+	"type": "GenericCrafter",
+	"health": 25000,
+	"name": "无神核能心工厂",
+	"description": "那一天，敌人们想起来无神核能心的恐惧",
+	"outputItem": {"item":"无能神核心","amount":5},
+	"liquidCapacity":200,
+	"itemCapacity": 100,
+	"size": 2,
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+	"craftTime": 85,
+	"updateEffect":"none",
+	"consumes": {
+	"power": 5,
+	"items": {	"items": [
+	{ "item":"无恒锭","amount":5},
+    {"item":"blast-compound","amount":15},
+    {"item":"pyratite","amount":15}	]
+		},
+		"liquid":{
+               "liquid":"oil",
+               "amount":5
+         }
+	},
+	"requirements": [
+        "copper/9800",
+	    "lead/11250",
+		"graphite/8400",
+		"silicon/1000",
+		"metaglass/670",
+		"phase-fabric/240",
+		"plastanium/500",
+		"surge-alloy/450",
+		"titanium/750",
+		"thorium/800",
+		"棱镜/8050",
+		"潜合铁金板/4580",
+		"潜铁板/6530",
+		"无遏板/4810",
+		"粒子核心/2580",
+		"无子核心/1500",
+		"神子智慧核心/550",
+		"无恒锭/150"
+		],
+	"category": "crafting",
+	"research": "无恒锭工厂"
+}

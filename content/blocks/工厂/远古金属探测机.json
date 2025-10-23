@@ -1,0 +1,86 @@
+{
+    "name":"远古金属探测机",
+    "type":"GenericCrafter",
+    "description":"远古金属分解稀有金属和其他物质",
+    "itemCapacity":50,
+  
+    "health":18000,
+    "size":5,
+    "hasPower":true,
+    "hasLiquids":true,
+    "hasItems":true,
+  
+    "craftTime":25,
+    "updateEffect":"none",
+    "drawer": {
+        "type": "DrawMulti",
+	    "drawers": [
+		{
+			"type" : "DrawRegion",
+			"suffix" : "-bottom"
+		},
+		"DrawWeave",
+		{
+		"type":"DrawRegion",
+		"suffix":"-rotate",
+		"spinSprite":true,
+   		"rotateSpeed":1.50
+   	    },
+		"DrawDefault",
+		{
+        "type": "DrawGlowRegion",
+        "color": "69E0C7FF",
+        "glowScale": 85,
+        "glowIntensity": 2,
+        "suffix": "-glow1"
+        },{
+        "type": "DrawGlowRegion",
+        "color": "DC7BFFFF",
+        "glowScale": 8,
+        "glowIntensity": 1,
+        "suffix": "-glow2"
+        },{
+        "type": "DrawGlowRegion",
+        "color": "F3E979FF",
+        "glowScale": 25,
+        "glowIntensity": 1,
+        "suffix": "-glow3"
+        }
+	]
+},
+     "consumes":{
+     "power":185.5,
+     "items": {
+     "items": [
+            "远古废料/2"
+        ]
+}
+    },
+    "liquidCapacity":60,
+    "outputItems": [
+        "surge-alloy/5",
+        "强化曼合金钢/3",
+        "潜合铁金板/3",
+        "恒化泵壳/2",
+        "恒金板/1"
+    ],
+    "requirements": [
+    "silicon/5000",
+    "surge-alloy/7850",
+    "plastanium/2000",
+    "phase-fabric/890",
+    "棱镜/2800",
+    "钢化棱镜/1200",
+    "无遏板/2000",
+    "潜铁板/6000",
+    "潜合铁金板/3000",
+    "合化电晶/7000",
+    "粒子核心/1000",
+    "无子核心/450",
+    "无能神核心/20",
+    "恒化泵壳/100",
+    "恒金板/30"
+    ],
+    "category": "crafting",
+    "research": "量子棱镜改化机"
+}

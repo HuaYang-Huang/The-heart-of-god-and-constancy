@@ -1,0 +1,45 @@
+{
+  "name":"粒子核心厂",
+  "type":"GenericCrafter",
+  "description":"?????",
+  "itemCapacity":20,
+  
+  "health":2500,
+  "size":2,
+  "hasPower":true,
+  "hasLiquids":false,
+  "hasItems":true,
+  
+  "craftTime":45,
+  "updateEffect":"none",
+  "drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+			"DrawFlame"
+            ]
+    },
+     "consumes":{
+     "power":8.5,
+     "items": {
+     "items": [
+            "无遏板/1",
+            "棱镜/2"
+        ]
+}
+  },
+  "outputItem":{"item":"粒子核心","amount":2},
+    
+    "requirements": [
+        "copper/360",
+        "lead/280",
+        "metaglass/85",
+        "silicon/105",
+        "titanium/100",
+        "thorium/120",
+        "棱镜/35",
+        "潜铁板/30"
+    ],
+    "category": "crafting",
+    "research": "无遏板工厂"
+}

@@ -1,0 +1,42 @@
+{
+    "type": "GenericCrafter",
+    "name": "大型碳化物坩埚",
+    "description":"强化碳化物坩埚，取消热量",
+    "category": "crafting",
+    "itemCapacity":40,
+    "requirements": [
+        "beryllium/355",
+        "graphite/250",
+        "silicon/220",
+        "oxide/170",
+        "tungsten/380",
+        "thorium/215",
+        "surge-alloy/75"
+    ],
+    "outputItem": {"item": "carbide", "amount": 5 },
+    "craftTime": 30,
+    "size": 4,
+    "hasPower": true,
+    "hasLiquids": false,
+    "consumes": {
+        "items": {
+            "items": [
+                "graphite/3",
+                "tungsten/2"
+            ]
+        },
+        "power": 2.5
+    },
+    "drawer": {
+        "type":"DrawMulti",
+	    "drawers": [
+		{
+			"type":"DrawRegion",
+			"suffix":"-bottom"
+		},
+		"DrawCrucibleFlame",
+		"DrawDefault"
+	]
+},
+    "research": "carbide-crucible"
+}

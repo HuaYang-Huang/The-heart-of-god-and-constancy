@@ -1,0 +1,62 @@
+{
+    "name":"氧化物改化机",
+    "description":"资源改化氧化物",
+    "type":"GenericCrafter",
+    "itemCapacity":60,
+    "health":8600,
+    "size":4,
+    "hasPower":true,
+    "hasItems":true,
+    "hasLiquids": true,
+    "liquidCapacity":120,
+    "craftTime":80,
+    "updateEffect":"none",
+    "craftEffect":"none",
+    "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+    {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+    },{
+			"type": "DrawLiquidRegion",
+			"drawLiquid": "water"
+		},{
+        "type": "DrawDefault"
+    },{
+        "type": "DrawGlowRegion",
+        "color": "DAFBCBFF",
+        "glowScale": 14,
+        "glowIntensity": 1,
+        "suffix": "-glow1"
+    }
+        ]
+    },
+    "requirements": [
+    "copper/750",
+    "lead/750",
+    "silicon/350",
+    "潜铁板/250",
+    "tungsten/320",
+    "surge-alloy/150",
+    "粒子核心/45    "
+    ],
+    "category": "crafting",
+    "outputItems": [
+    "oxide/3"
+    ],
+    "consumes":{
+    "power":10.0,
+    "items": {
+    "items": [
+            "beryllium/1",
+            "copper/2"
+        ]
+},
+    "liquid":{
+               "liquid":"water",
+               "amount":1
+         }
+    },
+    "research": "棱镜工厂"
+}

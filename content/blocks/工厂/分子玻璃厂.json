@@ -1,0 +1,41 @@
+{
+  "name":"分子玻璃厂",
+  "type":"GenericCrafter",
+  "description":"玻璃厂加强，铅多，生产也多",
+  "itemCapacity":20,
+  
+  "health":1200,
+  "size":2,
+  "hasPower":true,
+  "hasLiquids":true,
+  "hasItems":true,
+  
+  "craftTime":40,
+  "updateEffect":"none",
+     "consumes":{
+     "power":5.5,
+     "items": {
+       "items": [
+           {"item":"lead","amount":2}
+        ]
+},
+
+            "liquid":{
+               "liquid":"water",
+               "amount":0.25
+         }
+  },
+  "liquidCapacity":60,
+
+  "outputItem":{"item":"metaglass","amount":4},
+    "requirements": [
+       { "item":"titanium", "amount":110 },
+       { "item":"lead", "amount":195 },
+       { "item":"silicon", "amount":115 },
+       {"item":"graphite","amount":150},
+       {"item":"metaglass","amount":85}
+       
+    ],
+    "category": "crafting",
+    "research": "kiln"
+}

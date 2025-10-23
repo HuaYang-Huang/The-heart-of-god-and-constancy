@@ -1,0 +1,55 @@
+{
+  "name":"伽柏塑钢厂",
+  "type":"GenericCrafter",
+  "description":"塑钢生产增加,但钛和石油消耗多",
+  "itemCapacity":50,
+  
+  "health":2000,
+  "size":3,
+  "hasPower":true,
+  "hasLiquids":true,
+  "hasItems":true,
+  
+  "craftTime":25,
+  "updateEffect":"none",
+  "drawer": {
+        "type": "DrawMulti",
+	    "drawers": [
+		{
+			"type" : "DrawRegion",
+			"suffix" : "-bottom"
+		},{
+			"type": "DrawLiquidRegion",
+			"drawLiquid": "oil"
+		},
+		"DrawWeave",
+		"DrawDefault"
+	]
+},
+     "consumes":{
+     "power":6.4,
+     "items": {
+     "items": [
+           {
+           "item":"titanium","amount": 3
+           }
+     ]
+},
+            "liquid":{
+               "liquid":"oil",
+               "amount":0.20
+         }
+  },
+  "liquidCapacity":60,
+  "outputItem":{"item":"plastanium","amount":7},
+    
+    "requirements": [
+       { "item":"titanium", "amount":360 },
+       { "item":"thorium", "amount":295 },
+       { "item":"silicon", "amount":520 },
+       { "item":"metaglass", "amount":155 },
+       { "item":"lead", "amount":460 }
+    ],
+    "category": "crafting",
+    "research": "plastanium-compressor"
+}

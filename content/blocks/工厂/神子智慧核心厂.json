@@ -1,0 +1,48 @@
+{
+  "name":"神子智慧核心厂",
+  "type":"GenericCrafter",
+  "description":"?????",
+  "itemCapacity":20,
+  
+  "health":4900,
+  "size":4,
+  "hasPower":true,
+  "hasLiquids":false,
+  "hasItems":true,
+  
+  "craftTime":30,
+  "updateEffect":"none",
+  "drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+			"DrawFlame"
+            ]
+    },
+     "consumes":{
+     "power":2,
+     "items": {
+     "items": [
+            "无子核心/1",
+            "phase-fabric/3"
+        ]
+}
+  },
+  "outputItem":{"item":"神子智慧核心","amount":2},
+    
+    "requirements": [
+        "copper/7500",
+        "lead/8600",
+        "metaglass/3505",
+        "silicon/3880",
+        "titanium/5000",
+        "thorium/6500",
+        "棱镜/3150",
+        "潜铁板/2890",
+        "粒子核心/1500",
+        "无子核心/750",
+        "潜合铁金板/1000"
+    ],
+    "category": "crafting",
+    "research": "无子核心厂"
+}

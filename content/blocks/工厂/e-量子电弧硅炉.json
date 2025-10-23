@@ -1,0 +1,213 @@
+{
+	"type": "GenericCrafter",
+	"name": "量子电弧硅炉",
+	"health": 55800,
+	"armor": 150,
+	"description":"[purple]为什么生产过剩这么多呢",
+	"outputItem": "silicon/1000",
+	"outputLiquid": "neoplasm/1"
+	"size": 8,
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+	"squareSprite": false,
+	"craftTime": 120,
+	"itemCapacity": 10000,
+	"liquidCapacity":600,
+	"drawer":{
+		"type":"DrawMulti",
+		"drawers":[
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+		    "type":"DrawLiquidRegion",
+		    "drawLiquid": "slag"
+		    },
+		    {
+            "type": "DrawGlowRegion",
+            "color": "FF7733FF",
+            "glowScale": 17,
+            "glowIntensity": 0.1,
+            "suffix": "-glow1"
+            },
+            {
+            "type": "DrawGlowRegion",
+            "color": "FFD94EFF",
+            "glowScale": 38,
+            "glowIntensity": 0.1,
+            "suffix": "-glow2"
+            },
+			{
+				"type":"DrawCrucibleFlame",
+				"midColor":"7693e3",
+				"flameColor":"c4bdf3",
+				"flameRad":4.45,
+				"circleSpace":1,
+				"flameRadiusScl":16,
+				"flameRadiusMag":3,
+				"circleStroke":0.6,
+				"particles": 33,
+				"particleLife":107,
+				"particleRad":16,
+				"particleSize":5.68,
+				"rotateScl":1.7
+			},
+			"DrawDefault"
+			]
+	},
+	"craftEffect": {
+        "type": "multiEffect",
+        "effects": [
+    {
+        "type": "RadialEffect",
+        "effect": {
+            "type": "multiEffect",
+            "effects": [
+        {
+    "type": "ParticleEffect",
+    "particles": 5,
+    "sizeFrom": 15,
+    "sizeTo": 0,
+    "length": 37,
+    "cone": -40,
+    "lifetime": 100,
+    "interp": "exp10Out",
+    "sizeInterp": "pow5In"
+    "colorFrom": "FFCD66FF",
+    "colorTo": "ffa16690"
+    },{
+    "type": "ParticleEffect",
+    "particles": 6,
+    "sizeFrom": 6,
+    "sizeTo": 0,
+    "length": 125,
+    "cone": -40,
+    "lifetime": 85,
+    "interp": "exp10Out",
+    "sizeInterp": "pow5In"
+    "colorFrom": "FFCD66FF",
+    "colorTo": "ffa16690"
+    },{
+    "type": "ParticleEffect",
+    "particles": 9,
+    "sizeFrom": 11,
+    "sizeTo": 0,
+    "length": 150,
+    "cone": -40,
+    "lifetime": 75,
+    "interp": "exp10Out",
+    "sizeInterp": "pow5In"
+    "colorFrom": "FFCD66FF",
+    "colorTo": "ffa16690"
+    },{
+    "type": "ParticleEffect",
+    "particles": 19,
+    "sizeFrom": 8,
+    "sizeTo": 0,
+    "length": 230,
+    "cone": -40,
+    "lifetime": 40,
+    "interp": "exp10Out",
+    "sizeInterp": "pow5In"
+    "colorFrom": "FFCD66FF",
+    "colorTo": "ffa16690"
+    },{
+    "type": "ParticleEffect",
+    "line": true,
+    "particles": 3,
+    "lifetime": 38,
+    "interp": "circleOut",
+    "sizeInterp": "pow5In"
+    "length": 55,
+    "cone": -20,
+    "lenFrom": 7,
+    "lenTo": 0,
+    "colorFrom": "FFCD66FF",
+    "colorTo": "FFCD66FF"
+    },{
+    "type": "ParticleEffect",
+    "line": true,
+    "particles": 13,
+    "lifetime": 92,
+    "interp": "circleOut",
+    "sizeInterp": "pow5In"
+    "length": 190,
+    "cone": -40,
+    "lenFrom": 9,
+    "lenTo": 0,
+    "colorFrom": "FFCD66FF",
+    "colorTo": "FFCD66FF"
+    },{
+    "type": "ParticleEffect",
+    "line": true,
+    "particles": 6,
+    "lifetime": 60,
+    "interp": "circleOut",
+    "sizeInterp": "pow5In"
+    "length": 65,
+    "cone": -60,
+    "lenFrom": 6,
+    "lenTo": 0,
+    "colorFrom": "FFCD66FF",
+    "colorTo": "FFCD66FF"
+            }
+        ]
+    },
+    "rotationOffset": 45,
+    "lengthOffset": 20,
+    "amount": 4
+    },{
+    "type": "RadialEffect",
+    "effect": {
+    "type": "multiEffect",
+    "effects": [
+    "surgeCruciSmoke"
+        ]
+    },
+    "rotationOffset": 20,
+    "lengthOffset": 23,
+    "amount": 12
+    },{
+    "type": "RadialEffect",
+    "effect": {
+    "type": "multiEffect",
+    "effects": [
+    "surgeCruciSmoke"
+        ]
+    },
+    "rotationOffset": 60,
+    "lengthOffset": 23,
+    "amount": 12
+    }
+        ]
+    },
+	"consumes": {
+	"power": 65.5,
+	"items": {
+	"items": 
+	    [
+	    "sand/10",
+	    "graphite/25"
+	    ] 
+	},
+	"liquid": {
+               "liquid": "slag",
+               "amount": 2
+         }
+},
+	"requirements": [
+		"beryllium/10550",
+		"graphite/5500",
+		"silicon/10000",
+		"oxide/3000",
+		"tungsten/9000",
+		"surge-alloy/2400",
+		"phase-fabric/900",
+		"carbide/1500"
+	],
+	"ambientSound":"smelter",
+	"category": "crafting",
+	"research": "e-大型电弧硅炉"
+}

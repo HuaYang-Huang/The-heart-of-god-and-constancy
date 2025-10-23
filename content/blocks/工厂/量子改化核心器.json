@@ -1,0 +1,76 @@
+{
+    "name":"量子改核心器",
+    "description":"量子改造核心",
+    "type":"GenericCrafter",
+    "itemCapacity":150,
+    "health":38600,
+    "size":8,
+    "hasPower":true,
+    "hasItems":true,
+    "hasLiquids": true,
+    "liquidCapacity":360,
+    "craftTime":110,
+    "updateEffect":"none",
+    "craftEffect":"none",
+    "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+    {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+    },{
+			"type": "DrawLiquidRegion",
+			"drawLiquid": "cryofluid"
+		},{
+        "type": "DrawDefault"
+    },{
+		"type":"DrawFrames",
+		"frames":38,
+		"interval":2,
+		"sine":false
+	},{
+        "type": "DrawGlowRegion",
+        "color": "A172DFFF",
+        "glowScale": 35,
+        "glowIntensity": 1,
+        "suffix": "-glow"
+    }
+        ]
+    },
+    "requirements": [
+        "copper/10000",
+        "lead/8600",
+        "metaglass/5505",
+        "silicon/6880",
+        "titanium/8000",
+        "thorium/8500",
+        "oxide/3200",
+        "tungsten/5000"
+        "棱镜/4000",
+        "潜铁板/5000",
+        "粒子核心/2000",
+        "无子核心/1000",
+        "神子智慧核心/300",
+        "潜合铁金板/1200"
+    ],
+    "category": "crafting",
+    "research": "神子智慧核心厂",
+    "outputItems": [
+    "粒子核心/15",
+    "无子核心/10",
+    "神子智慧核心/5"
+    ],
+    "consumes":{
+    "power":135.0,
+    "items": {
+    "items": [
+            "lead/5",
+            "metaglass/3"
+        ]
+},
+    "liquid":{
+               "liquid":"合化晶液",
+               "amount":2.0
+         }
+    }
+}

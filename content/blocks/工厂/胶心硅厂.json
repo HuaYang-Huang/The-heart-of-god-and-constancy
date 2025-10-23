@@ -1,0 +1,36 @@
+{
+	"type": "GenericCrafter",
+	"health": 360,
+	"name": "胶心硅厂",
+	"description": "硅厂加强，沙子/煤多，生产也多",
+	"outputItem": {"item": "silicon", "amount": 6	},
+	"itemCapacity": 30,
+	"size": 2,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 85,
+	"updateEffect":"none",
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+			"DrawFlame"
+            ]
+    },
+	"consumes": {
+	"power": 1.5,
+	"items": {	"items": [
+	{ "item": "coal", "amount": 2 },
+	{ "item": "sand", "amount": 3 }	]
+		}
+	},
+	"requirements": [
+		{ "item":"copper", "amount":25 },
+        { "item":"lead", "amount":25 },
+        { "item":"silicon", "amount":20 },
+        {"item":"graphite","amount":30}
+		],
+	"category": "crafting",
+	"research": "silicon-smelter"
+}

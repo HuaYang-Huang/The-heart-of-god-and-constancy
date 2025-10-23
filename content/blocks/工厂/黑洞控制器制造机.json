@@ -1,0 +1,127 @@
+{
+	"type": "GenericCrafter",
+	"name": "黑洞控制器制造机",
+	"description":"制作黑洞控制器",
+	"health": 8400,
+	"itemCapacity": 60,
+	"size": 6,
+	"drawer":{
+		"type":"DrawMulti",
+		"drawers":[
+		{
+		"type":"DrawRegion",
+		"suffix":"-bottom"
+		},{
+        "type": "DrawGlowRegion",
+        "color": "916CCDFF",
+        "glowScale": 17,
+        "glowIntensity": 1,
+        "suffix": "-glow2"
+        },{
+		"type":"DrawRegion",
+		"suffix":"-rotate",
+		"spinSprite":true,
+   		"rotateSpeed":1.65
+   		},
+		"DrawDefault",
+		{
+        "type": "DrawGlowRegion",
+        "color": "752C2CFF",
+        "glowScale": 17,
+        "glowIntensity": 1,
+        "suffix": "-glow1"
+        }
+	]
+	},
+	"hasItems": true,
+	"hasLiquids": true,
+	"outputsLiquid": true,
+	"hasPower": true,
+	"liquidCapacity": 600,
+	"craftTime": 120,
+	"craftEffect": {
+    "type": "multiEffect",
+    "effects": [
+      {
+        "type": "ParticleEffect",
+        "particles": 4,
+        "length": 15,
+        "lifetime": 60,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "lightColor": "916CCDFF",
+        "colorFrom": "916CCDFF",
+        "colorTo": "916CCDFF",
+        "sizeFrom": 4.5,
+        "sizeTo": 0
+      },
+      {
+        "type": "ParticleEffect",
+        "particles": 3,
+        "length": 20,
+        "lifetime": 80,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "lightColor": "916CCDFF",
+        "colorFrom": "916CCDFF",
+        "colorTo": "916CCDFF",
+        "sizeFrom": 3.5,
+        "sizeTo": 0
+      },
+      {
+        "type": "ParticleEffect",
+        "particles": 2,
+        "length": 25,
+        "lifetime": 100,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "lightColor": "916CCDFF",
+        "colorFrom": "916CCDFF",
+        "colorTo": "916CCDFF",
+        "sizeFrom": 2,
+        "sizeTo": 0
+      }
+    ]
+  },
+	"updateEffect": {
+		"type": "ParticleEffect",
+		"particles": 20,
+		"sizeFrom": 5,
+		"sizeTo": 0,
+		"length": 0,
+		"baseLength":0,
+		"lifetime": 60,
+		"colorFrom": "916CCDFF",
+		"colorTo": "916CCDFF"
+	},
+	"consumes":{
+	"power": 85.55,
+	"items": {
+	"items": [
+	    "恒金板/1"
+	]
+},
+	"liquid": {"liquid": "合化晶液", "amount": 1.5 }	
+},
+    "outputItems": [
+    "黑洞控制器/2"
+    ],
+	"requirements": [
+    "silicon/680",
+    "plastanium/410",
+    "thorium/520",
+    "metaglass/360",
+    "phase-fabric/230",
+    "surge-alloy/290",
+    "棱镜/350",
+    "钢化棱镜/275",
+    "无遏板/300",
+    "潜铁板/510",
+    "潜合铁金板/325",
+    "合化电晶/420",
+    "粒子核心/380",
+    "无子核心/215"
+	],
+	"category": "crafting",
+	"research": "恒金板制造机"
+}

@@ -1,0 +1,55 @@
+{
+  "type": "GenericCrafter",
+  "name":"恒化泵壳制造机",
+  "description":"制造恒化泵壳",
+  "health":6900,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+    {
+        "type": "DrawDefault"
+    },{
+    "type": "DrawGlowRegion",
+    "color": "BF3939FF",
+    "glowScale": 17,
+    "glowIntensity": 0.1,
+    "suffix": "-glow"
+    }
+    ]
+  },
+  "size": 3,
+  "hasPower": true,
+  "hasItems": true,
+  "itemCapacity": 30,
+  "craftTime": 60,
+  "updateEffectChance": 0.03,
+  "craftEffect": "healWave",
+  "consumes": {
+    "power": 50,
+    "items": {
+      "items": [
+        "无遏板/2",
+        "合化电晶/3"
+      ]
+    }
+  },
+  "requirements": [
+    "silicon/1500",
+    "titanium/3100",
+    "plastanium/2520",
+    "thorium/3100",
+    "metaglass/555",
+    "棱镜/400",
+    "钢化棱镜/200",
+    "无遏板/800",
+    "潜铁板/1500",
+    "潜合铁金板/455",
+    "合化电晶/1050",
+    "粒子核心/385"
+  ],
+  "category": "crafting",
+  "research": "强化曼合金钢制造机",
+  "outputItems": [
+    "恒化泵壳/3"
+  ]
+}

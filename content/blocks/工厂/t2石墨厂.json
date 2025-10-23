@@ -1,0 +1,49 @@
+{
+    "type": "GenericCrafter",
+    "name": "t2石墨厂",
+    "category": "crafting",
+    "description":"?????",
+    "itemCapacity": 40,
+    "requirements": [
+        "copper/230",
+        "lead/355",
+        "graphite/185",
+        "silicon/200",
+        "thorium/150",
+        "titanium/195",
+        "metaglass/85"
+    ],
+    "craftEffect": {
+    "type": "multiEffect",
+    "effects": [
+        {
+        "type": "ParticleEffect",
+        "particles": 8,
+        "length": 24,
+        "lifetime": 70,
+        "layer": 90,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "lightColor": "000000FF",
+        "colorFrom": "000000FF",
+        "colorTo": "00000000",
+        "sizeFrom": 3.5,
+        "sizeTo": 0
+            }
+        ]
+    },
+    "outputItem": "graphite/4",
+    "craftTime": 30.50,
+    "size": 3,
+    "hasPower": true,
+    "hasLiquids": false,
+    "consumes": {
+        "items": {
+            "items": [
+                "coal/3"
+            ]
+        },
+        "power": 8.86
+    },
+    "research": "multi-press"
+}

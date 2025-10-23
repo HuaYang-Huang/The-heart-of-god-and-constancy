@@ -1,0 +1,70 @@
+{
+    "type": "GenericCrafter",
+    "name": "大型合金坩埚",
+    "description":"强化碳合金坩埚，取消热量",
+    "category": "crafting",
+    "requirements": [
+        "beryllium/245",
+        "graphite/225",
+        "silicon/320",
+        "oxide/210",
+        "tungsten/200"
+    ],
+    "outputItem": {"item": "surge-alloy", "amount": 5 },
+    "craftTime": 30,
+    "size": 4,
+    "itemCapacity":50,
+    "liquidCapacity":60,
+    "hasPower": true,
+    "hasLiquids": true,
+    "consumes": {
+        "items": {
+            "items": [
+                "silicon/3"
+            ]
+        },
+        "liquid":{
+            "liquid":"slag",
+            "amount":0.666666666667
+        },
+        "power": 2.5
+    },
+    "drawer": {
+        "type":"DrawMulti",
+	    "drawers": [
+		{
+			"type":"DrawRegion",
+			"suffix":"-bottom"
+		},
+		{
+		    "type":"DrawLiquidRegion",
+		    "drawLiquid": "slag"
+		},
+		{
+		    "type":"DrawCircles",
+		    "color":"ffc073",
+            "strokeMax":1.5,
+            "radius":12.5,
+            "amount":6
+		},
+		{
+		    "type":"DrawHeatRegion",
+		    "color":"ff6060ff",
+		    "suffix":"-vents"
+		},
+		{
+			"type": "DrawGlowRegion",
+			"alpha": 1,
+			"glowScale": 5,
+			"color": "F37348FF"
+		},
+		"DrawDefault",
+		"DrawHeatInput",
+		{
+		    "type":"DrawHeatRegion",
+		    "suffix":"-vents"
+		}
+	]
+},
+    "research": "surge-crucible"
+}

@@ -1,0 +1,36 @@
+{
+	"type": "GenericCrafter",
+	"health": 360,
+	"name": "潜铁板工厂",
+	"description": "?????",
+	"outputItem": {"item": "潜铁板", "amount": 2	},
+	"itemCapacity": 20,
+	"size": 2,
+	"hasPower": true,
+	"hasLiquids": false,
+	"hasItems": true,
+	"craftTime": 85,
+	"updateEffect":"none",
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+			"DrawFlame"
+            ]
+    },
+	"consumes": {
+	"power": 5.5,
+	"items": {	"items": [
+	{ "item": "silicon", "amount": 2 },
+	{ "item": "copper", "amount": 3 }	]
+		}
+	},
+	"requirements": [
+		{ "item":"copper", "amount":105 },
+        { "item":"lead", "amount":105 },
+        { "item":"silicon", "amount":85 },
+        {"item":"titanium","amount":100}
+		],
+	"category": "crafting",
+	"research": "silicon-smelter"
+}

@@ -1,0 +1,34 @@
+{
+    "name":"强化导热器",
+	"type": "HeatProducer",
+	"description":"热爱热电，不怕冷冻",
+	"size": 2,
+	"hasPower": true,
+	"hasLiquids": true,
+	"hasItems": true,
+	"craftTime": 20,
+	"heatOutput":6,
+	"regionRotated1": 1,
+	"requirements": [
+		"silicon/25",
+		"graphite/45",
+		"beryllium/15",
+		"oxide/20"
+	],
+	"consumes":{
+     "power":2.5
+    },
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			"DrawHeatOutput",
+			{
+				"type": "DrawHeatInput",
+				"suffix": "-heat"
+			}
+		]
+	},
+	"category": "crafting",
+	"research": "electric-heater"
+}

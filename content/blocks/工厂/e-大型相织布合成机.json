@@ -1,0 +1,71 @@
+{
+  "name":"大型相织布合成机",
+  "type":"HeatCrafter",
+  "description":"强化布厂，价格不变",
+  "itemCapacity":60,
+  "health":2600,
+  "size":4,
+  "hasPower":true,
+  "hasItems":true,
+  "hasLiquids": true,
+  "liquidCapacity":20,
+  "heatRequirement":8,
+  "craftTime":60,
+  "updateEffect":"none",
+  "drawer": {
+        "type": "DrawMulti",
+	    "drawers": [
+		{
+			"type" : "DrawRegion",
+			"suffix" : "-bottom"
+		},
+		{
+		    "type":"DrawSpikes",
+		    "color":"ffd59e",
+            "stroke":1.9,
+            "radius":8.7,
+            "layers":2,
+            "amount":12,
+            "rotateSpeed":0.5,
+            "layerSpeed":-0.9
+		},
+		"DrawWeave",
+		"DrawHeatInput",
+		{
+		    "type":"DrawHeatRegion",
+		    "suffix":"-vents"
+		},
+		"DrawDefault",
+		{
+			"type": "DrawHeatInput",
+			"suffix": "-heat"
+		}
+    ]
+}
+    "consumes":{
+     "power":3.8,
+     "items": {
+     "items": [
+        "thorium/2",
+        "sand/2"
+     ]
+},
+
+            "liquid": {
+               "liquid":"ozone",
+               "amount": 0.35
+         }
+    },
+    "outputItem":{"item":"phase-fabric","amount":5},
+    "requirements": [
+        "beryllium/200",
+        "graphite/85",
+        "silicon/100",
+        "tungsten/200",
+        "thorium/100",
+        "carbide/90",
+        "surge-alloy/15"
+    ],
+    "category": "crafting",
+    "research": "phase-synthesizer"
+}

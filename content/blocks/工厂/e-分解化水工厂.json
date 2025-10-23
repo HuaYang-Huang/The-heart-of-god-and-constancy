@@ -1,0 +1,45 @@
+{
+   "type":"GenericCrafter",
+   "name":"分解化水工厂",
+   "category":"crafting",
+   "description":"?????",
+   "requirements":[
+      {"item":"tungsten","amount":85},
+      {"item":"beryllium","amount":185},
+      {"item":"graphite","amount":110},
+      {"item":"silicon","amount":150},
+      {"item":"oxide","amount":40}
+    ],
+   "outputLiquid":"water/0.3334",
+   "craftTime":100,
+   "size":3,
+   "health":2500,
+   "liquidCapacity":300,
+   "hasPower":true,
+   "hasLiquids":true,
+   "rotate": false,
+    "solid": true,
+   "consumes":{
+    "power":1.00,
+    "liquid":"hydrogen/0.1"
+    },
+    "drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawLiquidTile",
+				"drawLiquid": "water"
+			},
+			{
+				"type": "DrawLiquidTile",
+				"drawLiquid": "hydrogen"
+			},
+			"DrawDefault"
+		]
+	},
+   "research":"electrolyzer"
+}

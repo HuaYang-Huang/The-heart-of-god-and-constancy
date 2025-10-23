@@ -1,0 +1,32 @@
+{
+   "type":"GenericCrafter",
+   "name":"次数液工厂",
+   "category":"crafting",
+   "description":"某人说这液体表面看起来很像太空景像",
+   "requirements":[
+      {"item":"无恒锭","amount":85},
+      {"item":"surge-alloy","amount":500},
+      {"item":"titanium","amount":700},
+      {"item":"silicon","amount":750},
+      {"item":"plastanium","amount":650},
+      {"item":"phase-fabric","amount":420},
+      {"item":"metaglass","amount":640}
+    ],
+   "outputLiquid":"H-次数液/0.5",
+   "craftTime":120,
+   "liquidCapacity":120,
+   "size":3,
+   "health":50000,
+   "hasPower":true,
+   "hasLiquids":true,
+   "rotate": false,
+    "solid": true,
+   "consumes":{
+    "power":1.00,
+    "item":"无恒锭",
+    "liquid":"cryofluid/0.05"
+    },
+
+   "research":"无恒锭工厂"
+}
+

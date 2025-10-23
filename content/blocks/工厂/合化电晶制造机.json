@@ -1,0 +1,118 @@
+{
+	"type": "GenericCrafter",
+	"health": 5200,
+	"name": "合化电晶制造机",
+	"description": "光学镜炉头来合化晶液凝固一下",
+	"itemCapacity": 20,
+	"size": 5,
+	"hasPower": true,
+	"hasItems": true,
+	"craftTime": 60,
+	"updateEffect":"none",
+	"craftEffect": {
+    "type": "multiEffect",
+    "effects": [
+      {
+        "type": "ParticleEffect",
+        "particles": 4,
+        "length": 15,
+        "lifetime": 15,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "lightColor": "EC6857FF",
+        "colorFrom": "C74837FF",
+        "colorTo": "EC6857FF",
+        "sizeFrom": 4.5,
+        "sizeTo": 0
+      },
+      {
+        "type": "ParticleEffect",
+        "particles": 3,
+        "length": 20,
+        "lifetime": 20,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "lightColor": "A16C65FF",
+        "colorFrom": "6C4641FF",
+        "colorTo": "A16C65FF",
+        "sizeFrom": 3.5,
+        "sizeTo": 0
+      },
+      {
+        "type": "ParticleEffect",
+        "particles": 2,
+        "length": 25,
+        "lifetime": 30,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "lightColor": "4B3A38FF",
+        "colorFrom": "302A2AFF",
+        "colorTo": "4B3A38FF",
+        "sizeFrom": 2,
+        "sizeTo": 0
+      }
+    ]
+  },
+    "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+    {
+    "type": "DrawRegion",
+    "suffix": "-bottom"
+    },{
+    "type": "DrawDefault"
+    },{
+    "type": "DrawGlowRegion",
+    "color": "47CCAFFF",
+    "glowScale": 17,
+    "glowIntensity": 1,
+    "suffix": "-glow2"
+    },{
+    "type": "DrawGlowRegion",
+    "color": "C14E3FFF",
+    "glowScale": 17,
+    "glowIntensity": 0.1,
+    "suffix": "-glow1"
+    },{
+    "type": "DrawCrucibleFlame",
+    "flameRad": 4,
+    "particleSize": 5,
+    "particleRad": 11,
+    "particles": 43,
+    "particleLife": 70
+    },{
+    "type": "DrawCrucibleFlame",
+    "particleSize": 5,
+    "particleRad": 18,
+    "particles": 43,
+    "particleLife": 70
+    }
+        ]
+    },
+	"consumes": {
+	"power": 25.5,
+	"items": {	
+	"items": [
+	    "棱镜/1"
+           ]
+		},
+	"liquid": {
+         "liquid":"合化晶液",
+         "amount":1.0
+         }
+	},
+	"outputItem":{"item":"合化电晶","amount":3},
+	"requirements": [
+	        "graphite/185",
+	        "metaglass/180",
+	        "silicon/210",
+	        "titanium/350",
+	        "plastanium/90",
+	        "棱镜/170",
+	        "潜铁板/350",
+	        "潜合铁金板/100",
+	        "无遏板/250"
+		],
+	"category": "crafting",
+	"research":"钢化棱镜制造机"
+}

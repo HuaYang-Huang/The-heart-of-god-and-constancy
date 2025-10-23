@@ -1,0 +1,58 @@
+{
+  "type": "GenericCrafter",
+  "name":"强化曼合金钢制造机",
+  "description":"?????",
+  "health":8000,
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+      },
+      {
+        "type": "DrawMultiWeave",
+        "glowColor": "69E0C7FF"
+      },
+      {
+        "type": "DrawDefault"
+      }
+    ]
+  },
+  "size": 4,
+  "hasPower": true,
+  "hasItems": true,
+  "itemCapacity": 30,
+  "craftTime": 60,
+  "updateEffectChance": 0.03,
+  "craftEffect": "healWave",
+  "consumes": {
+    "power": 85.5,
+    "items": {
+      "items": [
+        "潜铁板/2",
+        "合化电晶/1"
+      ]
+    }
+  },
+  "requirements": [
+    "silicon/2500",
+    "titanium/3000",
+    "plastanium/1500",
+    "thorium/3800",
+    "metaglass/2405",
+    "棱镜/1500",
+    "钢化棱镜/900",
+    "无遏板/1200",
+    "潜铁板/1800",
+    "潜合铁金板/555",
+    "合化电晶/1800",
+    "粒子核心/800"
+  ],
+  "category": "crafting",
+  "research": "钢化棱镜制造机",
+  "outputItems": [
+    "潜合铁金板/1",
+    "强化曼合金钢/3"
+  ]
+}

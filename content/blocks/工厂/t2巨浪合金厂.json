@@ -1,0 +1,45 @@
+{
+	"type": "GenericCrafter",
+	"health": 1750,
+	"name": "t2巨浪合金厂",
+	"description": "?????",
+	"itemCapacity": 40,
+	"size": 3,
+	"hasPower": true,
+	"hasItems": true,
+	"craftTime": 75,
+	"updateEffect":"none",
+	"drawer":{
+        "type":"DrawMulti",
+        "drawers":[
+            "DrawDefault",
+			"DrawFlame"
+            ]
+    },
+	"consumes": {
+	"power": 5.5,
+	"items": {
+	    "items": [
+	       { "item":"copper","amount":3},
+           {"item":"lead","amount":3},
+           {"item":"thorium","amount":3},
+           {"item":"silicon","amount":3}
+           ]
+		}
+	},
+	"outputItem":{"item":"surge-alloy","amount":5},
+	"requirements": [
+	   { "item":"copper", "amount":650 },
+       { "item":"lead", "amount":650 },
+       { "item":"graphite", "amount":450 },
+       { "item":"metaglass", "amount":250 },
+       { "item":"titanium", "amount":500 },
+       { "item":"thorium", "amount":500 },
+       { "item":"silicon", "amount":180 },
+       { "item":"plastanium", "amount":70 },
+       { "item":"phase-fabric", "amount":370 },
+       { "item":"surge-alloy", "amount":58 }
+	    ],
+	"category": "crafting",
+	"research": "alloy-smelter"
+}
