@@ -1,0 +1,121 @@
+{
+        "type": "missile",
+         "controller": "MissileAI",
+         "envDisabled":0,
+        "lowAltitude": true,
+        "speed": 9.6,
+        "rotateSpeed": 2.5,
+        "lifetime": 430,
+        "homingDelay": 45,
+         "isEnemy": false,
+        "allowedInPayloads": false,
+        "playerControllable": false,
+        "physics": false,
+        "useUnitCap": false,
+        "createWreck": false,
+        "createScorch": false,
+        "flying": true,
+        "hidden": false,
+        "health": 80,
+        "hitSize": 7,
+        "engineLayer": 110,
+          "outlineColor": "34353EFF",
+        "engineColor": "E38448FF",
+        "trailColor": "E38448FF",
+        "missileAccelTime": 60,
+        "engineOffset":6,
+        "engineSize": 2.3,
+        "drawCell": false,
+        "maxRange": 10,
+        "trailLength": 12,
+	    "weapons": [
+	   {
+    "shootCone": 360,
+    "shootOnDeath": true,
+    "controllable": true,
+    "shootSound": "none",
+    "bullet": {
+     "killShooter": true,
+      "hitEffect": {
+      "type": "multiEffect",
+    "effects": [
+    {
+    "type": "WaveEffect",
+    "lifetime": 15,
+    "sizeFrom": 0,
+    "sizeTo": 30,
+    "strokeFrom": 7.5,
+    "strokeTo": 0,
+    "colorFrom": "E38448FF",
+    "colorTo": "66B1FFFF"
+    },
+    {
+     "type": "ParticleEffect",
+    "offset": 30,
+    "particles": 10,
+    "lifetime": 20,
+    "length": 50,
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "cone": -360,
+    "line": true,
+    "strokeFrom": 1.5,
+    "strokeTo": 1.5,
+    "lenFrom": 5,
+    "lenTo": 5,
+    "lightColor": "E38448FF",
+    "colorFrom": "B75E26FF",
+    "colorTo": "E38448FF"
+    },
+    {
+    "type": "ParticleEffect",
+    "offset": 30,
+    "particles": 10,
+    "lifetime": 25,
+    "length": 30,
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "cone": -360,
+    "line": true,
+    "strokeFrom": 1.5,
+    "strokeTo": 1.5,
+    "lenFrom": 7,
+    "lenTo": 7,
+    "lightColor": "E38448FF",
+    "colorFrom": "B75E26FF",
+    "colorTo": "E38448FF"
+    }
+  ]
+  },
+    "type": "ExplosionBulletType",
+    "instantDisappear": true,
+    "keepVelocity": false,
+    "splashDamageRadius": 85,
+    "splashDamage": 350
+}
+}
+ ],
+    "abilities": [
+  {
+    "type": "MoveEffectAbility",
+    "effect": {
+ "type": "ParticleEffect",
+    "particles": 4,
+    "sizeFrom": 4,
+    "sizeTo": 1,
+    "length": 30,
+    "lifetime": 30,
+    "lightOpacity": 0,
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "colorFrom": "B75E26FF",
+    "colorTo": "E38448FF",
+    "cone": 9
+    },
+    "interval": 2,
+    "y": -6,
+    "rotateEffect": true,
+    "rotation": 180
+    }
+  ]
+}

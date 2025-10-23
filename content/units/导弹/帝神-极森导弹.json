@@ -1,0 +1,158 @@
+{
+        "type": "missile",
+        "name":"帝神-极森导弹",
+         "controller": "MissileAI",
+         "envDisabled":0,
+        "lowAltitude": true,
+        "speed": 10.1,
+        "rotateSpeed": 1.5,
+        "lifetime": 550,
+        "homingDelay": 45,
+         "isEnemy": false,
+        "allowedInPayloads": false,
+        "playerControllable": false,
+        "physics": false,
+        "useUnitCap": false,
+        "createWreck": false,
+        "createScorch": false,
+        "flying": true,
+        "hidden": false,
+        "health": 1000,
+        "hitSize": 18,
+        "engineLayer": 116,
+          "outlineColor": "34353EFF",
+        "engineColor": "F19583FF",
+        "trailColor": "F19583FF",
+        "missileAccelTime": 35,
+        "engineOffset":12,
+        "engineSize": 5.3,
+        "drawCell": true,
+        "maxRange": 60,
+        "trailLength": 19.5,
+	    "weapons": [
+	   {
+    "shootCone": 360,
+    "shootOnDeath": true,
+    "controllable": true,
+    "shootSound": "none",
+    "bullet": {
+     "killShooter": true,
+      "hitEffect": {
+      "type": "multiEffect",
+    "effects": [
+        {
+        "type": "ParticleEffect",
+        "particles": 6,
+        "sizeFrom": 15,
+        "sizeTo": 8,
+        "length": 0,
+        "lifetime": 28,
+        "colorFrom": "F19583FF",
+        "colorTo": "F19583FF"
+        },
+    {
+    "type": "WaveEffect",
+    "lifetime": 15,
+    "sizeFrom": 0,
+    "sizeTo": 30,
+    "strokeFrom": 7.5,
+    "strokeTo": 0,
+    "colorFrom": "34353EFF",
+    "colorTo": "34353EFF"
+    }
+  ]
+  },
+    "type": "ExplosionBulletType",
+    "instantDisappear": true,
+    "keepVelocity": false,
+    "splashDamageRadius": 120,
+    "splashDamage": 1500,
+    
+		"fragBullets": 5,
+		"fragBullet":{
+		"type" : "MissileBulletType",
+			"damage": 600,
+			"weaveMag": 5,
+   "weaveScale": 5,
+			"height": 24,
+			"width" : 14,			
+			"speed": 18.0,
+			"homingPower" : 0.04,
+			"lifetime": 360,
+			"frontColor": "89A0FF",
+		"backColor": "ffffff",
+			"lightning": 4, 
+            "lightningLength": 20,
+            "lightningDamage" : 270,
+			"smokeEffect": "shootSmallSmoke",
+			"trailColor": "FF5845",
+		"trailLength": 60,
+		"trailWidth": 8,
+		"trailParam": 5,
+		"trailInterval": 30,
+		"trailRotation": true,
+		"trailEffect": {
+			"type": "MultiEffect",
+			"lifetime": 32,
+			"layer": 115,
+			"effects": [
+				{
+					"type": "ParticleEffect",
+					"lightOpacity": 0,
+					"length": 70,
+					"cone": 0,
+					"randLength": false,
+					"sizeFrom": 25,
+					"sizeTo": 25,
+					"region": "神恒之心-wide",
+					"particles": 1,
+					"lifetime": 35,
+					"colorFrom": "FF5845",
+					"colorTo": "FF5845",
+					"spin": 6.5
+				},
+				{
+					"type": "ParticleEffect",
+					"lightOpacity": 0,
+					"length": 70,
+					"cone": 0,
+					"randLength": false,
+					"sizeFrom": 40,
+					"sizeTo": 40,
+					"region": "神恒之心-tall",
+					"particles": 1,
+					"lifetime": 35,
+					"colorFrom": "FF5845",
+					"colorTo": "FF5845",
+					"spin": -6.5
+				}
+			]
+		}
+}
+}
+}
+ ],
+    "abilities": [
+  {
+    "type": "MoveEffectAbility",
+    "effect": {
+ "type": "ParticleEffect",
+    "particles": 4,
+    "sizeFrom": 4,
+    "sizeTo": 1,
+    "length": 30,
+    "lifetime": 30,
+    "lightOpacity": 0,
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "colorFrom": "34353EFF",
+    "colorTo": "34353EFF",
+    "cone": 9
+    },
+    "interval": 2,
+    "y": -6,
+    "rotateEffect": true,
+    "rotation": 180
+    }
+  ]
+}

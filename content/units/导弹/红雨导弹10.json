@@ -1,0 +1,176 @@
+{
+        "type": "missile",
+        "name":"红雨导弹",
+        "envDisabled":0,
+        "controller": "MissileAI",
+        "lowAltitude": true,
+        "speed": 0.8,
+        "rotateSpeed": 0.45,
+        "lifetime": 1250,
+        "homingDelay": 5,
+        "isEnemy": false,
+        "allowedInPayloads": false,
+        "playerControllable": false,
+        "physics": false,
+        "useUnitCap": false,
+        "createWreck": false,
+        "createScorch": false,
+        "flying": true,
+        "hidden": false,
+        "health": 4550,
+        "armor": 255,
+        "hitSize": 4,
+        "outlineColor": "20202CFF",
+        "engineColor": "FFF3D6FF",
+        "trailColor": "FFF3D6FF",
+        "missileAccelTime": 30,
+        "engineOffset":2.5,
+        "engineSize": 0.6,
+        "drawCell": false,
+        "maxRange": 5,
+        "trailLength": 18.5,
+        "immunities":[
+    "blasted",
+    "burning",
+    "electrified",
+    "freezing",
+    "melting",
+    "muddy",
+    "sapped",
+    "shocked",
+    "slow",
+    "tarred",
+    "unmoving",
+    "wet",
+    "spore-slowed",
+    "corroded",
+    "结晶徽章",
+    "为国正骨",
+    "时间加速",
+    "时间逆流",
+    "时间暂停",
+    "国耻为杀"
+    ],
+        "weapons": [
+            {
+        "name":"红雨武器",
+        "x":3.0,
+        "y":-0.3,
+        "mirror": true,
+        "alternate": true,
+        "rotate": false,
+        "reload": 95.5,
+        "shootY":0,
+        "shootCone": 360,
+        "inaccuracy": 1,
+        "shoot": {
+                "shots": 5,
+                "shotDelay":7,
+                "type":"ShootBarrel",
+                "barrels":[
+        0,0.8,-90,
+        0.7,0.8,-90,
+        0,0,-90,
+        0,-0.8,-90,
+        0.7,-0.8,-90
+    ]
+        },
+            "bullet": {
+        "type": "BasicBulletType",
+        "spawnUnit": "神恒之心-红雨导弹11",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "backColor":"FFFFFFFF",	
+        "frontColor":"FFFFFFFF",
+	    "trailColor":"FFFFFFFF",
+	    "smokeEffect":"none",
+	    "shootEffect": "none"
+        }
+            },{
+        "name": "核弹",
+        "shootCone": 360,
+        "shootOnDeath": true,
+        "controllable": true,
+        "shootSound": "hongyv1",
+            "bullet": {
+        "type": "BasicBulletType",
+        "killShooter": true,
+        "instantDisappear": true,
+        "damage":220,
+        "buildingDamageMultiplier": 1.0,
+        "splashDamage": 190,
+        "suppressionRange": 155,
+        "splashDamageRadius": 170,
+        "status": "相位混乱",
+        "statusDuration": 360,
+        "fragBullets": 12,
+        "despawnEffect":{
+        "type": "MultiEffect",
+	    "effects": [
+    {
+        "type": "WaveEffect",
+        "lifetime": 25,
+        "sizeFrom": 0,
+        "sizeTo": 50,
+        "strokeFrom": 5,
+        "strokeTo": 0,
+        "colorFrom": "FFF3D6FF",
+        "colorTo": "FFF3D6FF"
+    }
+            ]
+        },
+		"fragBullet":{
+		"type": "BasicBulletType",
+		"sprite" : "神恒之心-plasma",
+		"speed":4.5,
+		"lifetime":30,
+        "damage":210,
+        "buildingDamageMultiplier": 1.0,
+        "splashDamage": 150,
+        "suppressionRange": 80,
+        "splashDamageRadius": 120,
+        "status": "burning",
+        "statusDuration": 360,
+        "width": 10,
+        "height": 10,
+        "frontColor": "FFF3D6FF",
+        "backColor": "FFF3D6FF",
+        "shrinkY": 0,
+        "shrinkX": 0,
+            "smokeEffect":"none",
+            "hitEffect":"none",
+            "despawnEffect":{
+        "type": "MultiEffect",
+	    "effects": [
+    {
+        "type": "WaveEffect",
+        "lifetime": 15,
+        "sizeFrom": 0,
+        "sizeTo": 20,
+        "strokeFrom": 3,
+        "strokeTo": 0,
+        "colorFrom": "FFF3D6FF",
+        "colorTo": "FFF3D6FF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 6,
+        "sizeFrom": 4,
+        "sizeTo": 0,
+        "length": 30,
+        "lifetime": 25,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "FFF3D6FF",
+        "colorTo": "FFF3D600",
+        "cone": 360
+    }
+        ]
+            }
+	}
+        }
+            }
+    ]
+}

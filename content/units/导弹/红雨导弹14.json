@@ -1,0 +1,141 @@
+{
+        "type": "missile",
+        "name":"红雨导弹",
+        "envDisabled":0,
+        "controller": "MissileAI",
+        "lowAltitude": true,
+        "speed": 5.7,
+        "rotateSpeed": 1.55,
+        "lifetime": 1800,
+        "homingDelay": 5,
+        "isEnemy": false,
+        "allowedInPayloads": false,
+        "playerControllable": false,
+        "physics": false,
+        "useUnitCap": false,
+        "createWreck": false,
+        "createScorch": false,
+        "flying": true,
+        "hidden": false,
+        "health": 50000,
+        "armor": 1850,
+        "hitSize": 5.5,
+        "outlineColor": "20202CFF",
+        "engineColor": "7A5E9FFF",
+        "trailColor": "7A5E9FFF",
+        "missileAccelTime": 0,
+        "engineOffset":6.3,
+        "engineSize": 2.8,
+        "drawCell": false,
+        "maxRange": 5,
+        "trailLength": 79.5,
+        "immunities":[
+    "blasted",
+    "burning",
+    "electrified",
+    "freezing",
+    "melting",
+    "muddy",
+    "sapped",
+    "shocked",
+    "slow",
+    "tarred",
+    "unmoving",
+    "wet",
+    "spore-slowed",
+    "corroded",
+    "结晶徽章",
+    "为国正骨",
+    "时间加速",
+    "时间逆流",
+    "时间暂停",
+    "国耻为杀"
+    ],
+    "parts": [
+    {
+    "type": "FlarePart",
+    "progress": {
+        "type": "life",
+        "op": "curve",
+        "interp": "pow3Out"
+    },
+        "y": -10,
+        "rotation": 45,
+        "color1": "7A5E9FFF",
+        "stroke": 4.5,
+        "radius": 0,
+        "radiusTo": 420
+            }
+    ],
+        "weapons": [
+            {
+        "name": "核弹",
+        "shootCone": 360,
+        "shootOnDeath": true,
+        "controllable": true,
+        "shootSound": "hongyv1",
+            "bullet": {
+        "type": "BasicBulletType",
+        "killShooter": true,
+        "instantDisappear": true,
+        "damage":10000,
+        "buildingDamageMultiplier": 1.0,
+        "splashDamage": 8500,
+        "suppressionRange": 280,
+        "splashDamageRadius": 8000,
+        "status": "强化故障麻痹",
+        "statusDuration": 360,
+        "lightningColor": "FCF387FF",
+        "despawnEffect":{
+        "type": "MultiEffect",
+	    "effects": [
+    {
+        "type": "WaveEffect",
+        "lifetime": 10,
+        "sizeFrom": 0,
+        "sizeTo": 500,
+        "strokeFrom": 10,
+        "strokeTo": 0,
+        "colorFrom": "FFFFFFFF",
+        "colorTo": "FFFFFFFF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 32,
+        "sizeFrom": 5,
+        "sizeTo": 60,
+        "length": 155,
+        "lifetime": 455,
+        "lightOpacity": 0,
+        "colorFrom": "FFD894FF",
+        "colorTo": "FFFFFF00",
+        "cone": 360
+    },{
+        "type": "ParticleEffect",
+        "layer":90,
+        "particles": 85,
+        "sizeFrom": 5,
+        "sizeTo": 100,
+        "length": 730,
+        "lifetime": 455,
+        "lightOpacity": 0,
+        "colorFrom": "FFFFFFFF",
+        "colorTo": "4C4C4C00",
+        "cone": 360
+    },{
+        "type": "ParticleEffect",
+        "particles": 15,
+        "sizeFrom": 90,
+        "sizeTo": 0,
+        "length": 1350,
+        "lifetime": 225,
+        "lightOpacity": 0,
+        "colorFrom": "7A5E9FFF",
+        "colorTo": "7A5E9F00",
+        "cone": 360
+    }
+            ]
+                }
+        }
+            }
+    ]
+}

@@ -1,0 +1,83 @@
+{
+        "type": "missile",
+        "name":"能量导弹",
+        "parts": [
+    {
+    "type": "RegionPart",
+    "layer": 110,
+    "colorTo": "FFFFFFFF",
+    "color": "FFFFFFFF",
+    "outline": false,
+    "suffix": "-本体"
+        }
+    ],
+        "envDisabled":0,
+        "controller": "MissileAI",
+        "lowAltitude": true,
+        "speed": 4.5,
+        "rotateSpeed": 1.15,
+        "lifetime": 650,
+        "homingDelay": 5,
+        "isEnemy": false,
+        "allowedInPayloads": false,
+        "playerControllable": false,
+        "physics": false,
+        "useUnitCap": false,
+        "createWreck": false,
+        "createScorch": false,
+        "flying": true,
+        "hidden": false,
+        "health": 1500,
+        "armor":0,
+        "hitSize": 20,
+        "outlineColor": "FFFFFF00",
+        "engineColor": "FFFFFF00",
+        "trailColor": "FFFFFF00",
+        "missileAccelTime": 30,
+        "engineOffset":0,
+        "engineSize": 0.0,
+        "drawCell": false,
+        "maxRange": 30,
+        "trailLength": 0.0,
+        "immunities":[
+    "blasted",
+    "burning",
+    "electrified",
+    "freezing",
+    "melting",
+    "muddy",
+    "sapped",
+    "shocked",
+    "slow",
+    "tarred",
+    "unmoving",
+    "wet",
+    "spore-slowed",
+    "corroded",
+    "结晶徽章",
+    "为国正骨",
+    "时间加速",
+    "时间逆流",
+    "时间暂停",
+    "国耻为杀"
+    ],
+        "weapons": [
+            {
+        "name": "核弹",
+        "shootCone": 360,
+        "shootOnDeath": true,
+        "controllable": true,
+            "bullet": {
+        "type": "BasicBulletType",
+        "killShooter": true,
+        "instantDisappear": true,
+        "makeFire": false,
+        "damage":400,
+        "buildingDamageMultiplier": 1.0,
+        "splashDamage": 400,
+        "suppressionRange": 50,
+        "splashDamageRadius": 100
+        }
+            }
+    ]
+}

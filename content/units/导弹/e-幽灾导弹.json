@@ -1,0 +1,77 @@
+{
+        "type": "missile",
+        "name":"幽灾导弹",
+        "envDisabled":0,
+         "controller": "MissileAI",
+        "lowAltitude": true,
+        "speed": 6.1,
+        "rotateSpeed": 2.3,
+        "lifetime": 450,
+        "homingDelay": 45,
+        "isEnemy": false,
+        "allowedInPayloads": false,
+        "playerControllable": false,
+        "physics": false,
+        "useUnitCap": false,
+        "createWreck": false,
+        "createScorch": false,
+        "flying": true,
+        "hidden": false,
+        "health": 1200,
+        "armor":25,
+        "hitSize": 28,
+        "engineLayer": 20,
+        "outlineColor": "3C3E40FF",
+        "engineColor": "665C9FFF",
+        "trailColor": "BF92F9FF",
+        "missileAccelTime": 30,
+        "engineOffset":12,
+        "engineSize": 8.5,
+        "drawCell": true,
+        "maxRange": 45,
+        "trailLength": 7.5,
+        "weapons": [
+            {
+        "name": "核弹",
+        "shootCone": 360,
+        "shootOnDeath": true,
+        "controllable": true,
+            "bullet": {
+        "type": "BasicBulletType",
+        "killShooter": true,
+        "hitEffect": "reactorExplosion",
+        "instantDisappear": true,
+        "damage":1750,
+        "buildingDamageMultiplier": 1.0,
+        "splashDamage": 1500,
+        "suppressionRange": 90,
+        "splashDamageRadius": 180,
+        "status": "sapped",
+        "statusDuration": 300
+        }
+    }
+],
+                "abilities": [
+        {
+            "type": "MoveEffectAbility",
+            "effect": {
+            "type": "ParticleEffect",
+            "particles": 5,
+            "sizeFrom": 6,
+            "sizeTo": 1,
+            "length": 50,
+            "lifetime": 60,
+            "lightOpacity": 0,
+            "interp": "circleOut",
+            "sizeInterp": "pow5In",
+            "colorFrom": "BF92F9FF",
+            "colorTo": "665C9FFF",
+            "cone": 15
+        },
+        "interval": 3,
+        "y": -17,
+        "rotateEffect": true,
+        "rotation": 180
+        }
+    ]
+}

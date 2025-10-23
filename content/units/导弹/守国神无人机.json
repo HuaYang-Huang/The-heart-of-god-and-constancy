@@ -1,0 +1,163 @@
+{
+        "type": "missile",
+        "name":"DND-04",
+        "description": "很抱歉，我真的是无人机啊",
+        "envDisabled":0,
+        "controller": "MissileAI",
+        "lowAltitude": true,
+        "speed": 2.1,
+        "rotateSpeed": 3.5,
+        "lifetime": 2700,
+        "homingDelay": 1.5,
+        "isEnemy": false,
+        "allowedInPayloads": false,
+        "playerControllable": false,
+        "physics": false,
+        "useUnitCap": false,
+        "createWreck": false,
+        "createScorch": false,
+        "flying": true,
+        "hidden": false,
+        "health": 100000,
+        "armor":1700,
+        "hitSize": 8,
+        "outlineColor": "20202CFF",
+        "engineColor": "69E0C7FF",
+        "trailColor": "69E0C7FF",
+        "missileAccelTime": 15,
+        "engineOffset":0,
+        "engineSize": 1.5,
+        "drawCell": true,
+        "maxRange": 350,
+        "trailLength": 32.5,
+        "immunities":[
+    "blasted",
+    "burning",
+    "electrified",
+    "freezing",
+    "melting",
+    "muddy",
+    "sapped",
+    "shocked",
+    "slow",
+    "tarred",
+    "unmoving",
+    "wet",
+    "spore-slowed",
+    "corroded",
+    "结晶徽章",
+    "为国正骨",
+    "国耻为杀"
+    ],
+        "abilities": [
+            {
+            "type": "RegenAbility",
+            "amount": 10.0
+        }
+    ],
+        "weapons": [
+            {
+		"name": "守国神无人机炮塔1",
+		"reload":2.5,
+		"x":8.5,
+		"y":-4.5,
+		"mirror":true,
+		"top":false,
+		"alternate": false,
+		"shootCone": 35,
+		"layerOffset": -0.001,
+		"rotate": false,
+		"bullet": {
+	"type": "BasicBulletType",
+    "width": 5,
+    "height": 5,
+    "status":"强化故障麻痹",
+    "statusDuration": 180,
+    "trailParam": 1,
+    "trailLength": 6,
+    "trailWidth": 1.5,
+    "trailColor": "69E0C7FF",
+    "frontColor": "69E0C7FF",
+    "backColor": "69E0C7FF",
+    "lifetime": 35,
+    "speed": 5.5,
+    "damage": 785,
+    "buildingDamageMultiplier": 0.01,
+    "pierce":false,
+    "pierceBuilding": false,
+    "shootEffect": "none",
+	"despawnEffect": "none",
+	"hitEffect":{
+    "type": "MultiEffect",
+	"effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 5,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "length": 20,
+        "lifetime": 10,
+        "lightOpacity": 15,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF",
+        "cone": 360
+    }
+        ]
+            }
+	    }
+	},{
+		"name": "守国神无人机炮塔1",
+		"reload":2.5,
+		"x":2.9,
+		"y":8.5,
+		"mirror":true,
+		"top":false,
+		"alternate": false,
+		"shootCone": 35,
+		"layerOffset": -0.001,
+		"rotate": false,
+		"bullet": {
+	"type": "BasicBulletType",
+    "width": 5,
+    "height": 5,
+    "status":"强化故障麻痹",
+    "statusDuration": 180,
+    "trailParam": 1,
+    "trailLength": 6,
+    "trailWidth": 1.5,
+    "trailColor": "69E0C7FF",
+    "frontColor": "69E0C7FF",
+    "backColor": "69E0C7FF",
+    "lifetime": 35,
+    "speed": 5.5,
+    "damage": 785,
+    "buildingDamageMultiplier": 0.01,
+    "pierce":false,
+    "pierceBuilding": false,
+    "shootEffect": "none",
+	"despawnEffect": "none",
+	"hitEffect":{
+    "type": "MultiEffect",
+	"effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 5,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "length": 20,
+        "lifetime": 10,
+        "lightOpacity": 15,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF",
+        "cone": 360
+    }
+        ]
+            }
+	    }
+	}
+    ]
+}

@@ -3,12 +3,11 @@
         "controller": "MissileAI",
         "lowAltitude": true,
         "envDisabled":0,
-    "speed":4.2,
-    "maxRange":6,
-    "lifetime":385,
-    "homingDelay": 45,
-        "isEnemy": false,
-        "targetAir":false,
+        "speed": 4.1,
+        "rotateSpeed": 2.5,
+        "lifetime": 135,
+        "homingDelay": 45,
+         "isEnemy": false,
         "allowedInPayloads": false,
         "playerControllable": false,
         "physics": false,
@@ -17,24 +16,24 @@
         "createScorch": false,
         "flying": true,
         "hidden": false,
-        "health": 650,
+        "health": 100,
         "hitSize": 5,
         "engineLayer": 110,
-        "rotateSpeed":0.29,
-        "outlineColor": "34353EFF",
-        "engineColor": "BC5452FF",
-        "trailColor": "BC5452FF",
+          "outlineColor": "34353EFF",
+        "engineColor": "E38448FF",
+        "trailColor": "34353EFF",
         "missileAccelTime": 60,
         "engineOffset":6,
-        "engineSize": 2.1,
+        "engineSize": 2.3,
         "drawCell": true,
-        "trailLength": 18,
-        
-        "weapons":[
-        {
+        "maxRange": 10,
+        "trailLength": 12,
+	    "weapons": [
+	   {
     "shootCone": 360,
     "shootOnDeath": true,
     "controllable": true,
+    "shootSound": "none",
     "bullet": {
      "killShooter": true,
       "hitEffect": {
@@ -47,8 +46,8 @@
         "sizeTo": 8,
         "length": 0,
         "lifetime": 28,
-        "colorFrom": "BC5452FF",
-        "colorTo": "BC5452FF"
+        "colorFrom": "34353EFF",
+        "colorTo": "34353EFF"
         },
     {
     "type": "WaveEffect",
@@ -57,33 +56,24 @@
     "sizeTo": 30,
     "strokeFrom": 7.5,
     "strokeTo": 0,
-    "colorFrom": "BC5452FF",
-    "colorTo": "BC5452FF"
+    "colorFrom": "34353EFF",
+    "colorTo": "34353EFF"
     }
   ]
   },
     "type": "ExplosionBulletType",
     "instantDisappear": true,
-    "knockback":0.8,
-    "lifetime":23,
     "keepVelocity": false,
-    "trailLength":20,
-    "trailWidth":3.5,
-    "damage":1200,
-    "splashDamageRadius": 80,
-    "splashDamage": 550,
-    "collidesTiles":false,
-    "despawnShake":7,
-    "lightRadius":30,
-    "lightColor":"BC5452FF",
-    "lightOpacity":0.5
+    "splashDamageRadius": 40,
+    "splashDamage": 210
 }
 }
-        ],
+ ],
     "abilities": [
   {
     "type": "MoveEffectAbility",
     "effect": {
+ "type": "ParticleEffect",
     "particles": 4,
     "sizeFrom": 4,
     "sizeTo": 1,
@@ -92,14 +82,14 @@
     "lightOpacity": 0,
     "interp": "circleOut",
     "sizeInterp": "pow5In",
-    "colorFrom": "BC5452FF",
-    "colorTo": "BC5452FF",
+    "colorFrom": "34353EFF",
+    "colorTo": "34353EFF",
     "cone": 9
     },
     "interval": 2,
-    "y": -9,
+    "y": -6,
     "rotateEffect": true,
     "rotation": 180
     }
-    ]
+  ]
 }
