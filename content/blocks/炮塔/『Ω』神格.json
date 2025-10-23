@@ -1,0 +1,88 @@
+{
+   "type":"itemTurret",
+   "name":"『Ω』神格",
+   "category":"turret",
+   "reload": 280,
+   "description":"?????",
+   "requirements":[
+        "copper/100000",
+        "lead/100000",
+        "silicon/99000",
+        "surge-alloy/88800",
+        "无恒锭/40000",
+        "无能神核心/25000"
+    ],
+
+   "drawer":{"type":"DrawMulti",
+    "drawers":[{"type":"DrawTurret",
+    "parts":[
+    {"type":"RegionPart",
+    "mirror":true,
+    "under" : true,
+    "x":10,"y":-16,
+    "suffix":"-3",
+    "layer":210,
+    "moveX":28,
+    "moveY":-11,
+    "moveRot":55
+    },{"type":"RegionPart",
+    "mirror":true,
+    "under" : true,
+    "x":12,"y":-10,
+    "suffix":"-2",
+    "layer":210,
+    "moveX":27,
+    "moveY":-21,
+    "moveRot":85
+    },{"type":"RegionPart",
+    "mirror":true,
+    "x":2,"y":5,
+    "suffix":"-1",
+    "layer":50,
+    "moveX":10,
+    "moveY":19
+    },{"type":"RegionPart",
+    "mirror":false,
+    "x":0,"y":0,
+    "suffix":"-4",
+    "layer":50,
+    "moveX":0,
+    "moveY":0
+    }
+    ]
+    }
+    ]
+    },
+   "consumes": {
+       "power": 400.5
+},
+     "ammoTypes": {
+     "无恒锭":{
+     "type": "LaserBulletType",
+     "colors": ["835cc3","bc93ff","000000"],
+     "hitSize": 90,
+     "drawSize": 400.00,
+     "collidesAir": true,
+     "ammoMultiplier": 1.00,
+                   "length" : 1500,
+                    "damage" : 8500000,
+                    "width" : 90,
+              "despawnEffect":"none",
+                    "lifetime" : 65,
+              "hitEffect":"hitLancer",
+                    "lightningSpacing" : 35,
+                    "lightningLength" : 5,
+                    "lightningDelay" : 1.1,
+                    "lightningLengthRand" : 15,
+                    "lightningDamage" : 250,
+                    "lightningAngleRand" : 40
+        	}
+     },
+   "size":15,
+   "range":1500,
+   "shootCone":4500.00,
+   "health":285000,
+   "inaccuracy":0.00,
+   "rotateSpeed":1.20,
+   "research":"？"
+}

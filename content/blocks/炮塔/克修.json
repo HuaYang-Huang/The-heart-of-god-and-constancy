@@ -1,0 +1,22 @@
+{
+	"name": "克修",
+	"description": "可以帮你建造建筑",
+	"type": "BuildTurret",
+	"health": 1060,
+	"size": 3,
+	"range":580,
+	"buildSpeed": 5.5,
+	"canOverdrive": false,
+	"consumes": {
+		"power": 8.5},
+	"requirements": [
+	{ "item":"copper","amount":220},
+	{ "item":"graphite","amount":120},
+	{ "item":"silicon","amount":80},
+	{ "item":"titanium","amount":100},
+	{ "item":"潜铁板","amount":75},
+	{ "item":"棱镜","amount":55}
+	],
+	"category": "turret",
+	"research":"神力修复器"
+}

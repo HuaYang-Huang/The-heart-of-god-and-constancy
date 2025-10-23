@@ -1,0 +1,41 @@
+{
+    "type": "itemTurret",
+    "name" : "S.T.H",
+    "size": 3,
+    "health": 4250,
+    "range" : 480,
+    "description":"?????",
+    "consumes": {
+        "power": 11.5
+    },
+            "shoot": {
+                "shots": 2,
+                "shotDelay": 4
+                },
+        "ammoTypes" : {
+        "surge-alloy" : {
+    "type": "RailBulletType",
+    "shootEffect": "railShoot",
+    "length": 720,
+    "pierceEffect": "railHit",
+    "trailEffect": "instTrail",
+    "hitEffect": "massiveExplosion",
+    "smokeEffect": "shootBig2",
+    "damage": 1550,
+    "pierceDamageFactor": 0.0,
+    "lifetime" : 2450,
+    "status" : "shocked"
+            }
+        },
+            "requirements" : [
+        "graphite/1850",
+        "silicon/4500",
+        "surge-alloy/2500",
+        "thorium/455",
+        "titanium/5000",
+        "phase-fabric/800",
+        "plastanium/1860"
+    ],
+	        "category": "turret",
+	        "research": "cyclone"
+}

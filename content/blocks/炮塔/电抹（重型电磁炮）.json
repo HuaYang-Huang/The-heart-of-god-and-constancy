@@ -1,0 +1,188 @@
+{
+    "name":"电抹",
+    "type":"PowerTurret",
+    "description":"无偿，纪念品炮塔",
+    "squareSprite": false,
+    "outlineColor": "34353EFF",
+    "size": 9,
+    "health": 8500,
+    "cooldownTime": 120,
+    "reload": 40,
+    "itemCapacity": 30
+    "inaccuracy": 0,
+    "velocityRnd": 0.11,
+    "range": 640,
+    "rotateSpeed": 0.3,
+    "shootY": 0,
+    "shake": 2,
+    "targetGround": true,
+    "consumeAmmoOnce": true,
+    "recoil": 0,
+    "recoils": 3,
+    "requirements": [
+    "plastanium/200",
+    "phase-fabric/155",
+    "surge-alloy/6000",
+    "无遏板/550",
+    "粒子核心/100",
+    "钢化棱镜/450"
+    ],
+    "research": "散樱（三联重装炮）",
+    "consumes": {
+    "coolant": {
+    "amount": 0.1
+        }
+    },
+    "shootSound": "none",
+    "consumes": {
+    "power": 5
+    },
+    "drawer": {
+    "type": "drawTurret",
+    "basePrefix": "DM-",
+    "parts": [
+    {
+        "type": "RegionPart",
+        "outline": true,
+        "under": false,
+        "moveY": 0,
+        "suffix": "-body"
+    },{
+    "type": "RegionPart",
+    "x": 0,
+    "y": 52,
+    "suffix": "-2",
+    "outline": true,
+    "under": true
+    },{
+    "type": "RegionPart",
+    "x": 0,
+    "y": 31,
+    "suffix": "-1",
+    "outline": true,
+    "under": true
+    }
+        ]
+            },
+    "shoot": {
+        "type": "ShootMulti",
+    "source": {
+    "type": "ShootBarrel"
+    "barrels": [
+    22.25, 53.25, 0,
+    0, 53.25, 0,
+    -22.25, 53.25, 0
+        ]
+    },
+    "dest": [
+        {
+    "type": "ShootPattern",
+    "shots": 1
+        }
+    ]
+        },
+            "shootType" : {
+        "sprite" : "神恒之心-light-bullet",
+        "reloadMultiplier":0.90,
+        "speed":18,
+        "height": 45,
+        "width": 45,
+        "shrinkX": 0,
+        "shrinkY": 0,
+	    "damage":250,
+	    "inaccuracy":0,
+	    "lifetime": 65,
+		"lightColor": "B9FAFFFF",
+        "lightningColor": "B9FAFFFF",
+		"lightningDamage":250,
+		"lightning":5,
+        "lightningLength":20,
+        "status":"shocked",
+        "statusDuration":60,
+        "pierce":true,
+        "pierceBuilding": true,
+        "pierceCap": 5,
+        "trailParam": 4,
+        "trailLength": 17,
+        "trailWidth": 3,
+        "trailColor": "B9FAFFFF",
+        "backColor": "B9FAFFFF",
+        "frontColor": "B9FAFFFF",
+            "shootEffect": {
+            "type": "MultiEffect",
+	        "effects": [
+	{
+        "type": "ParticleEffect",
+        "particles": 24,
+        "length": 225,
+        "lifetime": 50,
+        "line": true,
+        "cone": 20,
+        "lenFrom": 39,
+        "lenTo": 0,
+        "strokeFrom": 7,
+        "strokeTo": 7,
+        "colorFrom": "B9FAFFFF",
+        "colorTo": "B9FAFF00"
+    },{
+        "type": "WaveEffect",
+        "lifetime": 20,
+        "sizeFrom": 0,
+        "sizeTo": 170,
+        "strokeFrom": 10,
+        "strokeTo": 0,
+        "colorFrom": "B9FAFFFF",
+        "colorTo": "B9FAFFFF"
+    }
+        ]
+    },
+            "hitEffect": {
+            "type": "MultiEffect",
+	        "effects": [
+	{
+        "type": "ParticleEffect",
+        "particles": 18,
+        "length": 136,
+        "lifetime": 30,
+        "line": true,
+        "cone": 40,
+        "lenFrom": 25,
+        "lenTo": 0,
+        "strokeFrom": 4,
+        "strokeTo": 4,
+        "colorFrom": "B9FAFFFF",
+        "colorTo": "B9FAFF00"
+    },{
+    "type": "ParticleEffect",
+    "particles": 28,
+    "length": 165,
+    "lifetime": 30,
+    "line": false,
+    "cone": 30,
+    "sizeFrom": 9,
+    "sizeTo": 0,
+    "colorFrom": "B9FAFFFF",
+    "colorTo": "B9FAFF00"
+    }
+        ]
+    },
+            "despawnEffect": {
+            "type": "MultiEffect",
+	        "effects": [
+	{
+    "type": "ParticleEffect",
+    "particles": 18,
+    "length": 185,
+    "lifetime": 100,
+    "line": false,
+    "cone": 360,
+    "sizeFrom": 21,
+    "sizeTo": 0,
+    "colorFrom": "B9FAFFFF",
+    "colorTo": "B9FAFF00"
+    }
+        ]
+    }
+        },
+    "category": "turret"
+}

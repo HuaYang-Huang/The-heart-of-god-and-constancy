@@ -1,0 +1,73 @@
+{
+   "type":"itemTurret",
+   "name":"空预",
+   "description":"双管炮的一生",
+   "category":"turret",
+   "requirements":[
+       {"item":"surge-alloy","amount":70},
+       {"item":"copper","amount":450},
+       {"item":"silicon","amount":310},
+       {"item":"metaglass","amount":200},
+       {"item":"graphite","amount":350},
+       {"item":"plastanium","amount":85},
+       {"item":"phase-fabric","amount":55},
+       {"item":"潜铁板","amount":110},
+       {"item":"棱镜","amount":40}
+   ],
+   "shoot": {
+                "shots": 2,
+                "shotDelay":7,
+                "type":"ShootBarrel",
+	            "barrels":[
+        2,0,0,
+        -2,0,0
+    ]
+    },
+   "consumes": {
+       "power": 4.5
+   },
+   "ammoTypes": {
+      "copper": {
+      "speed":10.00,
+      "damage": 250,
+      "knockback": 0.80,
+      "lifetime": 500.00,
+      "width": 12.00,
+      "height": 12.00,
+      "collidesTiles": false,
+      		"pierce":false,
+        "homingPower": 45,
+        "homingRange": 45,
+        "status": "shocked",
+        "fragBullets":8,
+        "fragBullet":{
+        "type": "BasicBulletType",
+        "speed":3.00,
+        "lifetime":340,
+        "damage":75,
+        "homingPower": 100,
+        "homingRange": 100,
+        "status": "shocked",
+        "backColor":"B7FFFFFF",	
+        "frontColor":"B7FFFFFF",
+	    "trailColor":"B7FFFFFF"
+},
+        "drag":0.02,
+        "backColor":"B7FFFFFF",	
+        "frontColor":"B7FFFFFF",
+	    "trailColor":"B7FFFFFF",
+        "hitShake": 6,
+        "ammoMultiplier": 15,
+	    "smokeEffect": "shootBigSmoke2",
+	    "hitEffect":"shockwave"
+        }
+
+	},
+    "reload": 15.0,
+    "range": 300,
+    "shootCone": 30.00,
+    "health": 1550,
+    "inaccuracy": 0.10,
+    "rotateSpeed": 3.00,
+    "research":"HG-守子核心"
+}

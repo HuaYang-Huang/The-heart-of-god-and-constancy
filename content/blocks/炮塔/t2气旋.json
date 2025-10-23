@@ -1,0 +1,84 @@
+{
+    "type": "itemTurret",
+    "name" : "t2气旋",
+    "description" :"原版的气旋加强,增强[cyan]攻击闪电和闪电距离",
+    "health" : 2750,
+    "size": 3,
+    "rotateSpeed": 4,
+    "inaccuracy" : 3.50,
+    "range" :550,
+    "shootCone" : 21.50,
+	"targetAir":true,
+	"targetGround":true,
+    "requirements" : [
+        "surge-alloy/55",
+        "phase-fabric/30",
+        "plastanium/125",
+        "lead/200",
+        "graphite/225",
+        "thorium/420",
+        "titanium/420",
+        "silicon/380"
+        ],
+        "shoot": {
+        "shots": 6,
+        "shotDelay": 1
+        },
+            "ammoTypes" : {
+    "surge-alloy" : {
+        "speed":9,
+        "height": 9,
+        "width": 9,
+	    "damage":30,
+	    "inaccuracy":15,
+	    "lifetime": 80,
+		"fragBullets":3,
+		"lightningDamage":55,
+		"lightning":4,
+        "lightningLength":12,
+        "status":"shocked",
+        "statusDuration":60
+	    },
+	"pyratite": {
+	    "speed":9,
+        "height": 9,
+        "width": 9,
+	    "damage":75,
+	    "pierce":true,
+	    "inaccuracy":15,
+	    "lifetime": 80,
+        "status":"burning",
+        "statusDuration":60
+	    },
+	"blast-compound": {
+	    "speed":9,
+        "height": 9,
+        "width": 9,
+	    "damage":120,
+	    "inaccuracy":15,
+	    "lifetime": 80,
+		"splashDamage" : 100,
+	    "splashDamageRadius" : 85,
+        "status":"blasted",
+        "statusDuration":60
+	    },
+	"metaglass":{
+	    "speed":9,
+        "height": 9,
+        "width": 9,
+	    "damage":55,
+	    "inaccuracy":1,
+	    "lifetime": 80,
+		"fragBullets":5,
+		"fragBullet": {
+	    "type": "BasicBulletType",
+	    "height" : 4,
+	    "width" : 4,
+	    "lifetime": 25,
+	    "damage" : 50
+	        }
+	    }
+	},
+	"category": "turret",
+	"research" : "cyclone"
+}

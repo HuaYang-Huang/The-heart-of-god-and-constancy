@@ -1,0 +1,39 @@
+{
+	"type": "PowerTurret",
+	"size": 2,
+	"name":"t2蓝瑟",
+	"description":"升级蓝瑟炮",
+	"health": 680,
+	"reload":25,
+	"armor":8,
+	"range": 240,
+	"inaccuracy": 0,
+	"targetAir" : true, 
+	"targetGround" : true,
+	"shootCone" : 2,
+	"shootSound" : "lasershoot",
+	"hasPower" : true,
+	"shootType" : {
+		"type" : "LaserBulletType",
+                   "length" : 260,
+                    "damage" : 200,
+                    "width" : 15,
+              "despawnEffect":"none",
+                    "lifetime" : 25,
+              "hitEffect":"hitLancer"
+             
+	},
+	"consumes": {
+       "power": 1.5
+    },
+	"requirements": [
+		"silicon/100",
+		"copper/290",
+		"lead/205",
+		"graphite/105",
+		"thorium/50",
+        "titanium/50"
+		],
+	"category": "turret",
+	"research": "arc"
+}

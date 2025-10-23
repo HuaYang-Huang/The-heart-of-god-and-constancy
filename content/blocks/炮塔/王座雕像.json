@@ -1,0 +1,62 @@
+{
+	"type": "PowerTurret",
+	"size": 5,
+	"name":"王座雕像",
+	"description":"王座的时代堕落了，但也带来了众多新生感悟并走向不同模组的地方作为王座",
+	"health": 9999999990,
+	"reload":130,
+	"armor":9999999990,
+	"range": 5000,
+	"recoil": 0,
+	"rotateSpeed":0,
+	"inaccuracy": 0,
+	"targetAir" : true, 
+	"targetGround" : true,
+	"shootCone" : 360,
+	"shootSound" : "none",
+	"hasPower" : true,
+	"shootType" : {
+	        "speed":0.00,
+            "damage": 0,
+            "splashDamageRadius": 23000.0,
+            "splashDamage": 1.00,
+            "status": "王座的战场",
+            "statusDuration": 240,
+            "knockback": 0.0,
+            "lifetime": 0.10,
+            "width": 0.00,
+            "height": 0.00,
+            "shootEffect":"none",
+            "despawnEffect": "none",
+            "chargeEffect":"none",
+            "smokeEffect":"none",
+            "hitEffect":"none",
+            "collidesTiles": true,
+      		"pierce":false
+	    }
+	"drawer": {
+    "type": "drawTurret",
+    "parts": [
+    {
+        "type": "RegionPart",
+        "colorTo": "FFFFFFFF",
+        "color": "FFFFFF00",
+        "progress": "warmup",
+        "blending": "additive",
+        "layerOffset": 0.002,
+        "moveY": 0,
+        "outline": false,
+        "suffix": "-glow"
+    }
+        ]
+            },
+	"consumes": {
+       "power": 0
+    },
+	"requirements": [
+		"远古废料/100000",
+		"无恒锭/58000"
+		],
+	"category": "turret",
+	"research": "GH-暗沉"
+}

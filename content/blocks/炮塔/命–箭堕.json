@@ -1,0 +1,92 @@
+{
+   "type":"itemTurret",
+   "name":"命–箭堕",
+   "category":"turret",
+   "description":"?????",
+   "requirements":[
+       {"item":"surge-alloy","amount":1500},
+       {"item":"无恒锭","amount":250},
+       {"item":"无能神核心","amount":250}
+   ],
+   "drawer":{"type":"DrawMulti",
+    "drawers":[{"type":"DrawTurret",
+    "parts":[
+    {"type":"RegionPart",
+    "mirror":false,
+    "x":0,"y":0,
+    "suffix":"-1",
+    "layer":50,
+    "moveX":0,
+    "moveY":6
+    },
+    {"type":"RegionPart",
+    "mirror":true,
+    "x":0,"y":-2,
+    "suffix":"-2",
+    "layer":50,
+    "moveX":0,
+    "moveY":-3},
+    {"type":"RegionPart",
+    "mirror":true,
+    "x":0,"y":0,
+    "suffix":"-3",
+    "layer":50,
+    "moveX":3,
+    "moveY":-4}
+    ]}]},
+   "consumes": {
+     "power": 25.5
+},
+    "ammoUseEffect": "none",
+	"canOverdrive": true,
+	"targetGround":true,
+	"targetAir":true,
+	"shootCone":30,
+	"shake":1,
+    "ammoPerShot": 1,
+    "shoot": {
+                "shots": 6,
+                "shotDelay":24,
+                "type":"ShootBarrel",
+                "barrels":[
+        10,0,0,
+        -10,0,0,
+        19,0,0,
+        -19,0,0,
+        29,0,0,
+        -29,0,0
+    ]
+                },
+    "ammoTypes": {
+      "surge-alloy": {
+        "type": "basicBulletType",
+        "spawnUnit": "神恒之心-导弹4",
+        "speed": 3.70,
+        "lifetime": 450,
+        "damage": 350,
+        "width": 14.00,
+        "height": 24.00,
+        "shrinkY": 0.86,
+        "shrinkX":0.26,
+        "homingPower": 0.08,
+        "splashDamageRadius": 210.00,
+        "splashDamage": 350.00,
+        "makeFire": true,
+        "homingRange" : 440,
+        "ammoMultiplier": 5.00,
+        "status": "burning",
+        "backColor":"FFFFFFFF",	
+        "frontColor":"FFFFFFFF",
+	    "trailColor":"FFFFFFFF"
+       }
+     },
+   "size":8,
+   "reload":385,
+   "range":1500,
+   "health":25000,
+   "inaccuracy":0.00,
+   "rotateSpeed":1.20,
+   
+   "research":"空预"
+}
+        

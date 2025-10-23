@@ -1,0 +1,78 @@
+{
+    "type":"LiquidTurret",
+    "name": "t2海啸",
+    "description":"?????",
+    "requirements": [
+        "metaglass/415",
+        "lead/325",
+        "graphite/250",
+        "silicon/230",
+        "titanium/125",
+        "thorium/120",
+        "plastanium/45"
+    ],
+    "shoot" : {
+        "shots" : 25,
+        "shotDelay": 1
+    },
+    "ammoTypes":{
+    "water":{
+    "type":"LiquidBulletType",
+    "damage": 1,
+    "status":"wet",
+    "liquid":"water",
+    "lifetime": 90.80,
+    "speed":5,
+    "knockback":1,
+    "ammoMultiplier":1
+    },
+    "slag":{
+    "type":"LiquidBulletType",
+    "damage": 1,
+    "status":"burning",
+    "liquid":"slag",
+    "lifetime": 90.80,
+    "speed":5,
+    "knockback":1,
+    "ammoMultiplier":1
+    },
+    "oil":{
+    "type":"LiquidBulletType",
+    "damage": 1,
+    "status":"tarred",
+    "liquid":"oil",
+    "lifetime": 90.80,
+    "speed":5,
+    "knockback":1,
+    "ammoMultiplier":1
+    },
+    "cryofluid":{
+    "type":"LiquidBulletType",
+    "damage": 1,
+    "status":"freezing",
+    "liquid":"cryofluid",
+    "lifetime": 90.80,
+    "speed":5,
+    "knockback":1,
+    "ammoMultiplier":1
+    },
+    "合化晶液":{
+    "type":"LiquidBulletType",
+    "damage": 1,
+    "liquid":"合化晶液",
+    "lifetime": 90.80,
+    "speed":5,
+    "knockback":1,
+    "ammoMultiplier":1
+    }
+},
+    "size": 5,
+    "reload": 0.10,
+    "inaccuracy": 10.00,
+    "shootCone": 1.00,
+    "liquidCapacity": 60.00,
+    "range": 410.00,
+    "health": 5500,
+       "category": "turret",
+       "research": "wave"
+}

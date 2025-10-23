@@ -1,0 +1,23 @@
+{
+    "type": "TractorBeamTurret",
+    "name": "泽明",
+    "category": "turret",
+    "description":"?????",
+    "requirements": [
+        "silicon/120",
+        "titanium/90",
+        "graphite/30"
+    ],
+
+    "hasPower": true,
+    "size": 2,
+    "force": 8.00,
+    "scaledForce": 15.00,
+    "range": 700.00,
+    "damage": 1.00,
+    "health": 2500,
+    "rotateSpeed": 10,
+    "consumes": {
+        "power": 10.00
+    }
+}

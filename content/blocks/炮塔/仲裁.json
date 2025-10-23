@@ -1,0 +1,124 @@
+{
+    "name" : "仲裁",
+    "type":"itemTurret",
+    "category":"turret",
+    "size":8,
+   "range":650,
+   "targetAir":false,
+   "targetGround":true,
+   "health":18920,
+   "inaccuracy":1.18,
+   "rotateSpeed":4.80,
+   "reload": 27,
+   "description":"?????",
+    "requirements":[
+       {"item":"surge-alloy","amount":400},
+       {"item":"copper","amount":1245},
+       {"item":"lead","amount":850},
+       {"item":"metaglass","amount":425},
+       {"item":"titanium","amount":375},
+       {"item":"thorium","amount":320},
+       {"item":"silicon","amount":315}
+   ],
+   "shoot": {
+                "shots": 3,
+                "shotDelay":4,
+                "type":"ShootBarrel",
+	            "barrels":[
+        22,0,0,
+        0,0,0,
+        -22,0,0
+    ]
+                },
+    "drawer":{"type":"DrawMulti",
+    "drawers":[{"type":"DrawTurret",
+    "parts":[
+    {"type":"RegionPart",
+    "mirror":false,
+    "under" : false,
+    "x":0,"y":0,
+    "suffix":"-1",
+    "layer":1,
+    "moveX":0,
+    "moveY":0
+    },{"type":"RegionPart",
+    "mirror":true,
+    "under" : false,
+    "x":2,"y":0,
+    "suffix":"-2",
+    "layer":2450,
+    "moveX":7,
+    "moveY":0
+    }
+    ]}]},
+"coolantMultiplier":1,
+"ammoTypes": {
+  "surge-alloy":{
+    "type":"ArtilleryBulletType",
+    "splashDamageRadius":220,
+    "splashDamage":485,
+    "knockback":3.5,
+    "speed":9,
+    "homingPower":50,
+	"homingRange": 150,
+    "lifetime":690,
+    "damage":685,
+	"status":"shocked",
+  	"statusDuration":120,
+	"width": 30,
+	"height":30,
+    "backColor":"F6E03EFF",
+    "frontColor":"F6E03EFF", 
+    "trailLength":15,
+	"trailWidth":5,
+    "trailColor":"F6E03EFF",
+    "ammoMultiplier":1,
+    "hitEffect":{"type": "MultiEffect",
+	"effects": [
+	"titanExplosion",
+	"titanSmoke",
+	"plasticExplosionFlak",
+	{"type": "WaveEffect",
+"lifetime": 15,
+"sizeFrom": 1,
+"sizeTo": 28,
+"strokeFrom":7,
+"strokeTo": 0,
+"colorFrom": "F6E03EFF",
+"colorTo": "F6E03EFF"
+},
+{"type": "WaveEffect",
+"lifetime": 20,
+"sizeFrom": 1,
+"sizeTo": 45,
+"strokeFrom":7,
+"strokeTo": 0,
+"colorFrom": "F6E03EFF",
+"colorTo": "F6E03EFF"}
+]
+},
+"smokeEffect":{
+"type": "ParticleEffect",
+"particles":12,
+"sizeFrom":10,
+"sizeTo": 0,
+"length": 40,
+"baseLength":3,
+"lifetime": 25,
+"colorFrom": "F6E03EFF",
+"colorTo": "F6E03EFF",
+"cone": 60
+},
+"shootEffect":{     
+"type": "WaveEffect",
+"lifetime": 30,
+"sizeFrom":0,
+"sizeTo":60,
+"strokeFrom": 6,
+"strokeTo": 1,
+"colorFrom": "F6E03EFF",
+"colorTo": "F6E03EFF" }
+}
+},
+    "research":"t2气旋"
+}

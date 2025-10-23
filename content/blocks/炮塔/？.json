@@ -1,0 +1,41 @@
+{
+    "type":"itemTurret",
+    "name":"？",
+    "category":"turret",
+    "description":"?????",
+    "requirements":[
+        "copper/100000",
+        "lead/100000",
+        "silicon/99000",
+        "surge-alloy/88800",
+        "无恒锭/40000",
+        "无能神核心/25000"
+    ],
+
+    "consumes": {
+        "power": 355.5
+},
+    "ammoTypes": {
+    "无恒锭":{
+		"type" : "PointBulletType",
+        "damage": 8500000,
+            "trailSpacing": 20.0,
+            "speed": 500,
+            "hitShake": 6.0,
+            "ammoMultiplier": 1,
+            "shootEffect": "instShoot",
+            "hitEffect": "instHit",
+            "trailEffect": "instTrail",
+            "despawnEffect": "instBomb",
+            "smokeEffect": "smokeCloud"
+        }
+    },
+    "size":15,
+    "range":1500,
+    "shootCone":4500.00,
+    "health":285000,
+    "inaccuracy":0.00,
+    "rotateSpeed":1.20,
+   
+    "research":"空预"
+}
