@@ -1,0 +1,11 @@
+{
+  "displayName":"神恒之心",
+  "name":"神恒之心",
+  "authar":"花杨永瀛",
+  "description":"更新版本",
+  "main": "ACD.ACD",
+  "java": true,
+  "version":"1.3a",
+  "minGameVersion":"150",
+  "hidden": true
+}

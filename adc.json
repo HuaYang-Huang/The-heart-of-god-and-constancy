@@ -1,0 +1,10 @@
+{
+  "root": [
+    {
+      "planet":"神歆堕星",
+      "items": ["tungsten","spore-pod","scrap","pyratite","sand","fissile-matter","coal","carbide","blast-compound","beryllium","copper","lead","graphite","silicon","metaglass","phase-fabric","plastanium","surge-alloy","titanium","thorium"],
+      "liquids": ["water","slag","ozone","nitrogen","neoplasm","hydrogen","gallium","cryofluid","oil","arkycite",],
+      "units": ["zenith","vela","vanquish","toxopid","tecta","stell","spiroct","sei","scepter","risso","retusa","reign","quell","quasar","quad","pulsar","precept","poly","omura","oct","obviate","nova","navanax","mono","minke","merui","mega","manifold","mace","locus","incite","horizon","gamma","fortress","flare","evoke","emanate","elude","eclipse","disrupt","dagger","cyerce","crawler","corvus","conquer","collaris","cleroi","bryde","beta","avert","atrax","assembly-drone","arkyid","antumbra","anthicus","alpha","aegires","dagger"]
+    }
+  ]
+}
