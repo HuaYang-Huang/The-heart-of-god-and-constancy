@@ -1,0 +1,37 @@
+{
+    "name": "享身ΙΙΙ",
+    "description":"?????",
+    "effectChance": 0.25,
+    "damage": -10,
+    "damageMultiplier":2.5,
+	"speedMultiplier":2.3,
+	"reloadMultiplier":2.8,
+	"healthMultiplier":2.0,
+    "effect": {
+    "type": "multiEffect",
+    "effects": [
+    {
+        "type": "WaveEffect",
+        "lifetime": 25,
+        "sizeFrom": 0,
+        "sizeTo": 11,
+        "sides": 6,
+        "strokeFrom": 5,
+        "strokeTo": 0,
+        "colorFrom": "47CCAFFF",
+        "colorTo": "47CCAFFF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "region": "神恒之心-rhombus",
+        "interp": "swing",
+        "lifetime": 10,
+        "length": 0,
+        "sizeFrom": 0,
+        "sizeTo": 6,
+        "colorFrom": "36B79BFF",
+        "colorTo": "36B79BFF"
+    }
+    ]
+    }
+}

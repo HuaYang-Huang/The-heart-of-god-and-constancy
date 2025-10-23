@@ -1,0 +1,9 @@
+{
+    "name": "命运印章",
+    "description":"[purple]万一被白光照耀一下，可却躲不掉这突然的白光照明万物世界，白光刻画了一张神秘图标，似乎宣告了等待命运齿轮启动来进行下一次命运的路",
+    "effectChance": 1,
+    "damageMultiplier":0,
+	"speedMultiplier":0,
+	"reloadMultiplier":0,
+	"healthMultiplier":0.85,
+}

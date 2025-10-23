@@ -1,0 +1,24 @@
+{
+    "name": "结晶徽章",
+    "description":"受结晶母体鼓励和奋斗精神",
+    "effectChance": 0.02,
+	"speedMultiplier":2.25,
+	"healthMultiplier":3.0,
+    "effect": {
+    "type": "multiEffect",
+    "effects": [
+    {
+        "type": "WaveEffect",
+        "layer":60,
+        "lifetime": 60,
+        "sizeFrom": 60,
+        "sizeTo": 60,
+        "sides": 6,
+        "strokeFrom": 20,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C700"
+    }
+        ]
+    }
+}

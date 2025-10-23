@@ -1,0 +1,7 @@
+{
+    "name": "时间逆流",
+    "description":"?????",
+    "damage": -10000,
+    "healthMultiplier":50000.0,
+	"reloadMultiplier":0.00
+}

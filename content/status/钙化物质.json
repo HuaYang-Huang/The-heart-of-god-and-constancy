@@ -1,0 +1,12 @@
+{
+    "name": "钙化物质",
+    "description":"增益效果，却代价太大",
+    "damage":-10.00,
+	"damageMultiplier":5.0,
+	"speedMultiplier":0.5,
+	"reloadMultiplier":1.5,
+	"opposites": [
+    "黑洞吞噬",
+    "次元破折"
+    ]
+}

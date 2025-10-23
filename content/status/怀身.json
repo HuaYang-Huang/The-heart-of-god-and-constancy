@@ -1,0 +1,23 @@
+{
+	"name":"怀身",
+	"description":"接触合化晶液体而带来舒适感觉",
+	"damage":-5.00,
+	"damageMultiplier":1.0,
+	"speedMultiplier":1.15,
+	"reloadMultiplier":2.0,
+	"effectChance":0.15,
+	"effect":{	
+	"type": "ParticleEffect",
+	"particles": 2,
+	"baseLength": 10,
+	"length":10,
+	"lifetime": 60,
+	"spin":9,
+	"region":"神恒之心-rhombus",
+	"sizeFrom": 3.5,
+	"sizeTo": 0,
+	"colorFrom": "69E0C7FF",
+	"colorTo": "69E0C7FF",
+	"cone":360
+	}
+}

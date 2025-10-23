@@ -1,1 +1,11 @@
-
+{
+    "name": "1级变质麻痹",
+    "description":"麻痹",
+    "damage": 1.00,
+	"damageMultiplier":0.85,
+	"speedMultiplier":0.85,
+	"reloadMultiplier":0.85,
+	"opposites": [
+	"神化"
+    ]
+}

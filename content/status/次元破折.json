@@ -1,0 +1,40 @@
+{
+    "name": "次元破折",
+    "description":"未知物质来把东西压扁而变成了一片纸",
+    "effectChance": 0.25,
+    "damage": 15,
+    "transitionDamage": 2500,
+    "opposites": [
+    "神化"
+    ],
+    "affinities": [
+    "黑洞吞噬"
+    ],
+    "effect": {
+    "type": "multiEffect",
+    "effects": [
+    {
+        "type": "WaveEffect",
+        "lifetime": 35,
+        "sizeFrom": 0,
+        "sizeTo": 5,
+        "sides": 4,
+        "strokeFrom": 4,
+        "strokeTo": 0,
+        "colorFrom": "2E2040FF",
+        "colorTo": "775AA1FF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "region": "神恒之心-rhombus",
+        "interp": "swing",
+        "lifetime": 25,
+        "length": 0,
+        "sizeFrom": 0,
+        "sizeTo": 6,
+        "colorFrom": "2E2040FF",
+        "colorTo": "775AA1FF"
+    }
+    ]
+    }
+}

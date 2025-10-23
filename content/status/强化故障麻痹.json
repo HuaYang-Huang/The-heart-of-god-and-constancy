@@ -1,0 +1,27 @@
+{
+    "name": "强化故障麻痹",
+    "description":"麻痹",
+	"damageMultiplier":0.90,
+	"speedMultiplier":0.90,
+	"reloadMultiplier":0.95,
+	"effectChance":0.1,
+	"effect": {
+    "type": "multiEffect",
+    "effects": [
+    {
+        "type": "WaveEffect",
+        "lifetime": 25,
+        "sizeFrom": 5,
+        "sizeTo": 0,
+        "sides": 6,
+        "strokeFrom": 5,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+    }
+        ]
+    },
+	"opposites": [
+	"神化"
+    ]
+}

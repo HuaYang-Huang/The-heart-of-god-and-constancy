@@ -1,0 +1,9 @@
+{
+    "name": "轮回之章",
+    "description":"[purple]当图标悄悄地发光，命运齿轮启动转起来，似乎听到了世界的声音，不，这不是世界的声音，是轮回之印的声音！世界突然停止了，声音也停止了，万物也停止了。当轮回之印正在泛光，默默地等待是谁来下一世轮回做自己的光辉",
+    "effectChance": 1,
+    "damageMultiplier":0,
+	"speedMultiplier":0,
+	"reloadMultiplier":0,
+	"healthMultiplier":0,
+}

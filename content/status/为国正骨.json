@@ -1,0 +1,26 @@
+{
+    "name": "为国正骨",
+    "description":"[red]守护国家，背后众多百姓",
+    "effectChance": 0.01,
+    "damage": -50,
+    "damageMultiplier":2.75,
+	"speedMultiplier":2.90,
+	"reloadMultiplier":2.75,
+	"healthMultiplier":3.5,
+    "effect": {
+    "type": "multiEffect",
+    "effects": [
+    {
+        "type": "WaveEffect",
+        "lifetime": 60,
+        "sizeFrom": 0,
+        "sizeTo": 150,
+        "sides": 6,
+        "strokeFrom": 15,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C700"
+    }
+        ]
+    }
+}

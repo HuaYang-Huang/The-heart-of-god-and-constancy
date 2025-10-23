@@ -1,0 +1,49 @@
+{
+	"name":"黑洞吞噬",
+	"description":"事件条件发生，来吸收任何物质，不可能活下去而已",
+	"damage":166.66667,
+	"damageMultiplier":0.1,
+	"speedMultiplier":0.5,
+	"reloadMultiplier":0.1,
+	"effectChance":0.25,
+	"effect": {
+    "type": "multiEffect",
+    "effects": [
+    {
+	"type": "ParticleEffect",
+	"particles": 2,
+	"baseLength": 10,
+	"length":10,
+	"lifetime": 20,
+	"spin":0,
+	"region":"神恒之心-square",
+	"sizeFrom": 5.5,
+	"sizeTo": 5.5,
+	"colorFrom": "FFFFFFFF",
+	"colorTo": "FFFFFFFF",
+	"cone":360
+	},{
+	"type": "ParticleEffect",
+	"layer":90,
+	"particles": 2,
+	"baseLength": 10,
+	"length":10,
+	"lifetime": 20,
+	"spin":0,
+	"region":"神恒之心-square",
+	"sizeFrom": 5.5,
+	"sizeTo": 5.5,
+	"colorFrom": "000000FF",
+	"colorTo": "000000FF",
+	"cone":360
+	}
+    ]
+    },
+	"opposites": [
+    "神化"
+    ],
+	"affinities": [
+    "次元破折"
+    ],
+    "transitionDamage": 2500
+}

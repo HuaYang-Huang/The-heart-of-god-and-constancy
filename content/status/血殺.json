@@ -1,0 +1,42 @@
+{
+    "name": "血殺",
+    "description":"出血量大",
+    "effectChance": 0.25,
+    "damage": 10,
+    "damageMultiplier":0.8,
+	"speedMultiplier":0.8,
+	"reloadMultiplier":0.8,
+	"healthMultiplier":0.05,
+    "effect": {
+    "type": "multiEffect",
+    "effects": [
+    {
+    "type": "ParticleEffect",
+	"particles": 2,
+	"baseLength": 0,
+	"length":0,
+	"lifetime": 60,
+	"spin":0,
+	"region":"神恒之心-X",
+	"sizeFrom": 10,
+	"sizeTo": 0,
+	"colorFrom": "C73535FF",
+	"colorTo": "C73535FF",
+	"cone":360
+    },{
+    "type": "ParticleEffect",
+	"particles": 1,
+	"baseLength": 0,
+	"length":0,
+	"lifetime": 60,
+	"spin":0,
+	"region":"神恒之心-X",
+	"sizeFrom": 10,
+	"sizeTo": 0,
+	"colorFrom": "E5C546FF",
+	"colorTo": "E5C546FF",
+	"cone":360
+    }
+    ]
+    }
+}

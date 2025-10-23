@@ -1,0 +1,59 @@
+{
+    "name": "相位混乱",
+    "description":"?????",
+    "effectChance": 0.55,
+    "damageMultiplier":0.8,
+	"speedMultiplier":0.65,
+	"reloadMultiplier":0.85,
+	"healthMultiplier":0.8,
+    "effect": {
+    "type": "multiEffect",
+    "effects": [
+    {
+    "type": "ParticleEffect",
+	"particles": 2,  
+	"baseLength": 50,
+	"length":-50,
+	"lifetime": 10,
+	"line":true,
+	"strokeFrom": 2,
+	"strokeTo": 0,
+	"lenFrom": 20,
+	"lenTo": 0,
+	"colorFrom": "FFF3D6FF",
+	"colorTo": "FFF3D6FF",
+	"cone":360
+    },{
+    "type": "ParticleEffect",
+	"particles": 2,  
+	"baseLength": 50,
+	"length":-50,
+	"lifetime": 10,
+	"line":true,
+	"strokeFrom": 2,
+	"strokeTo": 0,
+	"lenFrom": 20,
+	"lenTo": 0,
+	"colorFrom": "F19583FF",
+	"colorTo": "F19583FF",
+	"cone":360
+      }
+    ]
+    },
+    "affinities": [
+    "blasted",
+    "burning",
+    "corroded",
+    "disarmed",
+    "electrified",
+    "freezing",
+    "melting",
+    "muddy",
+    "shocked",
+    "slow",
+    "spore-slowed",
+    "tarred",
+    "wet"
+    ],
+    "transitionDamage": 35
+}

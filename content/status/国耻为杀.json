@@ -1,0 +1,25 @@
+{
+    "name": "国耻为杀",
+    "description":"[red]入侵国家，犯下重大的罪行",
+    "effectChance": 0.01,
+    "damageMultiplier":0.85,
+	"speedMultiplier":0.85,
+	"reloadMultiplier":0.65,
+	"healthMultiplier":0.75,
+    "effect": {
+    "type": "multiEffect",
+    "effects": [
+    {
+        "type": "WaveEffect",
+        "lifetime": 60,
+        "sizeFrom": 0,
+        "sizeTo": 150,
+        "sides": 5,
+        "strokeFrom": 15,
+        "strokeTo": 0,
+        "colorFrom": "FF0000FF",
+        "colorTo": "FF000000"
+    }
+        ]
+    }
+}

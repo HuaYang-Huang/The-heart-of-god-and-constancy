@@ -1,0 +1,7 @@
+{
+	"name":"雷达警告",
+	"description":"被雷达扫到而恐惧起来了",
+	"damageMultiplier":0.95,
+	"speedMultiplier":0.5,
+	"reloadMultiplier":0.95
+}

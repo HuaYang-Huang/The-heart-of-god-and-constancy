@@ -1,0 +1,25 @@
+{
+    "name": "王国的辉煌",
+    "description":"为王座上杯！",
+    "effectChance": 0.12,
+	"speedMultiplier":2.05,
+	"healthMultiplier":4.50,
+	"damageMultiplier":2.50,
+    "effect": {
+    "type": "multiEffect",
+    "effects": [
+    {
+        "type": "WaveEffect",
+        "layer":60,
+        "lifetime": 60,
+        "sizeFrom": 15,
+        "sizeTo": 15,
+        "sides": 4,
+        "strokeFrom": 15,
+        "strokeTo": 15,
+        "colorFrom": "FEE761FF",
+        "colorTo": "FEE76100"
+    }
+        ]
+    }
+}

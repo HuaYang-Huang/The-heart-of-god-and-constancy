@@ -1,0 +1,24 @@
+{
+    "name": "王座的战场",
+    "description":"威胁、恐吓敌人",
+    "effectChance": 0.12,
+	"speedMultiplier":0.35,
+	"healthMultiplier":0.35,
+    "effect": {
+    "type": "multiEffect",
+    "effects": [
+    {
+        "type": "WaveEffect",
+        "layer":60,
+        "lifetime": 60,
+        "sizeFrom": 15,
+        "sizeTo": 15,
+        "sides": 4,
+        "strokeFrom": 15,
+        "strokeTo": 15,
+        "colorFrom": "FF0000FF",
+        "colorTo": "FF000000"
+    }
+        ]
+    }
+}

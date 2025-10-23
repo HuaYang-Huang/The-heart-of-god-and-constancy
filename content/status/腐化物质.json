@@ -1,0 +1,13 @@
+{
+    "name": "腐化物质",
+    "description":"不好的效果，却代价引人瞩目",
+    "damage":5.00,
+	"damageMultiplier":0.05,
+	"speedMultiplier":0.4,
+	"reloadMultiplier":0.3,
+	"affinities": [
+    "次元破折",
+    "黑洞吞噬"
+    ],
+    "transitionDamage": 1000
+}

@@ -1,0 +1,42 @@
+{
+    "name": "神化",
+    "description":"[purple]享身时光，收到希望的信",
+    "effectChance": 0.45,
+    "damage": -200,
+    "damageMultiplier":5.0,
+	"speedMultiplier":3.8,
+	"reloadMultiplier":4.5,
+	"healthMultiplier":5.0,
+    "effect": {
+    "type": "multiEffect",
+    "effects": [
+    {
+    "type": "ParticleEffect",
+	"particles": 2,
+	"baseLength": 0,
+	"length":10,
+	"lifetime": 80,
+	"spin":0,
+	"region":"神恒之心-deify",
+	"sizeFrom": 3.5,
+	"sizeTo": 10.5,
+	"colorFrom": "36B79BFF",
+	"colorTo": "69E0C7FF",
+	"cone":360
+    },{
+    "type": "ParticleEffect",
+	"particles": 2,
+	"baseLength": 0,
+	"length":10,
+	"lifetime": 50,
+	"spin":0,
+	"region":"神恒之心-closed-angle",
+	"sizeFrom": 1.5,
+	"sizeTo": 6.5,
+	"colorFrom": "563D78FF",
+	"colorTo": "A67DE0FF",
+	"cone":360
+      }
+    ]
+    }
+}
