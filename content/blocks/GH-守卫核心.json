@@ -1,0 +1,39 @@
+{
+	"name":"守卫核心",
+	"description":"提升自己的修复型核心飞机和核心实力",
+	"type": "CoreBlock",
+	"armor":25,
+	"itemCapacity":8500,
+	"hasItems": true,
+	"health":8000,
+	"unitCapModifier":40,
+	"unitType":"GH-守卫",
+	"size":5,
+	"requirements": [
+	    "silicon/1890",
+	    "thorium/2550",
+	    "copper/3000",
+	    "lead/2800",
+	    "titanium/1900",
+	    "graphite/2950",
+	    "beryllium/3050",
+	    "oxide/2450",
+	    "metaglass/885",
+	    "tungsten/2750",
+	    "合化电晶/250",
+	    "潜铁板/1050",
+	    "粒子核心/750"
+	    ],
+	"category": "effect",
+	"canOverdrive": false,
+	"alwaysUnlocked": false,
+	"research":{
+    "parent": "GH-守子核心",
+    "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "科技发展地"
+			}
+		]
+    }
+}

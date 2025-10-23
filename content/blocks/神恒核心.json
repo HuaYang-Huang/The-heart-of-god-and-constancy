@@ -1,0 +1,21 @@
+{
+	"name":"神恒核心",
+	"description":"[purple]国家强大起来，志气越来越坚强，人民们和党员们团结力量",
+	"type": "CoreBlock",
+	"armor":8800,
+	"itemCapacity": 250000,
+	"hasItems": true,
+	"health":85760000,
+	"unitCapModifier":1000,
+	"unitType":"GH-守国神",
+	"size":16,
+	"requirements": [
+	    "silicon/60000",
+	    "thorium/88000",
+	    "lead/292000",
+	    "copper/300000",
+	    "titanium/80000"
+	    ],
+	"category": "effect",
+	"research": "GH-守子核心"
+}

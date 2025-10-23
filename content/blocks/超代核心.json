@@ -1,0 +1,19 @@
+{
+	"name":"超代核心",
+	"description":"基地的核心，各项属性极高……",
+	"type": "CoreBlock",
+	"armor":280,
+	"itemCapacity":50000,
+	"hasItems": true,
+	"health":16000,
+	"unitCapModifier":50,
+	"unitType":"截塔",
+	"size":6,
+	"requirements": [
+	    "silicon/6000",
+	    "thorium/8000",
+	    "lead/12000",
+	    "titanium/10000"],
+	"category": "effect",
+	"research": "core-nucleus"
+}

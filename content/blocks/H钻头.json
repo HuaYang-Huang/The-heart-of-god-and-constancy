@@ -1,0 +1,38 @@
+{
+"type": "Drill",
+"name":"H钻头",
+"description":"这就是你想要的",
+"size": 4,
+"health": 2000,
+"tier": 1000,
+"drillTime":0.01,
+"buildCostMultiplier":0.05,
+"drillEffect": "flakExplosionBig",
+"updateEffect": "mineHuge",
+"drawMineItem":true,
+"canOverdrive": false,
+"drawRim":true,
+"rotateSpeed":10.5,
+"itemCapacity": 1000,
+"liquidBoostIntensity": 12.95,
+"consumes": {
+		"power": 0.5,
+  "liquid": {
+        "liquid": "water",
+        "amount": 0.05,
+        "optional":true
+       }
+},
+    "requirements": [
+        "silicon/50",
+		"copper/210",
+		"lead/225",
+		"graphite/100",
+		"plastanium/35",
+		"titanium/75",
+		"thorium/85",
+		"surge-alloy/25"
+],
+"category": "production",
+"research":"mechanical-drill"
+}

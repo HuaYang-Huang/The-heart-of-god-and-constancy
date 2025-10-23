@@ -1,0 +1,18 @@
+{
+	"type": "StackConveyor",
+	"name": "花",
+	"description": "?????",
+	"health": 920,
+	"requirements": [
+	"silicon/10",
+	"plastanium/10",
+	"graphite/10",
+	"metaglass/10"
+	],
+	"buildCostMultiplier":2,
+
+	"category": "distribution",
+	"research":"plastanium-conveyor",
+	"speed": 1.9,
+	"itemCapacity":50
+}

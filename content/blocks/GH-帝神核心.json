@@ -1,0 +1,21 @@
+{
+	"name":"帝神核心",
+	"description":"[purple]管理国家安全，事务，社会，网络来发展和保护",
+	"type": "CoreBlock",
+	"armor":8800,
+	"itemCapacity": 250000,
+	"hasItems": true,
+	"health":85760000,
+	"unitCapModifier":1000,
+	"unitType":"GH-帝者之国",
+	"size":16,
+	"requirements": [
+	    "silicon/60000",
+	    "thorium/88000",
+	    "lead/292000",
+	    "copper/300000",
+	    "titanium/80000"
+	    ],
+	"category": "effect",
+	"research": "神恒核心"
+}

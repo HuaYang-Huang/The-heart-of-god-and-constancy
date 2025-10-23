@@ -1,0 +1,39 @@
+{
+	"name":"杀子核心",
+	"description":"改变核心飞机的能力却，加强核心限制单位数量",
+	"type": "CoreBlock",
+	"armor":45,
+	"itemCapacity":8500,
+	"hasItems": true,
+	"health":10000,
+	"unitCapModifier":80,
+	"unitType":"GH-杀子",
+	"size":5,
+	"requirements": [
+	    "silicon/2890",
+	    "thorium/3550",
+	    "copper/1000",
+	    "lead/800",
+	    "titanium/100",
+	    "graphite/950",
+	    "beryllium/1050",
+	    "oxide/1450",
+	    "metaglass/3185",
+	    "tungsten/4000",
+	    "合化电晶/1000",
+	    "潜铁板/250",
+	    "粒子核心/150"
+	    ],
+	"category": "effect",
+	"canOverdrive": false,
+	"alwaysUnlocked": false,
+	"research":{
+    "parent": "GH-守子核心",
+    "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "科技发展地"
+			}
+		]
+    }
+}

@@ -1,0 +1,33 @@
+{
+	"name":"守子核心",
+	"description":"[purple]无可星球都可怕死了...",
+	"type": "CoreBlock",
+	"armor":20,
+	"itemCapacity":5500,
+	"hasItems": true,
+	"health":6000,
+	"unitCapModifier":40,
+	"unitType":"GH-守护卫",
+	"size":4,
+	"requirements": [
+	    "silicon/890",
+	    "thorium/250",
+	    "copper/700",
+	    "lead/700",
+	    "titanium/500",
+	    "graphite/250",
+	    "beryllium/450",
+	    "oxide/150",
+	    "metaglass/75",
+	    "tungsten/105"
+	    ],
+	"category": "effect",
+	"canOverdrive": false,
+	"alwaysUnlocked": true,
+	    "research":{
+	    "nodeRoot":true,
+	    "root": true,
+	    "name":"神歆堕星",
+	    "planet":"神歆堕星"
+	}
+}
