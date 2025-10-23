@@ -1,0 +1,17 @@
+{
+"localizedName": "科技发展地",
+	"description": "发展中地区",
+    "planet":"神歆堕星",
+    "sector":15,
+    "captureWave":46,
+    "difficulty":4,
+    "research": {
+		"parent": "GH-守子核心",
+	"objectives": [
+            {
+		"type": "SectorComplete",
+		"preset": "新的开始"
+		    }
+		]
+	}
+}

@@ -1,0 +1,20 @@
+{
+"localizedName": "运送援军地",
+	"description": "?????",
+    "planet":"神歆堕星",
+    "sector":25,
+    "captureWave": 100,
+    "difficulty":7,
+    "research": {
+		"parent": "运送援军地",
+	"objectives": [
+            {
+		"type": "SectorComplete",
+		"preset": "运送援军地"
+		    },{
+		"type": "SectorComplete",
+		"preset": "科技发展地"
+		    }
+		]
+	}
+}

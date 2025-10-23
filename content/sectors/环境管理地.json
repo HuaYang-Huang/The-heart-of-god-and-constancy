@@ -1,1 +1,23 @@
-
+{
+"localizedName": "环境管理地",
+	"description": "管理环境地区发展",
+    "planet":"神歆堕星",
+    "sector":37,
+    "captureWave":71,
+    "difficulty":5,
+    "research": {
+		"parent": "一联三路",
+	"objectives": [
+            {
+		"type": "SectorComplete",
+		"preset": "运送援军地"
+		    },{
+		"type": "SectorComplete",
+		"preset": "科技发展地"
+		    },{
+		"type": "SectorComplete",
+		"preset": "一联三路"
+		    }
+		]
+	}
+}
