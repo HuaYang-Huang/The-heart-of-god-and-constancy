@@ -1,0 +1,1169 @@
+.class public LACD/main/ADCMain;
+.super Ljava/lang/Object;
+.source "ADCMain.java"
+
+
+# static fields
+.field public static ADCRoot:Ljava/lang/String;
+
+.field private static final json:Larc/util/serialization/Json;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 1
+
+    .line 26
+    new-instance v0, Larc/util/serialization/Json;
+
+    invoke-direct {v0}, Larc/util/serialization/Json;-><init>()V
+
+    sput-object v0, LACD/main/ADCMain;->json:Larc/util/serialization/Json;
+
+    .line 28
+    const-string v0, "adc.json"
+
+    sput-object v0, LACD/main/ADCMain;->ADCRoot:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .registers 1
+
+    .line 25
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static init()V
+    .registers 17
+
+    .line 30
+    const/4 v0, 0x0
+
+    .line 31
+    sget-object v1, Lmindustry/Vars;->mods:Lmindustry/mod/Mods;
+
+    invoke-virtual {v1}, Lmindustry/mod/Mods;->list()Larc/struct/Seq;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Larc/struct/Seq;->iterator()Ljava/util/Iterator;
+
+    move-result-object v7
+
+    move v1, v0
+
+    :cond_c
+    :goto_c
+    invoke-interface {v7}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_37b
+
+    invoke-interface {v7}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lmindustry/mod/Mods$LoadedMod;
+
+    .line 32
+    if-eqz v0, :cond_c
+
+    iget-object v2, v0, Lmindustry/mod/Mods$LoadedMod;->meta:Lmindustry/mod/Mods$ModMeta;
+
+    if-eqz v2, :cond_c
+
+    .line 33
+    invoke-virtual {v0}, Lmindustry/mod/Mods$LoadedMod;->enabled()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_c
+
+    .line 34
+    iget-object v2, v0, Lmindustry/mod/Mods$LoadedMod;->meta:Lmindustry/mod/Mods$ModMeta;
+
+    iget-object v8, v2, Lmindustry/mod/Mods$ModMeta;->name:Ljava/lang/String;
+
+    .line 35
+    const/4 v2, 0x0
+
+    .line 36
+    iget-object v3, v0, Lmindustry/mod/Mods$LoadedMod;->root:Larc/files/Fi;
+
+    sget-object v4, LACD/main/ADCMain;->ADCRoot:Ljava/lang/String;
+
+    invoke-virtual {v3, v4}, Larc/files/Fi;->child(Ljava/lang/String;)Larc/files/Fi;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Larc/files/Fi;->exists()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_3c2
+
+    .line 37
+    iget-object v0, v0, Lmindustry/mod/Mods$LoadedMod;->root:Larc/files/Fi;
+
+    sget-object v2, LACD/main/ADCMain;->ADCRoot:Ljava/lang/String;
+
+    invoke-virtual {v0, v2}, Larc/files/Fi;->child(Ljava/lang/String;)Larc/files/Fi;
+
+    move-result-object v0
+
+    .line 39
+    :goto_3f
+    if-nez v0, :cond_5e
+
+    .line 40
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "mod "
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v2, " has no adc.json, skip..."
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Larc/util/Log;->info(Ljava/lang/Object;)V
+
+    goto :goto_c
+
+    .line 43
+    :cond_5e
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "mod "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, " load adc.json..."
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Larc/util/Log;->info(Ljava/lang/Object;)V
+
+    .line 44
+    sget-object v2, LACD/main/ADCMain;->json:Larc/util/serialization/Json;
+
+    const-class v3, LACD/main/ADCMain$adcMeta;
+
+    invoke-virtual {v0}, Larc/files/Fi;->readString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Larc/util/serialization/Jval;->read(Ljava/lang/String;)Larc/util/serialization/Jval;
+
+    move-result-object v0
+
+    sget-object v4, Larc/util/serialization/Jval$Jformat;->plain:Larc/util/serialization/Jval$Jformat;
+
+    invoke-virtual {v0, v4}, Larc/util/serialization/Jval;->toString(Larc/util/serialization/Jval$Jformat;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v2, v3, v0}, Larc/util/serialization/Json;->fromJson(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, LACD/main/ADCMain$adcMeta;
+
+    .line 45
+    iget-object v2, v0, LACD/main/ADCMain$adcMeta;->root:[LACD/main/ADCMain$adcRoot;
+
+    array-length v2, v2
+
+    if-lez v2, :cond_c
+
+    .line 46
+    iget-object v9, v0, LACD/main/ADCMain$adcMeta;->root:[LACD/main/ADCMain$adcRoot;
+
+    array-length v10, v9
+
+    const/4 v2, 0x0
+
+    move v5, v2
+
+    move v0, v1
+
+    :goto_9d
+    if-ge v5, v10, :cond_3bf
+
+    aget-object v11, v9, v5
+
+    .line 47
+    iget-object v1, v11, LACD/main/ADCMain$adcRoot;->planet:Ljava/lang/String;
+
+    if-nez v1, :cond_b1
+
+    .line 48
+    const-string v1, "where is you planet?"
+
+    const/4 v2, 0x0
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    invoke-static {v1, v2}, Larc/util/Log;->err(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 46
+    :goto_ad
+    add-int/lit8 v1, v5, 0x1
+
+    move v5, v1
+
+    goto :goto_9d
+
+    .line 51
+    :cond_b1
+    sget-object v1, Lmindustry/Vars;->content:Lmindustry/core/ContentLoader;
+
+    iget-object v2, v11, LACD/main/ADCMain$adcRoot;->planet:Ljava/lang/String;
+
+    invoke-virtual {v1, v2}, Lmindustry/core/ContentLoader;->planet(Ljava/lang/String;)Lmindustry/type/Planet;
+
+    move-result-object v2
+
+    .line 52
+    sget-object v1, Lmindustry/Vars;->content:Lmindustry/core/ContentLoader;
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v3, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    const-string v4, "-"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    iget-object v4, v11, LACD/main/ADCMain$adcRoot;->planet:Ljava/lang/String;
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v3}, Lmindustry/core/ContentLoader;->planet(Ljava/lang/String;)Lmindustry/type/Planet;
+
+    move-result-object v1
+
+    .line 53
+    if-eqz v2, :cond_115
+
+    move-object v6, v2
+
+    .line 54
+    :goto_db
+    if-nez v6, :cond_117
+
+    .line 55
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "can not find planet \'"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, "-"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    iget-object v2, v11, LACD/main/ADCMain$adcRoot;->planet:Ljava/lang/String;
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, "\' or \'"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    iget-object v2, v11, LACD/main/ADCMain$adcRoot;->planet:Ljava/lang/String;
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, "\'"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    invoke-static {v1, v2}, Larc/util/Log;->err(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    goto :goto_ad
+
+    :cond_115
+    move-object v6, v1
+
+    .line 53
+    goto :goto_db
+
+    .line 58
+    :cond_117
+    iget-object v1, v11, LACD/main/ADCMain$adcRoot;->items:[Ljava/lang/String;
+
+    if-eqz v1, :cond_23a
+
+    .line 59
+    const/4 v1, 0x0
+
+    const/4 v4, 0x0
+
+    .line 60
+    iget-object v2, v11, LACD/main/ADCMain$adcRoot;->items:[Ljava/lang/String;
+
+    array-length v2, v2
+
+    if-lez v2, :cond_199
+
+    .line 61
+    iget-object v12, v11, LACD/main/ADCMain$adcRoot;->items:[Ljava/lang/String;
+
+    array-length v13, v12
+
+    const/4 v3, 0x0
+
+    move v1, v4
+
+    move v2, v0
+
+    :goto_128
+    if-ge v3, v13, :cond_19a
+
+    aget-object v14, v12, v3
+
+    .line 62
+    sget-object v0, Lmindustry/Vars;->content:Lmindustry/core/ContentLoader;
+
+    invoke-virtual {v0, v14}, Lmindustry/core/ContentLoader;->item(Ljava/lang/String;)Lmindustry/type/Item;
+
+    move-result-object v0
+
+    .line 63
+    sget-object v4, Lmindustry/Vars;->content:Lmindustry/core/ContentLoader;
+
+    new-instance v15, Ljava/lang/StringBuilder;
+
+    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v15, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v15
+
+    const-string v16, "-"
+
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v15
+
+    invoke-virtual {v15, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v15
+
+    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v15
+
+    invoke-virtual {v4, v15}, Lmindustry/core/ContentLoader;->item(Ljava/lang/String;)Lmindustry/type/Item;
+
+    move-result-object v4
+
+    .line 64
+    if-eqz v0, :cond_152
+
+    move-object v4, v0
+
+    .line 65
+    :cond_152
+    if-nez v4, :cond_18c
+
+    .line 66
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "can not find item \'"
+
+    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v4, "-"
+
+    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v4, "\' or \'"
+
+    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v4, "\'"
+
+    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    const/4 v4, 0x0
+
+    new-array v4, v4, [Ljava/lang/Object;
+
+    invoke-static {v0, v4}, Larc/util/Log;->err(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    move v0, v1
+
+    .line 61
+    :goto_188
+    add-int/lit8 v3, v3, 0x1
+
+    move v1, v0
+
+    goto :goto_128
+
+    .line 69
+    :cond_18c
+    add-int/lit8 v0, v1, 0x1
+
+    .line 70
+    iget-object v1, v4, Lmindustry/type/Item;->shownPlanets:Larc/struct/ObjectSet;
+
+    invoke-virtual {v1, v6}, Larc/struct/ObjectSet;->add(Ljava/lang/Object;)Z
+
+    .line 71
+    invoke-virtual {v4}, Lmindustry/type/Item;->postInit()V
+
+    .line 72
+    const/4 v1, 0x1
+
+    move v2, v1
+
+    goto :goto_188
+
+    :cond_199
+    move v2, v0
+
+    .line 75
+    :cond_19a
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "mod "
+
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v3, " adds "
+
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, " items to "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    iget-object v1, v6, Lmindustry/type/Planet;->localizedName:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Larc/util/Log;->info(Ljava/lang/Object;)V
+
+    .line 77
+    :goto_1c6
+    iget-object v0, v11, LACD/main/ADCMain$adcRoot;->liquids:[Ljava/lang/String;
+
+    if-eqz v0, :cond_304
+
+    .line 78
+    const/4 v0, 0x0
+
+    const/4 v3, 0x0
+
+    .line 79
+    iget-object v1, v11, LACD/main/ADCMain$adcRoot;->liquids:[Ljava/lang/String;
+
+    array-length v1, v1
+
+    if-lez v1, :cond_264
+
+    .line 80
+    iget-object v12, v11, LACD/main/ADCMain$adcRoot;->liquids:[Ljava/lang/String;
+
+    array-length v13, v12
+
+    const/4 v1, 0x0
+
+    move v4, v1
+
+    move v0, v3
+
+    :goto_1d7
+    if-ge v4, v13, :cond_264
+
+    aget-object v14, v12, v4
+
+    .line 81
+    sget-object v1, Lmindustry/Vars;->content:Lmindustry/core/ContentLoader;
+
+    invoke-virtual {v1, v14}, Lmindustry/core/ContentLoader;->liquid(Ljava/lang/String;)Lmindustry/type/Liquid;
+
+    move-result-object v3
+
+    .line 82
+    sget-object v1, Lmindustry/Vars;->content:Lmindustry/core/ContentLoader;
+
+    new-instance v15, Ljava/lang/StringBuilder;
+
+    invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v15, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v15
+
+    const-string v16, "-"
+
+    invoke-virtual/range {v15 .. v16}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v15
+
+    invoke-virtual {v15, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v15
+
+    invoke-virtual {v15}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v15
+
+    invoke-virtual {v1, v15}, Lmindustry/core/ContentLoader;->liquid(Ljava/lang/String;)Lmindustry/type/Liquid;
+
+    move-result-object v1
+
+    .line 83
+    if-eqz v3, :cond_201
+
+    move-object v1, v3
+
+    .line 84
+    :cond_201
+    if-nez v1, :cond_259
+
+    .line 85
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "can not find liquid \'"
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v3, "-"
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v3, "\' or \'"
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v3, "\'"
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v3, 0x0
+
+    new-array v3, v3, [Ljava/lang/Object;
+
+    invoke-static {v1, v3}, Larc/util/Log;->err(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 80
+    :goto_236
+    add-int/lit8 v1, v4, 0x1
+
+    move v4, v1
+
+    goto :goto_1d7
+
+    .line 76
+    :cond_23a
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "mod "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, " adc.json has no items"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Larc/util/Log;->info(Ljava/lang/Object;)V
+
+    move v2, v0
+
+    goto/16 :goto_1c6
+
+    .line 88
+    :cond_259
+    add-int/lit8 v0, v0, 0x1
+
+    .line 89
+    iget-object v3, v1, Lmindustry/type/Liquid;->shownPlanets:Larc/struct/ObjectSet;
+
+    invoke-virtual {v3, v6}, Larc/struct/ObjectSet;->add(Ljava/lang/Object;)Z
+
+    .line 90
+    invoke-virtual {v1}, Lmindustry/type/Liquid;->postInit()V
+
+    goto :goto_236
+
+    .line 93
+    :cond_264
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "mod "
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v3, " adds "
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, " liquids to "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    iget-object v1, v6, Lmindustry/type/Planet;->localizedName:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Larc/util/Log;->info(Ljava/lang/Object;)V
+
+    .line 95
+    :goto_290
+    iget-object v0, v11, LACD/main/ADCMain$adcRoot;->units:[Ljava/lang/String;
+
+    if-eqz v0, :cond_35c
+
+    .line 96
+    const/4 v0, 0x0
+
+    const/4 v3, 0x0
+
+    .line 97
+    iget-object v1, v11, LACD/main/ADCMain$adcRoot;->units:[Ljava/lang/String;
+
+    array-length v1, v1
+
+    if-lez v1, :cond_32d
+
+    .line 98
+    iget-object v11, v11, LACD/main/ADCMain$adcRoot;->units:[Ljava/lang/String;
+
+    array-length v12, v11
+
+    const/4 v1, 0x0
+
+    move v4, v1
+
+    move v0, v3
+
+    :goto_2a1
+    if-ge v4, v12, :cond_32d
+
+    aget-object v13, v11, v4
+
+    .line 99
+    sget-object v1, Lmindustry/Vars;->content:Lmindustry/core/ContentLoader;
+
+    invoke-virtual {v1, v13}, Lmindustry/core/ContentLoader;->unit(Ljava/lang/String;)Lmindustry/type/UnitType;
+
+    move-result-object v3
+
+    .line 100
+    sget-object v1, Lmindustry/Vars;->content:Lmindustry/core/ContentLoader;
+
+    new-instance v14, Ljava/lang/StringBuilder;
+
+    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {v14, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    const-string v15, "-"
+
+    invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v14
+
+    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v14
+
+    invoke-virtual {v1, v14}, Lmindustry/core/ContentLoader;->unit(Ljava/lang/String;)Lmindustry/type/UnitType;
+
+    move-result-object v1
+
+    .line 101
+    if-eqz v3, :cond_2cb
+
+    move-object v1, v3
+
+    .line 102
+    :cond_2cb
+    if-nez v1, :cond_322
+
+    .line 103
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "can not find unit \'"
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v3, "-"
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v3, "\' or \'"
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v3, "\'"
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v3, 0x0
+
+    new-array v3, v3, [Ljava/lang/Object;
+
+    invoke-static {v1, v3}, Larc/util/Log;->err(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 98
+    :goto_300
+    add-int/lit8 v1, v4, 0x1
+
+    move v4, v1
+
+    goto :goto_2a1
+
+    .line 94
+    :cond_304
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "mod "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, " adc.json has no liquids"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Larc/util/Log;->info(Ljava/lang/Object;)V
+
+    goto/16 :goto_290
+
+    .line 106
+    :cond_322
+    add-int/lit8 v0, v0, 0x1
+
+    .line 107
+    iget-object v3, v1, Lmindustry/type/UnitType;->shownPlanets:Larc/struct/ObjectSet;
+
+    invoke-virtual {v3, v6}, Larc/struct/ObjectSet;->add(Ljava/lang/Object;)Z
+
+    .line 108
+    invoke-virtual {v1}, Lmindustry/type/UnitType;->postInit()V
+
+    goto :goto_300
+
+    .line 111
+    :cond_32d
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "mod "
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v3, " adds "
+
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, " units to "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    iget-object v1, v6, Lmindustry/type/Planet;->localizedName:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Larc/util/Log;->info(Ljava/lang/Object;)V
+
+    move v0, v2
+
+    goto/16 :goto_ad
+
+    .line 112
+    :cond_35c
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "mod "
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, " adc.json has no units"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Larc/util/Log;->info(Ljava/lang/Object;)V
+
+    move v0, v2
+
+    goto/16 :goto_ad
+
+    .line 116
+    :cond_37b
+    if-nez v1, :cond_37e
+
+    .line 124
+    :cond_37d
+    return-void
+
+    .line 117
+    :cond_37e
+    const-string v0, "last progress..."
+
+    invoke-static {v0}, Larc/util/Log;->info(Ljava/lang/Object;)V
+
+    .line 118
+    sget-object v0, Lmindustry/Vars;->content:Lmindustry/core/ContentLoader;
+
+    invoke-virtual {v0}, Lmindustry/core/ContentLoader;->planets()Larc/struct/Seq;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Larc/struct/Seq;->copy()Larc/struct/Seq;
+
+    move-result-object v0
+
+    invoke-custom {}, call_site_0("get", ()Larc/func/Boolf;, (Ljava/lang/Object;)Z, invoke-static@LACD/main/ADCMain;->lambda$init$0(Lmindustry/type/Planet;)Z, (Lmindustry/type/Planet;)Z)@Ljava/lang/invoke/LambdaMetafactory;->metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Larc/struct/Seq;->removeAll(Larc/func/Boolf;)Larc/struct/Seq;
+
+    move-result-object v1
+
+    .line 119
+    sget-object v0, Lmindustry/Vars;->content:Lmindustry/core/ContentLoader;
+
+    invoke-virtual {v0}, Lmindustry/core/ContentLoader;->blocks()Larc/struct/Seq;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Larc/struct/Seq;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_39f
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_37d
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lmindustry/world/Block;
+
+    .line 120
+    iget-object v3, v0, Lmindustry/world/Block;->requirements:[Lmindustry/type/ItemStack;
+
+    array-length v3, v3
+
+    if-nez v3, :cond_3b9
+
+    iget-object v3, v0, Lmindustry/world/Block;->shownPlanets:Larc/struct/ObjectSet;
+
+    invoke-virtual {v3, v1}, Larc/struct/ObjectSet;->addAll(Larc/struct/Seq;)V
+
+    .line 122
+    :goto_3b5
+    invoke-virtual {v0}, Lmindustry/world/Block;->postInit()V
+
+    goto :goto_39f
+
+    .line 121
+    :cond_3b9
+    iget-object v3, v0, Lmindustry/world/Block;->shownPlanets:Larc/struct/ObjectSet;
+
+    invoke-virtual {v3}, Larc/struct/ObjectSet;->clear()V
+
+    goto :goto_3b5
+
+    :cond_3bf
+    move v1, v0
+
+    goto/16 :goto_c
+
+    :cond_3c2
+    move-object v0, v2
+
+    goto/16 :goto_3f
+.end method
+
+.method private static synthetic lambda$init$0(Lmindustry/type/Planet;)Z
+    .registers 2
+
+    .line 118
+    sget-object v0, Lmindustry/content/Planets;->sun:Lmindustry/type/Planet;
+
+    if-ne p0, v0, :cond_6
+
+    const/4 v0, 0x1
+
+    :goto_5
+    return v0
+
+    :cond_6
+    const/4 v0, 0x0
+
+    goto :goto_5
+.end method
