@@ -1,0 +1,11 @@
+{
+    "name":"远古废料矿",
+"type":"OreBlock",
+"playerUnmineable":true,
+"itemDrop":"远古废料",
+"mapColor":"E8D174FF",
+"useColor":true,
+"oreDefault":true,
+"oreThreshold":2.5,
+"oreScale":5
+}

@@ -1,0 +1,13 @@
+{
+	"type": "Floor",
+	"name": "伪板",
+	"variants":3,
+	"walkSound": "none",
+	"useColor": true,
+	"hasColor": true,
+	"emitLight": false,
+	"lightRadius": 0,
+	"lightColor": "CB4D4DFF",
+    "playerUnmineable": false,
+    "speedMultiplier": 1
+}

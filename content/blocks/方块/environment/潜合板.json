@@ -1,0 +1,13 @@
+{
+	"type": "Floor",
+	"name": "潜合板",
+		"walkSound": "none",
+	"variants":3,
+	"useColor": true,
+	"hasColor": true,
+	"emitLight": false,
+	"lightRadius": 0,
+	"lightColor": "3D4D58FF",
+    "playerUnmineable": false,
+    "speedMultiplier": 1
+}

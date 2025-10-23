@@ -1,0 +1,17 @@
+{
+    "type": "Floor",
+    "name": "合化晶液板",
+    "speedMultiplier":1.0,
+    "variants":0,
+    "status":"怀身",
+    "statusDuration": 90,
+    "albedo": 0.3,
+    "shallow":true,
+    "cacheLayer":"water",
+    "isLiquid": true,
+    "liquidDrop": "合化晶液",
+    "liquidMultiplier": 1,
+    "placeableOn":true,
+    "supportsOverlay":true,
+    "blendGroup": "合化晶液板"
+}
