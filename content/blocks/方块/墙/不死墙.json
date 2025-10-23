@@ -1,1 +1,22 @@
-
+{ 
+    "name":"不死墙",
+    "armor":125,
+    "type":"MendProjector",
+    "description":"极限的再生能力",
+    "reload":1,
+    "range":4,
+    "group":"walls",
+    "healPercent":100,
+    "phaseBoost":0,
+    "hasPower":false,
+    "phaseRangeBoost":0,
+    "health":100000,
+    "size":2,
+    "canOverdrive":false,
+    "buildCostMultiplier":3,
+    "requirements":[
+        "无恒锭/1"
+       ],
+    "category":"defense",
+    "research":"泰合大墙"
+}

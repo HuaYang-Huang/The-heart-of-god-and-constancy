@@ -1,0 +1,19 @@
+{
+    "type":"wall",
+    "name":"金钢悍墙",
+    "description":"?????",
+    "health":35000,
+    "size":3,
+    "requirements":[
+        "surge-alloy/4",
+        "棱镜/4"
+    ],
+    "armor":310,
+    "buildCostMultiplier":1,
+    "canOverdrive":false,
+    "lightningChance":0.31,
+    "lightningDamage":300,
+    "lightningLength":13,
+    "category": "defense",
+    "research": "金钢大墙"
+}

@@ -1,0 +1,19 @@
+{
+    "type":"wall",
+    "name":"金钢墙",
+    "description":"?????",
+    "health":8400,
+    "size":1,
+    "requirements":[
+        "surge-alloy/2",
+        "棱镜/1"
+    ],
+    "armor":140,
+    "buildCostMultiplier":1,
+    "canOverdrive":false,
+    "lightningChance":0.15,
+    "lightningDamage":145,
+    "lightningLength":10,
+    "category": "defense",
+    "research": "GH-守子核心"
+}

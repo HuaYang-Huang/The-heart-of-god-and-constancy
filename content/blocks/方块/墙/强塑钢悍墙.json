@@ -1,0 +1,17 @@
+{
+   "type":"wall",
+   "name":"强塑钢悍墙",
+   "description":"?????",
+   "health":19800,
+   "size":3,
+   "requirements":[
+      {"item":"plastanium","amount":25},
+      {"item":"silicon","amount":22},
+      {"item":"潜铁板","amount":28}
+   ],
+   "armor":22,
+   "insulated": true,
+    "absorbLasers": true,
+    "category": "defense",
+    "research": "强塑钢大墙"
+}  

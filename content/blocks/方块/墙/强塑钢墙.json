@@ -1,0 +1,17 @@
+{
+   "type":"wall",
+   "name":"强塑钢墙",
+   "description":"?????",
+   "health":3850,
+   "size":1,
+   "requirements":[
+      {"item":"plastanium","amount":10},
+      {"item":"silicon","amount":8},
+      {"item":"潜铁板","amount":5}
+   ],
+   "armor":6,
+   "insulated": true,
+    "absorbLasers": true,
+    "category": "defense",
+    "research": "GH-守子核心"
+}  

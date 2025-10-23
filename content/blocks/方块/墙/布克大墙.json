@@ -1,0 +1,30 @@
+{
+    "type":"ShieldWall",
+    "name":"布和大墙",
+   "description":"?????",
+   "health":3000,
+   "size":2,
+   "requirements":[
+      {"item":"phase-fabric","amount":10},
+      {"item":"plastanium","amount":7},
+      {"item":"潜铁板","amount":15}
+   ],
+   "consumes": {
+		"power":0.0333334
+	},
+   "canOverdrive": true,
+   "outputsPower":false,
+   "hasPower":true,
+   "consumesPower":true,
+   "conductivePower":true,
+   "breakCooldown":25,
+   "regenSpeed":15,
+   "glowColor":"69E0C7FF",
+   "glowMag":1,
+   "shieldHealth":3150,
+   "armor":25,
+   "buildCostMultiplier":4.5,
+   
+   "category":"defense",
+   "research":"布克墙"
+}

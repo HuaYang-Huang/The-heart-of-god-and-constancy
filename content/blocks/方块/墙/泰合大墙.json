@@ -1,0 +1,20 @@
+{
+   "type":"wall",
+   "name":"泰合大墙",
+   "description":"?????",
+   "health":8360,
+   "size":2,
+   "requirements":[
+      {"item":"phase-fabric","amount":7},
+      {"item":"silicon","amount":8},
+      {"item":"潜铁板","amount":4}
+   ],
+   "armor":20,
+   "buildCostMultiplier":3,
+  "canOverdrive":false,
+  "lightningChance":0.75,
+   "lightningDamage":145,
+   "lightningLength":24,
+    "category": "defense",
+    "research": "泰合墙"
+}  

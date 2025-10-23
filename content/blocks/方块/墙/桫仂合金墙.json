@@ -1,0 +1,16 @@
+{
+   "type":"wall",
+   "name":"桫仂合金墙",
+   "description":"合金墙加强[cyan]闪电伤害高",
+   "health":15200,
+   "size":3,
+   "requirements":[
+      {"item":"surge-alloy","amount":75}
+   ],
+   "lightningChance":0.05,
+   "lightningDamage":250,
+   "lightningLength":20,
+  "chanceDeflect":5,
+    "category": "defense",
+    "research": "surge-wall-large"
+}
