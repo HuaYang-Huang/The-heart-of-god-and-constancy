@@ -1,0 +1,483 @@
+{
+    "type": "flying",
+    "name": "玖爱",
+    "description": "削弱了防御和血量但伤害威胁，还有回血能力爆发",
+    "immunities":["blasted","burning","electrified","freezing","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed","结晶徽章"],
+    "research": {
+	"parent": "GH-空军组装机",
+	"objectives": [
+		{
+	"type": "SectorComplete",
+	"preset": "新的开始"
+		}
+	],
+	"requirements": [
+	"copper/14000",
+	"lead/14000",
+	"silicon/11000",
+	"thorium/6560",
+	"graphite/9800",
+	"titanium/5000",
+	"beryllium/4850",
+	"tungsten/3500",
+	"oxide/2880",
+	"phase-fabric/650",
+	"plastanium/1285",
+	"surge-alloy/750",
+	"棱镜/4500",
+	"无遏板/2050",
+	"潜铁板/2180",
+	"粒子核心/3580",
+	"无遏板/650",
+	"无子核心/1000",
+	"钢化棱镜/1000"
+	    ]
+	},
+    "armor" : 15,
+    "range" : 250,
+    "flying": true,
+    "lowAltitude": true,
+    "omniMovement": true,
+    "speed": 4.5,
+    "accel":0.1,
+    "drag": 0.4,
+    "envDisabled":0,
+    "fogRadius": 95,
+    "itemCapacity": 300,
+    "rotateSpeed": 3.8,
+    "buildSpeed": 6.5,
+    "buildBeamOffset":10,
+    "mineSpeed": 65,
+    "mineTier": 20,
+    "engineOffset": 0.0,
+    "engineSize" : 0,
+    "engineColor" : "69E0C7FF",
+    "outlineColor": "20202CFF",
+    "hitSize": 37,
+    "health": 2920,
+    "payloadCapacity" : 20,
+    "parts": [
+        {
+		"type": "ShapePart",
+		"y": -24.5,
+		"stroke": 2,
+		"strokeTo":2,
+		"color": "69E0C7FF",
+		"circle": true,
+		"hollow": true,
+		"radius": 6,
+		"radiusTo": 6,
+		"layer":110
+		},{
+		"type": "ShapePart",
+		"y": -24.5,
+		"stroke": 1,
+		"strokeTo":1,
+		"color": "000000FF",
+		"circle": true,
+		"hollow": false,
+		"radius": 3,
+		"radiusTo": 3,
+		"layer":114
+		},{
+			"type": "HaloPart",
+			"y": -24.5,
+			"rotateSpeed": 0,
+			"sides": 3,
+			"shapes": 2,
+			"color": "69E0C7FF",
+			"tri": true,
+			"hollow": true,
+			"stroke": 7,
+			"strokeTo": 7,
+			"radius": 6,
+			"radiusTo": 6,
+			"triLength": 12,
+			"triLengthTo": 12,
+			"haloRadius": 5,
+			"haloRotation": 0,
+			"haloRotateSpeed": -0.4,
+			"layer":110
+		}
+	],
+    "weapons": [
+    {
+        "name":"玖爱炮台2",
+        "mirror": true,
+        "alternate": true,
+        "rotate": true,
+        "rotateSpeed": 4.95,
+        "shootCone":30,
+        "reload":20,
+        "x": 18.5,
+        "y": 4.0,
+        "bullet":{
+        "type": "EmpBulletType",
+        "width": 9,
+        "height": 9,
+        "frontColor": "69E0C7FF",
+        "backColor": "69E0C7FF",
+        "lifetime": 155,
+        "speed": 6.5,
+        "damage": 85,
+        "weaveScale": 4,
+        "weaveMag": 2,
+        "splashDamage": 85,
+        "splashDamageRadius": 90,
+        "shrinkY": 0,
+        "shrinkX": 0,
+        "radius": 150,
+        "hitPowerEffect": {
+          "type": "ParticleEffect",
+          "line": true,
+          "particles": 6,
+          "lifetime": 60,
+          "length": 100,
+          "cone": -360,
+          "lenFrom": 8,
+          "lenTo": 0,
+          "colorFrom": "69E0C7FF",
+          "colorTo": "69E0C703"
+        },
+        "hitColor": "69E0C7FF",
+        "timeIncrease": 2.5,
+        "powerDamageScl": 1.5,
+        "powerSclDecrease": 1.5,
+        "unitDamageScl": 1.0,
+        "status": "electrified",
+        "statusDuration": 240,
+        "shootEffect": {
+        "type": "multiEffect",
+        "effects": [
+            {
+            "type": "ParticleEffect",
+            "particles": 8,
+            "sizeFrom": 3,
+            "sizeTo": 0,
+            "length": 55,
+            "lifetime": 45,
+            "interp": "circleOut",
+            "sizeInterp": "pow5In",
+            "colorFrom": "69E0C7FF",
+            "colorTo": "69E0C703",
+            "cone": 20
+            }
+        ]
+    },
+        "homingPower": 0.01450,
+        "homingRange": 130,
+        "hitEffect": {
+        "type": "multiEffect",
+        "effects": [
+            {
+            "type": "ParticleEffect",
+            "particles": 8,
+            "sizeFrom": 5,
+            "sizeTo": 0,
+            "length": 185,
+            "lifetime": 55,
+            "interp": "circleOut",
+            "sizeInterp": "pow5In",
+            "colorFrom": "69E0C7FF",
+            "colorTo": "69E0C703",
+            "cone": 360
+            },{
+            "type": "ParticleEffect",
+            "particles": 1,
+            "sizeFrom": 0,
+            "sizeTo": 20,
+            "length": 185,
+            "lifetime": 85,
+            "interp": "circleOut",
+            "sizeInterp": "pow5In",
+            "colorFrom": "69E0C7FF",
+            "colorTo": "69E0C703"
+            }
+        ]
+    },
+        "trailColor": "69E0C7FF",
+        "trailLength": 7.5,
+        "trailWidth": 3.5
+            }
+        },{
+        "name":"玖爱炮台2",
+        "mirror": true,
+        "alternate": true,
+        "rotate": true,
+        "rotateSpeed": 4.95,
+        "shootCone":30,
+        "reload":20,
+        "x": 24.5,
+        "y": 18.0,
+        "bullet":{
+        "type": "EmpBulletType",
+        "width": 9,
+        "height": 9,
+        "frontColor": "69E0C7FF",
+        "backColor": "69E0C7FF",
+        "lifetime": 155,
+        "speed": 6.5,
+        "damage": 85,
+        "weaveScale": 4,
+        "weaveMag": 2,
+        "splashDamage": 85,
+        "splashDamageRadius": 90,
+        "shrinkY": 0,
+        "shrinkX": 0,
+        "radius": 150,
+        "hitPowerEffect": {
+          "type": "ParticleEffect",
+          "line": true,
+          "particles": 6,
+          "lifetime": 60,
+          "length": 100,
+          "cone": -360,
+          "lenFrom": 8,
+          "lenTo": 0,
+          "colorFrom": "69E0C7FF",
+          "colorTo": "69E0C703"
+        },
+        "hitColor": "69E0C7FF",
+        "timeIncrease": 2.5,
+        "powerDamageScl": 1.5,
+        "powerSclDecrease": 1.5,
+        "unitDamageScl": 1.0,
+        "status": "electrified",
+        "statusDuration": 240,
+        "shootEffect": {
+        "type": "multiEffect",
+        "effects": [
+            {
+            "type": "ParticleEffect",
+            "particles": 8,
+            "sizeFrom": 3,
+            "sizeTo": 0,
+            "length": 55,
+            "lifetime": 45,
+            "interp": "circleOut",
+            "sizeInterp": "pow5In",
+            "colorFrom": "69E0C7FF",
+            "colorTo": "69E0C703",
+            "cone": 20
+            }
+        ]
+    },
+        "homingPower": 0.01450,
+        "homingRange": 130,
+        "hitEffect": {
+        "type": "multiEffect",
+        "effects": [
+            {
+            "type": "ParticleEffect",
+            "particles": 8,
+            "sizeFrom": 5,
+            "sizeTo": 0,
+            "length": 185,
+            "lifetime": 55,
+            "interp": "circleOut",
+            "sizeInterp": "pow5In",
+            "colorFrom": "69E0C7FF",
+            "colorTo": "69E0C703",
+            "cone": 360
+            },{
+            "type": "ParticleEffect",
+            "particles": 1,
+            "sizeFrom": 0,
+            "sizeTo": 20,
+            "length": 185,
+            "lifetime": 85,
+            "interp": "circleOut",
+            "sizeInterp": "pow5In",
+            "colorFrom": "69E0C7FF",
+            "colorTo": "69E0C703"
+            }
+        ]
+    },
+        "trailColor": "69E0C7FF",
+        "trailLength": 7.5,
+        "trailWidth": 3.5
+            }
+        },{
+        "name":"玖爱炮台1",
+        "mirror": true,
+        "alternate": false,
+        "rotate": true,
+        "rotateSpeed": 1.95,
+        "shootCone":30,
+        "reload":100,
+        "x": 19.5,
+        "y": -15.0,
+        "bullet": {
+				"type": "PointBulletType",
+				"trailSpacing": 10,
+				"trailEffect": {
+					"type": "MultiEffect",
+					"effects": [
+						{
+							"type": "ParticleEffect",
+							"particles": 1,
+							"length": 0,
+							"baseLength": 1,
+							"lifetime": 7.5,
+							"line": true,
+							"randLength": false,
+							"lenFrom": 3.3,
+							"lenTo": 3.3,
+							"strokeFrom": 1.2,
+							"strokeTo": 0,
+							"colorFrom": "69E0C7FF",
+							"colorTo": "69E0C7FF",
+							"cone": 0
+						},
+						{
+							"type": "ParticleEffect",
+							"particles": 1,
+							"sizeFrom": 1,
+							"sizeTo": 0,
+							"length": 0,
+							"baseLength": 3,
+							"lifetime": 15,
+							"colorFrom": "69E0C7FF",
+							"colorTo": "69E0C7FF",
+							"cone": 360
+						}
+					]
+				},
+				"buildingDamageMultiplier": 0.00,
+				"damage": 0,
+				"lifetime": 45,
+				"speed": 18,
+				"splashDamageRadius": 45,
+				"splashDamage": 225,
+				"pierceBuilding": true,
+                "pierceCap": 3,
+				"chargeEffect":"none",
+				"shootEffect":"none",
+				"smokeEffect":"none",
+				"hitEffect": {
+					"type": "MultiEffect",
+					"effects": [
+	{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 76,
+        "sizeTo": 0,
+        "length": 0,
+        "layer": 114,
+        "region": "神恒之心-plasma-back",
+        "interp": "swing",
+        "lifetime": 30,
+        "colorFrom": "000000FF",
+        "colorTo": "000000FF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 90,
+        "sizeTo": 0,
+        "length": 0,
+        "interp": "swing",
+        "lifetime": 30,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+        }
+					]
+				},
+	"despawnEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 76,
+        "sizeTo": 0,
+        "length": 0,
+        "layer": 114,
+        "region": "神恒之心-plasma-back",
+        "interp": "swing",
+        "lifetime": 30,
+        "colorFrom": "000000FF",
+        "colorTo": "000000FF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 90,
+        "sizeTo": 0,
+        "length": 0,
+        "interp": "swing",
+        "lifetime": 30,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+    }
+	    ]
+    },
+        "fragBullets": 8,
+        "fragBullet": {
+        "speed": 8,
+        "damage":0,
+        "height": 0,
+        "width": 0,
+        "lifetime": 50,
+        "collidesAir": false,
+        "collidesTiles": false,
+        "collidesGround": false,
+    "despawnEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 29,
+        "sizeTo": 0,
+        "length": 0,
+        "layer": 114,
+        "region": "神恒之心-plasma-back",
+        "interp": "swing",
+        "lifetime": 20,
+        "colorFrom": "000000FF",
+        "colorTo": "000000FF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 40,
+        "sizeTo": 0,
+        "length": 0,
+        "interp": "swing",
+        "lifetime": 20,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+    }
+	        ]
+		},
+        "fragBullets": 1,
+        "fragRandomSpread": 1,
+        "fragVelocityMin": 1,
+        "fragBullet": {
+        "type": "basicBulletType",
+        "damage": 140,
+        "splashDamageRadius": 0.00,
+        "splashDamage": 0.00,
+        "homingPower": 0.67,
+        "homingRange": 65,
+        "homingDelay": 0.8,
+        "trailParam": 4,
+        "trailLength": 15,
+        "trailWidth": 2,
+        "trailColor": "69E0C7FF",
+        "backColor": "69E0C7FF",
+        "frontColor": "69E0C7FF",
+        "height": 17,
+        "width": 12,
+        "speed": -4.5,
+        "lifetime": 180
+        }
+    }
+			}
+        }
+    ],
+    "abilities": [
+            {
+            "type": "RegenAbility",
+            "amount": 10.0
+        }
+    ]
+}

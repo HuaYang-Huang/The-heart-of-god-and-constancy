@@ -1,0 +1,136 @@
+{
+    "name":"守卫",
+	"description":"加强核心飞机实力和修复型能力强化",
+	"research":"GH-守卫核心",
+    "envDisabled":0,
+	"type":"flying",
+	"controller": "BuilderAI",
+	"flying":true,
+	"accel": 0.2,"drag": 0.1,
+	"engineSize":4.0,
+	"engineColor": "69E0C7FF",
+	"engineOffset":9,
+	"trailLength": 15.5,
+	"trailColor": "69E0C7FF",
+	"engines": [
+		{
+			"x": 7.5,
+			"y": -8,
+			"radius": 2,
+			"rotation": -90
+		},{
+			"x": -7.5,
+			"y": -8,
+			"radius": 2,
+			"rotation": -135
+		}
+	],
+	"faceTarget": true,
+	"outlineColor":"20202CFF",
+    "immunities":[
+	"blasted",
+	"freezing",
+	"electrified",
+	"burning",
+	"melting",
+	"muddy",
+	"sapped",
+	"shocked",
+	"slow",
+	"tarred",
+	"unmoving",
+	"wet",
+	"spore-slowed",
+	"corroded",
+	"disarmed",
+	"结晶徽章"
+	],
+	"fogRadius":140,
+	"isEnemy": false,
+	"targetable": false,
+	"hittable": false,
+	"rotateSpeed":3.8,
+	"mineWalls":true,
+	"mineFloor":true,
+	"buildSpeed":2.5,
+	"speed":4.0,
+	"lowAltitude":true,
+	"health":1750,
+	"hitSize":30,
+	"itemCapacity":250,
+	"mineSpeed":18.5,
+	"mineTier":8,
+	"armor":25,
+
+	"payloadCapacity":320,
+	"pickupUnits":true,
+	"vulnerableWithPayloads": true,
+
+	"weapons":[
+		{
+		"name": "RepairBeamWeapon",
+		"type":"RepairBeamWeapon",
+		"widthSinMag":0.05,
+		"reload":40,
+		"x":0,"y":12.5,
+		"rotate":true,
+		"beamWidth":0.7,
+		"shootCone":35,
+		"mirror":false,
+		"repairSpeed":5,
+		"fractionRepairSpeed":0.15,
+		"laserColor":"69E0C7FF",
+		"healColor":"69E0C7FF",
+		"targetUnits":false,
+		"targetBuildings":true,
+		"autoTarget":false,
+		"controllable":true,
+		"bullet": {
+		"maxRange": 125
+		        }
+        	},{
+		"name": "守卫炮塔2",
+		"type":"RepairBeamWeapon",
+		"widthSinMag":0.05,
+		"reload":40,
+		"x":0,"y":-1.0,
+		"rotate":true,
+		"beamWidth":0.7,
+		"shootCone":35,
+		"mirror":false,
+		"repairSpeed":5,
+		"fractionRepairSpeed":0.15,
+		"laserColor":"69E0C7FF",
+		"healColor":"69E0C7FF",
+		"targetUnits":false,
+		"targetBuildings":false,
+		"autoTarget":true,
+		"controllable":false,
+		"bullet": {
+		"shootEffect": {
+    "type": "ParticleEffect",
+    "line": true,
+    "particles": 4,
+    "offset": 40,
+    "lifetime": 3.5,
+    "length": 8,
+    "cone": -360,
+    "lenFrom": 10,
+    "lenTo": 0,
+    "colorFrom": "69E0C7FF",
+    "colorTo": "69E0C700"   
+    },
+		"maxRange": 330
+		        }
+        	},{
+        "name":"守卫炮塔1",
+		"type":"BuildWeapon",
+		"x":7.5,"y":0.5,
+		"shootY":6,
+		"rotate":true,
+		"rotateSpeed":6,
+		"mirror":true,
+		"layerOffset":-0.001
+		}
+	]
+}

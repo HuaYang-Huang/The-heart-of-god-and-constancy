@@ -1,0 +1,142 @@
+{
+    "type": "hover",
+    "name": "蟒蛇",
+    "description": "名字听起来很霸气，但强度不怎样",
+    "immunities":["blasted","burning","electrified","freezing","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed","结晶徽章"],
+    "research": {
+	"parent": "GH-泽明兵工厂",
+	"requirements": [
+	"copper/210",
+	"lead/210",
+	"silicon/100",
+	"thorium/100",
+	"graphite/100",
+	"titanium/100",
+	"beryllium/300",
+	"棱镜/30",
+	"无遏板/20",
+	"潜铁板/30"
+	    ]
+	},
+    "armor" : 20,
+    "range" : 80,
+    "flying": false,
+    "lowAltitude": true,
+    "omniMovement": true,
+    "speed": 3.7,
+    "accel":0.2,
+    "drag": 0.4,
+    "envDisabled":0,
+    "itemCapacity": 100,
+    "rotateSpeed": 5,
+    "buildSpeed": 3.5,
+    "buildBeamOffset":8,
+    "mineSpeed": 45,
+    "mineTier": 15,
+    "outlineColor": "20202CFF",
+    "hitSize": 9,
+    "health": 700,
+    "hovering":true,
+    "shadowElevation":0.1,
+    "maxRange":120,
+    "abilities": [
+            {
+            "type": "RegenAbility",
+            "amount": 1.0
+        }
+    ],
+    "parts": [
+        {
+    "type":"HoverPart",
+    "x":4.3,
+    "y":3.5,
+    "mirror":true,
+    "radius":7,
+    "phase":90,
+    "stroke":2,
+    "layerOffset":-0.001,
+    "color":"69E0C7FF"
+        },{
+    "type":"HoverPart",
+    "x":4.3,
+    "y":-3.1,
+    "mirror":true,
+    "radius":7,
+    "phase":90,
+    "stroke":2,
+    "layerOffset":-0.001,
+    "color":"69E0C7FF"
+        }
+    ],
+    "weapons": [
+	{
+		"name": "蟒蛇炮塔1",
+		"type": "PointDefenseWeapon",
+		"reload":30,
+		"x":0,"y":0,
+		"mirror":false,
+		"top":false,
+		"alternate": false,
+		"shootCone": 360,
+		"rotationLimit": 360,
+		"rotateSpeed": 25,
+		"rotate": true,
+		"targetInterval": 1,
+        "targetSwitchInterval": 3,
+        "recoil": 1.2,
+        "bullet":{
+        "speed": 55,
+        "lifetime": 19,
+        "shootEffect": "none",
+        "hitEffect": "none",
+        "maxRange":270,
+        "damage":350
+        }
+	},{
+	    "name": "蟒蛇炮塔2",
+		"reload":75,
+		"x":0,"y":0,
+		"mirror":false,
+		"top":false,
+		"alternate": false,
+		"shootCone": 360,
+		"rotationLimit": 360,
+		"rotateSpeed": 25,
+		"shootY": 0,
+		"rotate": true,
+            "bullet": {
+		"type": "PointBulletType",
+		"trailSpacing": 10,
+		"trailEffect": {
+			"type": "MultiEffect",
+		"effects": [
+			{
+		"type": "ParticleEffect",
+		"particles": 1,
+		"length": 0,
+		"baseLength": 1,
+		"lifetime": 10.5,
+		"line": true,
+		"randLength": false,
+		"lenFrom": 15.0,
+		"lenTo": 15.0,
+		"strokeFrom": 1.8,
+		"strokeTo": 1.8,
+		"colorFrom": "69E0C7FF",
+		"colorTo": "69E0C7FF",
+		"cone": 0
+		}
+			]
+		},
+		"lifetime": 28,
+		"speed": 14,
+		"damage":85,
+		"chargeEffect":"none",
+		"shootEffect": "none",
+		"smokeEffect":"none",
+		"hitEffect":"none",
+		"despawnEffect":"none"
+		    }
+	    }
+	]
+}

@@ -1,0 +1,500 @@
+{
+    "name": "幸运",
+    "description" : "升级T2海船，本体强度强一点，战斗性效果强",
+    "type":"naval",
+    "hitSize":36.5,
+    "envDisabled":0,
+    "canBoost":false,
+    "speed" : 0.85,
+    "rotateSpeed":2.0,
+	"ammoCapacity": 50,
+    "itemCapacity" : 300,
+    "fogRadius": 85,
+    "mineSpeed": 55,
+    "buildSpeed": 5.0,
+    "mineTier": 15,
+    "maxRange":250,
+    "outlineColor": "20202CFF",
+    "health": 1660,
+    "armor":80,
+    "research": {
+	"parent": "GH-铮骨升级厂",
+	"objectives": [
+		{
+	"type": "SectorComplete",
+	"preset": "新的开始"
+		}
+	],
+	"requirements": [
+	"copper/10000",
+	"lead/10000",
+	"silicon/4500",
+	"thorium/3200",
+	"graphite/2500",
+	"titanium/3100",
+	"beryllium/2000",
+	"tungsten/3000",
+	"棱镜/2000",
+	"无遏板/450",
+	"潜铁板/1450",
+	"粒子核心/500",
+	"无遏板/300"
+	    ]
+	},
+    "immunities":["blasted","freezing","electrified","burning","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed","结晶徽章"],
+    "abilities": [
+            {
+            "type": "RegenAbility",
+            "amount": 2.5
+        }
+    ],
+    "weapons": [
+    {
+	    "name": "幸运炮塔1",
+		"reload":8,
+		"x":12.5,"y":13.5,
+		"mirror":true,
+		"top":true,
+		"alternate": false,
+		"shootCone": 10,
+		"rotateSpeed": 2.95,
+		"shootY": 0,
+		"rotate": true,
+	    "alwaysShooting": false,
+        "alwaysContinuous": false,
+        "continuous": false,
+        "parentizeEffects": true,
+            "bullet": {
+		"type": "PointBulletType",
+		"trailSpacing": 10,
+		"trailEffect": {
+			"type": "MultiEffect",
+		"effects": [
+			{
+		"type": "ParticleEffect",
+		"particles": 1,
+		"length": 0,
+		"baseLength": 1,
+		"lifetime": 10.5,
+		"line": true,
+		"randLength": false,
+		"lenFrom": 9.0,
+		"lenTo": 9.0,
+		"strokeFrom": 2.1,
+		"strokeTo": 2.1,
+		"colorFrom": "69E0C7FF",
+		"colorTo": "69E0C7FF",
+		"cone": 0
+		}
+			]
+		},
+		"lifetime": 28,
+		"speed": 18,
+		"damage":80,
+	    "splashDamageRadius": 25,
+		"splashDamage": 35,
+		"chargeEffect":"none",
+		"shootEffect": {
+		    "type": "ParticleEffect",
+            "particles": 6,
+            "length": 30,
+            "lifetime": 15,
+            "line": true,
+            "cone": 30,
+            "lenFrom": 4,
+            "lenTo": 0,
+            "strokeFrom": 2,
+            "strokeTo": 2,
+            "colorFrom": "69E0C7FF",
+            "colorTo": "69E0C7FF"
+        },
+		"smokeEffect":"none",
+		"hitEffect":"none",
+		"despawnEffect":"none"
+		}
+	},{
+	    "name": "运气炮塔2",
+		"reload":40,
+		"x":16.5,"y":18.0,
+		"mirror":true,
+		"top":false,
+		"alternate": false,
+		"shootCone": 360,
+		"rotate": false,
+		"shootY": 5,
+		"shoot": {
+        "shots":3,
+        "shotDelay":7
+        },
+		"bullet": {
+        "maxRange":50,
+        "backColor":"69E0C7FF",
+        "frontColor":"69E0C7FF",
+        "hitSize":22,
+        "collidesAir":false,
+        "lifetime":100,
+        "speed":0.6,
+        "drag":-0.03,
+        "trailParam": 2,
+        "trailLength": 10,
+        "trailWidth": 3,
+        "trailColor": "69E0C7FF",
+        "collideFloor":true,
+        "homingPower": 0.10,
+        "homingRange": 65,
+        "homingDelay": 0.15,
+        "damage": 20,
+        "splashDamageRadius": 45,
+	    "splashDamage": 50,
+	    "shootEffect":"none",
+	    "despawnEffect":{
+		"type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "ParticleEffect",
+        "particles": 5,
+        "sizeFrom": 10,
+        "sizeTo": 0,
+        "length": 60,
+        "lifetime": 80,
+        "lightOpacity": 20,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703",
+        "cone": 360
+	}
+	    ]
+	            },
+	    "smokeEffect":"none",
+	    "hitEffect":{
+		"type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "ParticleEffect",
+        "particles": 5,
+        "sizeFrom": 10,
+        "sizeTo": 0,
+        "length": 60,
+        "lifetime": 80,
+        "lightOpacity": 20,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703",
+        "cone": 360
+	}
+	    ]
+	            }
+		    }
+	    },{
+		"name": "运气炮塔1",
+		"reload":135,
+		"x":15.0,"y":-7.0,
+		"mirror":false,
+		"top":true,
+		"alternate": false,
+		"shootCone": 0,
+		"rotateSpeed": 2.05,
+		"rotate": true,
+		"bullet": {
+	"type": "BasicBulletType",
+	"sprite": "神恒之心-rail-star-line-0",
+    "width": 20,
+    "height": 20,
+    "status":"electrified",
+    "statusDuration": 600,
+    "trailParam": 2,
+    "trailLength": 18,
+    "trailWidth": 4,
+    "trailColor": "69E0C7FF",
+    "trailChance": 0,
+	"trailInterval": 2,
+	"trailEffect": {
+		"type": "MultiEffect",
+	    "effects": [
+	{
+	"type": "ParticleEffect",
+    "particles": 1,
+    "lifetime": 25,
+    "length": 0,
+    "interp": "swingIn",
+    "region": "神恒之心-rail-star-line",
+    "sizeFrom": 20,
+    "sizeTo": 0,
+    "cone": 1,
+    "lightColor": "69E0C7FF",
+    "colorFrom": "69E0C7FF",
+    "colorTo": "69E0C703"
+			},{
+	    "type": "WaveEffect",
+        "lifetime": 25,
+        "sizeFrom": 0,
+        "sizeTo": 35,
+        "strokeFrom": 15,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+	}
+	    ]
+	},
+	"trailRotation": true,
+	"keepVelocity": false,
+    "frontColor": "69E0C7FF",
+    "backColor": "69E0C7FF",
+    "lifetime": 75,
+    "speed": 0.30,
+    "damage": 350,
+    "splashDamageRadius": 110,
+	"splashDamage": 200,
+    "drag":-0.08,
+    "pierce":false,
+    "pierceBuilding": false,
+    "hitEffect":{
+		"type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "WaveEffect",
+        "lifetime": 30,
+        "sizeFrom": 0,
+        "sizeTo": 150,
+        "strokeFrom": 15,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+			},{
+	    "type": "ParticleEffect",
+        "particles": 15,
+        "sizeFrom": 25,
+        "sizeTo": 0,
+        "length": 210,
+        "lifetime": 60,
+        "lightOpacity": 20,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703",
+        "cone": 360
+	}
+	    ]
+	},
+	"despawnEffect":{
+		"type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "WaveEffect",
+        "lifetime": 30,
+        "sizeFrom": 0,
+        "sizeTo": 150,
+        "strokeFrom": 15,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+			},{
+	    "type": "ParticleEffect",
+	    "layer":110,
+        "particles": 10,
+        "sizeFrom": 25,
+        "sizeTo": 0,
+        "length": 130,
+        "lifetime": 30,
+        "lightOpacity": 20,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF",
+        "cone": 360
+	},{
+	    "type": "ParticleEffect",
+	    "layer":109,
+        "particles": 10,
+        "sizeFrom": 25,
+        "sizeTo": 0,
+        "length": 130,
+        "lifetime": 30,
+        "lightOpacity": 20,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703",
+        "cone": 360
+	}
+	    ]
+	},
+	"shootEffect": {
+	    "type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "ParticleEffect",
+        "particles": 15,
+        "sizeFrom": 10,
+        "sizeTo": 0,
+        "length": 70,
+        "lifetime": 45,
+        "lightOpacity": 20,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703",
+        "cone": 30
+	}
+	    ]
+	}
+		}
+	        },{
+		"name": "运气炮塔1",
+		"reload":135,
+		"x":-15.0,"y":-7.0,
+		"mirror":false,
+		"top":true,
+		"alternate": false,
+		"shootCone": 0,
+		"rotateSpeed": 2.05,
+		"rotate": true,
+		"bullet": {
+	"type": "BasicBulletType",
+	"sprite": "神恒之心-rail-star-line",
+    "width": 20,
+    "height": 20,
+    "status":"electrified",
+    "statusDuration": 600,
+    "trailParam": 2,
+    "trailLength": 18,
+    "trailWidth": 4,
+    "trailColor": "69E0C7FF",
+    "trailChance": 0,
+	"trailInterval": 2,
+	"trailEffect": {
+		"type": "MultiEffect",
+	    "effects": [
+	{
+	"type": "ParticleEffect",
+    "particles": 1,
+    "lifetime": 25,
+    "length": 0,
+    "interp": "swingIn",
+    "region": "神恒之心-rail-star-line",
+    "sizeFrom": 20,
+    "sizeTo": 0,
+    "cone": 1,
+    "lightColor": "69E0C7FF",
+    "colorFrom": "69E0C7FF",
+    "colorTo": "69E0C703"
+			},{
+	    "type": "WaveEffect",
+        "lifetime": 25,
+        "sizeFrom": 0,
+        "sizeTo": 35,
+        "strokeFrom": 15,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+	}
+	    ]
+	},
+	"trailRotation": true,
+	"keepVelocity": false,
+    "frontColor": "69E0C7FF",
+    "backColor": "69E0C7FF",
+    "lifetime": 75,
+    "speed": 0.30,
+    "damage": 350,
+    "splashDamageRadius": 110,
+	"splashDamage": 200,
+    "drag":-0.08,
+    "pierce":false,
+    "pierceBuilding": false,
+    "hitEffect":{
+		"type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "WaveEffect",
+        "lifetime": 30,
+        "sizeFrom": 0,
+        "sizeTo": 150,
+        "strokeFrom": 15,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+			},{
+	    "type": "ParticleEffect",
+        "particles": 15,
+        "sizeFrom": 25,
+        "sizeTo": 0,
+        "length": 210,
+        "lifetime": 60,
+        "lightOpacity": 20,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703",
+        "cone": 360
+	}
+	    ]
+	},
+	"despawnEffect":{
+		"type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "WaveEffect",
+        "lifetime": 30,
+        "sizeFrom": 0,
+        "sizeTo": 150,
+        "strokeFrom": 15,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+			},{
+	    "type": "ParticleEffect",
+	    "layer":110,
+        "particles": 10,
+        "sizeFrom": 25,
+        "sizeTo": 0,
+        "length": 130,
+        "lifetime": 30,
+        "lightOpacity": 20,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF",
+        "cone": 360
+	},{
+	    "type": "ParticleEffect",
+	    "layer":109,
+        "particles": 10,
+        "sizeFrom": 25,
+        "sizeTo": 0,
+        "length": 130,
+        "lifetime": 30,
+        "lightOpacity": 20,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703",
+        "cone": 360
+	}
+	    ]
+	},
+	"shootEffect": {
+	    "type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "ParticleEffect",
+        "particles": 15,
+        "sizeFrom": 10,
+        "sizeTo": 0,
+        "length": 70,
+        "lifetime": 45,
+        "lightOpacity": 20,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703",
+        "cone": 30
+	}
+	    ]
+	}
+		}
+	        }
+    ]
+}

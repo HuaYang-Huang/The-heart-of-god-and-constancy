@@ -1,0 +1,124 @@
+{
+    "type": "flying",
+    "name": "截塔",
+    "description": "保护战术核心，可建造建筑",
+    "controller": "BuilderAI",
+    "range" : 30,
+    "flying": true,
+    "lowAltitude": true,
+    "speed": 4,
+    "accel":0.3,
+    "envDisabled":0,
+    "drag": 0.1,
+    "itemCapacity": 150,
+    "rotateSpeed": 22,
+    "buildSpeed": 2.5,
+    "buildBeamOffset":3,
+    "mineSpeed": 25,
+    "mineTier": 6,
+    "engineOffset": 7.5,
+    "hitSize": 12,
+    "health": 650,
+    "armor": 3,
+    "weapons":[
+        {
+            "name":"截塔机炮",
+            "y":5.5,
+            "x":0,
+            "shootY":2.2,
+            "ejectEffect":"casing1",
+            "reload":8,
+            "recoil":0.8,
+            "shake":0,
+            "shootSound": "shoot",
+            "rotate":false,
+            "top":false,
+            "mirror":false,
+            "bullet": {
+                "type": "BasicBulletType",
+                "damage":16,
+                "buildingDamageMultiplier":0.01,
+                "pierce":true,
+                "pierceCap":2,
+                "width":4,
+                "height":12,
+                "lifetime":44,
+                "speed":6,
+                "shootEffect": "shootSmallSmoke"
+                }
+            },
+            {
+            "name":"截塔导弹",
+            "y":-2.2,
+            "x":3.2,
+            "top":false,
+            "shootY":4,
+            "reload":180,
+            "recoil":1,
+            "shake":0,
+            "shootSound": "missile",
+            "rotate":false,
+            "bullet":{
+				"damage":35,
+				"buildingDamageMultiplier":0.01,
+				"splashDamage":0,
+                "splashDamageRadius":0,
+                "width":2,
+                "height":7,
+				"speed":8,
+				"hitEffect":"hitBulletSmall",
+				"lifetime":42,
+    			"type":"MissileBulletType",
+    			"homingPower":0.5,
+    			"trailChance":0.03
+				}
+			},
+	   {
+    "type": "RepairBeamWeapon",  
+    "mirror": false,
+    "alternate": false,
+    "rotateSpeed": 3,
+    "name": "修复炮",
+    "x": 0,
+    "y": 0,
+    "shootY": 1,
+    "reload": 1,
+    "recoil": 0,
+    "shake": 1,
+    "rotate": true,
+    "shootSound": "laser",
+    "laserColor": "73FFAEFF",
+    "controllable": false,
+    "autoTarget": true,
+    "beamWidth": 0.9,
+    "pulseRadius": 6,
+    "pulseStroke": 2,
+    "repairSpeed": 6.25,
+	"bullet": {
+	"shootEffect": {
+    "type": "ParticleEffect",
+    "line": true,
+    "particles": 20,
+    "offset": 35,
+    "lifetime": 5,
+    "length": 620,
+    "cone": -360,
+    "lenFrom": 10,
+    "lenTo": 0,
+    "colorFrom": "73FFAEFF",
+    "colorTo": "57D993FF"   
+    },
+	"maxRange": 300
+        }
+
+            }
+        ],
+        "abilities": [
+    {
+        "type": "RepairFieldAbility",
+        "amount": 250,
+        "reload": 600,
+        "range": 150
+    }
+]
+}

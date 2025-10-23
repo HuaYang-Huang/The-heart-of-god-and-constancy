@@ -1,0 +1,51 @@
+{
+    "name" : "GisDim",
+    "description" : "?????",
+    "envDisabled":0,
+    "mineTier" : 15,
+    "mineSpeed": 25,
+    "payloadCapacity" : 8,
+    "buildSpeed" : 13,
+    "itemCapacity" : 100,
+
+    "immunities":["blasted","burning","electrified","freezing","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed"],
+    "health" : 650,
+    "speed": 1.5,
+    "accel": 4.5,
+    "drag": 28,
+    "flying": true,
+    "range": 85,
+    "hitSize" : 2.5,
+    "lowAltitude" : 2.5,
+    "forceMultiTarget" : 1.5,
+    "armor" : 15,
+    "engineOffset" : 3.9,
+    "engineSize" : 3.8,
+    "engineColor": "89A0FF",
+    "targetAir" : true,
+    "weapons":[
+        {
+            "name":"轨道激光",
+            "y":0,
+            "x":0,
+            "shootY":2.2,
+            "ejectEffect":"casing1",
+            "reload":165,
+            "recoil":0.8,
+            "shake":0,
+            "shootSound": "shoot",
+            "rotate":false,
+            "top":false,
+            "mirror":false,
+            "bullet": {
+                "type" : "LaserBulletType",
+                   "length" : 250,
+                    "damage" : 220,
+                    "width" : 15,
+              "despawnEffect":"none",
+                    "lifetime" : 85,
+              "hitEffect":"hitLancer"
+                }
+                }
+       ]
+}

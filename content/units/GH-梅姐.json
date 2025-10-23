@@ -1,0 +1,34 @@
+{
+    "type": "tether",
+    "name":"梅姐",
+    "description":"?????",
+    "defaultController":"AssemblerAI",
+    "lowAltitude": true,
+    "flying":true,
+    "hitSize": 54,
+    "drag":0.06,
+    "accel": 0.11,
+    "speed":1.3,
+    "health":2500,
+    "engineSize": 9.5,
+    "engineOffset":13.5,
+    "payloadCapacity":0,
+    "envDisabled":0,
+    "outlineColor":"20202CFF",
+    "isEnemy": false,
+	"hidden": true,
+	"createWreck": false,
+	"faceTarget": false,
+	"useUnitCap": true,
+	"allowedInPayloads": false,
+	"logicControllable": false,
+	"playerControllable": false,
+        "abilities":[
+    {
+        "type": "RepairFieldAbility",
+        "amount": 1500,
+        "reload": 120,
+        "range": 350
+    }
+    ]
+}

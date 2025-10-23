@@ -1,0 +1,355 @@
+{
+	"speed":1.15,
+	"hitSize":33.0,
+	"name": "荡波",
+	"health": 1820,
+	"description":"加强速度和防御，还有威胁近战",
+	"armor":70,
+	"type": "mech",
+	"flying":false,
+	"canBoost":true,
+	"boostMultiplier": 1.1,
+    "fogRadius": 50,
+    "itemCapacity": 210,
+    "rotateSpeed": 5,
+    "buildSpeed": 5.0,
+    "buildBeamOffset":8,
+    "mineSpeed": 55,
+    "mineTier": 15,
+    "maxRange":305,
+    "engineOffset": 18.0,
+    "engineSize" : 6,
+	"engineColor" : "69E0C7FF",
+	"outlineColor": "20202CFF",
+	"immunities":["blasted","freezing","electrified","burning","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed","结晶徽章"],
+    "research": {
+	"parent": "GH-铮骨升级厂",
+	"objectives": [
+		{
+	"type": "SectorComplete",
+	"preset": "新的开始"
+		}
+	],
+	"requirements": [
+	"copper/9900",
+	"lead/10000",
+	"silicon/4890",
+	"thorium/4160",
+	"graphite/1980",
+	"titanium/3600",
+	"beryllium/1850",
+	"tungsten/1100",
+	"棱镜/1100",
+	"无遏板/1450",
+	"潜铁板/1260",
+	"粒子核心/900",
+	"无遏板/555",
+	"无子核心/365",
+	"钢化棱镜/650"
+	    ]
+	},
+    "abilities": [
+            {
+            "type": "RegenAbility",
+            "amount": 2.5
+        }
+    ],
+	"weapons": [
+	{
+        "name": "发动机",
+        "y": -5.5,"x": 17.5,
+        "mirror": true,
+        "alternate": false,
+        "top": true,
+        "display": false,
+        "rotate": false,
+        "baseRotation": -155,
+        "shootY": 1,
+        "shootSound": "none",
+        "alwaysShooting": true,
+        "alwaysContinuous": true,
+        "continuous": true,
+        "parentizeEffects": true,
+        "bullet": {
+            "type": "ContinuousFlameBulletType",
+                "colors": [
+                "69E0C7FF",
+                "47CCAFFF",
+                "36B79BFF",
+                "115C4CFF"
+        ],
+            "damage": 20,
+            "layer": 110,
+            "intervalBullets": 2,
+            "intervalRandomSpread": 1,
+            "bulletInterval": 2.7,
+    "intervalBullet": {
+        "type": "BulletType",
+        "despawnHit": true,
+        "despawnEffect": "none",
+        "shootEffect": "none",
+    "hitEffect": {
+        "type":"multiEffect",
+        "followParent": false,
+        "rotWithParent": false,
+    "effects":[
+    {
+        "type": "ParticleEffect",
+        "followParent": true,
+        "rotWithParent": true,
+        "line": true,
+        "layer": 108,
+        "particles": 1,
+        "lifetime": 31,
+        "interp": "circleOut",
+        "length": 35,
+        "baseLength": 8,
+        "cone": 20,
+        "strokeFrom": 2,
+        "lenFrom": 10,
+        "lenTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+                }
+            ]
+        },
+        "lifetime": 0,
+        "instantDisappear": true
+    },
+            "drawFlare": false,
+            "collides": false,
+            "width": 2,
+            "divisions": 40,
+            "length": 10
+        }
+    },{
+        "name": "发动机",
+        "y": -9.5,"x": 11.5,
+        "mirror": true,
+        "alternate": false,
+        "top": true,
+        "display": false,
+        "rotate": false,
+        "baseRotation": -155,
+        "shootY": 1,
+        "shootSound": "none",
+        "alwaysShooting": true,
+        "alwaysContinuous": true,
+        "continuous": true,
+        "parentizeEffects": true,
+        "bullet": {
+            "type": "ContinuousFlameBulletType",
+                "colors": [
+                "69E0C7FF",
+                "47CCAFFF",
+                "36B79BFF",
+                "115C4CFF"
+        ],
+            "damage": 20,
+            "layer": 110,
+            "intervalBullets": 2,
+            "intervalRandomSpread": 1,
+            "bulletInterval": 2.7,
+    "intervalBullet": {
+        "type": "BulletType",
+        "despawnHit": true,
+        "despawnEffect": "none",
+        "shootEffect": "none",
+    "hitEffect": {
+        "type":"multiEffect",
+        "followParent": false,
+        "rotWithParent": false,
+    "effects":[
+    {
+        "type": "ParticleEffect",
+        "followParent": true,
+        "rotWithParent": true,
+        "line": true,
+        "layer": 108,
+        "particles": 1,
+        "lifetime": 31,
+        "interp": "circleOut",
+        "length": 35,
+        "baseLength": 8,
+        "cone": 20,
+        "strokeFrom": 2,
+        "lenFrom": 10,
+        "lenTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+                }
+            ]
+        },
+        "lifetime": 0,
+        "instantDisappear": true
+    },
+            "drawFlare": false,
+            "collides": false,
+            "width": 3,
+            "divisions": 40,
+            "length": 18
+        }
+    },{
+	    "name": "荡波炮塔1",
+		"reload":50,
+		"x":23.0,"y":3,
+		"mirror":true,
+		"top":false,
+		"alternate": false,
+		"shootCone": 10,
+		"layerOffset": -0.001,
+		"rotationLimit": 120,
+		"rotateSpeed": 1.5,
+		"shootY": 17,
+		"rotate": true,
+	    "alwaysShooting": false,
+        "alwaysContinuous": false,
+        "continuous": false,
+        "parentizeEffects": false,
+            "bullet": {
+		"type": "PointBulletType",
+		"trailSpacing": 10,
+		"trailEffect": {
+			"type": "MultiEffect",
+		"effects": [
+			{
+		"type": "ParticleEffect",
+		"particles": 1,
+		"length": 0,
+		"baseLength": 1,
+		"lifetime": 10.5,
+		"line": true,
+		"randLength": false,
+		"lenFrom": 9.0,
+		"lenTo": 9.0,
+		"strokeFrom": 2.1,
+		"strokeTo": 2.1,
+		"colorFrom": "69E0C7FF",
+		"colorTo": "69E0C7FF",
+		"cone": 0
+		}
+			]
+		},
+		"lifetime": 30,
+		"speed": 20,
+		"damage":215,
+	    "splashDamageRadius": 30,
+		"splashDamage": 155,
+		"chargeEffect":"none",
+		"shootEffect": {
+		    "type": "ParticleEffect",
+            "particles": 6,
+            "length": 70,
+            "lifetime": 15,
+            "line": true,
+            "cone": 30,
+            "lenFrom": 6,
+            "lenTo": 0,
+            "strokeFrom": 3,
+            "strokeTo": 3,
+            "colorFrom": "69E0C7FF",
+            "colorTo": "69E0C7FF"
+        },
+		"smokeEffect":"none",
+		"hitEffect":"none",
+		"despawnEffect":"none"
+		}
+	},{
+	    "name": "荡波炮塔2",
+		"x":12.0,"y":14.0,
+		"mirror":true,
+		"top":false,
+		"alternate": false,
+		"alwaysShooting": false,
+        "alwaysContinuous": true,
+        "continuous": true,
+        "parentizeEffects": false,
+		"shootCone": 10,
+		"layerOffset": -0.001,
+		"rotationLimit": 100,
+		"rotateSpeed": 1.5,
+		"rotate": true,
+		    "bullet": {
+		"type": "ContinuousFlameBulletType",
+                "colors": [
+                "69E0C7FF",
+                "47CCAFFF",
+                "36B79BFF",
+                "115C4CFF"
+        ],
+        "damage": 55,
+        "layer": 110,
+        "bulletInterval": 2.7,
+        "shootEffect":"none",
+        "smokeEffect":"none",
+		"despawnEffect":"none",
+		"intervalBullet": {
+        "type": "BulletType",
+        "despawnHit": true,
+        "despawnEffect": "none",
+        "shootEffect": "none",
+        "hitEffect":"none",
+        "lifetime": 0,
+        "instantDisappear": true
+    },
+        "drawFlare": false,
+        "collides": false,
+        "width": 5,
+        "divisions": 40,
+        "length": 100,
+        
+        "hitEffect":{
+    "type": "MultiEffect",
+	"effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 2,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "length": 20,
+        "lifetime": 25,
+        "lightOpacity": 15,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF",
+        "cone": 360
+    }
+        ]
+            }
+        }
+	},{
+	    "name": "荡波炮塔3",
+		"reload":10,
+		"x":10.0,"y":3.0,
+		"mirror":true,
+		"top":true,
+		"alternate": false,
+		"shootCone": 10,
+		"rotationLimit": 360,
+		"rotateSpeed": 2,
+		"rotate": true,
+		
+		"bullet": {
+		"damage": 40,
+        "splashDamageRadius": 0.00,
+        "splashDamage": 0.00,
+        "homingPower": 0.97,
+        "homingRange": 125,
+        "homingDelay": 0.35,
+        "trailParam": 2,
+        "trailLength": 10,
+        "trailWidth": 2,
+        "trailColor": "69E0C7FF",
+        "backColor": "69E0C7FF",
+        "frontColor": "69E0C7FF",
+        "hitEffect":"none",
+		"despawnEffect":"none",
+        "height": 17,
+        "width": 12,
+        "speed": 5.5,
+        "lifetime": 100
+		}
+	}
+	    ]
+}

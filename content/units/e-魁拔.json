@@ -1,0 +1,1001 @@
+{
+    "type": "hover",
+    "name": "魁拔",
+    "description": "悬浮功能代替了陆行功能，提升了武器质量和本体性质",
+    "armor" : 105,
+    "range" : 450,
+    "flying": false,
+    "lowAltitude": true,
+    "omniMovement": true,
+    "speed": 0.5,
+    "accel":0.1,
+    "drag": 0.1,
+    "envDisabled":0,
+    "itemCapacity": 3000,
+    "rotateSpeed": 0.2,
+    "buildSpeed": 0.7,
+    "buildBeamOffset":12,
+    "mineSpeed": 5,
+    "mineTier": 15,
+    "maxRange":210,
+    "hitSize": 55,
+    "health": 45000,
+    "hovering":true,
+    "shadowElevation":0.1,
+    "outlineColor":"3C3E40FF",
+    "engineSize" : 0,
+    "engineColor" : "FEB380FF",
+    "engines": [
+		{
+			"x": 41.5,
+			"y": -64,
+			"radius": 18,
+			"rotation": -90
+		},{
+			"x": -41.5,
+			"y": -64,
+			"radius": 18,
+			"rotation": -135
+		}
+	],
+    "parts": [
+        {
+    "type": "RegionPart",
+    "colorTo": "FEB380FF",
+    "color": "FEB380FF",
+    "outline": false,
+    "suffix": "-glow1"
+    },{
+    "type": "RegionPart",
+    "colorTo": "FEB380FF",
+    "color": "FEB380FF",
+    "outline": false,
+    "suffix": "-glow"
+    },{
+    "type":"HoverPart",
+    "x":57.7,
+    "y":-6.5,
+    "mirror":true,
+    "sides": 6,
+    "radius":31,
+    "phase":185,
+    "stroke":13.5,
+    "layerOffset":-0.0011,
+    "color":"FEB380FF"
+        },{
+    "type":"HoverPart",
+    "x":67.7,
+    "y":16.5,
+    "mirror":true,
+    "sides": 8,
+    "radius":10,
+    "phase":55,
+    "stroke":3.5,
+    "layerOffset":-0.0011,
+    "color":"FEB380FF"
+        },{
+    "type":"HoverPart",
+    "x":35.7,
+    "y":44.5,
+    "mirror":true,
+    "sides": 6,
+    "radius":24,
+    "phase":200,
+    "stroke":10.5,
+    "layerOffset":-0.0011,
+    "color":"FEB380FF"
+        },{
+    "type":"HoverPart",
+    "x":12.7,
+    "y":48.5,
+    "mirror":true,
+    "sides": 5,
+    "radius":7,
+    "phase":60,
+    "stroke":4.5,
+    "layerOffset":-0.0011,
+    "color":"FEB380FF"
+        },{
+    "type":"HoverPart",
+    "x": 0,
+    "y":-41.2,
+    "mirror":false,
+    "sides": 8,
+    "radius":28,
+    "phase":105,
+    "stroke":9.5,
+    "layerOffset":-0.0011,
+    "color":"FEB380FF"
+        },{
+    "type":"HoverPart",
+    "x": 38.5,
+    "y":-61.5,
+    "mirror":true,
+    "sides": 6,
+    "radius":28,
+    "phase":298,
+    "stroke":11.5,
+    "layerOffset":-0.0011,
+    "color":"FEB380FF"
+        }
+    ],
+    "weapons": [
+    {
+        "name":"魁拔导弹武器",
+        "x": 38.5,
+        "y":-55.5,
+        "mirror": true,
+        "alternate": false,
+        "rotate": false,
+        "reload": 370,
+        "shootY":0,
+        "baseRotation": -180,
+        "shootCone": 360,
+            "bullet": {
+        "type": "basicBulletType",
+        "spawnUnit": "神恒之心-魁拔导弹1",
+        "makeFire": false,
+        "backColor":"FFFFFFFF",	
+        "frontColor":"FFFFFFFF",
+	    "trailColor":"FFFFFFFF"
+        }
+    },{
+        "name": "魁拔炮塔2",
+        "reload": 85,
+		"x": 53.5,
+		"y": 52.5,
+		"mirror":true,
+		"top":true,
+		"alternate": false,
+		"shootSound": "heavyCannonSound",
+		"shootCone": 20,
+		"rotateSpeed": 1.37,
+		"rotate": true,
+		"rotationLimit": 300,
+		"shootY": 8.5,
+		"shoot" : {
+            "shots" : 8
+    },
+		"bullet": {
+		    "type": "BasicBulletType",
+		    "inaccuracy": 8.50,
+            "speed": 4.95,
+            "damage": 100,
+            "knockback": 3.50,
+            "lifetime": 158.00,
+            "width": 16.00,
+            "height": 16.00,
+            "collidesTiles": true,
+            "splashDamageRadius": 34.85,
+            "splashDamage": 245.00,
+            "backColor":"FEB380FF",	
+            "frontColor":"FEB380FF",
+            "trailChance": 1,
+            "trailParam": 1,
+            "trailLength": 10,
+            "trailWidth": 4.5,
+            "trailColor": "FEB380FF",
+            "hitEffect": {
+	"type": "multiEffect",
+	"effects": [
+	        {
+        "type": "ParticleEffect",
+        "particles": 4,
+        "length": 145,
+        "lifetime": 50,
+        "line": true,
+        "cone": 360,
+        "lenFrom": 20,
+        "lenTo": 0,
+        "strokeFrom": 7,
+        "strokeTo": 0,
+        "colorFrom": "FEB380FF",
+        "colorTo": "FEB380FF"
+    },{
+        "type": "WaveEffect",
+        "lifetime": 20,
+        "sizeFrom": 0,
+        "sizeTo": 90,
+        "strokeFrom": 5.2,
+        "strokeTo": 0,
+        "colorFrom": "FFFFFFF",
+        "colorTo": "FFFFFFF"
+    }
+	    ]
+	        }
+		}
+            },{
+        "name": "魁拔炮塔3",
+        "shootWarmupSpeed": 0.0205,
+        "minWarmup": 0.0120,
+        "reload": 90,
+		"x": 33.5,
+		"y": 24.5,
+		"mirror":true,
+		"top":true,
+		"alternate": false,
+		"shootSound": "heavyCannonSound",
+		"shootCone": 20,
+		"rotateSpeed": 0.75,
+		"rotate": true,
+		"rotationLimit": 300,
+		"shootY": 18.5,
+		"shoot" : {
+            "shots" : 2,
+            "shotDelay": 40,
+            "type":"ShootBarrel",
+	            "barrels":[
+        7.0,0,0,
+        -7.0,0,0
+        ]
+    },
+        "recoil": 0,
+        "recoils": 2,
+            "parts":[
+        {
+        "type": "RegionPart",
+        "colorTo": "FEB380FF",
+        "color": "FEB38000",
+        "progress": "recoil",
+        "heatProgress": "recoil",
+        "layerOffset": 0.002,
+        "moveY": 0,
+        "outline": false,
+        "suffix": "-glow"
+        },{
+    "type": "RegionPart",
+    "x": 0,
+    "y": 0,
+    "suffix": "-wing1",
+    "mirror":false,
+    "outline": true,
+    "under": true,
+    "recoilIndex": 0,
+    "progress": "recoil",
+        "moveY": -6.5
+        },{
+        "type": "RegionPart",
+        "colorTo": "FEB380FF",
+        "color": "FEB38000",
+        "progress": "recoil",
+        "heatProgress": "recoil",
+        "layerOffset": 0.002,
+        "x":0,
+        "y":0,
+        "moveX": 0,
+        "moveY": -6.5,
+        "mirror":false,
+        "outline": false,
+        "recoilIndex": 0,
+        "suffix": "-wing1-glow"
+    },{
+    "type": "RegionPart",
+    "x": 0,
+    "y": 0,
+    "suffix": "-wing2",
+    "mirror":false,
+    "outline": true,
+    "under": true,
+    "recoilIndex": 1,
+    "progress": "recoil",
+        "moveY": -6.5
+        },{
+        "type": "RegionPart",
+        "colorTo": "FEB380FF",
+        "color": "FEB38000",
+        "progress": "recoil",
+        "heatProgress": "recoil",
+        "layerOffset": 0.002,
+        "x":0,
+        "y":0,
+        "moveX": 0,
+        "moveY": -6.5,
+        "mirror":false,
+        "outline": false,
+        "recoilIndex": 1,
+        "suffix": "-wing2-glow"
+    }
+    ],
+		"bullet": {
+		    "type": "BasicBulletType",
+		    "sprite": "神恒之心-rail-star-line-0",
+		    "inaccuracy": 0,
+            "speed": 20.25,
+            "damage": 290,
+            "knockback": 8.10,
+            "lifetime": 96.00,
+            "width": 32.00,
+            "height": 32.00,
+            "shrinkY": 0,
+            "shrinkX": 0,
+            "collidesTiles": true,
+            "splashDamageRadius": 45.85,
+            "splashDamage": 120.00,
+            "lightColor": "FEB380FF",
+        "lightningColor": "FEB380FF",
+        "lightningDamage":35,
+	    "lightning": 5,
+        "lightningLength": 8,
+        "lightningLengthRand": 5,
+            "backColor":"FEB380FF",	
+            "frontColor":"FEB380FF",
+            "trailParam": 1,
+            "trailLength": 13,
+            "trailWidth": 6.5,
+            "trailColor": "FEB380FF",
+            "trailRotation": true,
+            "trailChance": 0,
+	"trailInterval": 10,
+	"trailEffect": {
+		"type": "MultiEffect",
+	    "effects": [
+	{
+	"type": "ParticleEffect",
+    "particles": 1,
+    "lifetime": 25,
+    "length": 0,
+    "interp": "swingIn",
+    "region": "神恒之心-rail-star-line",
+    "sizeFrom": 15,
+    "sizeTo": 0,
+    "cone": 1,
+    "lightColor": "FEB380FF",
+    "colorFrom": "FEB380FF",
+    "colorTo": "FEB380FF"
+			},{
+    	"type": "ParticleEffect",
+        "particles": 3,
+        "sizeFrom": 15,
+        "sizeTo": 15,
+        "line":true,
+        "length": 65,
+        "baseLength": 0,
+        "colorFrom": "FEB380FF",
+        "colorTo": "FEB380FF",
+        "cone": 30
+            }
+	    ]
+	},
+            "hitEffect": {
+	"type": "multiEffect",
+	"effects": [
+	        {
+        "type": "ParticleEffect",
+        "particles": 11,
+        "length": 145,
+        "lifetime": 30,
+        "line": true,
+        "cone": 360,
+        "lenFrom": 32,
+        "lenTo": 0,
+        "strokeFrom": 0,
+        "strokeTo": 0,
+        "colorFrom": "FEB380FF",
+        "colorTo": "FEB380FF"
+    },{
+        "type": "WaveEffect",
+        "lifetime": 8,
+        "sizeFrom": 0,
+        "sizeTo": 150,
+        "strokeFrom": 6.5,
+        "strokeTo": 0,
+        "colorFrom": "FFFFFFF",
+        "colorTo": "FFFFFFF"
+    }
+	    ]
+	        },
+	    "shootEffect": {
+	"type": "multiEffect",
+	"effects": [
+		{
+        "type": "ParticleEffect",
+        "particles": 8,
+        "length": 29,
+        "lifetime": 15,
+        "line": true,
+        "cone": 360,
+        "lenFrom": 23,
+        "lenTo": 0,
+        "strokeFrom": 4,
+        "strokeTo": 4,
+        "colorFrom": "FEB380FF",
+        "colorTo": "FEB380FF"
+        }
+	]
+	        },
+		"smokeEffect":"none"
+		}
+            },{
+        "name": "魁拔炮塔3",
+        "shootWarmupSpeed": 0.0205,
+        "minWarmup": 0.0120,
+        "reload": 90,
+		"x": 51.0,
+		"y": -34.5,
+		"mirror":true,
+		"top":true,
+		"alternate": false,
+		"shootSound": "heavyCannonSound",
+		"shootCone": 20,
+		"rotateSpeed": 0.75,
+		"rotate": true,
+		"rotationLimit": 300,
+		"shootY": 18.5,
+		"shoot" : {
+            "shots" : 2,
+            "shotDelay": 40,
+            "type":"ShootBarrel",
+	            "barrels":[
+        7.0,0,0,
+        -7.0,0,0
+        ]
+    },
+        "recoil": 0,
+        "recoils": 2,
+            "parts":[
+        {
+        "type": "RegionPart",
+        "colorTo": "FEB380FF",
+        "color": "FEB38000",
+        "progress": "recoil",
+        "heatProgress": "recoil",
+        "layerOffset": 0.002,
+        "moveY": 0,
+        "outline": false,
+        "suffix": "-glow"
+        },{
+    "type": "RegionPart",
+    "x": 0,
+    "y": 0,
+    "suffix": "-wing1",
+    "mirror":false,
+    "outline": true,
+    "under": true,
+    "recoilIndex": 0,
+    "progress": "recoil",
+        "moveY": -6.5
+        },{
+        "type": "RegionPart",
+        "colorTo": "FEB380FF",
+        "color": "FEB38000",
+        "progress": "recoil",
+        "heatProgress": "recoil",
+        "layerOffset": 0.002,
+        "x":0,
+        "y":0,
+        "moveX": 0,
+        "moveY": -6.5,
+        "mirror":false,
+        "outline": false,
+        "recoilIndex": 0,
+        "suffix": "-wing1-glow"
+    },{
+    "type": "RegionPart",
+    "x": 0,
+    "y": 0,
+    "suffix": "-wing2",
+    "mirror":false,
+    "outline": true,
+    "under": true,
+    "recoilIndex": 1,
+    "progress": "recoil",
+        "moveY": -6.5
+        },{
+        "type": "RegionPart",
+        "colorTo": "FEB380FF",
+        "color": "FEB38000",
+        "progress": "recoil",
+        "heatProgress": "recoil",
+        "layerOffset": 0.002,
+        "x":0,
+        "y":0,
+        "moveX": 0,
+        "moveY": -6.5,
+        "mirror":false,
+        "outline": false,
+        "recoilIndex": 1,
+        "suffix": "-wing2-glow"
+    }
+    ],
+		"bullet": {
+		    "type": "BasicBulletType",
+		    "sprite": "神恒之心-rail-star-line-0",
+		    "inaccuracy": 0,
+            "speed": 20.25,
+            "damage": 290,
+            "knockback": 8.10,
+            "lifetime": 96.00,
+            "width": 32.00,
+            "height": 32.00,
+            "shrinkY": 0,
+            "shrinkX": 0,
+            "collidesTiles": true,
+            "splashDamageRadius": 45.85,
+            "splashDamage": 120.00,
+            "lightColor": "FEB380FF",
+        "lightningColor": "FEB380FF",
+        "lightningDamage":35,
+	    "lightning": 5,
+        "lightningLength": 8,
+        "lightningLengthRand": 5,
+            "backColor":"FEB380FF",	
+            "frontColor":"FEB380FF",
+            "trailParam": 1,
+            "trailLength": 13,
+            "trailWidth": 6.5,
+            "trailColor": "FEB380FF",
+            "trailChance": 0,
+            "trailRotation": true,
+	"trailInterval": 10,
+	"trailEffect": {
+		"type": "MultiEffect",
+	    "effects": [
+	{
+	"type": "ParticleEffect",
+    "particles": 1,
+    "lifetime": 25,
+    "length": 0,
+    "interp": "swingIn",
+    "region": "神恒之心-rail-star-line",
+    "sizeFrom": 15,
+    "sizeTo": 0,
+    "cone": 1,
+    "lightColor": "FEB380FF",
+    "colorFrom": "FEB380FF",
+    "colorTo": "FEB380FF"
+			},{
+    	"type": "ParticleEffect",
+        "particles": 3,
+        "sizeFrom": 15,
+        "sizeTo": 15,
+        "line":true,
+        "length": 65,
+        "baseLength": 0,
+        "colorFrom": "FEB380FF",
+        "colorTo": "FEB380FF",
+        "cone": 30
+            }
+	    ]
+	},
+            "hitEffect": {
+	"type": "multiEffect",
+	"effects": [
+	        {
+        "type": "ParticleEffect",
+        "particles": 11,
+        "length": 145,
+        "lifetime": 30,
+        "line": true,
+        "cone": 360,
+        "lenFrom": 32,
+        "lenTo": 0,
+        "strokeFrom": 0,
+        "strokeTo": 0,
+        "colorFrom": "FEB380FF",
+        "colorTo": "FEB380FF"
+    },{
+        "type": "WaveEffect",
+        "lifetime": 8,
+        "sizeFrom": 0,
+        "sizeTo": 150,
+        "strokeFrom": 6.5,
+        "strokeTo": 0,
+        "colorFrom": "FFFFFFF",
+        "colorTo": "FFFFFFF"
+    }
+	    ]
+	        },
+	    "shootEffect": {
+	"type": "multiEffect",
+	"effects": [
+		{
+        "type": "ParticleEffect",
+        "particles": 8,
+        "length": 29,
+        "lifetime": 15,
+        "line": true,
+        "cone": 360,
+        "lenFrom": 23,
+        "lenTo": 0,
+        "strokeFrom": 4,
+        "strokeTo": 4,
+        "colorFrom": "FEB380FF",
+        "colorTo": "FEB380FF"
+        }
+	]
+	        },
+		"smokeEffect":"none"
+		}
+            },{
+        "name": "魁拔炮塔1",
+        "shootWarmupSpeed": 0.0305,
+        "minWarmup": 0.0250,
+        "shoot": {
+                "firstShotDelay": 50,
+                },
+        "parts":[
+    {
+    "type":"RegionPart",
+    "mirror":false,
+    "under":false,
+    "x":0,
+    "y":0,
+    "outline": true,
+    "suffix":"-top",
+    "moveX":0,
+    "moveY":0,
+    "moveRot":0
+    },{
+    "type":"RegionPart",
+    "mirror":true,
+    "under":true,
+    "x":6,
+    "y":6,
+    "outline": true,
+    "suffix":"-wing",
+    "under": true,
+    "progress": "recoil",
+    "moveX": -6,
+    "moveY": -6,
+    "moveRot":0
+    },{
+    "type":"RegionPart",
+    "mirror":false,
+    "under":true,
+    "x":0,
+    "y":25,
+    "outline": true,
+    "suffix":"-ling",
+    "under": true,
+    "progress": "recoil",
+    "moveX": 0,
+    "moveY": -35,
+    "moveRot":0
+    },{
+        "type": "RegionPart",
+        "colorTo": "FEB380FF",
+        "color": "FEB38000",
+        "progress": "recoil",
+        "heatProgress": "recoil",
+        "layerOffset": 0.002,
+        "x":6,
+        "y":6,
+        "moveX": -6,
+        "moveY": -6,
+        "mirror":true,
+        "outline": false,
+        "suffix": "-wing-glow"
+    },{
+        "type": "RegionPart",
+        "colorTo": "FEB380FF",
+        "color": "FEB38000",
+        "progress": "recoil",
+        "heatProgress": "recoil",
+        "layerOffset": 0.002,
+        "moveY": 0,
+        "outline": false,
+        "suffix": "-glow"
+    }
+        ],
+		"reload": 400,
+		"x": 0,
+		"y": 0,
+		"mirror":false,
+		"top":true,
+		"alternate": false,
+		"shootSound": "turrets-2",
+		"shootCone": 20,
+		"rotateSpeed": 0.17,
+		"rotate": true,
+		"rotationLimit": 300,
+		"shootY": 95,
+		"bullet": {
+	    "type": "BasicBulletType",
+	    "speed": 13,
+        "lifetime": 145,
+	    "damage": 1850,
+        "width": 34,
+        "height": 68,
+        "shrinkY": 0,
+        "shrinkX": 0,
+        "status":"burning",
+        "statusDuration": 120,
+        "pierceCap": 3,
+        "spin": 0,
+        "buildingDamageMultiplier": 1.50,
+        "pierceBuilding": true,
+        "pierce": true,
+        "backColor":"FEB380FF",	
+        "frontColor":"FEB380FF",
+        "trailEffect": "none",
+        "hitEffect": {
+	"type": "multiEffect",
+	"effects": [
+	        {
+        "type": "ParticleEffect",
+        "particles": 8,
+        "sizeFrom": 30,
+        "sizeTo": 0,
+        "length": 240,
+        "lifetime": 20,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "FEB380FF",
+        "colorTo": "FEB38000",
+        "cone": 360
+    },{
+        "type": "ParticleEffect",
+        "particles": 8,
+        "sizeFrom": 30,
+        "sizeTo": 0,
+        "length": 240,
+        "lifetime": 20,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "FEB380FF",
+        "colorTo": "FEB380FF",
+        "cone": 360
+    },{
+        "type": "ParticleEffect",
+        "particles": 9,
+        "length": 320,
+        "lifetime": 25,
+        "line": true,
+        "cone": 360,
+        "lenFrom": 45,
+        "lenTo": 0,
+        "strokeFrom": 6,
+        "strokeTo": 6,
+        "colorFrom": "FEB380FF",
+        "colorTo": "FEB380FF"
+    }
+	    ]
+	        },
+        "shootEffect": {
+	"type": "multiEffect",
+	"effects": [
+		{
+	"type": "ParticleEffect",
+    "particles": 17,
+    "sizeFrom": 8,
+    "sizeTo": 0,
+    "length": 50,
+    "lifetime": 40,
+    "lightOpacity": 20,
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "colorFrom": "FFFFFFFF",
+    "colorTo": "FFFFFF00",
+    "cone": 20
+	    },{
+        "type": "ParticleEffect",
+        "layer":90,
+        "particles": 37,
+        "sizeFrom": 2,
+        "sizeTo": 18,
+        "length": 150,
+        "lifetime": 75,
+        "lightOpacity": 0.1,
+        "colorFrom": "FFFFFFFF",
+        "colorTo": "4C4C4C00",
+        "cone": 20
+        }
+	]
+	        },
+		"smokeEffect":"none",
+		"despawnEffect":{
+	"type": "multiEffect",
+	"effects": [
+	        {
+        "type": "WaveEffect",
+        "lifetime": 15,
+        "sizeFrom": 0,
+        "sizeTo": 350,
+        "strokeFrom": 20,
+        "strokeTo": 0,
+        "colorFrom": "FFFFFFF",
+        "colorTo": "FFFFFFF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 18,
+        "sizeFrom": 15,
+        "sizeTo": 0,
+        "length": 120,
+        "lifetime": 56,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "FEB380FF",
+        "colorTo": "FEB380FF",
+        "cone": 360
+    }
+	    ]
+	        },
+	        "fragBullets": 7,
+        "fragVelocityMin": 15,
+        "fragLifeMin": 3,
+	    "fragBullet": {
+	        "type": "BasicBulletType",
+	    "speed": 1.2,
+        "lifetime": 80,
+	    "damage": 290,
+        "width": 37,
+        "height": 37,
+        "shrinkY": 0,
+        "shrinkX": 0,
+        "status":"burning",
+        "statusDuration": 120,
+        "pierceCap": 0,
+        "spin": 0,
+        "buildingDamageMultiplier": 1.25,
+        "pierceBuilding": false,
+        "pierce": false,
+        "backColor":"FEB380FF",	
+        "frontColor":"FEB380FF",
+        "trailEffect": "none",
+        "smokeEffect":"none",
+		"despawnEffect":{
+	"type": "multiEffect",
+	"effects": [
+	        {
+        "type": "ParticleEffect",
+        "particles": 12,
+        "sizeFrom": 6.8,
+        "sizeTo": 0,
+        "length": 80,
+        "lifetime": 70,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "FEB380FF",
+        "colorTo": "FEB380FF",
+        "cone": 360
+    },{
+        "type": "WaveEffect",
+        "lifetime": 10,
+        "sizeFrom": 0,
+        "sizeTo": 100,
+        "strokeFrom": 8,
+        "strokeTo": 0,
+        "colorFrom": "FFFFFFF",
+        "colorTo": "FFFFFFF"
+    }
+	    ]
+	        },
+	"hitEffect": {
+	"type": "multiEffect",
+	"effects": [
+	    {
+        "type": "ParticleEffect",
+        "particles": 6,
+        "length": 275,
+        "lifetime": 25,
+        "line": true,
+        "cone": 360,
+        "lenFrom": 25,
+        "lenTo": 0,
+        "strokeFrom": 4,
+        "strokeTo": 4,
+        "colorFrom": "FEB380FF",
+        "colorTo": "FEB380FF"
+        }
+	]
+	        }
+	    },
+	    "intervalBullets": 3,
+        "intervalRandomSpread": 360,
+        "bulletInterval": 10,
+        "intervalBullet": {
+        "type": "BasicBulletType",
+        "width": 19,
+        "height": 23,
+        "frontColor": "FEB380FF",
+        "backColor": "FEB380FF",
+        "lifetime": 100,
+        "speed": 1.4,
+        "damage": 315,
+        "splashDamage": 85,
+        "splashDamageRadius": 25,
+        "status":"burning",
+        "statusDuration": 120,
+        "lightColor": "FEB380FF",
+        "lightningColor": "FEB380FF",
+        "lightningDamage":85,
+	    "lightning": 3,
+        "lightningLength": 12,
+        "lightningLengthRand": 4,
+        "pierce":false,
+        "pierceBuilding": false,
+        "hitEffect": {
+	"type": "multiEffect",
+	"effects": [
+	        {
+        "type": "ParticleEffect",
+        "particles": 7,
+        "sizeFrom": 7.3,
+        "sizeTo": 0,
+        "length": 40,
+        "lifetime": 20,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "FEB380FF",
+        "colorTo": "FEB38000",
+        "cone": 360
+    },{
+        "type": "ParticleEffect",
+        "particles": 7,
+        "sizeFrom": 7.3,
+        "sizeTo": 0,
+        "length": 40,
+        "lifetime": 20,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "FEB380FF",
+        "colorTo": "FEB380FF",
+        "cone": 360
+    }
+	    ]
+	        },
+        "smokeEffect":"none",
+		"despawnEffect":{
+	"type": "multiEffect",
+	"effects": [
+	        {
+        "type": "WaveEffect",
+        "lifetime": 10,
+        "sizeFrom": 0,
+        "sizeTo": 75,
+        "strokeFrom": 2.8,
+        "strokeTo": 0,
+        "colorFrom": "FFFFFFF",
+        "colorTo": "FFFFFFF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 7,
+        "sizeFrom": 4.8,
+        "sizeTo": 0,
+        "length": 80,
+        "lifetime": 57,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "FEB380FF",
+        "colorTo": "FEB380FF",
+        "cone": 360
+    }
+	    ]
+	        }
+        }
+    }
+        }
+    ],
+    "abilities": [
+    {
+        "type": "MoveLightningAbility",
+        "minSpeed": -1,
+        "maxSpeed": 0,
+        "damage": 0,
+        "chance": 10,
+        "length": 1,
+        "color": "00000000",
+        "shootSound": "none",
+        "shootEffect": {
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 130,
+        "sizeTo": 130,
+        "length": 0.01,
+        "lifetime": 70,
+        "region": "神恒之心-e-魁拔-glow2",
+        "colorFrom": "FEB380FF",
+        "colorTo": "FEB38000",
+        "lightOpacity": 0,
+        "layer": 105
+        }
+            }
+    ]
+}

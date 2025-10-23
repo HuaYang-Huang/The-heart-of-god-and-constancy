@@ -1,0 +1,258 @@
+{
+	"speed":0.95,
+	"hitSize":13.5,
+	"name": "复仇",
+	"health": 850,
+	"description":"武力强的陆兵",
+	"armor":30,
+	"type": "mech",
+	"flying":false,
+	"canBoost":true,
+	"itemCapacity": 100,
+	"boostMultiplier": 2,
+    "fogRadius": 25,
+    "mineSpeed": 45,
+    "buildSpeed": 3.5,
+    "mineTier": 15,
+    "maxRange":250,
+	"engineColor" : "69E0C7FF",
+	"outlineColor": "20202CFF",
+	"immunities":[
+	"blasted",
+	"freezing",
+	"electrified",
+	"burning",
+	"melting",
+	"muddy",
+	"sapped",
+	"shocked",
+	"slow",
+	"tarred",
+	"unmoving",
+	"wet",
+	"spore-slowed",
+	"corroded",
+	"disarmed",
+	"结晶徽章"
+	],
+    "research": {
+	"parent": "GH-泽明兵工厂",
+	"requirements": [
+	"copper/550",
+	"lead/520",
+	"silicon/260",
+	"thorium/145",
+	"graphite/85",
+	"titanium/145",
+	"beryllium/350",
+	"棱镜/250",
+	"无遏板/190",
+	"潜铁板/310",
+	"粒子核心/115"
+	    ]
+	},
+    "abilities": [
+            {
+            "type": "RegenAbility",
+            "amount": 1.0
+        }
+    ],
+	"weapons": [
+	{
+		"name": "复仇炮塔1",
+		"reload":8,
+		"x":7.5,"y":1,
+		"mirror":true,
+		"top":false,
+		"alternate": false,
+		"shootCone": 45,
+		"layerOffset": -0.001,
+		"rotationLimit": 40,
+		"rotateSpeed": 1,
+		"rotate": true,
+		"bullet": {
+	"type": "BasicBulletType",
+    "width": 7,
+    "height": 7,
+    "status":"burning",
+    "statusDuration": 180,
+    "trailParam": 1,
+    "trailLength": 10,
+    "trailWidth": 2,
+    "trailColor": "69E0C7FF",
+    "frontColor": "69E0C7FF",
+    "backColor": "69E0C7FF",
+    "lifetime": 40,
+    "speed": 12.5,
+    "damage": 35,
+    "pierce":false,
+    "pierceBuilding": false,
+    "shootEffect": {
+	"type": "multiEffect",
+	"effects": [
+		{
+	"type": "ParticleEffect",
+    "particles": 10,
+    "sizeFrom": 2,
+    "sizeTo": 0,
+    "length": 55,
+    "lifetime": 20,
+    "lightOpacity": 20,
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "colorFrom": "69E0C7FF",
+    "colorTo": "69E0C7FF",
+    "cone": 20
+	    }
+	]
+	        },
+	"despawnEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	    "type": "ParticleEffect",
+        "particles": 5,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "length": 20,
+        "lifetime": 25,
+        "lightOpacity": 15,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF",
+        "cone": 360
+	}
+	    ]
+	        },
+	"hitEffect":{
+    "type": "MultiEffect",
+	"effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 5,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "length": 20,
+        "lifetime": 25,
+        "lightOpacity": 15,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF",
+        "cone": 360
+    }
+        ]
+            }
+	    }
+	},{
+        "name":"梦子导弹武器",
+        "x":3.5,
+        "y":-0.5,
+        "mirror": true,
+        "alternate": true,
+        "rotate": false,
+        "reload": 55,
+        "shootY":0,
+        "shootCone": 360,
+            "bullet": {
+        "type": "basicBulletType",
+        "spawnUnit": "神恒之心-梦子导弹",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "backColor":"FFFFFFFF",	
+        "frontColor":"FFFFFFFF",
+	    "trailColor":"FFFFFFFF"
+        }
+    },{
+        "name": "复仇炮塔2",
+		"reload":130,
+		"x":4.5,"y":1.0,
+		"mirror":true,
+		"top":true,
+		"alternate": true,
+		"shootCone": 45,
+		"rotationLimit": 40,
+		"rotateSpeed": 1,
+		"rotate": true,
+		"bullet": {
+	"type": "BasicBulletType",
+    "width": 25,
+    "height": 25,
+    "status":"burning",
+    "statusDuration": 100,
+    "trailParam": 3,
+    "trailLength": 15,
+    "trailWidth": 6,
+    "trailColor": "69E0C7FF",
+    "frontColor": "69E0C7FF",
+    "backColor": "69E0C7FF",
+    "lifetime": 130,
+    "speed": 5.5,
+    "damage": 205,
+    "splashDamageRadius": 45.00,
+    "splashDamage": 90.00,
+    "pierce":false,
+    "pierceBuilding": false,
+    "despawnEffect":{
+    "type": "MultiEffect",
+	"effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 9,
+        "sizeFrom": 25,
+        "sizeTo": 0,
+        "length": 130,
+        "lifetime": 55,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF",
+        "cone": 360
+    },{
+        "type": "WaveEffect",
+        "lifetime": 65,
+        "sizeFrom": 0,
+        "sizeTo": 95,
+        "strokeFrom": 25,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+    }
+        ]
+            },
+    "hitEffect":{
+    "type": "MultiEffect",
+	"effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 9,
+        "sizeFrom": 25,
+        "sizeTo": 0,
+        "length": 130,
+        "lifetime": 55,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF",
+        "cone": 360
+    },{
+        "type": "WaveEffect",
+        "lifetime": 65,
+        "sizeFrom": 0,
+        "sizeTo": 95,
+        "strokeFrom": 25,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+    }
+        ]
+            }
+        }
+    }
+	    ]
+}

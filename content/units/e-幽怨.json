@@ -1,0 +1,188 @@
+{ 
+   "name":"幽怨",
+   "template": "ErekirUnitType",
+   "envDisabled":0,
+   "description":"?????",
+   "research": {
+    "parent": "disrupt",
+    "objectives": [
+    "disrupt",
+    "basic-assembler-module",
+    "ship-fabricator"
+    ],
+    "requirements": [
+	"beryllium/45000",
+	"tungsten/35000",
+	"silicon/30000",
+	"thorium/33900",
+	"graphite/41000",
+	"oxide/28000",
+	"surge-alloy/15500",
+	"phase-fabric/11000",
+	"carbide/5000"
+	    ]
+    },
+   "outlineColor":"3C3E40FF",
+   "lowAltitude": true,
+   "flying":true,
+   "speed":1.2,
+   "hitSize":54,
+   "health": 13200,
+   "armor":20,
+   "payloadCapacity" : 7,
+   "engineOffset":25,
+   "engineSize":7,
+   "itemCapacity":25,
+   "mechFrontSway":0.55,
+   "ammoCapacity":500,
+   "mineTier":3,
+   "mineSpeed":4.5,
+   "buildSpeed":4,
+        "accel":0.10,
+        "drag": 0.07,
+        "range": 400,
+        "targetAir": true,
+        "faceTarget": true,
+   "weapons":[
+        {
+    "name":"e-幽怨炮台",
+    "mirror": true,
+    "alternate": false,
+    "rotate": false,
+    "reload":70,
+    "x": -19,
+    "y": 2,
+   "parts":[
+    {"type":"RegionPart",
+    "mirror":false,
+    "x":0,"y":0,
+    "suffix":"-右",
+    "layer":80,
+    "moveX":3,
+    "moveY":-19,
+    "moveRot":130
+    }
+],
+   "shoot": {
+   "shots": 2,
+   "shotDelay":5
+   },
+        "bullet": {
+        "type": "basicBulletType",
+        "spawnUnit": "神恒之心-e-幽怨-导弹",
+        "speed": 3.70,
+        "makeFire": true,
+        "homingRange" : 440,
+        "ammoMultiplier": 5.00,
+        "status": "burning",
+        "backColor":"FFFFFFFF",
+        "frontColor":"FFFFFFFF",
+	    "trailColor":"FFFFFFFF"
+        }
+},{
+        "name":"e-幽怨炮台",
+        "mirror": false,
+        "alternate": false,
+        "rotate": true,
+        "rotateSpeed": 3,
+        "x": 0,
+        "y": -9,
+        "shootY":2.2,
+        "ejectEffect":"casing1",
+        "shake":1,
+        "alwaysShooting": false,
+        "alwaysContinuous": false,
+        "continuous": true,
+        "parentizeEffects": true,
+        "cooldownTime":200,
+        "bullet":{
+        "type": "PointLaserBulletType",
+        "damage": 130,
+        "splashDamageRadius": 60,
+        "splashDamage": 20,
+        "drawSize": 1300,
+        "beamEffect": {
+        "type": "multiEffect",
+        "effects": [
+        {
+        "type": "ParticleEffect",
+        "particles": 6,
+        "length": 40,
+        "lifetime": 36,
+        "interp": "circleOut",
+        "colorFrom": "BF92F9FF",
+        "colorTo": "BF92F9FF",
+        "sizeFrom": 3.5,
+        "sizeTo": 0
+        },
+        {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 5,
+        "lifetime": 20,
+        "length": 75,
+        "cone": -360,
+        "lenFrom": 8,
+        "lenTo": 0,
+        "colorFrom": "BF92F9FF",
+        "colorTo": "BF92F9FF"
+        }
+        ]
+        },
+        "color": "BF92F9FF"
+        }
+},{
+        "name":"e-幽怨炮台2-右",
+        "type": "PointDefenseWeapon",
+        "mirror": false,
+        "alternate": false,
+        "rotate": true,
+        "rotateSpeed": 3,
+        "x": 19,
+        "y": -20,
+        "reload": 25,
+
+        "targetInterval": 9,
+        "targetSwitchInterval": 12,
+        "recoil": 1.2,
+        "bullet":{
+        "speed": 45,
+        "lifetime": 10,
+        "shootEffect": "sparkShoot",
+        "hitEffect": "pointHit",
+        "maxRange":250,
+        "damage":40
+    }
+},{
+        "name":"e-幽怨炮台2-左",
+        "type": "PointDefenseWeapon",
+        "mirror": false,
+        "alternate": false,
+        "rotate": true,
+        "rotateSpeed": 3,
+        "x": -19,
+        "y": -20,
+        "reload": 25,
+
+        "targetInterval": 9,
+        "targetSwitchInterval": 12,
+        "recoil": 1.2,
+        "bullet":{
+        "speed": 45,
+        "lifetime": 10,
+        "shootEffect": "sparkShoot",
+        "hitEffect": "pointHit",
+        "maxRange":250,
+        "damage":40
+    }
+}
+],
+	"abilities": [
+    {
+        "type": "SuppressionFieldAbility",
+    "orbRadius": 5,
+    "particleSize": 12,
+                "y": -6
+   }
+   ]
+}

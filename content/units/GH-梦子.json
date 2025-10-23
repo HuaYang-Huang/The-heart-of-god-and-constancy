@@ -1,0 +1,143 @@
+{
+    "type": "flying",
+    "name": "梦子",
+    "description": "护卫舰，实力很强，完全轻松打T1，硬吃T2，勉强打T3",
+    "immunities":["blasted","burning","electrified","freezing","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed","结晶徽章"],
+    "research": {
+	"parent": "GH-泽明兵工厂",
+	"requirements": [
+	"copper/500",
+	"lead/500",
+	"silicon/150",
+	"thorium/80",
+	"graphite/80",
+	"titanium/80",
+	"beryllium/50",
+	"棱镜/100",
+	"无遏板/50",
+	"潜铁板/70"
+	    ]
+	},
+    "armor" : 20,
+    "range" : 80,
+    "flying": true,
+    "lowAltitude": true,
+    "omniMovement": true,
+    "speed": 4.5,
+    "accel":0.2,
+    "drag": 0.4,
+    "envDisabled":0,
+    "itemCapacity": 100,
+    "rotateSpeed": 6,
+    "buildSpeed": 3.5,
+    "buildBeamOffset":8,
+    "mineSpeed": 45,
+    "mineTier": 15,
+    "engineOffset": 8.0,
+    "engineSize" : 4,
+    "engineColor" : "69E0C7FF",
+    "outlineColor": "20202CFF",
+    "trailColor": "69E0C7FF",
+    "trailLength": 10.5,
+    "hitSize": 10,
+    "health": 680,
+    "payloadCapacity" : 10,
+    "weapons":[
+        {
+        "name": "发喷器",
+        "y": 2,
+        "x": 0,
+        "mirror": true,
+        "alternate": false,
+        "top": true,
+        "display": true,
+        "rotate": false,
+        "shootY": 0,
+        "shootSound": "none",
+        "alwaysShooting": false,
+        "alwaysContinuous": true,
+        "continuous": true,
+        "parentizeEffects": true,
+        "bullet": {
+            "type": "ContinuousFlameBulletType",
+                "colors": [
+                "69E0C7FF",
+                "47CCAFFF",
+                "36B79BFF",
+                "115C4CFF"
+        ],
+            "damage": 50,
+            "layer": 110,
+            "intervalBullets": 1,
+            "intervalRandomSpread": 1,
+            "bulletInterval": 2.0,
+    "intervalBullet": {
+        "type": "BulletType",
+        "despawnHit": true,
+        "despawnEffect": "none",
+        "shootEffect": "none",
+    "hitEffect": {
+        "type":"multiEffect",
+        "followParent": true,
+        "rotWithParent": true,
+    "effects":[
+    {
+        "type": "ParticleEffect",
+        "followParent": true,
+        "rotWithParent": true,
+        "line": true,
+        "layer": 108,
+        "particles": 1,
+        "lifetime": 31,
+        "interp": "circleOut",
+        "length": 35,
+        "baseLength": 8,
+        "cone": 20,
+        "strokeFrom": 2,
+        "lenFrom": 10,
+        "lenTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+                }
+            ]
+        },
+        "lifetime": 0,
+        "instantDisappear": true
+    },
+            "drawFlare": false,
+            "collides": false,
+            "width": 4,
+            "divisions": 20,
+            "length": 45
+        }
+    },{
+        "name":"梦子导弹武器",
+        "x":7.5,
+        "y":-2,
+        "mirror": true,
+        "alternate": false,
+        "rotate": false,
+        "reload": 55,
+        "shootY":0,
+        "baseRotation": -65,
+        "shootCone": 360,
+            "bullet": {
+        "type": "basicBulletType",
+        "spawnUnit": "神恒之心-梦子导弹",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "backColor":"FFFFFFFF",	
+        "frontColor":"FFFFFFFF",
+	    "trailColor":"FFFFFFFF"
+            }
+        }
+        ],
+        "abilities": [
+            {
+            "type": "RegenAbility",
+            "amount": 1.0
+        }
+    ]
+}

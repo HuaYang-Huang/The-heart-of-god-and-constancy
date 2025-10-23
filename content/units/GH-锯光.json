@@ -1,0 +1,204 @@
+{
+    "type": "hover",
+    "name": "锯光",
+    "description": "穿透力的锯齿刀对付敌人，还带着修复炮维修友方",
+    "immunities":["blasted","burning","electrified","freezing","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed","结晶徽章"],
+    "research": {
+	"parent": "GH-铮骨升级厂",
+	"objectives": [
+		{
+	"type": "SectorComplete",
+	"preset": "新的开始"
+		}
+	],
+	"requirements": [
+	"copper/4900",
+	"lead/500",
+	"silicon/3890",
+	"thorium/2860",
+	"graphite/4680",
+	"titanium/1500",
+	"beryllium/3500",
+	"tungsten/1800",
+	"棱镜/4200",
+	"无遏板/650",
+	"潜铁板/2160",
+	"粒子核心/1100",
+	"无遏板/450",
+	"无子核心/880",
+	"钢化棱镜/180"
+	    ]
+	},
+    "armor" : 45,
+    "range" : 190,
+    "flying": false,
+    "lowAltitude": true,
+    "omniMovement": true,
+    "speed": 3.3,
+    "accel":0.2,
+    "drag": 0.4,
+    "envDisabled":0,
+    "itemCapacity": 190,
+    "rotateSpeed": 5,
+    "buildSpeed": 5.0,
+    "buildBeamOffset":8,
+    "mineSpeed": 55,
+    "mineTier": 15,
+    "maxRange":210,
+    "outlineColor": "20202CFF",
+    "hitSize": 31,
+    "health": 1600,
+    "hovering":true,
+    "shadowElevation":0.1,
+    "abilities": [
+            {
+            "type": "RegenAbility",
+            "amount": 2.5
+        }
+    ],
+    "parts": [
+        {
+    "type":"HoverPart",
+    "x":19.9,
+    "y":-14.5,
+    "mirror":true,
+    "radius":7,
+    "phase":90,
+    "stroke":2,
+    "layerOffset":-0.0011,
+    "color":"69E0C7FF"
+        },{
+    "type":"HoverPart",
+    "x":19.7,
+    "y":-11.8,
+    "mirror":true,
+    "radius":7,
+    "phase":90,
+    "stroke":2,
+    "layerOffset":-0.0011,
+    "color":"69E0C7FF"
+        },{
+    "type":"HoverPart",
+    "x":12.1,
+    "y":-22.4,
+    "mirror":true,
+    "radius":7,
+    "phase":90,
+    "stroke":2,
+    "layerOffset":-0.0011,
+    "color":"69E0C7FF"
+        },{
+    "type":"HoverPart",
+    "x":0,
+    "y":-14.5,
+    "mirror":false,
+    "radius":18,
+    "phase":180,
+    "stroke":4,
+    "layerOffset":-0.0011,
+    "color":"69E0C7FF"
+        }
+    ],
+    "weapons": [
+    {
+        "name" : "锯光炮塔2",
+	    "type": "RepairBeamWeapon",
+	    "x":0,"y":0,
+		"mirror":false,
+		"top":false,
+		"alternate": false,
+		"shootCone": 360,
+		"rotationLimit": 360,
+		"rotateSpeed": 25,
+		"rotate": true,
+		"laserColor": "69E0C7FF",
+        "controllable": false,
+        "autoTarget": true,
+        "beamWidth": 2.1,
+        "pulseRadius": 18,
+        "pulseStroke": 7,
+        "repairSpeed": 3.50,
+	    "bullet": {
+	    "shootEffect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 3,
+        "offset": 50,
+        "lifetime": 18.5,
+        "length": 10,
+        "cone": 360,
+        "lenFrom": 10,
+        "lenTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"   
+    },
+	    "maxRange": 225
+            }
+        },{
+        "name": "锯光炮塔1",
+		"reload":6,
+		"x":25.5,"y":7.5,
+		"mirror":true,
+		"top":true,
+		"alternate": true,
+		"shootCone": 20,
+		"rotateSpeed": 2.65,
+		"rotate": true,
+		"rotationLimit": 50,
+		"shootY": 22,
+		"layerOffset": -0.001,
+		"bullet": {
+	    "type": "BasicBulletType",
+	    "sprite": "神恒之心-sawtooth",
+	    "speed": 6,
+        "lifetime": 60,
+	    "damage": 125,
+        "width": 10,
+        "height": 10,
+        "status":"electrified",
+        "statusDuration": 360,
+        "pierceCap": 3,
+        "spin": 6,
+        "buildingDamageMultiplier": 1.50,
+        "pierceBuilding": true,
+        "pierce": true,
+        "backColor":"69E0C7FF",	
+        "frontColor":"69E0C7FF",
+        "trailChance": 7,
+	    "trailInterval": 21,
+        "trailEffect": {
+          "type": "ParticleEffect",
+          "particles": 1,
+          "length": 0,
+          "lifetime": 30,
+          "spin": 6,
+          "region": "神恒之心-sawtooth",
+          "lightColor": "69E0C7FF",
+          "colorFrom": "69E0C7FF",
+          "colorTo": "69E0C703",
+          "sizeFrom": 10,
+          "sizeTo": 10
+        },
+        "hitEffect":{
+        "type": "ParticleEffect",
+		"particles": 12,
+		"length": 30,
+		"baseLength": 3,
+		"lifetime": 16.5,
+		"line": true,
+		"randLength": false,
+		"lenFrom": 9.0,
+		"lenTo": 0,
+		"strokeFrom": 1.5,
+		"strokeTo": 0,
+		"colorFrom": "69E0C7FF",
+		"colorTo": "69E0C7FF",
+		"cone": 360
+        },
+        "shootEffect": "none",
+		"smokeEffect":"none",
+		"despawnEffect":"none"
+    }
+        }
+    ]
+}

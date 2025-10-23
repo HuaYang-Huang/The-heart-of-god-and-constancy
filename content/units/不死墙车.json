@@ -1,0 +1,43 @@
+{
+	"type": "tank",
+	"template": "ErekirUnitType",
+	"fogRadius": 35,
+	"squareShape": true,
+	"treadFrames":14,
+	"treadPullOffset":1,
+	"treadRects": [
+	{
+	    "x":20,
+	    "y":-19,
+	    "width":11,
+	    "height":51
+	}	
+	],
+    "envDisabled":0,
+    "drawCell": false,
+	"omniMovement": false,
+	"crushDamage":5.5,
+	"dpsEstimate":500,
+	"name":"不死墙车",
+	"description":"[green]整活单位，哈哈哈",
+	"research":{
+	"parent": "不死墙",
+	"objectives": [
+	"GH-陆军组装机",
+	"GH-泽明兵工厂"
+	]	},
+	"armor":125,
+	"hitSize":20,
+	"rotateSpeed":1.3,
+	"speed":1.3,
+	"flying": false,
+	"health":100000,
+	"range":295,
+	"immunities": ["blasted","freezing","electrified","burning","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed","结晶徽章"],
+    "abilities": [
+            {
+            "type": "RegenAbility",
+            "amount": 100.0
+        }
+    ]
+}

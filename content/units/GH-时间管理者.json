@@ -1,0 +1,1261 @@
+{
+    "type": "flying",
+    "name": "时间管理者",
+    "description": "[purple]谁调动时间，这世界一向未来还是一向以前，不知道时间是一种玩具？",
+    "immunities":["blasted","burning","electrified","freezing","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed","时间加速","结晶徽章"],
+    "parts": [
+    {
+		"type": "ShapePart",
+		"stroke": 20,
+		"strokeTo":20,
+		"color": "69E0C7FF",
+		"circle": true,
+		"hollow": true,
+		"radius": 220,
+		"radiusTo": 220,
+		"layer": 80
+		},{
+			"type": "HaloPart",
+			"rotateSpeed": 0,
+			"sides": 3,
+			"shapes": 1,
+			"color": "69E0C7FF",
+			"tri": true,
+			"hollow": true,
+			"stroke": 5,
+			"strokeTo": 5,
+			"radius": 40,
+			"radiusTo": 40,
+			"triLength": 174,
+			"triLengthTo": 174,
+			"haloRadius": 0,
+			"haloRotation": 0,
+			"haloRotateSpeed": -0.1,
+			"layer": 80
+		},{
+			"type": "HaloPart",
+			"rotateSpeed": 0,
+			"sides": 3,
+			"shapes": 1,
+			"color": "69E0C7FF",
+			"tri": true,
+			"hollow": true,
+			"stroke": 5,
+			"strokeTo": 5,
+			"radius": 40,
+			"radiusTo": 40,
+			"triLength": 45,
+			"triLengthTo": 45,
+			"haloRadius": 0,
+			"haloRotation": 180,
+			"haloRotateSpeed": -0.1,
+			"layer": 80
+		},{
+			"type": "HaloPart",
+			"rotateSpeed": 0,
+			"sides": 3,
+			"shapes": 1,
+			"color": "69E0C7FF",
+			"tri": true,
+			"hollow": true,
+			"stroke": 5,
+			"strokeTo": 5,
+			"radius": 55,
+			"radiusTo": 55,
+			"triLength": 125,
+			"triLengthTo": 125,
+			"haloRadius": 0,
+			"haloRotation": 0,
+			"haloRotateSpeed": -0.04,
+			"layer": 80
+		},{
+			"type": "HaloPart",
+			"rotateSpeed": 0,
+			"sides": 3,
+			"shapes": 1,
+			"color": "69E0C7FF",
+			"tri": true,
+			"hollow": true,
+			"stroke": 5,
+			"strokeTo": 5,
+			"radius": 55,
+			"radiusTo": 55,
+			"triLength": 45,
+			"triLengthTo": 45,
+			"haloRadius": 0,
+			"haloRotation": 180,
+			"haloRotateSpeed": -0.04,
+			"layer": 80
+		}
+	],
+	"fogRadius": 350,
+    "armor" : 380,
+    "range" : 510,
+    "flying": true,
+    "lowAltitude": true,
+    "omniMovement": true,
+    "speed": 0.9,
+    "accel":0.2,
+    "drag": 0.4,
+    "envDisabled":0,
+    "itemCapacity": 5000,
+    "rotateSpeed": 2.5,
+    "buildSpeed": 100.0,
+    "buildBeamOffset":15,
+    "mineSpeed": 100.0,
+    "mineTier": 15,
+    "engineOffset": 120.0,
+    "engineSize" : 40,
+    "engineColor" : "69E0C7FF",
+    "outlineColor": "20202CFF",
+    "trailColor": "69E0C7FF",
+    "trailLength": 0.0,
+    "hitSize": 295,
+    "health": 2285000,
+    "payloadCapacity" : 30,
+    "weapons":[
+        {
+        "name": "发动机",
+        "y": -85.0,
+        "x":196.0,
+        "mirror": true,
+        "alternate": false,
+        "top": true,
+        "rotate": false,
+        "shootY": 1,
+        "display": false,
+        "baseRotation": -135,
+        "shootSound": "none",
+        "alwaysShooting": true,
+        "alwaysContinuous": true,
+        "continuous": true,
+        "parentizeEffects": true,
+        "bullet": {
+        "type": "ContinuousFlameBulletType",
+                "colors": [
+                "69E0C7FF",
+                "47CCAFFF",
+                "36B79BFF",
+                "115C4CFF"
+        ],
+            "damage": 1000,
+            "layer": 110,
+            "intervalBullets": 2,
+            "intervalRandomSpread": 1,
+            "bulletInterval": 2.7,
+    "intervalBullet": {
+        "type": "BulletType",
+        "despawnHit": true,
+        "despawnEffect": "none",
+        "shootEffect": "none",
+        "hitEffect":"none",
+        "lifetime": 0,
+        "instantDisappear": true
+    },
+        "drawFlare": false,
+        "collides": false,
+        "width": 31,
+        "divisions": 40,
+        "length": 164,
+        "hitEffect":{
+    "type": "MultiEffect",
+	"effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 3,
+        "sizeFrom": 15,
+        "sizeTo": 0,
+        "length": 50,
+        "lifetime": 40,
+        "lightOpacity": 15,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703",
+        "cone": 360
+    }
+        ]
+            }
+        }
+    },{
+        "name": "发动机",
+        "y": -114.0,
+        "x":133.0,
+        "mirror": true,
+        "alternate": false,
+        "top": true,
+        "rotate": false,
+        "shootY": 1,
+        "display": false,
+        "baseRotation": -180,
+        "shootSound": "none",
+        "alwaysShooting": true,
+        "alwaysContinuous": true,
+        "continuous": true,
+        "parentizeEffects": true,
+        "bullet": {
+        "type": "ContinuousFlameBulletType",
+                "colors": [
+                "69E0C7FF",
+                "47CCAFFF",
+                "36B79BFF",
+                "115C4CFF"
+        ],
+            "damage": 1000,
+            "layer": 110,
+            "intervalBullets": 2,
+            "intervalRandomSpread": 1,
+            "bulletInterval": 2.7,
+    "intervalBullet": {
+        "type": "BulletType",
+        "despawnHit": true,
+        "despawnEffect": "none",
+        "shootEffect": "none",
+        "hitEffect":"none",
+        "lifetime": 0,
+        "instantDisappear": true
+    },
+        "drawFlare": false,
+        "collides": false,
+        "width": 22,
+        "divisions": 40,
+        "length": 140,
+        "hitEffect":{
+    "type": "MultiEffect",
+	"effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 3,
+        "sizeFrom": 15,
+        "sizeTo": 0,
+        "length": 50,
+        "lifetime": 40,
+        "lightOpacity": 15,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703",
+        "cone": 360
+    }
+        ]
+            }
+        }
+    },{
+        "name":"能量导弹发射器",
+        "x":39.0,
+        "y":185,
+        "mirror": true,
+        "alternate": false,
+        "rotate": false,
+        "reload": 60,
+        "shootY":0,
+        "baseRotation": 0,
+        "shootCone": 360,
+            "bullet": {
+        "type": "basicBulletType",
+        "spawnUnit": "神恒之心-能量导弹",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "backColor":"FFFFFF00",	
+        "frontColor":"FFFFFF00"
+            }
+        },{
+		"name": "时间管理者炮塔3",
+		"type": "PointDefenseWeapon",
+		"reload":5,
+		"x":54.0,
+		"y":238.0,
+		"mirror":true,
+		"top":true,
+		"alternate": false,
+		"shootCone": 360,
+		"rotationLimit": 360,
+		"rotateSpeed": 25,
+		"rotate": true,
+		"targetInterval": 0,
+        "targetSwitchInterval": 0,
+        "recoil": 1.2,
+        "bullet":{
+        "speed": 55,
+        "lifetime": 25,
+        "shootEffect": {
+		    "type": "ParticleEffect",
+            "particles": 8,
+            "length": 80,
+            "lifetime": 35,
+            "line": true,
+            "cone": 50,
+            "lenFrom": 9,
+            "lenTo": 9,
+            "strokeFrom": 5,
+            "strokeTo": 0,
+            "colorFrom": "69E0C7FF",
+            "colorTo": "69E0C7FF"
+    },
+        "hitEffect":{
+    "type": "MultiEffect",
+	"effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 15,
+        "sizeFrom": 8,
+        "sizeTo": 0,
+        "length": 150,
+        "lifetime": 45,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703",
+        "cone": 360
+    },{
+        "type": "WaveEffect",
+        "lifetime": 45,
+        "sizeFrom": 0,
+        "sizeTo": 80,
+        "strokeFrom": 15,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703"
+    }
+        ]
+            },
+        "maxRange":470,
+        "damage":700
+        }
+	},{
+		"name": "时间管理者炮塔3",
+		"type": "PointDefenseWeapon",
+		"reload":5,
+		"x":54.0,
+		"y":212.0,
+		"mirror":true,
+		"top":true,
+		"alternate": false,
+		"shootCone": 360,
+		"rotationLimit": 360,
+		"rotateSpeed": 25,
+		"rotate": true,
+		"targetInterval": 0,
+        "targetSwitchInterval": 0,
+        "recoil": 1.2,
+        "bullet":{
+        "speed": 55,
+        "lifetime": 25,
+        "shootEffect": {
+		    "type": "ParticleEffect",
+            "particles": 8,
+            "length": 80,
+            "lifetime": 35,
+            "line": true,
+            "cone": 50,
+            "lenFrom": 9,
+            "lenTo": 9,
+            "strokeFrom": 5,
+            "strokeTo": 0,
+            "colorFrom": "69E0C7FF",
+            "colorTo": "69E0C7FF"
+    },
+        "hitEffect":{
+    "type": "MultiEffect",
+	"effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 15,
+        "sizeFrom": 8,
+        "sizeTo": 0,
+        "length": 150,
+        "lifetime": 45,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703",
+        "cone": 360
+    },{
+        "type": "WaveEffect",
+        "lifetime": 45,
+        "sizeFrom": 0,
+        "sizeTo": 80,
+        "strokeFrom": 15,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703"
+    }
+        ]
+            },
+        "maxRange":470,
+        "damage":700
+        }
+	},{
+		"name": "时间管理者炮塔3",
+		"type": "PointDefenseWeapon",
+		"reload":5,
+		"x":74.0,
+		"y":221.0,
+		"mirror":true,
+		"top":true,
+		"alternate": false,
+		"shootCone": 360,
+		"rotationLimit": 360,
+		"rotateSpeed": 25,
+		"rotate": true,
+		"targetInterval": 0,
+        "targetSwitchInterval": 0,
+        "recoil": 1.2,
+        "bullet":{
+        "speed": 55,
+        "lifetime": 25,
+        "shootEffect": {
+		    "type": "ParticleEffect",
+            "particles": 8,
+            "length": 80,
+            "lifetime": 35,
+            "line": true,
+            "cone": 50,
+            "lenFrom": 9,
+            "lenTo": 9,
+            "strokeFrom": 5,
+            "strokeTo": 0,
+            "colorFrom": "69E0C7FF",
+            "colorTo": "69E0C7FF"
+    },
+        "hitEffect":{
+    "type": "MultiEffect",
+	"effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 15,
+        "sizeFrom": 8,
+        "sizeTo": 0,
+        "length": 150,
+        "lifetime": 45,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703",
+        "cone": 360
+    },{
+        "type": "WaveEffect",
+        "lifetime": 45,
+        "sizeFrom": 0,
+        "sizeTo": 80,
+        "strokeFrom": 15,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703"
+    }
+        ]
+            },
+        "maxRange":470,
+        "damage":700
+        }
+	},{
+		"name": "时间管理者炮塔3",
+		"type": "PointDefenseWeapon",
+		"reload":5,
+		"x":78.0,
+		"y":187.0,
+		"mirror":true,
+		"top":true,
+		"alternate": false,
+		"shootCone": 360,
+		"rotationLimit": 360,
+		"rotateSpeed": 25,
+		"rotate": true,
+		"targetInterval": 0,
+        "targetSwitchInterval": 0,
+        "recoil": 1.2,
+        "bullet":{
+        "speed": 55,
+        "lifetime": 25,
+        "shootEffect": {
+		    "type": "ParticleEffect",
+            "particles": 8,
+            "length": 80,
+            "lifetime": 35,
+            "line": true,
+            "cone": 50,
+            "lenFrom": 9,
+            "lenTo": 9,
+            "strokeFrom": 5,
+            "strokeTo": 0,
+            "colorFrom": "69E0C7FF",
+            "colorTo": "69E0C7FF"
+    },
+        "hitEffect":{
+    "type": "MultiEffect",
+	"effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 15,
+        "sizeFrom": 8,
+        "sizeTo": 0,
+        "length": 150,
+        "lifetime": 45,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703",
+        "cone": 360
+    },{
+        "type": "WaveEffect",
+        "lifetime": 45,
+        "sizeFrom": 0,
+        "sizeTo": 80,
+        "strokeFrom": 15,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703"
+    }
+        ]
+            },
+        "maxRange":470,
+        "damage":700
+        }
+	},{
+		"name": "时间管理者炮塔3",
+		"type": "PointDefenseWeapon",
+		"reload":5,
+		"x":103.0,
+		"y":168.0,
+		"mirror":true,
+		"top":true,
+		"alternate": false,
+		"shootCone": 360,
+		"rotationLimit": 360,
+		"rotateSpeed": 25,
+		"rotate": true,
+		"targetInterval": 0,
+        "targetSwitchInterval": 0,
+        "recoil": 1.2,
+        "bullet":{
+        "speed": 55,
+        "lifetime": 25,
+        "shootEffect": {
+		    "type": "ParticleEffect",
+            "particles": 8,
+            "length": 80,
+            "lifetime": 35,
+            "line": true,
+            "cone": 50,
+            "lenFrom": 9,
+            "lenTo": 9,
+            "strokeFrom": 5,
+            "strokeTo": 0,
+            "colorFrom": "69E0C7FF",
+            "colorTo": "69E0C7FF"
+    },
+        "hitEffect":{
+    "type": "MultiEffect",
+	"effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 15,
+        "sizeFrom": 8,
+        "sizeTo": 0,
+        "length": 150,
+        "lifetime": 45,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703",
+        "cone": 360
+    },{
+        "type": "WaveEffect",
+        "lifetime": 45,
+        "sizeFrom": 0,
+        "sizeTo": 80,
+        "strokeFrom": 15,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703"
+    }
+        ]
+            },
+        "maxRange":470,
+        "damage":700
+        }
+	},{
+		"name": "时间管理者炮塔3",
+		"type": "PointDefenseWeapon",
+		"reload":5,
+		"y": -140.0,
+        "x":39.0,
+		"mirror":true,
+		"top":true,
+		"alternate": false,
+		"shootCone": 360,
+		"rotationLimit": 360,
+		"rotateSpeed": 25,
+		"rotate": true,
+		"targetInterval": 0,
+        "targetSwitchInterval": 0,
+        "recoil": 1.2,
+        "bullet":{
+        "speed": 55,
+        "lifetime": 25,
+        "shootEffect": {
+		    "type": "ParticleEffect",
+            "particles": 8,
+            "length": 80,
+            "lifetime": 35,
+            "line": true,
+            "cone": 50,
+            "lenFrom": 9,
+            "lenTo": 9,
+            "strokeFrom": 5,
+            "strokeTo": 0,
+            "colorFrom": "69E0C7FF",
+            "colorTo": "69E0C7FF"
+    },
+        "hitEffect":{
+    "type": "MultiEffect",
+	"effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 15,
+        "sizeFrom": 8,
+        "sizeTo": 0,
+        "length": 150,
+        "lifetime": 45,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703",
+        "cone": 360
+    },{
+        "type": "WaveEffect",
+        "lifetime": 45,
+        "sizeFrom": 0,
+        "sizeTo": 80,
+        "strokeFrom": 15,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703"
+    }
+        ]
+            },
+        "maxRange":470,
+        "damage":700
+        }
+	},{
+	    "name": "时间管理者炮塔2",
+		"reload":150,
+		"y": -94.0,
+        "x":77.0,
+		"mirror":true,
+		"top":true,
+		"alternate": false,
+		"shootCone": 25,
+		"rotateSpeed": 3.25,
+		"shootY": 2,
+		"rotate": true,
+	    "alwaysShooting": false,
+        "alwaysContinuous": false,
+        "continuous": false,
+        "parentizeEffects": true,
+            "bullet": {
+		"type": "PointBulletType",
+		"trailSpacing": 10,
+		"trailEffect": {
+			"type": "MultiEffect",
+		"effects": [
+			{
+		"type": "ParticleEffect",
+		"particles": 1,
+		"length": 0,
+		"baseLength": 1,
+		"lifetime": 75.0,
+		"line": true,
+		"randLength": false,
+		"lenFrom": 9.0,
+		"lenTo": 9.0,
+		"strokeFrom": 15.5,
+		"strokeTo": 15.5,
+		"colorFrom": "69E0C7FF",
+		"colorTo": "69E0C703",
+		"cone": 0
+		}
+			]
+		},
+		"lifetime": 65,
+		"speed": 20,
+		"damage":8500,
+	    "splashDamageRadius": 85,
+		"splashDamage": 1000,
+		"chargeEffect":"none",
+		"shootEffect": "none",
+		"smokeEffect":"none",
+		"hitEffect":"none",
+		"despawnEffect":"none"
+		}
+	},{
+	    "name": "时间管理者炮塔2",
+		"reload":150,
+		"y": -23.0,
+        "x":158.0,
+		"mirror":true,
+		"top":true,
+		"alternate": false,
+		"shootCone": 25,
+		"rotateSpeed": 3.25,
+		"shootY": 2,
+		"rotate": true,
+	    "alwaysShooting": false,
+        "alwaysContinuous": false,
+        "continuous": false,
+        "parentizeEffects": true,
+            "bullet": {
+		"type": "PointBulletType",
+		"trailSpacing": 10,
+		"trailEffect": {
+			"type": "MultiEffect",
+		"effects": [
+			{
+		"type": "ParticleEffect",
+		"particles": 1,
+		"length": 0,
+		"baseLength": 1,
+		"lifetime": 75.0,
+		"line": true,
+		"randLength": false,
+		"lenFrom": 9.0,
+		"lenTo": 9.0,
+		"strokeFrom": 15.5,
+		"strokeTo": 15.5,
+		"colorFrom": "69E0C7FF",
+		"colorTo": "69E0C703",
+		"cone": 0
+		}
+			]
+		},
+		"lifetime": 65,
+		"speed": 20,
+		"damage":8500,
+	    "splashDamageRadius": 85,
+		"splashDamage": 1000,
+		"chargeEffect":"none",
+		"shootEffect": "none",
+		"smokeEffect":"none",
+		"hitEffect":"none",
+		"despawnEffect":"none"
+		}
+	},{
+        "name":"时间导弹发射器",
+        "x":142.0,
+        "y":140,
+        "mirror": true,
+        "alternate": false,
+        "rotate": false,
+        "reload": 240,
+        "shootY":0,
+        "shoot": {
+                "firstShotDelay": 0
+            },
+        "baseRotation": -45,
+        "shootCone": 360,
+            "bullet": {
+        "type": "basicBulletType",
+        "spawnUnit": "神恒之心-时间管理者导弹",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "backColor":"FFFFFF00",	
+        "frontColor":"FFFFFF00"
+            }
+        },{
+        "name":"时间导弹发射器",
+        "x":168.0,
+        "y":130,
+        "mirror": true,
+        "alternate": false,
+        "rotate": false,
+        "reload": 240,
+        "shootY":0,
+        "shoot": {
+                "firstShotDelay": 20
+            },
+        "baseRotation": -45,
+        "shootCone": 360,
+            "bullet": {
+        "type": "basicBulletType",
+        "spawnUnit": "神恒之心-时间管理者导弹",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "backColor":"FFFFFF00",	
+        "frontColor":"FFFFFF00"
+            }
+        },{
+        "name":"时间导弹发射器",
+        "x":194.0,
+        "y":120,
+        "mirror": true,
+        "alternate": false,
+        "rotate": false,
+        "reload": 240,
+        "shootY":0,
+        "shoot": {
+                "firstShotDelay": 40
+            },
+        "baseRotation": -45,
+        "shootCone": 360,
+            "bullet": {
+        "type": "basicBulletType",
+        "spawnUnit": "神恒之心-时间管理者导弹",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "backColor":"FFFFFF00",	
+        "frontColor":"FFFFFF00"
+            }
+        },{
+        "name": "时间管理者炮塔1",
+        "y": -57.0,
+        "x":121.0,
+        "reload": 220,
+        "shootCone": 50,
+		"rotateSpeed": 2.25,
+        "mirror": true,
+        "alternate": true,
+        "top": true,
+        "rotate": true,
+        "shootY": 14,
+        "display": false,
+        "shootSound": "none",
+        "bullet": {
+        "type": "BasicBulletType",
+    "width": 30,
+    "height": 30,
+    "status":"时间暂停",
+    "statusDuration": 600,
+    "trailParam": 6,
+    "trailLength": 48,
+    "trailWidth": 18,
+    "trailColor": "69E0C7FF",
+    "trailChance": 0,
+	"trailInterval": 2,
+	"trailEffect": {
+		"type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "ParticleEffect",
+        "particles": 5,
+        "sizeFrom": 25,
+        "sizeTo": 0,
+        "length": 90,
+        "lifetime": 80,
+        "lightOpacity": 20,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703",
+        "cone": 360
+	},{
+	    "type": "ParticleEffect",
+        "particles": 5,
+        "sizeFrom": 25,
+        "sizeTo": 0,
+        "length": 170,
+        "lifetime": 80,
+        "lightOpacity": 20,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "B9B9FFFF",
+        "colorTo": "B9B9FF00",
+        "cone": 360
+	}
+	    ]
+	},
+	"keepVelocity": true,
+    "frontColor": "69E0C7FF",
+    "backColor": "69E0C703",
+    "lifetime": 105,
+    "speed": 7.50,
+    "damage": 580,
+    "splashDamageRadius": 250,
+	"splashDamage": 100,
+    "pierce":false,
+    "pierceBuilding": false,
+    "hitEffect":{
+		"type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "WaveEffect",
+        "lifetime": 300,
+        "sizeFrom": 0,
+        "sizeTo": 250,
+        "strokeFrom": 65,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703"
+			},{
+	    "type": "ParticleEffect",
+        "particles": 29,
+        "sizeFrom": 30,
+        "sizeTo": 30,
+        "length": 320,
+        "lifetime": 300,
+        "lightOpacity": 20,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703",
+        "cone": 360
+	},{
+	    "type": "ParticleEffect",
+        "particles": 40,
+        "sizeFrom": 30,
+        "sizeTo": 30,
+        "length": 580,
+        "lifetime": 300,
+        "lightOpacity": 20,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "B9B9FFFF",
+        "colorTo": "B9B9FF00",
+        "cone": 360
+	}
+	    ]
+	},
+	"despawnEffect":{
+		"type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "WaveEffect",
+        "lifetime": 300,
+        "sizeFrom": 0,
+        "sizeTo": 250,
+        "strokeFrom": 65,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703"
+			},{
+	    "type": "ParticleEffect",
+        "particles": 29,
+        "sizeFrom": 30,
+        "sizeTo": 30,
+        "length": 320,
+        "lifetime": 300,
+        "lightOpacity": 20,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703",
+        "cone": 360
+	},{
+	    "type": "ParticleEffect",
+        "particles": 40,
+        "sizeFrom": 30,
+        "sizeTo": 30,
+        "length": 580,
+        "lifetime": 300,
+        "lightOpacity": 20,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "B9B9FFFF",
+        "colorTo": "B9B9FF00",
+        "cone": 360
+	}
+	    ]
+	},
+	"shootEffect": {
+	    "type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "ParticleEffect",
+        "particles": 34,
+        "sizeFrom": 28,
+        "sizeTo": 28,
+        "length": 130,
+        "lifetime": 180,
+        "lightOpacity": 20,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703",
+        "cone": 40
+	},{
+	    "type": "ParticleEffect",
+        "particles": 34,
+        "sizeFrom": 28,
+        "sizeTo": 28,
+        "length": 250,
+        "lifetime": 180,
+        "lightOpacity": 20,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "B9B9FFFF",
+        "colorTo": "B9B9FF00",
+        "cone": 40
+	}
+	    ]
+	},
+	"fragBullets": 45,
+        "fragLifeMin": 0.5,
+        "fragBullet": {
+        "type": "BasicBulletType",
+        "parts": [
+    {
+              "type": "FlarePart",
+              "progress": "life",
+              "rotation": 86,
+              "color": "69E0C7FF",
+              "stroke": 3.5,
+              "radius": 15,
+              "radiusTo": 15
+        }
+    ],
+        "width": 0,
+        "height": 0,
+        "frontColor": "FFFFFF",
+        "backColor": "66B1FFFF",
+        "lifetime": 100,
+        "speed": 6.0,
+        "splashDamage": 0,
+        "splashDamageRadius": 0,
+        "shrinkY": 0,
+        "shrinkX": 0,
+        "hitEffect": {
+            "type": "multiEffect",
+            "effects": [
+            {
+                "type": "ParticleEffect",
+                "particles": 1,
+                "sizeFrom": 148,
+                "sizeTo": 0,
+                "length": 0,
+                "interp": "swing",
+                "lightColor": "B9B9FFFF",
+                "lifetime": 30,
+                "region": "神恒之心-tall",
+                "colorFrom": "69E0C7FF",
+                "colorTo": "B9B9FF00"
+            }
+        ]
+    },
+        "despawnEffect": {
+            "type": "multiEffect",
+            "effects": [
+            {
+                "type": "ParticleEffect",
+                "particles": 1,
+                "sizeFrom": 148,
+                "sizeTo": 0,
+                "length": 0,
+                "interp": "swing",
+                "lightColor": "B9B9FFFF",
+                "lifetime": 30,
+                "region": "神恒之心-tall",
+                "colorFrom": "69E0C7FF",
+                "colorTo": "B9B9FF00"
+            }
+        ]
+    },
+            "trailColor": "69E0C7FF",
+            "trailParam": 6,
+            "trailLength": 12,
+        "collidesAir": false,
+        "collidesTiles": false,
+        "collidesGround": false
+            }
+        }
+    },{
+		"name": "时间管理者炮塔4",
+		"reload":11,
+		"shootY": 38,
+		"x":152.0,
+		"y":93.0,
+		"mirror":true,
+		"top":true,
+		"alternate": false,
+		"shootCone": 60,
+		"rotationLimit": 360,
+		"rotateSpeed": 3.85,
+		"rotate": true,
+		"shoot": {
+                "shots": 2,
+                "shotDelay":11,
+                "type":"ShootBarrel",
+                "barrels":[
+        14,5,0,
+        -14,5,0
+        ]
+    },
+        "bullet":{
+        "type":"LaserBoltBulletType",
+        "width": 5,
+        "height": 19,
+        "damage": 1550,
+        "lifetime": 85,
+        "speed": 12.50,
+		"splashDamageRadius": 85,
+		"splashDamage": 850,
+		"buildingDamageMultiplier": 0.75,
+		"keepVelocity": true,
+		"frontColor": "69E0C7FF",
+        "backColor": "69E0C703",
+		"shootEffect": {
+	    "type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "ParticleEffect",
+        "particles": 18,
+        "length": 200,
+        "lifetime": 10,
+        "line": true,
+        "cone": 40,
+        "lenFrom": 9,
+        "lenTo": 9,
+        "strokeFrom": 3,
+        "strokeTo": 3,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703"
+    }
+	    ]
+	},
+	    "despawnEffect":{
+		"type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "WaveEffect",
+        "lifetime": 10,
+        "sizeFrom": 0,
+        "sizeTo": 25,
+        "strokeFrom": 4,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703"
+	        }
+	    ]
+	},
+	    "hitEffect":{
+		"type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "WaveEffect",
+        "lifetime": 10,
+        "sizeFrom": 0,
+        "sizeTo": 25,
+        "strokeFrom": 4,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703"
+			},{
+	    "type": "ParticleEffect",
+        "particles": 18,
+        "length": 200,
+        "lifetime": 10,
+        "line": true,
+        "cone": -40,
+        "lenFrom": 9,
+        "lenTo": 9,
+        "strokeFrom": 3,
+        "strokeTo": 3,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703"
+	        }
+	    ]
+	        }
+        }
+	},{
+		"name": "自爆",
+		"reload":1800,
+		"x":0,
+		"y":0,
+		"mirror":false,
+		"top":false,
+		"alternate": false,
+		"shootCone": 360,
+		"rotate": false,
+		"alwaysShooting": true,
+        "alwaysContinuous": false,
+        "continuous": true,
+        "parentizeEffects": true,
+		"shootStatusDuration": 80,
+        "shootStatus": "神恒之心-时间逆流",
+		"bullet":{
+	"width": 0,
+    "height": 0,
+    "frontColor": "FFFFFF",
+    "backColor": "66B1FFFF",
+    "lifetime": 20,
+    "speed": 0,
+    "splashDamage": 10000,
+    "splashDamageRadius": 750,
+    "hitEffect": {
+        "type": "ParticleEffect",
+        "particles": 59,
+        "sizeFrom": 30,
+        "sizeTo": 30,
+        "length": 750,
+        "lifetime": 650,
+        "lightOpacity": 20,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C703",
+        "cone": 360
+	    }
+    }
+		}
+    ],
+    "abilities": [
+    {
+    "type": "mindustry.entities.abilities.StatusFieldAbility",
+    "effect": "wet",
+    "parentizeEffects": true,
+    "activeEffect": {
+    "type": "multiEffect",
+    "followParent": true,
+    "rotWithParent": true,
+    "effects": [
+    {
+    "type": "ParticleEffect",
+    "layer": 90,
+    "lifetime": 602,
+    "length": -0,
+    "sizeFrom":48,
+    "sizeTo": 48,
+    "spin": -0.6,
+    "particles": 1,
+    "region": "神恒之心-GH-时间管理者-minute-hand"
+            },{
+    "type": "ParticleEffect",
+    "layer": 91,
+    "lifetime": 602,
+    "length": 0,
+    "sizeFrom": 70,
+    "sizeTo": 70,
+    "spin": -1.2,
+    "particles": 1,
+    "region": "神恒之心-GH-时间管理者-second-hand"
+            }
+        ]
+    },
+    "range": 1,
+    "reload": 600,
+    "duration": 1
+        },{
+            "type": "RegenAbility",
+            "amount": 140.0
+        },{
+        "type": "StatusFieldAbility",
+        "activeEffect": "none",
+        "effect": "神恒之心-时间加速",
+        "range": 99999990,
+        "reload": 1,
+        "duration": 60
+        }
+    ]
+}

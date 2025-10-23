@@ -1,0 +1,286 @@
+{
+    "type": "flying",
+    "name": "安逸",
+    "description": "驱逐舰，它的强度比T1强度多一点，它的武器非常致命非常麻烦",
+    "immunities":["blasted","burning","electrified","freezing","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed","结晶徽章"],
+    "research": {
+	"parent": "GH-铮骨升级厂",
+	"objectives": [
+		{
+	"type": "SectorComplete",
+	"preset": "新的开始"
+		}
+	],
+	"requirements": [
+	"copper/8500",
+	"lead/8000",
+	"silicon/4300",
+	"thorium/2600",
+	"graphite/1400",
+	"titanium/2400",
+	"beryllium/1000",
+	"tungsten/1000",
+	"棱镜/1500",
+	"无遏板/1150",
+	"潜铁板/1050",
+	"粒子核心/700",
+	"无遏板/265"
+	    ]
+	},
+    "armor" : 25,
+    "range" : 150,
+    "flying": true,
+    "lowAltitude": true,
+    "omniMovement": true,
+    "speed": 3.3,
+    "accel":0.1,
+    "drag": 0.4,
+    "envDisabled":0,
+    "itemCapacity": 210,
+    "rotateSpeed": 5,
+    "buildSpeed": 5.0,
+    "buildBeamOffset":8,
+    "mineSpeed": 55,
+    "mineTier": 15,
+    "engineOffset": 16.0,
+    "engineSize" : 5,
+    "engineColor" : "69E0C7FF",
+    "outlineColor": "20202CFF",
+    "trailColor": "69E0C7FF",
+    "trailLength": 18.5,
+    "hitSize": 28,
+    "health": 1580,
+    "payloadCapacity" : 12,
+    "weapons":[
+    {
+        "name":"梦子导弹武器",
+        "x":14.5,
+        "y":-0.5,
+        "mirror": true,
+        "alternate": false,
+        "rotate": false,
+        "reload": 55,
+        "shootY":0,
+        "baseRotation": -75,
+        "shootCone": 360,
+            "bullet": {
+        "type": "basicBulletType",
+        "spawnUnit": "神恒之心-梦子导弹",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "backColor":"FFFFFFFF",	
+        "frontColor":"FFFFFFFF",
+	    "trailColor":"FFFFFFFF"
+            }
+        },{
+        "name":"梦子导弹武器",
+        "x":16.0,
+        "y":-8.5,
+        "mirror": true,
+        "alternate": false,
+        "rotate": false,
+        "reload": 55,
+        "shootY":0,
+        "baseRotation": -125,
+        "shootCone": 360,
+            "bullet": {
+        "type": "basicBulletType",
+        "spawnUnit": "神恒之心-梦子导弹",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "backColor":"FFFFFFFF",	
+        "frontColor":"FFFFFFFF",
+	    "trailColor":"FFFFFFFF"
+                }
+            },{
+        "name":"虫洞子弹武器",
+        "x":0.0,
+        "y":0.0,
+        "mirror": false,
+        "alternate": false,
+        "rotate": true,
+        "rotateSpeed":30.0,
+        "reload": 100,
+        "shootY":0,
+        "alwaysShooting": false,
+        "alwaysContinuous": false,
+        "continuous": false,
+        "parentizeEffects": true,
+            "bullet": {
+				"type": "PointBulletType",
+				"trailSpacing": 10,
+				"trailEffect": {
+					"type": "MultiEffect",
+					"effects": [
+						{
+							"type": "ParticleEffect",
+							"particles": 1,
+							"length": 0,
+							"baseLength": 1,
+							"lifetime": 7.5,
+							"line": true,
+							"randLength": false,
+							"lenFrom": 3.3,
+							"lenTo": 3.3,
+							"strokeFrom": 1.2,
+							"strokeTo": 0,
+							"colorFrom": "69E0C7FF",
+							"colorTo": "69E0C7FF",
+							"cone": 0
+						},
+						{
+							"type": "ParticleEffect",
+							"particles": 1,
+							"sizeFrom": 1,
+							"sizeTo": 0,
+							"length": 0,
+							"baseLength": 3,
+							"lifetime": 15,
+							"colorFrom": "69E0C7FF",
+							"colorTo": "69E0C7FF",
+							"cone": 360
+						}
+					]
+				},
+				"buildingDamageMultiplier": 0.00,
+				"damage": 0,
+				"lifetime": 25,
+				"speed": 18,
+				"splashDamageRadius": 45,
+				"splashDamage": 225,
+				"pierceBuilding": true,
+                "pierceCap": 3,
+				"chargeEffect":"none",
+				"shootEffect":"none",
+				"smokeEffect":"none",
+				"hitEffect": {
+					"type": "MultiEffect",
+					"effects": [
+	{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 76,
+        "sizeTo": 0,
+        "length": 0,
+        "layer": 114,
+        "region": "神恒之心-plasma-back",
+        "interp": "swing",
+        "lifetime": 30,
+        "colorFrom": "000000FF",
+        "colorTo": "000000FF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 90,
+        "sizeTo": 0,
+        "length": 0,
+        "interp": "swing",
+        "lifetime": 30,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+        }
+					]
+				},
+	"despawnEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 76,
+        "sizeTo": 0,
+        "length": 0,
+        "layer": 114,
+        "region": "神恒之心-plasma-back",
+        "interp": "swing",
+        "lifetime": 30,
+        "colorFrom": "000000FF",
+        "colorTo": "000000FF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 90,
+        "sizeTo": 0,
+        "length": 0,
+        "interp": "swing",
+        "lifetime": 30,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+    }
+	    ]
+    },
+        "fragBullets": 8,
+        "fragBullet": {
+        "speed": 8,
+        "damage":0,
+        "height": 0,
+        "width": 0,
+        "lifetime": 50,
+        "collidesAir": false,
+        "collidesTiles": false,
+        "collidesGround": false,
+    "despawnEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 29,
+        "sizeTo": 0,
+        "length": 0,
+        "layer": 114,
+        "region": "神恒之心-plasma-back",
+        "interp": "swing",
+        "lifetime": 20,
+        "colorFrom": "000000FF",
+        "colorTo": "000000FF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 40,
+        "sizeTo": 0,
+        "length": 0,
+        "interp": "swing",
+        "lifetime": 20,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+    }
+	        ]
+		},
+        "fragBullets": 1,
+        "fragRandomSpread": 1,
+        "fragVelocityMin": 1,
+        "fragBullet": {
+        "type": "basicBulletType",
+        "damage": 140,
+        "splashDamageRadius": 0.00,
+        "splashDamage": 0.00,
+        "homingPower": 0.67,
+        "homingRange": 65,
+        "homingDelay": 0.8,
+        "trailParam": 4,
+        "trailLength": 15,
+        "trailWidth": 2,
+        "trailColor": "69E0C7FF",
+        "backColor": "69E0C7FF",
+        "frontColor": "69E0C7FF",
+        "height": 17,
+        "width": 12,
+        "speed": -4.5,
+        "lifetime": 180
+        }
+    }
+			}
+        }
+        ],
+        "abilities": [
+            {
+            "type": "RegenAbility",
+            "amount": 2.0
+        }
+    ]
+}

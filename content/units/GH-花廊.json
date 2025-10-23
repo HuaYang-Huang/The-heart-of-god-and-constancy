@@ -1,0 +1,37 @@
+{
+	"type": "tether",
+	"name": "花廊",
+	"defaultController": "AssemblerAI",
+	"speed": 1.15,
+	"drag": 0.06,
+	"accel": 0.09,
+	"rotateSpeed": 2.5,
+	"immunities":["blasted","freezing","electrified","burning","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed","结晶徽章"],
+    "abilities": [
+            {
+            "type": "RegenAbility",
+            "amount": 1.0
+        }
+    ],
+	"lightRadius": 60,
+	"lightColor": "97FFA8",
+	"fogRadius": 45,
+	"hitSize": 7,
+	"buildBeamOffset": 11,
+	"buildSpeed": 0.5,
+	"flying": true,
+	"faceTarget": false,
+	"useUnitCap": true,
+	"health": 600,
+	"armor":35,
+	"engineColor" : "69E0C7FF",
+	"outlineColor": "20202CFF",
+	"engineOffset": 4,
+	"engineSize": 2.3,
+	"isEnemy": false,
+	"hidden": true,
+	"createWreck": false,
+	"allowedInPayloads": false,
+	"logicControllable": false,
+	"playerControllable": false
+}

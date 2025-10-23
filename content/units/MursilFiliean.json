@@ -1,0 +1,45 @@
+{
+    "name" : "MursilFiliean",
+    "description" : "?????",
+    "mineTier" : 10,
+    "mineSpeed": 15,
+    "payloadCapacity" : 4,
+    "buildSpeed" : 10,
+    "itemCapacity" : 100,
+    "envDisabled":0,
+    "immunities":["blasted","burning","electrified","freezing","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed"],
+    "health" : 175,
+    "speed": 4.5,
+    "accel": 4.5,
+    "drag": 6,
+    "flying": true,
+    "range": 15,
+    "hitSize" : 3.5,
+    "lowAltitude" : 2.5,
+    "forceMultiTarget" : 1.5,
+    "armor" : 10,
+    "engineOffset" : 3.5,
+    "engineSize" : 4.5,
+    "engineColor": "89A0FF",
+    
+    "weapons" : [
+    {
+    "x" : 0,
+    "y" : 0,
+    "top": false,
+    "rotate":false,
+    "mirror":true,
+            "bullet": {
+    "type": "BombBulletType",
+    "lifetime": 10.0,
+    "speed": 1.0,
+    "splashDamageRadius": 223.0,
+    "splashDamage": 155.0,
+    "instantDisappear": true,
+    "killShooter": true,
+    "hittable": false,
+    "collidesAir": true
+            }
+        }
+    ]
+}

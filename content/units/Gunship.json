@@ -1,0 +1,96 @@
+{
+    "name" : "Gunship",
+    "description" : "?????",
+
+    "mineTier" : 10,
+    "mineSpeed": 15,
+    "payloadCapacity" : 4,
+    "buildSpeed" : 10,
+    "itemCapacity" : 100,
+    "envDisabled":0,
+    "immunities":["blasted","burning","electrified","freezing","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed"],
+    "health" : 450,
+    "speed": 2.5,
+    "accel": 4.5,
+    "drag": 12,
+    "flying": true,
+    "range": 35,
+    "hitSize" : 2.5,
+    "lowAltitude" : 2.5,
+    "forceMultiTarget" : 1.5,
+    "armor" : 10,
+    "engineOffset" : 3.5,
+    "engineSize" : 4.5,
+    "engineColor": "89A0FF",
+    "targetAir" : true,
+    "weapons":[
+        {
+            "name":"管炮",
+            "y":0,
+            "x":2.5,
+            "shootY":2.2,
+            "ejectEffect":"casing1",
+            "reload":15,
+            "recoil":0.8,
+            "shake":0,
+            "shootSound": "shoot",
+            "rotate":false,
+            "top":false,
+            "mirror":false,
+            "bullet": {
+                "type": "BasicBulletType",
+                "damage":25,
+                "width":8,
+                "height":12,
+                "lifetime":100,
+                "speed":9,
+                "shootEffect": "shootSmallSmoke"
+                }
+                },
+        {
+            "name":"管炮",
+            "y":0,
+            "x":-2.5,
+            "shootY":2.2,
+            "ejectEffect":"casing1",
+            "reload":15,
+            "recoil":0.8,
+            "shake":0,
+            "shootSound": "shoot",
+            "rotate":false,
+            "top":false,
+            "mirror":false,
+            "bullet": {
+                "type": "BasicBulletType",
+                "damage":25,
+                "width":8,
+                "height":12,
+                "lifetime":100,
+                "speed":9,
+                "shootEffect": "shootSmallSmoke"
+                }
+            },
+            {
+           "name":"管弹",
+           "x":0,
+           "y":0,
+           "top":false,
+           "rotate":false,
+           "reload":45,
+           "mirror":false,
+           "inaccuracy": 5.00,
+           "velocityRnd": 0.10,
+           "bullet": {
+           "type":"MissileBulletType",
+                "speed": 9.85,
+                "damage": 150.00,
+                "shrinkY": 0.00,
+                "drag": -0.003,
+                "keepVelocity": false,
+                "splashDamageRadius": 50.00,
+                "splashDamage": 35.00,
+                "lifetime": 130.00
+         }
+       }
+       ]
+}

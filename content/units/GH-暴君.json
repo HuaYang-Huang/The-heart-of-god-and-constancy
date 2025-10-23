@@ -1,0 +1,253 @@
+{
+	"type": "tank",
+	"template": "ErekirUnitType",
+	"squareShape": true,
+	"fogRadius": 85,
+	"treadFrames":18,
+	"treadPullOffset":1,
+	"treadRects": [
+	{
+	    "x":46,
+	    "y":-40,
+	    "width":49,
+	    "height":98
+	}	
+	],
+    "envDisabled":0,
+	"omniMovement": false,
+	"outlineColor": "20202CFF",
+	"crushDamage":5.0,
+	"dpsEstimate":700,
+	"name":"暴君",
+	"description":"[purple]新时代已来临...",
+	"research":{
+	"parent": "GH-震慑",
+	"objectives": [
+	"GH-震慑",
+	"GH-锯光",
+	"GH-运气",
+	"GH-陆军组装机",
+	"GH-铮骨升级厂"
+	    ],
+	    "requirements": [
+	"copper/6500",
+	"lead/4250",
+	"silicon/2800",
+	"thorium/2100",
+	"graphite/9000",
+	"titanium/800",
+	"beryllium/600",
+	"tungsten/800",
+	"棱镜/995",
+	"无遏板/850",
+	"潜铁板/1100",
+	"粒子核心/1000",
+	"无子核心/100",
+	"无遏板/565"
+	    ]
+	},
+    "mineSpeed": 60,
+    "buildSpeed": 7.0,
+    "mineTier": 15,
+	"itemCapacity":350,
+	"armor":320,
+	"hitSize":46,
+	"rotateSpeed":1.0,
+	"speed":1.0,
+	"flying": false,
+	"health":4850,
+	"range":290,
+	"immunities": ["blasted","freezing","electrified","burning","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed","结晶徽章"],
+	"weapons": [
+	    {
+	    "name": "坦荡炮塔1",
+		"reload":15,
+		"x":23,
+		"y":-3,
+		"mirror":true,
+		"top":true,
+		"alternate": false,
+		"inaccuracy":1,
+		"rotate": true,
+		"rotateSpeed":4.5,
+		"shootSound":"flame",
+		"shoot": {
+                "shots": 2,
+                "shotDelay":5,
+                "type":"ShootBarrel",
+                "barrels":[
+        3,3,0,
+        -3,3,0
+            ]
+        },
+		"bullet": {
+		"type":"SapBulletType",
+		"damage":75,
+		"knockback":1.5,
+		"length":220,
+		"sapStrength":0.7,
+		"color":"69E0C7FF",
+		"lightColor":"69E0C7FF",
+		"hitEffect":"hitLiquid",
+		"status":"slow",
+		"statusDuration": 180,
+	"shootEffect": {
+		"type": "ParticleEffect",
+		"particles": 6,
+		"length": 15,
+		"lifetime": 12,
+		"interp": "circleOut",
+		"sizeInterp": "pow5Out",
+		"cone":0,
+		"colorFrom": "69E0C7FF",
+		"colorTo": "69E0C7FF",
+		"sizeFrom": 5.5,
+		"sizeTo": 0
+    }	
+	    }	
+	        },{
+	    "name": "暴君炮塔1",
+		"reload":115,
+		"x":0,
+		"y":1,
+		"mirror":false,
+		"top":true,
+		"inaccuracy":2,
+		"rotate": true,
+		"rotateSpeed":3.0,
+		"shoot": {
+                "shots": 2,
+                "type":"ShootBarrel",
+                "barrels":[
+        8,19,0,
+        -8,19,0
+            ]
+        },
+        "bullet": {
+        "type": "BasicBulletType",
+	"sprite": "神恒之心-rail-star-line-0",
+    "width": 15,
+    "height": 15,
+    "status":"electrified",
+    "statusDuration": 300,
+    "trailParam": 2,
+    "trailLength": 16,
+    "trailWidth": 4,
+    "trailColor": "69E0C7FF",
+    "trailChance": 0,
+	"trailInterval": 2,
+	"trailEffect": {
+		"type": "MultiEffect",
+	    "effects": [
+	{
+	"type": "ParticleEffect",
+    "particles": 1,
+    "lifetime": 25,
+    "length": 0,
+    "interp": "swingIn",
+    "region": "神恒之心-rail-star-line",
+    "sizeFrom": 15,
+    "sizeTo": 0,
+    "cone": 1,
+    "lightColor": "69E0C7FF",
+    "colorFrom": "69E0C7FF",
+    "colorTo": "115C4CFF"
+			},{
+    	"type": "ParticleEffect",
+        "particles": 3,
+        "sizeFrom": 15,
+        "sizeTo": 15,
+        "line":true,
+        "length": 65,
+        "baseLength": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF",
+        "cone": 30
+            }
+	    ]
+	},
+	"trailRotation": true,
+	"keepVelocity": false,
+    "frontColor": "69E0C7FF",
+    "backColor": "69E0C7FF",
+    "lifetime": 75,
+    "speed": 0.50,
+    "damage": 310,
+    "splashDamageRadius": 60,
+	"splashDamage": 250,
+    "drag":-0.08,
+    "pierce":false,
+    "pierceBuilding": false,
+    "hitEffect":{
+		"type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "WaveEffect",
+        "lifetime": 30,
+        "sizeFrom": 0,
+        "sizeTo": 150,
+        "strokeFrom": 15,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+			},{
+    	"type": "ParticleEffect",
+        "particles": 25,
+        "sizeFrom": 15,
+        "sizeTo": 15,
+        "line":true,
+        "length": 65,
+        "baseLength": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF",
+        "cone": 360
+            }
+	    ]
+	},
+	"despawnEffect":{
+		"type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "WaveEffect",
+        "lifetime": 30,
+        "sizeFrom": 0,
+        "sizeTo": 150,
+        "strokeFrom": 15,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+			},{
+    	"type": "ParticleEffect",
+        "particles": 25,
+        "sizeFrom": 15,
+        "sizeTo": 15,
+        "line":true,
+        "length": 65,
+        "baseLength": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF",
+        "cone": 360
+            }
+	    ]
+	},
+	"shootEffect": {
+	    "type": "MultiEffect",
+	    "effects": [
+	    {
+	"type": "ParticleEffect",
+    "particles": 11,
+    "sizeFrom": 15,
+    "sizeTo": 15,
+    "line":true,
+    "length": 65,
+    "baseLength": 0,
+    "colorFrom": "69E0C7FF",
+    "colorTo": "69E0C7FF",
+    "cone": 40
+            }
+	    ]
+	}
+        }
+	}
+	]
+}

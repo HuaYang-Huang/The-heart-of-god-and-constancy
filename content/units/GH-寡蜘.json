@@ -1,0 +1,812 @@
+{
+    "type":"legs",
+    "name":"寡蜘",
+    "description":"牺牲了悬空性能而转化爬行性能，却改变了武器能力作用",
+    "legCount":6,
+	"legMoveSpace":0.8,
+	"legPairOffset":1.5,
+	"stepShake":1,
+	"legExtension":-18,
+	"legLength":89,
+	"legBaseOffset":14.5,
+	"legSpeed":0.28,
+	"legLengthScl":1.1,
+	"rippleScale":1,
+	"legForwardScl":1.4,
+	"lockLegBase":false,
+	"legContinuousMove":false,
+	"immunities":[
+	"blasted",
+	"freezing",
+	"electrified",
+	"burning",
+	"melting",
+	"muddy",
+	"sapped",
+	"shocked",
+	"slow",
+	"tarred",
+	"unmoving",
+	"wet",
+	"spore-slowed",
+	"corroded",
+	"disarmed",
+	"结晶徽章"
+	],
+	"hovering":true,
+	"flying":false,
+	"outlineColor":"20202CFF",
+    "omniMovement": true,
+    "hitSize": 49,
+    "health": 14880,
+	"armor" : 250,
+    "range" : 280,
+    "speed": 0.8,
+    "envDisabled":0,
+    "itemCapacity": 280,
+    "rotateSpeed": 1.5,
+    "buildSpeed": 7.0,
+    "buildBeamOffset":8,
+    "mineSpeed": 70,
+    "mineTier": 20,
+    "maxRange":250,
+    "abilities": [
+        {
+            "type": "RegenAbility",
+            "amount": 8.0
+        },{
+            "type": "ForceFieldAbility",
+            "radius": 155.0,
+            "regen": 15.0,
+            "max": 100000.0,
+            "cooldown": 550.0
+        }
+    ],
+        "weapons":[
+    {
+        "name" : "寡蜘炮塔4",
+	    "type": "RepairBeamWeapon",
+	    "x": 28.0,
+        "y": 27.5,
+		"mirror":true,
+		"top":false,
+		"alternate": false,
+		"shootCone": 80,
+		"rotationLimit": 60,
+		"rotateSpeed": 35,
+		"rotate": true,
+		"laserColor": "69E0C7FF",
+        "controllable": false,
+        "autoTarget": true,
+        "beamWidth": 0.9,
+        "pulseRadius": 3,
+        "pulseStroke": 2,
+        "repairSpeed": 4.50,
+	    "bullet": {
+	    "shootEffect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 3,
+        "offset": 50,
+        "lifetime": 18.5,
+        "length": 10,
+        "cone": 360,
+        "lenFrom": 10,
+        "lenTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"   
+    },
+	    "maxRange": 285
+            }
+        },{
+        "name" : "寡蜘炮塔4",
+	    "type": "RepairBeamWeapon",
+	    "x":44.5,
+	    "y":8.5,
+		"mirror":true,
+		"top":false,
+		"alternate": false,
+		"shootCone": 80,
+		"rotationLimit": 60,
+		"rotateSpeed": 35,
+		"rotate": true,
+		"laserColor": "69E0C7FF",
+        "controllable": false,
+        "autoTarget": true,
+        "beamWidth": 0.9,
+        "pulseRadius": 3,
+        "pulseStroke": 2,
+        "repairSpeed": 4.50,
+	    "bullet": {
+	    "shootEffect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 3,
+        "offset": 50,
+        "lifetime": 18.5,
+        "length": 10,
+        "cone": 360,
+        "lenFrom": 10,
+        "lenTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"   
+    },
+	    "maxRange": 285
+            }
+        },{
+        "name": "寡蜘炮塔3",
+        "shootCone": 60,
+        "mirror": true,
+        "alternate": true,
+        "reload": 300,
+        "x": 26.0,
+        "y": -1,
+        "inaccuracy": 0,
+        "rotate": true,
+        "rotationLimit": 90,
+		"rotateSpeed": 0.8,
+        "shootY": 3.5,
+        "bullet": {
+            "type": "BasicBulletType",
+            "width": 15,
+            "height": 15,
+            "frontColor": "69E0C7FF",
+            "backColor": "69E0C7FF",
+            "lifetime": 220,
+            "damage": 560,
+            "splashDamageRadius": 115.00,
+            "splashDamage": 350.00,
+            "status": "1级变质麻痹",
+            "statusDuration": 180,
+            "speed": 2.2,
+            "shrinkY": 0,
+            "shrinkX": 0,
+                    "parts": [
+    {
+        "type": "shapePart",
+        "circle": true,
+        "hollow": false,
+        "color": "69E0C7FF",
+        "stroke": 35,
+        "strokeTo": 35,
+        "radiusTo": 10,
+        "radius": 10
+        },{
+        "type": "shapePart",
+        "circle": true,
+        "layer": 114,
+        "color": "000000FF",
+        "radiusTo": 6,
+        "radius": 6
+        }
+                        ],
+    "shootEffect": {
+            "type": "multiEffect",
+            "effects": [
+    {
+                "type": "WaveEffect",
+                "lifetime": 40,
+                "sizeFrom": 0,
+                "sizeTo": 38,
+                "lightColor": "69E0C7FF",
+                "interp": "circleOut",
+                "strokeFrom": 10,
+                "strokeTo": 0,
+                "colorFrom": "69E0C7FF",
+                "colorTo": "69E0C7FF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 4,
+        "sizeTo": 0,
+        "length": 0,
+        "layer": 114,
+        "region": "神恒之心-plasma-back",
+        "interp": "swing",
+        "lifetime": 105,
+        "colorFrom": "000000FF",
+        "colorTo": "000000FF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 5,
+        "sizeTo": 0,
+        "length": 0,
+        "interp": "swing",
+        "lifetime": 105,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+        },{
+	"type": "ParticleEffect",
+    "particles": 8,
+    "sizeFrom": 2,
+    "sizeTo": 0,
+    "length": 38,
+    "lifetime": 105,
+    "lightOpacity": 20,
+    "interp": "swing",
+    "sizeInterp": "pow5In",
+    "colorFrom": "69E0C7FF",
+    "colorTo": "69E0C700",
+    "cone": 20
+	    }
+            ]
+    },
+            "hitEffect": {
+            "type": "multiEffect",
+            "effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 24,
+        "sizeTo": 0,
+        "length": 0,
+        "layer": 114,
+        "region": "神恒之心-plasma-back",
+        "interp": "swing",
+        "lifetime": 160,
+        "colorFrom": "000000FF",
+        "colorTo": "000000FF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 30,
+        "sizeTo": 0,
+        "length": 0,
+        "interp": "swing",
+        "lifetime": 160,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+        }
+            ]
+    },
+        "trailColor": "69E0C7FF",
+        "trailParam": 8,
+        "trailLength": 29,
+        "trailWidth": 6.8,
+        "despawnEffect": "none",
+        "smokeEffect":"none",
+            "intervalBullets": 1,
+        "intervalRandomSpread": 360,
+        "bulletInterval": 3,
+        "intervalBullet": {
+        "type": "BasicBulletType",
+        "width": 9,
+        "height": 9,
+        "trailParam": 2,
+        "trailLength": 12,
+        "trailWidth": 1,
+        "trailColor": "69E0C7FF",
+        "frontColor": "69E0C7FF",
+        "backColor": "69E0C7FF",
+        "lifetime": 55,
+        "speed": 2.5,
+        "damage": 50,
+        "splashDamage": 90,
+        "splashDamageRadius": 35,
+        "status": "1级变质麻痹",
+        "statusDuration": 180,
+        "lightColor": "69E0C7FF",
+        "lightningColor": "69E0C7FF",
+        "lightningDamage":45,
+	    "lightning":3,
+        "lightningLength":7,
+        "lightningLengthRand": 4,
+        "pierce":true,
+        "pierceBuilding": true,
+        "homingPower": 0.055,
+        "homingRange": 100,
+        "homingDelay": 10,
+        "hitEffect": {
+            "type": "multiEffect",
+            "effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 8,
+        "sizeTo": 0,
+        "length": 0,
+        "layer": 114,
+        "region": "神恒之心-plasma-back",
+        "interp": "swing",
+        "lifetime": 55,
+        "colorFrom": "000000FF",
+        "colorTo": "000000FF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 9,
+        "sizeTo": 0,
+        "length": 0,
+        "interp": "swing",
+        "lifetime": 55,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+        }
+            ]
+    },
+        "despawnEffect": "none",
+        "smokeEffect":"none"
+            },
+        "fragBullets": 1,
+	    "fragBullet": {
+	"type": "BasicBulletType",
+	"collidesAir": false,
+    "collidesTiles": false,
+    "collidesGround": false,
+    "width": 0,
+    "height": 0,
+    "frontColor": "69E0C7FF",
+    "backColor": "69E0C7FF",
+    "lifetime": 160,
+    "damage": 80,
+    "splashDamageRadius": 100.00,
+    "splashDamage": 500.00,
+    "status": "1级变质麻痹",
+    "statusDuration": 180,
+    "speed": 0,
+    "shrinkY": 0,
+    "shrinkX": 0,
+                "despawnEffect": "none",
+                "smokeEffect":"none",
+                "hitEffect":{
+            "type": "multiEffect",
+            "effects": [
+    {
+                "type": "WaveEffect",
+                "lifetime": 110,
+                "sizeFrom": 0,
+                "sizeTo": 100,
+                "lightColor": "69E0C7FF",
+                "interp": "circleOut",
+                "strokeFrom": 10,
+                "strokeTo": 0,
+                "colorFrom": "69E0C7FF",
+                "colorTo": "69E0C7FF"
+    },{
+	"type": "ParticleEffect",
+    "particles": 22,
+    "sizeFrom": 20,
+    "sizeTo": 0,
+    "length": 72,
+    "lifetime": 120,
+    "lightOpacity": 20,
+    "interp": "swing",
+    "sizeInterp": "pow5In",
+    "colorFrom": "69E0C7FF",
+    "colorTo": "69E0C7FF",
+    "cone": 360
+	}
+            ]
+    }
+	        }
+        }
+    },{
+        "name": "寡蜘炮塔2",
+        "shootCone": 130,
+        "mirror": true,
+        "reload": 65,
+        "x": 33.5,
+        "y": 18.5,
+        "inaccuracy": 0,
+        "rotate": true,
+        "rotationLimit": 160,
+		"rotateSpeed": 1.4,
+        "shootY": 2,
+        "bullet": {
+            "type": "BasicBulletType",
+            "width": 25,
+            "height": 25,
+            "layer": 114,
+            "sprite":"神恒之心-black_halo",
+            "frontColor": "69E0C7FF",
+            "backColor": "69E0C7FF",
+            "lifetime": 120,
+            "damage": 80,
+            "splashDamageRadius": 85.00,
+            "splashDamage": 190.00,
+            "status": "1级变质麻痹",
+            "statusDuration": 180,
+            "speed": 5.4,
+            "shrinkY": 0,
+            "shrinkX": 0,
+    "shootEffect": {
+            "type": "multiEffect",
+            "effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "length": 0,
+        "layer": 114,
+        "region": "神恒之心-plasma-back",
+        "interp": "swing",
+        "lifetime": 25,
+        "colorFrom": "000000FF",
+        "colorTo": "000000FF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 3,
+        "sizeTo": 0,
+        "length": 0,
+        "interp": "swing",
+        "lifetime": 25,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+        }
+            ]
+    },
+            "hitEffect": {
+            "type": "multiEffect",
+            "effects": [
+    {
+                "type": "WaveEffect",
+                "lifetime": 65,
+                "sizeFrom": 0,
+                "sizeTo": 32,
+                "lightColor": "69E0C7FF",
+                "interp": "circleOut",
+                "strokeFrom": 8,
+                "strokeTo": 0,
+                "colorFrom": "69E0C7FF",
+                "colorTo": "69E0C7FF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 17,
+        "sizeTo": 0,
+        "length": 0,
+        "layer": 114,
+        "region": "神恒之心-plasma-back",
+        "interp": "swing",
+        "lifetime": 100,
+        "colorFrom": "000000FF",
+        "colorTo": "000000FF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 18,
+        "sizeTo": 0,
+        "length": 0,
+        "interp": "swing",
+        "lifetime": 100,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+        }
+    ]
+            },
+        "trailColor": "69E0C7FF",
+        "trailParam": 6,
+        "trailLength": 18,
+        "trailWidth": 4.5,
+        "despawnEffect": "none",
+        "smokeEffect":"none"
+        }
+    },{
+        "name": "寡蜘炮塔2",
+        "shootCone": 130,
+        "mirror": true,
+        "reload": 65,
+        "x": 41.5,
+        "y": -1,
+        "inaccuracy": 0,
+        "rotate": true,
+        "rotationLimit": 160,
+		"rotateSpeed": 1.4,
+        "shootY": 2,
+        "bullet": {
+            "type": "BasicBulletType",
+            "width": 25,
+            "height": 25,
+            "layer": 114,
+            "sprite":"神恒之心-black_halo",
+            "frontColor": "69E0C7FF",
+            "backColor": "69E0C7FF",
+            "lifetime": 120,
+            "damage": 80,
+            "splashDamageRadius": 85.00,
+            "splashDamage": 190.00,
+            "status": "1级变质麻痹",
+            "statusDuration": 180,
+            "speed": 5.4,
+            "shrinkY": 0,
+            "shrinkX": 0,
+    "shootEffect": {
+            "type": "multiEffect",
+            "effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "length": 0,
+        "layer": 114,
+        "region": "神恒之心-plasma-back",
+        "interp": "swing",
+        "lifetime": 25,
+        "colorFrom": "000000FF",
+        "colorTo": "000000FF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 3,
+        "sizeTo": 0,
+        "length": 0,
+        "interp": "swing",
+        "lifetime": 25,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+        }
+            ]
+    },
+            "hitEffect": {
+            "type": "multiEffect",
+            "effects": [
+    {
+                "type": "WaveEffect",
+                "lifetime": 65,
+                "sizeFrom": 0,
+                "sizeTo": 32,
+                "lightColor": "69E0C7FF",
+                "interp": "circleOut",
+                "strokeFrom": 8,
+                "strokeTo": 0,
+                "colorFrom": "69E0C7FF",
+                "colorTo": "69E0C7FF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 17,
+        "sizeTo": 0,
+        "length": 0,
+        "layer": 114,
+        "region": "神恒之心-plasma-back",
+        "interp": "swing",
+        "lifetime": 100,
+        "colorFrom": "000000FF",
+        "colorTo": "000000FF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 18,
+        "sizeTo": 0,
+        "length": 0,
+        "interp": "swing",
+        "lifetime": 100,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+        }
+    ]
+            },
+        "trailColor": "69E0C7FF",
+        "trailParam": 6,
+        "trailLength": 18,
+        "trailWidth": 4.5,
+        "despawnEffect": "none",
+        "smokeEffect":"none"
+        }
+    },{
+        "name": "寡蜘炮塔2",
+        "shootCone": 130,
+        "mirror": true,
+        "reload": 65,
+        "x": 6,
+        "y": -18,
+        "inaccuracy": 0,
+        "rotate": true,
+        "rotationLimit": 160,
+		"rotateSpeed": 1.4,
+        "shootY": 2,
+        "bullet": {
+            "type": "BasicBulletType",
+            "width": 25,
+            "height": 25,
+            "layer": 114,
+            "sprite":"神恒之心-black_halo",
+            "frontColor": "69E0C7FF",
+            "backColor": "69E0C7FF",
+            "lifetime": 120,
+            "damage": 80,
+            "splashDamageRadius": 85.00,
+            "splashDamage": 190.00,
+            "status": "1级变质麻痹",
+            "statusDuration": 180,
+            "speed": 5.4,
+            "shrinkY": 0,
+            "shrinkX": 0,
+    "shootEffect": {
+            "type": "multiEffect",
+            "effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "length": 0,
+        "layer": 114,
+        "region": "神恒之心-plasma-back",
+        "interp": "swing",
+        "lifetime": 25,
+        "colorFrom": "000000FF",
+        "colorTo": "000000FF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 3,
+        "sizeTo": 0,
+        "length": 0,
+        "interp": "swing",
+        "lifetime": 25,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+        }
+            ]
+    },
+            "hitEffect": {
+            "type": "multiEffect",
+            "effects": [
+    {
+                "type": "WaveEffect",
+                "lifetime": 65,
+                "sizeFrom": 0,
+                "sizeTo": 32,
+                "lightColor": "69E0C7FF",
+                "interp": "circleOut",
+                "strokeFrom": 8,
+                "strokeTo": 0,
+                "colorFrom": "69E0C7FF",
+                "colorTo": "69E0C7FF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 17,
+        "sizeTo": 0,
+        "length": 0,
+        "layer": 114,
+        "region": "神恒之心-plasma-back",
+        "interp": "swing",
+        "lifetime": 100,
+        "colorFrom": "000000FF",
+        "colorTo": "000000FF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 18,
+        "sizeTo": 0,
+        "length": 0,
+        "interp": "swing",
+        "lifetime": 100,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+        }
+    ]
+            },
+        "trailColor": "69E0C7FF",
+        "trailParam": 6,
+        "trailLength": 18,
+        "trailWidth": 4.5,
+        "despawnEffect": "none",
+        "smokeEffect":"none"
+        }
+    },{
+    "name": "寡蜘炮塔1",
+    "shootCone": 45,
+    "mirror": false,
+    "reload": 150,
+    "y": -56,
+    "xRand": 50,
+    "shoot": {
+        "type": "shootPattern",
+        "shots": 18,
+        "shotDelay": 8
+        },
+        "inaccuracy": 7,
+        "rotate": false,
+        "shootY": 0,
+        "shootSound": "none",
+        "bullet": {
+        "type": "BasicBulletType",
+        "width": 10,
+        "height": 17,
+        "frontColor": "69E0C7FF",
+        "backColor": "69E0C7FF",
+        "lifetime": 85,
+        "damage": 285,
+        "status": "1级变质麻痹",
+        "statusDuration": 180,
+        "speed": 9.7,
+        "shrinkY": 0,
+        "shrinkX": 0,
+        "shootEffect": {
+            "type": "multiEffect",
+            "effects": [
+            {
+                "type": "WaveEffect",
+                "lifetime": 35,
+                "sizeFrom": 0,
+                "sizeTo": 23,
+                "lightColor": "69E0C7FF",
+                "interp": "circleOut",
+                "strokeFrom": 4,
+                "strokeTo": 0,
+                "colorFrom": "69E0C7FF",
+                "colorTo": "69E0C7FF"
+            },{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 9,
+        "sizeTo": 0,
+        "length": 0,
+        "layer": 114,
+        "region": "神恒之心-plasma-back",
+        "interp": "swing",
+        "lifetime": 50,
+        "colorFrom": "000000FF",
+        "colorTo": "000000FF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 10,
+        "sizeTo": 0,
+        "length": 0,
+        "interp": "swing",
+        "lifetime": 50,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+        }
+    ]
+        },
+            "hitEffect": {
+            "type": "multiEffect",
+            "effects": [
+        {
+                "type": "WaveEffect",
+                "lifetime": 35,
+                "sizeFrom": 0,
+                "sizeTo": 23,
+                "lightColor": "69E0C7FF",
+                "interp": "circleOut",
+                "strokeFrom": 4,
+                "strokeTo": 0,
+                "colorFrom": "69E0C7FF",
+                "colorTo": "69E0C7FF"
+            },{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 9,
+        "sizeTo": 0,
+        "length": 0,
+        "layer": 114,
+        "region": "神恒之心-plasma-back",
+        "interp": "swing",
+        "lifetime": 50,
+        "colorFrom": "000000FF",
+        "colorTo": "000000FF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 10,
+        "sizeTo": 0,
+        "length": 0,
+        "interp": "swing",
+        "lifetime": 50,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+        }
+    ]
+        },
+        "homingPower": 0.07,
+        "homingRange": 100,
+        "homingDelay": 10,
+        "trailColor": "69E0C7FF",
+        "trailParam": 6,
+        "trailLength": 12,
+        "trailWidth": 2.5
+        },
+        "despawnEffect": "none",
+        "smokeEffect":"none"
+    }
+        ]
+}

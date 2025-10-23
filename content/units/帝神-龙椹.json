@@ -1,0 +1,461 @@
+{
+	"type": "flying",
+	"name": "帝神-龙椹",
+	"segments" : 3,
+    "segmentScl" : 4,
+    "segmentPhase" : 5,
+    "lowAltitude": true,
+	"description": "[green]要塞的辉煌",
+	"speed": 0.7,	
+	"drag":2.57,	"accel":1.15,
+	"rotateSpeed":4,
+	"envDisabled":0,
+	"ammoCapacity": 1600,
+    "itemCapacity" : 19850,
+    "immunities":["blasted","burning","electrified","freezing","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed"],
+	"hitSize":80, 
+		"lightRadius": 130,
+	"lightColor": "FF5845",
+	"engineColor": "73FFAEFF",
+	"flying": true,
+	"alwaysUnlocked": true,
+	"health": 12900000,
+	"armor":1020,
+	    "buildSpeed": 18.5,
+    "buildBeamOffset":16,
+    "mineSpeed": 585,
+    "mineTier": 15,
+	"engineOffset": 47,
+	"engineSize": 41,
+	
+	"weapons" : [
+	{
+            "name":"帝神-龙椹-炮5",
+            "y":0,
+            "x":0,
+            "shootY":2.2,
+            "ejectEffect":"casing1",
+            "recoil":0.8,
+            "shake":1,
+            "shootSound": "shoot",
+            "rotate":false,
+            "top":true,
+            "mirror":false,
+            "reload":600,
+            "continuous":true,
+            "cooldownTime":180,
+            "bullet": {
+    "type":"ContinuousLaserBulletType",
+    "damage":125,
+    "width":18,"length":1100,
+    "colors":["73FFAEFF","62E86FFF","000000"],
+    "hitEffect":{"type": "ParticleEffect",
+    "particles": 6,
+    "sizeFrom": 12,
+    "sizeTo": 0,
+    "line":true,
+    "length": 85,
+    "baseLength": 0,
+    "colorFrom": "73FFAEFF",
+    "colorTo": "73FFAEFF",
+    "cone": 60},
+    "lifetime":300,
+    "shake":4,
+    "despawnEffect":"smokeCloud",
+    "smokeEffect":"none",
+    "chargeEffect":{"type": "WaveEffect",
+    "sizeFrom": 100,
+    "sizeTo": 10,
+    "strokeFrom": 0,
+    "strokeTo": 9,
+    "colorFrom": "73FFAEFF",
+    "colorTo": "FFFFFFFF"}
+	}
+            },
+	{
+	    "name" : "帝神-龙椹-炮1",
+	    "type": "RepairBeamWeapon",
+        "mirror": false,
+        "alternate": false,
+        "rotateSpeed": 3,
+            "x": 0,
+            "y": -28,
+    "shootY": 1,
+    "reload": 1,
+    "recoil": 0,
+    "shake": 1,
+    "rotate": true,
+    "shootSound": "laser",
+    "laserColor": "73FFAEFF",
+    "controllable": false,
+    "autoTarget": true,
+    "beamWidth": 2.9,
+    "pulseRadius": 7,
+    "pulseStroke": 350,
+    "repairSpeed": 15.85,
+	"bullet": {
+	"shootEffect": {
+    "type": "ParticleEffect",
+    "line": true,
+    "particles": 28,
+    "offset": 50,
+    "lifetime": 18.5,
+    "length": 6800,
+    "cone": -1800,
+    "lenFrom": 10,
+    "lenTo": 0,
+    "colorFrom": "73FFAEFF",
+    "colorTo": "57D993FF"   
+    },
+	"maxRange": 1500
+        }
+            },{
+        "name":"帝神-龙椹-炮2",
+        "type": "PointDefenseWeapon",
+        "mirror": false,
+        "rotate": true,
+        "rotateSpeed": 3,
+        "x": 98,
+        "y": -55,
+        "reload": 9,
+
+        "targetInterval": 9,
+        "targetSwitchInterval": 12,
+        "recoil": 1.2,
+        "bullet":{
+        "speed": 45,
+        "lifetime": 10,
+        "shootEffect": "sparkShoot",
+        "hitEffect": "pointHit",
+        "maxRange":380.00,
+        "damage":100
+        }
+    },{
+        "name":"帝神-龙椹-炮2",
+        "type": "PointDefenseWeapon",
+        "mirror": false,
+        "rotate": true,
+        "rotateSpeed": 3,
+        "x": -98,
+        "y": -55,
+        "reload": 9,
+
+        "targetInterval": 9,
+        "targetSwitchInterval": 12,
+        "recoil": 1.2,
+        "bullet":{
+        "speed": 45,
+        "lifetime": 10,
+        "shootEffect": "sparkShoot",
+        "hitEffect": "pointHit",
+        "maxRange":380.00,
+        "damage":100
+                }
+            },
+            {
+      	    "name" : "帝神-龙椹-炮3",
+      	    "x" : 52,
+      	    "y" : -28,
+      	    "top" : true,
+      	    "ejectEffect":"casing1",
+            "reload":125,
+            "recoil":0.8,
+            "shake":0,
+            "shootSound": "shoot",
+            "rotate":true,
+            "mirror":false,
+            "shoot": {
+                "shots": 4,
+                "shotDelay": 12
+                },
+      	        "bullet": {
+                "type": "BasicBulletType",
+                "damage":525,
+                "width":16,
+                "height":28,
+                "lifetime":320,
+                "speed":9,
+                "shootEffect": "shootSmallSmoke",
+                "backColor":"73FFAEFF",	
+                "frontColor":"73FFAEFF",
+	            "trailColor":"73FFAEFF",
+	            "status": "electrified"
+                }
+      	                },{
+      	    "name" : "帝神-龙椹-炮3",
+      	    "x" : 97,
+      	    "y" : -30,
+      	    "top" : true,
+      	    "ejectEffect":"casing1",
+            "reload":125,
+            "recoil":0.8,
+            "shake":0,
+            "shootSound": "shoot",
+            "rotate":true,
+            "mirror":false,
+            "shoot": {
+                "shots": 4,
+                "shotDelay": 12
+                },
+      	        "bullet": {
+                "type": "BasicBulletType",
+                "damage":525,
+                "width":16,
+                "height":28,
+                "lifetime":320,
+                "speed":9,
+                "shootEffect": "shootSmallSmoke",
+                "backColor":"73FFAEFF",	
+                "frontColor":"73FFAEFF",
+	            "trailColor":"73FFAEFF",
+	            "status": "electrified"
+                }
+      	                },{
+      	    "name" : "帝神-龙椹-炮3",
+      	    "x" : -52,
+      	    "y" : -28,
+      	    "top" : true,
+      	    "ejectEffect":"casing1",
+            "reload":125,
+            "recoil":0.8,
+            "shake":0,
+            "shootSound": "shoot",
+            "rotate":true,
+            "mirror":false,
+            "shoot": {
+                "shots": 4,
+                "shotDelay": 12
+                },
+      	        "bullet": {
+                "type": "BasicBulletType",
+                "damage":525,
+                "width":16,
+                "height":28,
+                "lifetime":320,
+                "speed":9,
+                "shootEffect": "shootSmallSmoke",
+                "backColor":"73FFAEFF",	
+                "frontColor":"73FFAEFF",
+	            "trailColor":"73FFAEFF",
+	            "status": "electrified"
+                }
+      	                },{
+      	    "name" : "帝神-龙椹-炮3",
+      	    "x" : -97,
+      	    "y" : -30,
+      	    "top" : true,
+      	    "ejectEffect":"casing1",
+            "reload":125,
+            "recoil":0.8,
+            "shake":0,
+            "shootSound": "shoot",
+            "rotate":true,
+            "mirror":false,
+            "shoot": {
+                "shots": 4,
+                "shotDelay": 12
+                },
+      	        "bullet": {
+                "type": "BasicBulletType",
+                "damage":525,
+                "width":16,
+                "height":28,
+                "lifetime":320,
+                "speed":9,
+                "shootEffect": "shootSmallSmoke",
+                "backColor":"73FFAEFF",	
+                "frontColor":"73FFAEFF",
+	            "trailColor":"73FFAEFF",
+	            "status": "electrified"
+                }
+      	                },{
+      	        "name" : "帝神-龙椹-炮4",
+      	        "x": 52,"y": 8,"top" : true,
+      	        "reload" : 85,
+                "rotate": true,
+	            "mirror":false,
+	            "shoot": {
+	                "shots" : 4,
+	                "shotDelay": 8
+	            },
+      	        "bullet" : {
+	            "type" : "MissileBulletType",
+	            "sprite" : "神恒之心-导弹3",
+	            "height": 25.00,"width": 14.00,
+	            "speed": 3.85,
+	            "damage": 205.00,
+	            "shrinkY": 0.00,
+                "drag": -0.003,
+	            "lifetime": 310.50,
+	            "homingRange": 380,
+	            "keepVelocity": false,
+	            "ammoMultiplier": 4,
+	            "splashDamageRadius" : 105,
+	            "splashDamage" : 205.00,
+	            "status": "electrified",
+	            "backColor":"73FFAEFF",	
+                "frontColor":"73FFAEFF",
+	            "trailColor":"73FFAEFF"
+      	                }
+      	                    },{
+      	        "name" : "帝神-龙椹-炮4",
+      	        "x": -52,"y": 8,"top" : true,
+      	        "reload" : 85,
+                "rotate": true,
+	            "mirror":false,
+	            "shoot": {
+	                "shots" : 4,
+	                "shotDelay": 8
+	            },
+      	        "bullet" : {
+	            "type" : "MissileBulletType",
+	            "sprite" : "神恒之心-导弹3",
+	            "height": 25.00,"width": 14.00,
+	            "speed": 3.85,
+	            "damage": 205.00,
+	            "shrinkY": 0.00,
+                "drag": -0.003,
+	            "lifetime": 310.50,
+	            "homingRange": 380,
+	            "keepVelocity": false,
+	            "ammoMultiplier": 4,
+	            "splashDamageRadius" : 105,
+	            "splashDamage" : 205.00,
+	            "status": "electrified",
+	            "backColor":"73FFAEFF",	
+                "frontColor":"73FFAEFF",
+	            "trailColor":"73FFAEFF"
+      	                }
+      	                    },{
+      	        "name" : "帝神-龙椹-炮4",
+      	        "x": 37,"y": 41,"top" : true,
+      	        "reload" : 85,
+                "rotate": true,
+	            "mirror":false,
+	            "shoot": {
+	                "shots" : 4,
+	                "shotDelay": 8
+	            },
+      	        "bullet" : {
+	            "type" : "MissileBulletType",
+	            "sprite" : "神恒之心-导弹3",
+	            "height": 25.00,"width": 14.00,
+	            "speed": 3.85,
+	            "damage": 205.00,
+	            "shrinkY": 0.00,
+                "drag": -0.003,
+	            "lifetime": 310.50,
+	            "homingRange": 380,
+	            "keepVelocity": false,
+	            "ammoMultiplier": 4,
+	            "splashDamageRadius" : 105,
+	            "splashDamage" : 205.00,
+	            "status": "electrified",
+	            "backColor":"73FFAEFF",	
+                "frontColor":"73FFAEFF",
+	            "trailColor":"73FFAEFF"
+      	                }
+      	                    },{
+      	        "name" : "帝神-龙椹-炮4",
+      	        "x": -37,"y": 41,"top" : true,
+      	        "reload" : 85,
+                "rotate": true,
+	            "mirror":false,
+	            "shoot": {
+	                "shots" : 4,
+	                "shotDelay": 8
+	            },
+      	        "bullet" : {
+	            "type" : "MissileBulletType",
+	            "sprite" : "神恒之心-导弹3",
+	            "height": 25.00,"width": 14.00,
+	            "speed": 3.85,
+	            "damage": 205.00,
+	            "shrinkY": 0.00,
+                "drag": -0.003,
+	            "lifetime": 310.50,
+	            "homingRange": 380,
+	            "keepVelocity": false,
+	            "ammoMultiplier": 4,
+	            "splashDamageRadius" : 105,
+	            "splashDamage" : 205.00,
+	            "status": "electrified",
+	            "backColor":"73FFAEFF",	
+                "frontColor":"73FFAEFF",
+	            "trailColor":"73FFAEFF"
+      	                }
+      	                    },{
+      	        "name" : "帝神-龙椹-炮4",
+      	        "x" : 94,"y" : 2,"top" : true,
+      	        "reload" : 85,
+                "rotate": true,
+	            "mirror":false,
+	            "shoot": {
+	                "shots" : 4,
+	                "shotDelay": 8
+	            },
+      	        "bullet" : {
+	            "type" : "MissileBulletType",
+	            "sprite" : "神恒之心-导弹3",
+	            "height": 25.00,"width": 14.00,
+	            "speed": 3.85,
+	            "damage": 205.00,
+	            "shrinkY": 0.00,
+                "drag": -0.003,
+	            "lifetime": 310.50,
+	            "homingRange": 380,
+	            "keepVelocity": false,
+	            "ammoMultiplier": 4,
+	            "splashDamageRadius" : 105,
+	            "splashDamage" : 205.00,
+	            "status": "electrified",
+	            "backColor":"73FFAEFF",	
+                "frontColor":"73FFAEFF",
+	            "trailColor":"73FFAEFF"
+      	                }
+      	                    },{
+      	        "name" : "帝神-龙椹-炮4",
+      	        "x" : -94,"y" : 2,"top" : true,
+      	        "reload" : 85,
+                "rotate": true,
+	            "mirror":false,
+	            "shoot": {
+	                "shots" : 4,
+	                "shotDelay": 8
+	            },
+      	        "bullet" : {
+	            "type" : "MissileBulletType",
+	            "sprite" : "神恒之心-导弹3",
+	            "height": 25.00,"width": 14.00,
+	            "speed": 3.85,
+	            "damage": 205.00,
+	            "shrinkY": 0.00,
+                "drag": -0.003,
+	            "lifetime": 310.50,
+	            "homingRange": 380,
+	            "keepVelocity": false,
+	            "ammoMultiplier": 4,
+	            "splashDamageRadius" : 105,
+	            "splashDamage" : 205.00,
+	            "status": "electrified",
+	            "backColor":"73FFAEFF",	
+                "frontColor":"73FFAEFF",
+	            "trailColor":"73FFAEFF"
+      	                }
+      	                    }
+	],
+	"abilities" : [
+	    {
+        "type": "ForceFieldAbility",
+        "radius": 225.0,
+        "regen": 580.0,
+        "max": 28000.0,
+        "cooldown": 100.0
+        },{
+        "type": "RepairFieldAbility",
+        "amount": 4800,
+        "reload": 450,
+        "range": 880
+    }
+	]
+}

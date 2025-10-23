@@ -1,0 +1,36 @@
+{
+    "research": {
+    "parent": "elude",
+    "requirements": [
+        "beryllium/45",
+        "silicon/30"
+    ]
+},
+    "template": "ErekirUnitType",
+    "envDisabled":0,
+    "type": "flying",
+    "name": "星夜",
+    "description": "?????",
+    "controller": "minerAI",
+    "armor" : 15,
+    "range" : 70,
+    "flying": true,
+    "lowAltitude": false,
+    "mineWalls":true,
+    "mineFloor":true,
+    "mineHardnessScaling":true,
+    "isEnemy":false,
+    "speed": 5,
+    "accel":0.2,
+    "drag": 0.4,
+    "itemCapacity": 60,
+    "rotateSpeed": 3,
+    "buildSpeed": 1.5,
+    "buildBeamOffset":8,
+    "mineSpeed": 6,
+    "mineTier": 3,
+    "engineOffset": 3.5,
+    "engineSize" : 2.9,
+    "hitSize": 15,
+    "health": 350
+}

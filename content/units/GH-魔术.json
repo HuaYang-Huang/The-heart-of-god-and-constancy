@@ -1,0 +1,1231 @@
+{
+    "type": "flying",
+    "name": "魔术",
+    "description": "牺牲了悬空性能而转化飞行性能，但代价是成为轰炸机",
+    "immunities":["blasted","burning","electrified","freezing","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed","结晶徽章"],
+    "research": {
+	"parent": "GH-铮骨升级厂",
+	"objectives": [
+		{
+	"type": "SectorComplete",
+	"preset": "新的开始"
+		}
+	],
+	"requirements": [
+	"silicon/25000",
+	"thorium/28000",
+	"graphite/18000",
+	"titanium/28000",
+	"beryllium/10000",
+	"tungsten/10000",
+	"棱镜/9500",
+	"无遏板/7550",
+	"潜铁板/6950",
+	"粒子核心/1800",
+	"无遏板/6865"
+	    ]
+	},
+    "armor" : 300,
+    "range" : 210,
+    "flying": true,
+    "lowAltitude": false,
+    "omniMovement": true,
+    "speed": 3.3,
+    "accel":0.2,
+    "drag": 0.4,
+    "envDisabled":0,
+    "faceTarget": false,
+    "circleTarget": true,
+    "itemCapacity": 500,
+    "rotateSpeed": 1.7,
+    "buildSpeed": 7.0,
+    "buildBeamOffset":5,
+    "mineSpeed": 100,
+    "mineTier": 20,
+    "engineOffset": 0.0,
+    "engineSize" : 0,
+    "engineColor" : "69E0C7FF",
+    "outlineColor": "20202CFF",
+    "trailColor": "69E0C7FF",
+    "trailLength": 0,
+    "hitSize": 39,
+    "health": 4500,
+    "payloadCapacity" : 20,
+    "parts": [
+        {
+		"type": "ShapePart",
+		"y": -18.5,
+		"stroke": 3.5,
+		"strokeTo":3.5,
+		"color": "69E0C7FF",
+		"circle": true,
+		"hollow": true,
+		"radius": 8,
+		"radiusTo": 8,
+		"layer":110
+		},{
+		"type": "ShapePart",
+		"y": -18.5,
+		"stroke": 1,
+		"strokeTo":1,
+		"color": "000000FF",
+		"circle": true,
+		"hollow": false,
+		"radius": 7,
+		"radiusTo": 7,
+		"layer":114
+		}
+    ],
+    "weapons":[
+    {
+        "name": "浓雾",
+        "y": -18.5,
+        "x": 0,
+        "reload":12.5,
+        "mirror": false,
+        "alternate": false,
+        "top": true,
+        "rotate": false,
+        "shootY": 0,
+        "display": false,
+        "shootSound": "none",
+        "alwaysShooting": true,
+        "alwaysContinuous": false,
+        "continuous": true,
+        "parentizeEffects": true,
+        "shoot": {
+                "shots": 5,
+                "shotDelay": 4.0
+                },
+        "bullet": {
+        "type": "BasicBulletType",
+    "width": 0,
+    "height": 0,
+    "shrinkY": 0,
+	"shrinkX": 0,
+    "frontColor": "FF7171FF",
+    "backColor": "FF7171FF",
+    "lifetime": 0.1,
+    "speed": 0.0,
+    "damage": 0,
+    "splashDamageRadius": 0.00,
+    "splashDamage": 0.00,
+    "shootEffect": "none",
+    "chargeEffect": "none",
+	"smokeEffect":"none",
+    "despawnEffect": {
+    "type": "MultiEffect",
+	"effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 6.0,
+        "sizeTo": 6.0,
+        "length": 58,
+        "lifetime": 140,
+        "lightOpacity": 55,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C700",
+        "cone": 360
+    }
+        ]
+            },
+    "hitEffect":"none"
+        }
+    },{
+        "name": "烟雾",
+        "y": 9.5,
+        "x": -60.5,
+        "reload":215.5,
+        "mirror": false,
+        "alternate": false,
+        "top": true,
+        "rotate": false,
+        "shootY": 0,
+        "display": false,
+        "shootSound": "none",
+        "alwaysShooting": true,
+        "alwaysContinuous": false,
+        "continuous": true,
+        "parentizeEffects": true,
+        "shoot": {
+                "shots": 3,
+                "shotDelay": 5.0
+                },
+        "bullet": {
+        "type": "BasicBulletType",
+    "width": 0,
+    "height": 0,
+    "shrinkY": 0,
+	"shrinkX": 0,
+    "frontColor": "FF7171FF",
+    "backColor": "FF7171FF",
+    "lifetime": 0.1,
+    "speed": 0.0,
+    "damage": 0,
+    "splashDamageRadius": 0.00,
+    "splashDamage": 0.00,
+    "shootEffect": "none",
+    "chargeEffect": "none",
+	"smokeEffect":"none",
+    "despawnEffect": {
+    "type": "MultiEffect",
+	"effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 4,
+        "sizeTo": 4,
+        "length": 0,
+        "lifetime": 85,
+        "lightOpacity": 15,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "FF7171FF",
+        "colorTo": "FF000000",
+        "cone": 360
+    }
+        ]
+            },
+    "hitEffect":"none"
+        }
+    },{
+        "name": "烟雾",
+        "y": 9.5,
+        "x": 60.5,
+        "reload":215.5,
+        "mirror": false,
+        "alternate": false,
+        "top": true,
+        "rotate": false,
+        "shootY": 0,
+        "display": false,
+        "shootSound": "none",
+        "alwaysShooting": true,
+        "alwaysContinuous": false,
+        "continuous": true,
+        "parentizeEffects": true,
+        "shoot": {
+                "shots": 3,
+                "shotDelay": 5.0
+                },
+        "bullet": {
+        "type": "BasicBulletType",
+    "width": 0,
+    "height": 0,
+    "shrinkY": 0,
+	"shrinkX": 0,
+    "frontColor": "7ACAFFFF",
+    "backColor": "7ACAFFFF",
+    "lifetime": 0.1,
+    "speed": 0.0,
+    "damage": 0,
+    "splashDamageRadius": 0.00,
+    "splashDamage": 0.00,
+    "shootEffect": "none",
+    "chargeEffect": "none",
+	"smokeEffect":"none",
+    "despawnEffect": {
+    "type": "MultiEffect",
+	"effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 4,
+        "sizeTo": 4,
+        "length": 0,
+        "lifetime": 85,
+        "lightOpacity": 15,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "7ACAFFFF",
+        "colorTo": "0099FF00",
+        "cone": 360
+    }
+        ]
+            },
+    "hitEffect":"none"
+        }
+    },{
+        "name": "发动机",
+        "y": 4.5,
+        "x": -47.5,
+        "mirror": false,
+        "alternate": false,
+        "top": true,
+        "display": false,
+        "rotate": false,
+        "baseRotation": 180,
+        "shootY": 10,
+        "shootSound": "none",
+        "alwaysShooting": true,
+        "alwaysContinuous": true,
+        "continuous": true,
+        "parentizeEffects": true,
+        "bullet": {
+            "type": "ContinuousFlameBulletType",
+                "colors": [
+                "FF7171FF",
+                "FF7171FF",
+                "FF7171FF",
+                "FF7171FF"
+        ],
+            "damage": 30,
+            "intervalBullets": 2,
+            "intervalRandomSpread": 1,
+            "bulletInterval": 2.7,
+    "intervalBullet": {
+        "type": "BulletType",
+        "despawnHit": false,
+        "despawnEffect": "none",
+        "shootEffect": "none",
+    "hitEffect": {
+        "type":"multiEffect",
+        "followParent": false,
+        "rotWithParent": false,
+    "effects":[
+    {
+        "type": "ParticleEffect",
+        "followParent": true,
+        "rotWithParent": true,
+        "line": true,
+        "layer": 108,
+        "particles": 1,
+        "lifetime": 31,
+        "interp": "circleOut",
+        "length": 35,
+        "baseLength": 8,
+        "cone": 20,
+        "strokeFrom": 2,
+        "lenFrom": 10,
+        "lenTo": 0,
+        "colorFrom": "FF7171FF",
+        "colorTo": "FF7171FF"
+                }
+            ]
+        },
+        "lifetime": 0,
+        "instantDisappear": true
+    },
+            "drawFlare": false,
+            "collides": false,
+            "width": 2,
+            "divisions": 32,
+            "length": 23
+        }
+    },{
+        "name": "发动机",
+        "y": 1.5,
+        "x": -36.5,
+        "mirror": false,
+        "alternate": false,
+        "top": true,
+        "display": false,
+        "rotate": false,
+        "baseRotation": 180,
+        "shootY": 10,
+        "shootSound": "none",
+        "alwaysShooting": true,
+        "alwaysContinuous": true,
+        "continuous": true,
+        "parentizeEffects": true,
+        "bullet": {
+            "type": "ContinuousFlameBulletType",
+                "colors": [
+                "FF7171FF",
+                "FF7171FF",
+                "FF7171FF",
+                "FF7171FF"
+        ],
+            "damage": 30,
+            "intervalBullets": 2,
+            "intervalRandomSpread": 1,
+            "bulletInterval": 2.7,
+    "intervalBullet": {
+        "type": "BulletType",
+        "despawnHit": false,
+        "despawnEffect": "none",
+        "shootEffect": "none",
+    "hitEffect": {
+        "type":"multiEffect",
+        "followParent": false,
+        "rotWithParent": false,
+    "effects":[
+    {
+        "type": "ParticleEffect",
+        "followParent": true,
+        "rotWithParent": true,
+        "line": true,
+        "layer": 108,
+        "particles": 1,
+        "lifetime": 31,
+        "interp": "circleOut",
+        "length": 35,
+        "baseLength": 8,
+        "cone": 20,
+        "strokeFrom": 2,
+        "lenFrom": 10,
+        "lenTo": 0,
+        "colorFrom": "FF7171FF",
+        "colorTo": "FF7171FF"
+                }
+            ]
+        },
+        "lifetime": 0,
+        "instantDisappear": true
+    },
+            "drawFlare": false,
+            "collides": false,
+            "width": 4,
+            "divisions": 32,
+            "length": 38
+        }
+    },{
+        "name": "发动机",
+        "y": 4.5,
+        "x": 47.5,
+        "mirror": false,
+        "alternate": false,
+        "top": true,
+        "display": false,
+        "rotate": false,
+        "baseRotation": 180,
+        "shootY": 10,
+        "shootSound": "none",
+        "alwaysShooting": true,
+        "alwaysContinuous": true,
+        "continuous": true,
+        "parentizeEffects": true,
+        "bullet": {
+            "type": "ContinuousFlameBulletType",
+                "colors": [
+                "7ACAFFFF",
+                "7ACAFFFF",
+                "7ACAFFFF",
+                "7ACAFFFF"
+        ],
+            "damage": 30,
+            "intervalBullets": 2,
+            "intervalRandomSpread": 1,
+            "bulletInterval": 2.7,
+    "intervalBullet": {
+        "type": "BulletType",
+        "despawnHit": false,
+        "despawnEffect": "none",
+        "shootEffect": "none",
+    "hitEffect": {
+        "type":"multiEffect",
+        "followParent": false,
+        "rotWithParent": false,
+    "effects":[
+    {
+        "type": "ParticleEffect",
+        "followParent": true,
+        "rotWithParent": true,
+        "line": true,
+        "layer": 108,
+        "particles": 1,
+        "lifetime": 31,
+        "interp": "circleOut",
+        "length": 35,
+        "baseLength": 8,
+        "cone": 20,
+        "strokeFrom": 2,
+        "lenFrom": 10,
+        "lenTo": 0,
+        "colorFrom": "7ACAFFFF",
+        "colorTo": "7ACAFFFF"
+                }
+            ]
+        },
+        "lifetime": 0,
+        "instantDisappear": true
+    },
+            "drawFlare": false,
+            "collides": false,
+            "width": 2,
+            "divisions": 32,
+            "length": 23
+        }
+    },{
+        "name": "发动机",
+        "y": 1.5,
+        "x": 36.5,
+        "mirror": false,
+        "alternate": false,
+        "top": true,
+        "display": false,
+        "rotate": false,
+        "baseRotation": 180,
+        "shootY": 10,
+        "shootSound": "none",
+        "alwaysShooting": true,
+        "alwaysContinuous": true,
+        "continuous": true,
+        "parentizeEffects": true,
+        "bullet": {
+            "type": "ContinuousFlameBulletType",
+                "colors": [
+                "7ACAFFFF",
+                "7ACAFFFF",
+                "7ACAFFFF",
+                "7ACAFFFF"
+        ],
+            "damage": 30,
+            "intervalBullets": 2,
+            "intervalRandomSpread": 1,
+            "bulletInterval": 2.7,
+    "intervalBullet": {
+        "type": "BulletType",
+        "despawnHit": false,
+        "despawnEffect": "none",
+        "shootEffect": "none",
+    "hitEffect": {
+        "type":"multiEffect",
+        "followParent": false,
+        "rotWithParent": false,
+    "effects":[
+    {
+        "type": "ParticleEffect",
+        "followParent": true,
+        "rotWithParent": true,
+        "line": true,
+        "layer": 108,
+        "particles": 1,
+        "lifetime": 31,
+        "interp": "circleOut",
+        "length": 35,
+        "baseLength": 8,
+        "cone": 20,
+        "strokeFrom": 2,
+        "lenFrom": 10,
+        "lenTo": 0,
+        "colorFrom": "7ACAFFFF",
+        "colorTo": "7ACAFFFF"
+                }
+            ]
+        },
+        "lifetime": 0,
+        "instantDisappear": true
+    },
+            "drawFlare": false,
+            "collides": false,
+            "width": 4,
+            "divisions": 32,
+            "length": 38
+        }
+    },{
+		"name": "魔术炮塔2-red",
+		"reload":2.5,
+		"x":-32.5,
+		"y":14.5,
+		"mirror":false,
+		"top":false,
+		"alternate": false,
+		"shootCone": 45,
+		"layerOffset": -0.001,
+		"rotationLimit": 0,
+		"rotateSpeed": 0,
+		"rotate": false,
+		"inaccuracy": 6,
+		"bullet": {
+	"type": "BasicBulletType",
+    "width": 10,
+    "height": 10,
+    "status":"burning",
+    "statusDuration": 180,
+    "trailParam": 1,
+    "trailLength": 12,
+    "trailWidth": 3,
+    "trailColor": "FF7171FF",
+    "frontColor": "FF7171FF",
+    "backColor": "FF7171FF",
+    "lifetime": 65,
+    "speed": 9.5,
+    "damage":85,
+    "pierce":false,
+    "pierceBuilding": false,
+    "shootEffect": {
+	"type": "multiEffect",
+	"effects": [
+		{
+	"type": "ParticleEffect",
+    "particles": 10,
+    "sizeFrom": 2,
+    "sizeTo": 0,
+    "length": 55,
+    "lifetime": 20,
+    "lightOpacity": 20,
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "colorFrom": "FF7171FF",
+    "colorTo": "FF7171FF",
+    "cone": 20
+	    }
+	]
+	        },
+	"despawnEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	    "type": "ParticleEffect",
+        "particles": 5,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "length": 20,
+        "lifetime": 25,
+        "lightOpacity": 15,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "FF7171FF",
+        "colorTo": "FF7171FF",
+        "cone": 360
+	}
+	    ]
+	        },
+	"hitEffect":{
+    "type": "MultiEffect",
+	"effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 5,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "length": 20,
+        "lifetime": 25,
+        "lightOpacity": 15,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "FF7171FF",
+        "colorTo": "FF7171FF",
+        "cone": 360
+    }
+        ]
+            }
+	    }
+	},{
+		"name": "魔术炮塔2-red",
+		"reload":2.5,
+		"x":-22.0,
+		"y":22.5,
+		"mirror":false,
+		"top":false,
+		"alternate": false,
+		"shootCone": 45,
+		"layerOffset": -0.001,
+		"rotationLimit": 0,
+		"rotateSpeed": 0,
+		"rotate": false,
+		"inaccuracy": 6,
+		"bullet": {
+	"type": "BasicBulletType",
+    "width": 10,
+    "height": 10,
+    "status":"burning",
+    "statusDuration": 180,
+    "trailParam": 1,
+    "trailLength": 12,
+    "trailWidth": 3,
+    "trailColor": "FF7171FF",
+    "frontColor": "FF7171FF",
+    "backColor": "FF7171FF",
+    "lifetime": 65,
+    "speed": 9.5,
+    "damage":85,
+    "pierce":false,
+    "pierceBuilding": false,
+    "shootEffect": {
+	"type": "multiEffect",
+	"effects": [
+		{
+	"type": "ParticleEffect",
+    "particles": 10,
+    "sizeFrom": 2,
+    "sizeTo": 0,
+    "length": 55,
+    "lifetime": 20,
+    "lightOpacity": 20,
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "colorFrom": "FF7171FF",
+    "colorTo": "FF7171FF",
+    "cone": 20
+	    }
+	]
+	        },
+	"despawnEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	    "type": "ParticleEffect",
+        "particles": 5,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "length": 20,
+        "lifetime": 25,
+        "lightOpacity": 15,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "FF7171FF",
+        "colorTo": "FF7171FF",
+        "cone": 360
+	}
+	    ]
+	        },
+	"hitEffect":{
+    "type": "MultiEffect",
+	"effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 5,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "length": 20,
+        "lifetime": 25,
+        "lightOpacity": 15,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "FF7171FF",
+        "colorTo": "FF7171FF",
+        "cone": 360
+    }
+        ]
+            }
+	    }
+	},{
+		"name": "魔术炮塔2-blue",
+		"reload":2.5,
+		"x":32.5,
+		"y":14.5,
+		"mirror":false,
+		"top":false,
+		"alternate": false,
+		"shootCone": 45,
+		"layerOffset": -0.001,
+		"rotationLimit": 0,
+		"rotateSpeed": 0,
+		"rotate": false,
+		"inaccuracy": 6,
+		"bullet": {
+	"type": "BasicBulletType",
+    "width": 10,
+    "height": 10,
+    "status":"burning",
+    "statusDuration": 180,
+    "trailParam": 1,
+    "trailLength": 12,
+    "trailWidth": 3,
+    "trailColor": "7ACAFFFF",
+    "frontColor": "7ACAFFFF",
+    "backColor": "7ACAFFFF",
+    "lifetime": 65,
+    "speed": 9.5,
+    "damage":85,
+    "pierce":false,
+    "pierceBuilding": false,
+    "shootEffect": {
+	"type": "multiEffect",
+	"effects": [
+		{
+	"type": "ParticleEffect",
+    "particles": 10,
+    "sizeFrom": 2,
+    "sizeTo": 0,
+    "length": 55,
+    "lifetime": 20,
+    "lightOpacity": 20,
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "colorFrom": "7ACAFFFF",
+    "colorTo": "7ACAFFFF",
+    "cone": 20
+	    }
+	]
+	        },
+	"despawnEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	    "type": "ParticleEffect",
+        "particles": 5,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "length": 20,
+        "lifetime": 25,
+        "lightOpacity": 15,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "7ACAFFFF",
+        "colorTo": "7ACAFFFF",
+        "cone": 360
+	}
+	    ]
+	        },
+	"hitEffect":{
+    "type": "MultiEffect",
+	"effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 5,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "length": 20,
+        "lifetime": 25,
+        "lightOpacity": 15,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "7ACAFFFF",
+        "colorTo": "7ACAFFFF",
+        "cone": 360
+    }
+        ]
+            }
+	    }
+	},{
+		"name": "魔术炮塔2-blue",
+		"reload":2.5,
+		"x":22.0,
+		"y":22.5,
+		"mirror":false,
+		"top":false,
+		"alternate": false,
+		"shootCone": 45,
+		"layerOffset": -0.001,
+		"rotationLimit": 0,
+		"rotateSpeed": 0,
+		"rotate": false,
+		"inaccuracy": 6,
+		"bullet": {
+	"type": "BasicBulletType",
+    "width": 10,
+    "height": 10,
+    "status":"burning",
+    "statusDuration": 180,
+    "trailParam": 1,
+    "trailLength": 12,
+    "trailWidth": 3,
+    "trailColor": "7ACAFFFF",
+    "frontColor": "7ACAFFFF",
+    "backColor": "7ACAFFFF",
+    "lifetime": 65,
+    "speed": 9.5,
+    "damage":85,
+    "pierce":false,
+    "pierceBuilding": false,
+    "shootEffect": {
+	"type": "multiEffect",
+	"effects": [
+		{
+	"type": "ParticleEffect",
+    "particles": 10,
+    "sizeFrom": 2,
+    "sizeTo": 0,
+    "length": 55,
+    "lifetime": 20,
+    "lightOpacity": 20,
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "colorFrom": "7ACAFFFF",
+    "colorTo": "7ACAFFFF",
+    "cone": 20
+	    }
+	]
+	        },
+	"despawnEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	{
+	    "type": "ParticleEffect",
+        "particles": 5,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "length": 20,
+        "lifetime": 25,
+        "lightOpacity": 15,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "7ACAFFFF",
+        "colorTo": "7ACAFFFF",
+        "cone": 360
+	}
+	    ]
+	        },
+	"hitEffect":{
+    "type": "MultiEffect",
+	"effects": [
+    {
+        "type": "ParticleEffect",
+        "particles": 5,
+        "sizeFrom": 2,
+        "sizeTo": 0,
+        "length": 20,
+        "lifetime": 25,
+        "lightOpacity": 15,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "7ACAFFFF",
+        "colorTo": "7ACAFFFF",
+        "cone": 360
+    }
+        ]
+            }
+	    }
+	},{
+        "name": "魔术炮塔1",
+        "y": 29.5,
+        "x": 0,
+        "mirror": false,
+        "alternate": false,
+        "top": false,
+        "display": true,
+        "rotate": false,
+        "shootY": 0,
+        "shootSound": "none",
+        "alwaysShooting": false,
+        "alwaysContinuous": true,
+        "continuous": true,
+        "parentizeEffects": true,
+        "layerOffset": -0.001,
+        "bullet": {
+            "type": "ContinuousFlameBulletType",
+                "colors": [
+                "69E0C7FF",
+                "69E0C7FF",
+                "69E0C7FF",
+                "69E0C7FF"
+        ],
+            "damage": 65,
+            "intervalBullets": 1,
+            "intervalRandomSpread": 1,
+            "bulletInterval": 2.0,
+    "intervalBullet": {
+        "type": "BulletType",
+        "despawnHit": true,
+        "despawnEffect": "none",
+        "shootEffect": "none",
+    "hitEffect": {
+        "type":"multiEffect",
+        "followParent": true,
+        "rotWithParent": true,
+    "effects":[
+    {
+        "type": "ParticleEffect",
+        "followParent": true,
+        "rotWithParent": true,
+        "line": true,
+        "layer": 108,
+        "particles": 1,
+        "lifetime": 31,
+        "interp": "circleOut",
+        "length": 35,
+        "baseLength": 8,
+        "cone": 20,
+        "strokeFrom": 2,
+        "lenFrom": 10,
+        "lenTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+                }
+            ]
+        },
+        "lifetime": 0,
+        "instantDisappear": true
+    },
+            "drawFlare": false,
+            "collides": false,
+            "width": 8,
+            "divisions": 30,
+            "length": 155
+        }
+    },{
+        "name":"魔术导弹武器-red",
+        "x": -50.5,
+        "y": 10.5,
+        "mirror": false,
+        "alternate": false,
+        "rotate": false,
+        "reload": 395,
+        "shootY":0,
+        "shootCone": 360,
+        "shoot": {
+                "shots": 17,
+                "shotDelay": 4.5
+                },
+            "inaccuracy": 2,
+            "bullet": {
+        "type": "basicBulletType",
+        "shootEffect": "none",
+        "chargeEffect":"none",
+        "smokeEffect":"none",
+        "spawnUnit": "神恒之心-魔术导弹-red",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "backColor":"FFFFFFFF",	
+        "frontColor":"FFFFFFFF",
+	    "trailColor":"FFFFFFFF"
+            }
+        },{
+        "name":"魔术导弹武器-blue",
+        "x": 50.5,
+        "y": 10.5,
+        "mirror": false,
+        "alternate": false,
+        "rotate": false,
+        "reload": 395,
+        "shootY":0,
+        "shootCone": 360,
+        "shoot": {
+                "shots": 17,
+                "shotDelay": 4.5
+                },
+            "inaccuracy": 2,
+            "bullet": {
+        "type": "basicBulletType",
+        "shootEffect": "none",
+        "chargeEffect":"none",
+        "smokeEffect":"none",
+        "spawnUnit": "神恒之心-魔术导弹-blue",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "backColor":"FFFFFFFF",	
+        "frontColor":"FFFFFFFF",
+	    "trailColor":"FFFFFFFF"
+            }
+        },{
+        "name":"魔术导弹武器-red",
+        "x": -46.5,
+        "y": 10.5,
+        "mirror": false,
+        "alternate": false,
+        "rotate": false,
+        "reload": 395,
+        "shootY":0,
+        "shootCone": 360,
+        "shoot": {
+                "shots": 17,
+                "shotDelay": 4.5
+                },
+            "inaccuracy": 2,
+            "bullet": {
+        "type": "basicBulletType",
+        "shootEffect": "none",
+        "chargeEffect":"none",
+        "smokeEffect":"none",
+        "spawnUnit": "神恒之心-魔术导弹-red",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "backColor":"FFFFFFFF",	
+        "frontColor":"FFFFFFFF",
+	    "trailColor":"FFFFFFFF"
+            }
+        },{
+        "name":"魔术导弹武器-blue",
+        "x": 46.5,
+        "y": 10.5,
+        "mirror": false,
+        "alternate": false,
+        "rotate": false,
+        "reload": 395,
+        "shootY":0,
+        "shootCone": 360,
+        "shoot": {
+                "shots": 17,
+                "shotDelay": 4.5
+                },
+            "inaccuracy": 2,
+            "bullet": {
+        "type": "basicBulletType",
+        "shootEffect": "none",
+        "chargeEffect":"none",
+        "smokeEffect":"none",
+        "spawnUnit": "神恒之心-魔术导弹-blue",
+        "speed": 3.70,
+        "makeFire": false,
+        "homingRange" : 130,
+        "ammoMultiplier": 1.00,
+        "backColor":"FFFFFFFF",	
+        "frontColor":"FFFFFFFF",
+	    "trailColor":"FFFFFFFF"
+            }
+        },{
+           "name": "魔术投弹2",
+            "x": 0,
+            "y": -4,
+            "shootCone": 360,
+            "mirror": false,
+            "alternate": false,
+        "velocityRnd": 0.8,
+        "reload": 450,
+        "ignoreRotation": true,
+        "shootSound": "none",
+        "inaccuracy": 23,
+        "bullet": {
+        "damage": 750,
+        "speed": -1.5,
+        "drag": 0.04,
+        "type": "basicBulletType",
+        "collidesAir": false,
+        "collidesGround": true,
+        "collidesTiles": true,
+        "status": "slow",
+        "statusDuration": 500,
+        "shrinkY": 0,
+        "shrinkX": 0,
+        "trailColor": "69E0C7FF",
+        "trailLength": 10,
+        "trailWidth": 2,
+        "despawnShake": 3,
+        "buildingDamageMultiplier": 1.8,
+        "sprite": "神恒之心-energy-partical-back",
+        "splashDamage": 800,
+        "splashDamageRadius": 100,
+        "keepVelocity": false,
+        "shootEffect": "none",
+        "hitEffect": {
+    "type": "ParticleEffect",
+    "particles": 40,
+    "length": 105,
+    "lifetime": 245,
+    "interp": "circleOut",
+    "cone": 360,
+    "colorFrom": "69E0C7FF",
+    "colorTo": "69E0C7FF",
+    "sizeFrom": 4,
+    "sizeTo": 0
+        },
+        "width": 100,
+        "height": 100,
+        "lifetime": 98,
+        "frontColor": "69E0C7FF",
+        "mixColorTo": "69E0C7FF",
+        "backColor": "69E0C7FF"
+        }
+    },{
+           "name": "魔术投弹1-blue",
+            "x": 27,
+            "y": -4,
+            "shootCone": 360,
+            "mirror": false,
+            "alternate": false,
+            "shoot": {
+        "shots": 2
+    },
+        "velocityRnd": 0.8,
+        "reload": 10,
+        "ignoreRotation": true,
+        "shootSound": "none",
+        "inaccuracy": 23,
+        "bullet": {
+        "damage": 80,
+        "speed": -1.5,
+        "drag": 0.04,
+        "type": "basicBulletType",
+        "collidesAir": false,
+        "collidesGround": true,
+        "collidesTiles": true,
+        "status": "slow",
+        "statusDuration": 500,
+        "shrinkY": 0,
+        "shrinkX": 0,
+        "trailColor": "7ACAFFFF",
+        "trailLength": 10,
+        "trailWidth": 2,
+        "despawnShake": 3,
+        "buildingDamageMultiplier": 1.3,
+        "sprite": "神恒之心-energy-partical-back",
+        "splashDamage": 155,
+        "splashDamageRadius": 75,
+        "keepVelocity": false,
+        "shootEffect": "none",
+        "hitEffect": {
+    "type": "ParticleEffect",
+    "particles": 20,
+    "length": 35,
+    "lifetime": 46,
+    "interp": "circleOut",
+    "cone": 360,
+    "colorFrom": "7ACAFFFF",
+    "colorTo": "7ACAFFFF",
+    "sizeFrom": 4,
+    "sizeTo": 0
+        },
+        "width": 19,
+        "height": 19,
+        "lifetime": 30,
+        "frontColor": "7ACAFFFF",
+        "mixColorTo": "7ACAFFFF",
+        "backColor": "7ACAFFFF"
+        }
+    },{
+           "name": "魔术投弹1-red",
+            "x": -27,
+            "y": -4,
+            "shootCone": 360,
+            "mirror": false,
+            "alternate": false,
+            "shoot": {
+        "shots": 2
+    },
+        "velocityRnd": 0.8,
+        "reload": 10,
+        "ignoreRotation": true,
+        "shootSound": "none",
+        "inaccuracy": 23,
+        "bullet": {
+        "damage": 80,
+        "speed": -1.5,
+        "drag": 0.04,
+        "type": "basicBulletType",
+        "collidesAir": false,
+        "collidesGround": true,
+        "collidesTiles": true,
+        "status": "slow",
+        "statusDuration": 500,
+        "shrinkY": 0,
+        "shrinkX": 0,
+        "trailColor": "FF7171FF",
+        "trailLength": 10,
+        "trailWidth": 2,
+        "despawnShake": 3,
+        "buildingDamageMultiplier": 1.3,
+        "sprite": "神恒之心-energy-partical-back",
+        "splashDamage": 155,
+        "splashDamageRadius": 75,
+        "keepVelocity": false,
+        "shootEffect": "none",
+        "hitEffect": {
+    "type": "ParticleEffect",
+    "particles": 20,
+    "length": 35,
+    "lifetime": 46,
+    "interp": "circleOut",
+    "cone": 360,
+    "colorFrom": "FF7171FF",
+    "colorTo": "FF7171FF",
+    "sizeFrom": 4,
+    "sizeTo": 0
+        },
+        "width": 19,
+        "height": 19,
+        "lifetime": 30,
+        "frontColor": "FF7171FF",
+        "mixColorTo": "FF7171FF",
+        "backColor": "FF7171FF"
+        }
+    }
+        ],
+        "abilities": [
+            {
+            "type": "RegenAbility",
+            "amount": 5.0
+        }
+    ]
+}
