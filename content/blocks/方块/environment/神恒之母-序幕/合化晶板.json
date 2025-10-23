@@ -1,13 +1,13 @@
 {
 	"type": "Floor",
-	"name": "恒行板",
-	"variants":3,
+	"name": "合化晶板",
+	"variants":4,
 	"walkSound": "none",
 	"useColor": true,
 	"hasColor": true,
 	"emitLight": false,
 	"lightRadius": 0,
-	"lightColor": "CB4D4DFF",
+	"lightColor": "36B79BFF",
     "playerUnmineable": false,
     "speedMultiplier": 1,
     "wall": "1-恒行墙"

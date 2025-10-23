@@ -1,7 +1,7 @@
 {
 	"type": "Floor",
 	"name": "恒行板",
-	"variants":3,
+	"variants":6,
 	"walkSound": "none",
 	"useColor": true,
 	"hasColor": true,

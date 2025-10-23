@@ -1,0 +1,11 @@
+{
+    "name":"合化结晶",
+    "variants":4,
+    "type": "TallBlock",
+    "emitLight": true,
+    "clipSize":128,
+    "lightRadius": 110,
+    "lightColor": "69E0C7FF",
+    "shadowAlpha":0.5,
+    "shadowOffset":-2.5
+}

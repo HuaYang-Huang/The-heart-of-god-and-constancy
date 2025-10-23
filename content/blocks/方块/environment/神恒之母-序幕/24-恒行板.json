@@ -9,6 +9,5 @@
 	"lightRadius": 0,
 	"lightColor": "CB4D4DFF",
     "playerUnmineable": false,
-    "speedMultiplier": 1,
-    "wall": "1-恒行墙"
+    "speedMultiplier": 1
 }

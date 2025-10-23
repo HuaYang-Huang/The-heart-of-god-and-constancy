@@ -1,0 +1,12 @@
+{
+	"type": "StaticWall",
+	"name": "恒行墙",
+	"variants":3,
+	"useColor": true,
+	"hasColor": true,
+	"emitLight": false,
+	"lightRadius": 0,
+	"mapColor": "CB4D4DFF",
+	"lightColor": "CB4D4DFF",
+	"playerUnmineable": false
+}

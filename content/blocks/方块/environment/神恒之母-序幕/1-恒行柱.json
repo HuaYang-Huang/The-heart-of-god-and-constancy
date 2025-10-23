@@ -1,0 +1,8 @@
+{
+    "name":"恒行柱",
+    "variants":0,
+    "type": "StaticWall",
+    "emitLight": true,
+    "lightRadius": 100,
+    "lightColor": "69E0C7FF"
+}

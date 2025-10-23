@@ -1,7 +1,7 @@
 {
 	"type": "Floor",
-	"name": "恒行板",
-	"variants":3,
+	"name": "黄-恒行板",
+	"variants":0,
 	"walkSound": "none",
 	"useColor": true,
 	"hasColor": true,
@@ -9,6 +9,5 @@
 	"lightRadius": 0,
 	"lightColor": "CB4D4DFF",
     "playerUnmineable": false,
-    "speedMultiplier": 1,
-    "wall": "1-恒行墙"
+    "speedMultiplier": 1
 }
