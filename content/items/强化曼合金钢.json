@@ -1,0 +1,11 @@
+{
+   "name":"强化曼合金钢",
+   "description":"电子零件功能强，可惜是消耗很大才做了这个强化曼合金钢",
+   "color":"E5D07FFF",
+   "explosiveness":"0",
+   "flammability":"0",
+   "hardness":"80",
+   "cost":"1",
+   "alwaysUnlocked":"true",
+   "research":"潜铁板"
+}

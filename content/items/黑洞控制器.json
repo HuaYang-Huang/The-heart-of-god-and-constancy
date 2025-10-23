@@ -1,0 +1,12 @@
+{
+   "name":"黑洞控制器",
+   "description":"黑洞控制器很难做到，机器里面有稳定性黑洞，不担心黑洞失控爆炸吞噬",
+   "color":"0E1111FF",
+   "explosiveness":"589200.0",
+   "flammability":"0.0",
+   "radioactivity":"25.0",
+   "hardness":"75",
+   "cost":"1",
+   "alwaysUnlocked":"true",
+   "research":"无能神核心"
+}

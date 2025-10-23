@@ -1,0 +1,11 @@
+{
+   "name":"潜合铁金板",
+   "description":"?????",
+   "color":"4BC79EFF",
+   "explosiveness":"0",
+   "flammability":"0",
+   "hardness":"1000",
+   "cost":"1",
+   "alwaysUnlocked":"true",
+   "research":"潜铁板"
+}

@@ -1,0 +1,11 @@
+{
+   "name":"潜铁板",
+   "description":"专业的潜质的铁板，质量好",
+   "color":"#76EEC6",
+   "explosiveness":"0",
+   "flammability":"0",
+   "hardness":"1000",
+   "cost":"1",
+   "alwaysUnlocked":"true",
+   "research":"HG-守子核心"
+}

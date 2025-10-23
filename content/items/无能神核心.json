@@ -1,0 +1,14 @@
+{
+  "name":"无能神核心",
+  "description":"看起来微弱的紫光",
+  "color":"66ccff",
+  "explosiveness":"18257900.5",
+  "flammability":"500.75",
+  "radioactivity":"30.5",
+  "cost":"1",
+  "alwaysUnlocked":"true",
+  "frames":46,
+  "transitionFrames":1,
+  "frameTime":1,
+  "research":"恒金板"
+}

@@ -1,0 +1,15 @@
+{
+   "name":"无恒锭",
+   "description":"无恒锭材料非常非常多。但它都有好处",
+   "color":"9966ff",
+   "explosiveness":"0",
+   "flammability":"0",
+   "hardness":"15800",
+   "cost":"1",
+   "alwaysUnlocked":"true",
+   "radioactivity": 0,
+	"frames":35,
+	"transitionFrames":1,
+	"frameTime":2,
+	"research":"恒金板"
+}

@@ -1,0 +1,15 @@
+{
+   "name":"神子智慧核心",
+   "description":"?????",
+   "color":"3C4041FF",
+   "explosiveness":"0",
+   "flammability":"0",
+   "hardness":"150",
+   "cost":"1",
+   "alwaysUnlocked":"true",
+   "radioactivity": 0,
+	"frames":9,
+	"transitionFrames":1,
+	"frameTime":1,
+	"research":"无子核心"
+}

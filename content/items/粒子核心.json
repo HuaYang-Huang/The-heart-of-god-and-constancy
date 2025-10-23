@@ -1,0 +1,15 @@
+{
+   "name":"粒子核心",
+   "description":"?????",
+   "color":"5D6365FF",
+   "explosiveness":"0",
+   "flammability":"0",
+   "hardness":"100",
+   "cost":"1",
+   "alwaysUnlocked":"true",
+   "radioactivity": 0,
+	"frames":12,
+	"transitionFrames":1,
+	"frameTime":1,
+	"research":"棱镜"
+}

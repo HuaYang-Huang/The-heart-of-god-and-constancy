@@ -1,1 +1,11 @@
-
+{
+   "name":"钢化棱镜",
+   "description":"钢化棱镜硬度比棱镜硬度硬一些",
+   "color":"7D8D96FF",
+   "explosiveness":"0",
+   "flammability":"0",
+   "hardness":"50",
+   "cost":"1",
+   "alwaysUnlocked":"true",
+   "research":"钢化棱镜"
+}

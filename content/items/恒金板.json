@@ -1,0 +1,11 @@
+{
+   "name":"恒金板",
+   "description":"比其他强太多了，耐久性强，硬度强，众多机器、单位和武器使用它",
+   "color":"596366FF",
+   "explosiveness":"0",
+   "flammability":"0",
+   "hardness":"160",
+   "cost":"1",
+   "alwaysUnlocked":"true",
+   "research":"强化曼合金钢"
+}

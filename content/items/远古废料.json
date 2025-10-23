@@ -1,0 +1,12 @@
+{
+    "name":"远古废料",
+    "description":"许多金属融合的废料",
+    "color":"E8D174FF",
+    "explosiveness":"5",
+    "flammability":"0",
+    "hardness":"250",
+    "cost":"1",
+    "alwaysUnlocked":"true",
+    "radioactivity": 0,
+    "research":"合化电晶"
+}

@@ -1,0 +1,12 @@
+{
+   "name":"恒化泵壳",
+   "description":"恒化泵壳，对机器工作带来方便帮助",
+   "color":"444D4DFF",
+   "explosiveness":"0.0",
+   "flammability":"0.0",
+   "radioactivity":"0.0",
+   "hardness":"60",
+   "cost":"1",
+   "alwaysUnlocked":"true",
+   "research":"无遏板"
+}

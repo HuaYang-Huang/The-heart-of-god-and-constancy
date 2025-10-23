@@ -1,0 +1,11 @@
+{
+   "name":"无遏板",
+   "description":"?????",
+   "color":"6F6D6FFF",
+   "explosiveness":"0",
+   "flammability":"0",
+   "hardness":"1000",
+   "cost":"1",
+   "alwaysUnlocked":"true",
+   "research":"潜铁板"
+}
