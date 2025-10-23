@@ -1,0 +1,52 @@
+{
+	"type": "ConsumeGenerator",
+	"name": "合化晶液发电机",
+	"description":"用合化晶液来发电",
+	"size": 2,
+	"health": 3500,
+	"armor": 120,
+	"hasLiquids": true,
+	"hasItems": false,
+	"itemDuration": 60,
+	"powerProduction": 83.33333334,
+	"liquidCapacity": 200,
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			"DrawDefault",
+			{
+				"type": "DrawRegion",
+				"suffix": "-turbine",
+				"rotateSpeed":9,
+				"rotation":45
+			},{
+				"type": "DrawRegion",
+				"suffix": "-cap"
+			},
+			"DrawWarmupRegion",
+			{
+			"type": "DrawLiquidRegion",
+			"drawLiquid": "water"
+			}
+		]
+	},
+	"generateEffect": "generatespark",
+	"consumes": {
+		"liquid": "合化晶液/0.1"
+	},
+	"buildCostMultiplier": 0.4,
+	"requirements": [
+		"lead/650",
+		"titanium/400",
+		"metaglass/150",
+		"silicon/340",
+		"beryllium/200",
+		"tungsten/255",
+		"棱镜/105",
+		"潜铁板/80"
+	],
+	"ambientSound": "smelter",
+	"ambientSoundVolume": 0.06,
+	"category": "power",
+	"research": "GH-守子核心"
+}

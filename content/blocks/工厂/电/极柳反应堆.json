@@ -1,0 +1,23 @@
+{
+    "type": "NuclearReactor",
+    "name": "极柳反应堆",
+    "category": "power",
+    "description" : "?????",
+    "requirements": [
+        "lead/4550","silicon/2400","graphite/1250","thorium/1390","metaglass/1285"
+    ],
+    "size": 5,
+    "health": 6000,
+    "itemDuration": 920.00,
+    "powerProduction": 189.75,
+    "heating": 0.04,
+    "consumes": {
+        "item": "thorium",
+        "liquid": {
+            "liquid": "cryofluid",
+            "amount": 0.045,
+            "update": false
+        }
+    },
+    "research" : "t2钍反应堆"
+}

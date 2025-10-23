@@ -1,0 +1,60 @@
+{
+    "type": "HeaterGenerator",
+    "name": "大型化学燃烧室",
+    "category": "power",
+    "description" : "比化学燃烧室发电更多了",
+    "research":"chemical-combustion-chamber",
+    "squareSprite": false,
+    "size": 4,
+    "health": 2400,
+    "powerProduction": 25.00,
+    "regionRotated1": 2,
+    "heatOutput": 15,
+    "liquidCapacity":5,
+    "requirements": [
+		"silicon/110",
+		"graphite/95",
+		"beryllium/175",
+		"oxide/60",
+		"tungsten/115"
+	],
+	"consumes": {
+        "liquids": ["arkycite/1", "ozone/0.05"]
+    },
+    "drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-bottom"
+			},
+			{
+				"type": "DrawPistons",
+				"sinMag": 2.5,
+				"sinScl": 2,
+				"sides": 4,
+				"sideOffset": 1.57079633
+			},
+			{
+				"type": "DrawRegion",
+				"suffix": "-mid"
+			},
+			{
+				"type": "DrawLiquidTile",
+				"drawLiquid": "hydrogen"
+			},
+			"DrawDefault",
+			{
+				"type": "DrawGlowRegion",
+				"alpha": 1,
+				"glowScale": 5,
+				"color": "c967b099"
+			},
+			"DrawHeatOutput",
+			{
+				"type": "DrawHeatInput",
+				"suffix": "-heat"
+			}
+		]
+	}
+}

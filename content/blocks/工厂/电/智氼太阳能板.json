@@ -1,0 +1,12 @@
+{
+    "type": "SolarGenerator",
+    "name": "智氼太阳能板",
+   "description":"太阳能加强",
+    "size":5,
+    "requirements": [
+        "lead/2560","silicon/1500"
+    ],
+    "powerProduction": 50.0,
+  "research":"solar-panel-large",
+  "category":"power"
+}

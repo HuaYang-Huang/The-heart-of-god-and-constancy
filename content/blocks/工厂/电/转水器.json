@@ -1,0 +1,48 @@
+{
+    "type": "ConsumeGenerator",
+    "name":"转水器",
+    "description":"合化晶液转化水进行发电",
+    "health":6000,
+    "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+        {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+            },{
+        "type": "DrawGlowRegion",
+        "color": "69E0C7FF",
+        "glowScale": 17,
+        "glowIntensity": 1,
+        "suffix": "-glow1"
+            },{
+        "type": "DrawDefault"
+            }
+        ]
+    },
+    "powerProduction": 35.00,
+    "size": 3,
+    "liquidCapacity":300,
+    "hasLiquids":true,
+    "hasPower": true,
+    "hasItems": false,
+    "itemDuration": 60,
+    "consumes": {
+        "liquids": [
+        "water/1"
+        ]
+    },
+    "requirements": [
+    "copper/245",
+    "lead/250",
+    "metaglass/85",
+    "silicon/250",
+    "titanium/100",
+    "thorium/150",
+    "棱镜/45",
+    "潜铁板/10"
+    ],
+    "category": "crafting",
+    "research": "合化晶液发电机",
+    "outputLiquid": "合化晶液/0.5"
+}

@@ -1,0 +1,476 @@
+{
+    "type": "ImpactReactor",
+    "name": "渺光之心",
+    "health": 10000000,
+    "armor":5800,
+    "description":"[purple]无穷无尽的能量，却还是渺小的分子",
+    "research" : "合化晶液发电机"
+    "itemCapacity": 1000,
+    "liquidCapacity": 2400,
+    "size": 16,
+    "lightColor": "69E0C7FF",
+    "baseExplosiveness": 90000000,
+    "explosionRadius": 7000,
+    "explosionDamage": 90000000,
+    "hasLiquids": true,
+    "powerProduction": 10000000000,
+    "warmupSpeed": 0.0006,
+    "itemDuration": 220,
+    "destroyBullet":{
+	"type":"BasicBulletType",
+	"sprite": "神恒之心-black_halo",
+	"layer": 90.1,
+	"width": 180,
+	"height":180,
+	"hitShake": 6,
+	"damage":0,
+	"splashDamageRadius": 380,
+    "splashDamage": 458900,
+    "shrinkY":0,
+    "speed":0,
+    "lifetime":530,
+    "collides":false,
+    "frontColor": "69E0C7FF",
+    "backColor": "69E0C7FF",
+    "smokeEffect":"none",
+	"hitEffect": {
+	    "type": "MultiEffect",
+	        "effects": [
+	    {
+    "type": "ParticleEffect",
+	"region": "神恒之心-black_halo",
+	"layer": 90.1,
+	"startDelay": 5.5,
+	"spin": 0,
+    "particles": 1,
+    "sizeFrom": 180,
+    "sizeTo": 0,
+    "length": 0,
+    "lifetime": 60,
+    "lightOpacity": 15,
+    "interp": "swingIn",
+    "colorFrom": "69E0C7FF",
+    "colorTo": "69E0C7FF",
+    "cone": 0
+    },{
+        "type": "WaveEffect",
+        "lifetime": 55,
+        "sizeFrom": 0,
+        "sizeTo": 345,
+        "strokeFrom": 65,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+    }
+        ]
+	},
+	"despawnEffect":"none",
+    "shootEffect": "none",
+    "chargeEffect":"none",
+    "fragLifeMin":5,
+    "fragBullets":13,
+	"fragBullet":{
+	    "type": "PointBulletType",
+		"trailEffect": "none",
+		"lifetime": 25,
+		"speed": 12,
+		"damage":0,
+	    "splashDamageRadius": 180,
+		"splashDamage": 6650,
+            "despawnEffect": "none",
+	        "chargeEffect": "none",
+            "shootEffect": "none",
+	        "smokeEffect": "none",
+	        "hitEffect": {
+	        "type": "MultiEffect",
+	        "effects": [
+	{
+    "type": "ParticleEffect",
+	"region": "神恒之心-black_halo",
+	"layer": 90.1,
+	"startDelay": 5.5,
+	"spin": 0,
+    "particles": 1,
+    "sizeFrom": 180,
+    "sizeTo": 180,
+    "length": 0,
+    "lifetime": 530,
+    "lightOpacity": 15,
+    "interp": "swingIn",
+    "colorFrom": "69E0C7FF",
+    "colorTo": "69E0C7FF",
+    "cone": 0
+	        }
+	    ]
+    },
+	"fragLifeMin":1,
+    "fragBullets":1,
+	"fragBullet":{
+	    "type":"BasicBulletType",
+	"sprite": "神恒之心-black_halo",
+	"layer": 90.1,
+	"width": 0,
+	"height":0,
+	"hitShake": 6,
+	"damage":0,
+    "shrinkY":0,
+    "speed":0,
+    "lifetime":530,
+    "collides":false,
+    "frontColor": "69E0C7FF",
+    "backColor": "69E0C7FF",
+    "smokeEffect":"none",
+	"hitEffect": {
+	        "type": "MultiEffect",
+	        "effects": [
+	{
+    "type": "ParticleEffect",
+	"region": "神恒之心-black_halo",
+	"layer": 90.1,
+	"startDelay": 5.5,
+	"spin": 0,
+    "particles": 1,
+    "sizeFrom": 180,
+    "sizeTo": 180,
+    "length": 0,
+    "lifetime": 530,
+    "lightOpacity": 15,
+    "interp": "swingIn",
+    "colorFrom": "69E0C7FF",
+    "colorTo": "69E0C7FF",
+    "cone": 0
+	        },{
+        "type": "WaveEffect",
+        "lifetime": 55,
+        "sizeFrom": 0,
+        "sizeTo": 345,
+        "strokeFrom": 65,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+    }
+	    ]
+    },
+	"despawnEffect":"none",
+    "shootEffect": "none",
+    "chargeEffect":"none",
+        "intervalAngle": 360,
+    "intervalSpread": 360,
+    "intervalBullets": 5,
+    "intervalRandomSpread": 360,
+    "bulletInterval": 25,
+    "intervalBullet": {
+        "width": 0,
+	    "height":0,
+		"lifetime": 8.8,
+		"speed": 20,
+		"damage":0,
+	    "splashDamageRadius": 180,
+		"splashDamage": 6650,
+            "despawnEffect": "none",
+	        "chargeEffect": "none",
+            "shootEffect": "none",
+	        "smokeEffect": "none",
+	        "hitEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	    {
+        "type": "ParticleEffect",
+        "region": "神恒之心-explosive_debris",
+	    "layer": 90,
+        "particles": 1,
+        "sizeFrom": 145,
+        "sizeTo": 0,
+        "length": 40,
+        "lifetime": 35,
+        "lightOpacity": 10,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF",
+        "cone": 360
+    }
+	        ]
+	    },
+	"fragBullets": 1,
+        "fragRandomSpread": 5,
+        "fragVelocityMin": 3,
+        "fragBullet": {
+            "type":"BasicBulletType",
+	        "sprite": "神恒之心-black_halo",
+        	"layer": 89.9,
+        	"width": 58,
+        	"height":58,
+        	"hitShake": 6,
+        	"damage":17680,
+        	"splashDamageRadius": 80,
+            "splashDamage": 25000,
+            "shrinkY":0,
+            "speed":3,
+            "lifetime":45,
+            "collides": true,
+            "frontColor": "69E0C7FF",
+            "backColor": "69E0C7FF",
+            "smokeEffect":"none",
+            "hitEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	        {
+        "type": "ParticleEffect",
+        "particles": 1,
+        "lifetime": 100,
+        "length": 0,
+        "interp": "swingIn",
+        "spin": 3,
+        "region": "神恒之心-bigstar",
+        "sizeFrom": 280,
+        "sizeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"   
+                },{
+        "type": "WaveEffect",
+        "lifetime": 55,
+        "sizeFrom": 0,
+        "sizeTo": 205,
+        "strokeFrom": 45,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+                },{
+        "type": "ParticleEffect",
+        "particles": 12,
+        "sizeFrom": 55,
+        "sizeTo": 0,
+        "length": 250,
+        "lifetime": 75,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C700",
+        "cone": 360
+                }
+	    ]
+	},
+            "keepVelocity": false,
+            "drag":-0.058,
+            "pierce":false,
+            "fragLifeMin":1,
+            "fragBullets":1,
+	        "fragBullet":{
+    "type":"BasicBulletType",
+	"width": 0,
+	"height":0,
+	"hitShake": 6,
+	"damage":0,
+    "shrinkY":0,
+    "speed":0,
+    "lifetime":100,
+    "collides":false,
+    "frontColor": "69E0C7FF",
+    "backColor": "69E0C7FF",
+    "smokeEffect":"none",
+	"hitEffect": "none",
+	"intervalAngle": 360,
+    "intervalSpread": 360,
+    "intervalBullets": 3,
+    "intervalRandomSpread": 360,
+    "bulletInterval": 8,
+    "intervalBullet": {
+        "sprite": "神恒之心-rail-star-line-0",
+        "width": 30,
+	    "height":30,
+		"lifetime": 120.5,
+		"speed": 2.5,
+		"damage": 2450,
+		"frontColor": "69E0C7FF",
+        "backColor": "69E0C7FF",
+	    "splashDamageRadius": 90,
+		"splashDamage": 1450,
+		"homingPower": 0.0147,
+            "homingRange": 285,
+            "homingDelay": 0.062,
+            "weaveScale": 10,
+            "weaveMag": 5,
+            "trailParam": 2,
+    "trailLength": 16,
+    "trailWidth": 4,
+    "trailColor": "69E0C7FF",
+            "despawnEffect": "none",
+	        "chargeEffect": "none",
+            "shootEffect": "none",
+	        "smokeEffect": "none",
+	        "hitEffect": {
+        "type": "WaveEffect",
+        "lifetime": 35,
+        "sizeFrom": 0,
+        "sizeTo": 135,
+        "strokeFrom": 25,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+    }
+                }
+	        }
+        }
+    }
+    	}
+	},
+	    "intervalAngle": 360,
+    "intervalSpread": 360,
+    "intervalBullets": 5,
+    "intervalRandomSpread": 360,
+    "bulletInterval": 25,
+    "intervalBullet": {
+        "width": 0,
+	    "height":0,
+		"lifetime": 6.3,
+		"speed": 20,
+		"damage":0,
+	    "splashDamageRadius": 180,
+		"splashDamage": 6650,
+            "despawnEffect": "none",
+	        "chargeEffect": "none",
+            "shootEffect": "none",
+	        "smokeEffect": "none",
+	        "hitEffect": {
+	"type": "MultiEffect",
+	"effects": [
+	    {
+        "type": "ParticleEffect",
+        "region": "神恒之心-explosive_debris",
+	    "layer": 90,
+        "particles": 1,
+        "sizeFrom": 115,
+        "sizeTo": 0,
+        "length": 40,
+        "lifetime": 35,
+        "lightOpacity": 10,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF",
+        "cone": 360
+    }
+	        ]
+	    },
+	    "fragBullets": 4,
+        "fragRandomSpread": 5,
+        "fragVelocityMin":2,
+        "fragLifeMin":2,
+        "fragBullet": {
+    "type":"BasicBulletType",
+	"width": 0,
+	"height":0,
+	"hitShake": 6,
+	"damage":0,
+	"splashDamageRadius": 150,
+    "splashDamage": 158900,
+    "shrinkY":0,
+    "speed": 2.5,
+    "lifetime":90,
+    "collides":true,
+    "frontColor": "69E0C7FF",
+    "backColor": "69E0C7FF",
+    "smokeEffect":"none",
+	"hitEffect": {
+	    "type": "MultiEffect",
+	        "effects": [
+	    {
+        "type": "WaveEffect",
+        "lifetime": 85,
+        "sizeFrom": 0,
+        "sizeTo": 385,
+        "strokeFrom": 55,
+        "strokeTo": 0,
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF"
+    },{
+        "type": "ParticleEffect",
+        "startDelay": 5.5,
+        "particles": 1,
+        "sizeFrom": 155,
+        "sizeTo": 155,
+        "length": 0,
+        "lifetime": 135,
+        "lightOpacity": 10,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C700",
+        "cone": 360
+                }
+        ]
+	}
+            }
+        }
+    },
+    "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+        {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+        },{
+		"type": "DrawLiquidRegion",
+		"drawLiquid": "water"
+		},
+        {
+        "type": "DrawPlasma",
+        "suffix": "-plasma-",
+        "plasma1": "DE70FFFF",
+        "plasma2": "6171FFFF"
+        },
+        {
+        "type": "DrawDefault"
+        },
+        {
+		"type": "DrawGlowRegion",
+		"alpha": 1,
+		"glowScale": 3,
+		"color": "69E0C7FF"
+		}
+            ]
+  },
+    "consumes": {
+    "power": 150.0,
+    "items": [
+    "黑洞控制器/1",
+    "无能神核心/1"
+    ],
+    "liquids": [
+    "H-次数液/1"
+    ]
+    },
+    "requirements": [
+    "copper/88850",
+    "lead/88850",
+    "metaglass/58000",
+    "graphite/25000",
+    "beryllium/75800",
+    "titanium/100000",
+    "thorium/100000",
+    "tungsten/75000",
+    "silicon/98000",
+    "phase-fabric/25000",
+    "surge-alloy/48850",
+    "潜铁板/95000",
+    "潜合铁金板/65480",
+    "无遏板/37580",
+    "合化电晶/40000",
+    "钢化棱镜/60000",
+    "强化曼合金钢/50000",
+    "恒化泵壳/65880",
+    "恒金板/45580",
+    "黑洞控制器/37980",
+    "神子智慧核心/70000",
+    "无能神核心/10000",
+    "无恒锭/64200",
+    ],
+    "envRequired": 0,
+    "category": "power",
+    "loopSound": "huiji",
+    "loopSoundVolume": 8,
+    "ambientSound": "huiji",
+    "ambientSoundVolume": 8
+}
