@@ -1,5 +1,5 @@
 {
-    "type": "flying",
+    "type": "payload",
     "name": "结晶母体",
     "description": "很多年形成生命体结晶",
     "immunities":[
@@ -41,7 +41,8 @@
     "outlineColor": "196553FF",
     "hitSize": 205,
     "health": 570000,
-    "payloadCapacity" : 10,
+    "faceTarget": false,
+    "payloadCapacity" : 26000,
     "weapons":[
         {
         "name":"结晶孢子厂",

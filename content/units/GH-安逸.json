@@ -1,5 +1,5 @@
 {
-    "type": "flying",
+    "type": "payload",
     "name": "安逸",
     "description": "驱逐舰，它的强度比T1强度多一点，它的武器非常致命非常麻烦",
     "immunities":["blasted","burning","electrified","freezing","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed","结晶徽章"],
@@ -50,7 +50,8 @@
     "trailLength": 18.5,
     "hitSize": 28,
     "health": 1580,
-    "payloadCapacity" : 12,
+    "faceTarget": false,
+    "payloadCapacity" : 1100,
     "weapons":[
     {
         "name":"梦子导弹武器",

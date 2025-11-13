@@ -1,5 +1,5 @@
 {
-    "type": "flying",
+    "type": "payload",
     "name": "互杀",
     "description": "[purple]BOSS？可笑，只是个精英旗舰罢了",
     "immunities":["blasted","burning","electrified","freezing","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed",/*"结晶徽章"*/],
@@ -49,7 +49,8 @@
     "outlineColor": "20202CFF",
     "hitSize": 40,
     "health": 148000,
-    "payloadCapacity" : 25,
+    "faceTarget": false,
+    "payloadCapacity" : 6550,
     "weapons":[
     {
         "name": "发动机",

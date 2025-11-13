@@ -1,5 +1,5 @@
 {
-    "type": "flying",
+    "type": "payload",
     "name": "帝者之国",
     "description": "[green]我为了国家服务，为了人民服务",
     "controller": "BuilderAI",
@@ -61,7 +61,8 @@
 	],
     "hitSize": 38,
     "health": 90000,
-    "payloadCapacity" : 150,
+    "faceTarget": false,
+    "payloadCapacity" : 202500,
     "parts": [
             {
         "type": "FlarePart",
