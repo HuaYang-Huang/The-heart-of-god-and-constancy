@@ -1,5 +1,5 @@
 {
-    "type": "flying",
+    "type": "payload",
     "name": "魔术",
     "description": "牺牲了悬空性能而转化飞行性能，但代价是成为轰炸机",
     "immunities":["blasted","burning","electrified","freezing","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed","结晶徽章"],
@@ -50,7 +50,7 @@
     "trailLength": 0,
     "hitSize": 39,
     "health": 4500,
-    "payloadCapacity" : 20,
+    "payloadCapacity" : 2220,
     "parts": [
         {
 		"type": "ShapePart",

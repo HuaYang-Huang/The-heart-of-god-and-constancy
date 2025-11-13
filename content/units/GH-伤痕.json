@@ -1,5 +1,5 @@
 {
-    "type": "flying",
+    "type": "payload",
     "name": "伤痕",
     "description": "主力舰，削弱了伤害但防御和血量大大提升",
     "immunities":["blasted","burning","electrified","freezing","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed","结晶徽章"],
@@ -55,7 +55,8 @@
     "outlineColor": "20202CFF",
     "hitSize": 37,
     "health": 3980,
-    "payloadCapacity" : 20,
+    "faceTarget": false,
+    "payloadCapacity" : 1580,
     "weapons":[
     {
         "name": "发动机",

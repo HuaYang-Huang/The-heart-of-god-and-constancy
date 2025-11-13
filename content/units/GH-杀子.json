@@ -3,7 +3,7 @@
 	"description":"对修复型能力一所无用，但杀敌人特别喜欢，只能选择攻击型能力",
 	"research":"GH-杀子核心",
     "envDisabled":0,
-	"type":"flying",
+	"type":"payload",
 	"controller": "BuilderAI",
 	"flying":true,
 	"accel": 0.2,
@@ -49,7 +49,7 @@
 	"mineSpeed":7.5,
 	"mineTier":8,
 	"armor":55,
-
+    "faceTarget": false,
 	"payloadCapacity":320,
 	"pickupUnits":true,
 	"vulnerableWithPayloads": true,
