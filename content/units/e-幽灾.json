@@ -1794,6 +1794,13 @@
             "maxTargets": 20,
             "useAmmo": true,
             "color": "BF92F9FF"
-    }
-   ]
+    },{
+        "type": "StatusFieldAbility",
+        "activeEffect": "none",
+        "effect": "神恒之心-重度光芒晶石",
+        "range": 99999990,
+        "reload": 1,
+        "duration": 15
+        }
+    ]
 }
