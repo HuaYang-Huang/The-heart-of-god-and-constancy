@@ -1,5 +1,5 @@
 {
-    "type": "flying",
+    "type": "payload",
     "name": "梦子",
     "description": "护卫舰，实力很强，完全轻松打T1，硬吃T2，勉强打T3",
     "immunities":["blasted","burning","electrified","freezing","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed","结晶徽章"],
@@ -41,7 +41,8 @@
     "trailLength": 10.5,
     "hitSize": 10,
     "health": 680,
-    "payloadCapacity" : 10,
+    "faceTarget": false,
+    "payloadCapacity" : 200,
     "weapons":[
         {
         "name": "发喷器",

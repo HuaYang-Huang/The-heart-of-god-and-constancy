@@ -1,5 +1,5 @@
 {
-    "type": "flying",
+    "type": "payload",
     "name": "玖爱",
     "description": "削弱了防御和血量但伤害威胁，还有回血能力爆发",
     "immunities":["blasted","burning","electrified","freezing","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed","结晶徽章"],
@@ -55,7 +55,8 @@
     "outlineColor": "20202CFF",
     "hitSize": 37,
     "health": 2920,
-    "payloadCapacity" : 20,
+    "faceTarget": false,
+    "payloadCapacity" : 1870,
     "parts": [
         {
 		"type": "ShapePart",
