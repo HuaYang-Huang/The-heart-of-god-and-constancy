@@ -3,7 +3,7 @@
 	"description":"加强核心飞机实力和修复型能力强化",
 	"research":"GH-守卫核心",
     "envDisabled":0,
-	"type":"flying",
+	"type":"payload",
 	"controller": "BuilderAI",
 	"flying":true,
 	"accel": 0.2,"drag": 0.1,
@@ -25,7 +25,7 @@
 			"rotation": -135
 		}
 	],
-	"faceTarget": true,
+	"faceTarget": false,
 	"outlineColor":"20202CFF",
     "immunities":[
 	"blasted",

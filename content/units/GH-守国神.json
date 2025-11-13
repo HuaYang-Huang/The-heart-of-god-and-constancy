@@ -1,5 +1,5 @@
 {
-    "type": "flying",
+    "type": "payload",
     "name": "守国神",
     "description": "[red]为了党，为了人民，为了国家！",
     "controller": "BuilderAI",
@@ -43,7 +43,8 @@
     "engineSize" : 0,
     "hitSize": 125,
     "health": 140000,
-    "payloadCapacity" : 150,
+    "faceTarget": false,
+    "payloadCapacity" : 202500,
     "weapons":[
         {
         "name":"无人机航门",

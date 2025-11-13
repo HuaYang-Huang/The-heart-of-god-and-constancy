@@ -1,5 +1,5 @@
 {
-    "type": "flying",
+    "type": "payload",
     "name": "时间管理者",
     "description": "[purple]谁调动时间，这世界一向未来还是一向以前，不知道时间是一种玩具？",
     "immunities":["blasted","burning","electrified","freezing","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed","时间加速","结晶徽章"],
@@ -112,7 +112,8 @@
     "trailLength": 0.0,
     "hitSize": 295,
     "health": 2285000,
-    "payloadCapacity" : 30,
+    "faceTarget": false,
+    "payloadCapacity" : 10000,
     "weapons":[
         {
         "name": "发动机",
