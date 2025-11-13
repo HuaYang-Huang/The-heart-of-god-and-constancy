@@ -1,5 +1,6 @@
 { 
    "name":"幽怨",
+   "type":"payload",
    "template": "ErekirUnitType",
    "envDisabled":0,
    "description":"?????",
@@ -29,7 +30,8 @@
    "hitSize":54,
    "health": 13200,
    "armor":20,
-   "payloadCapacity" : 7,
+   "faceTarget": false,
+   "payloadCapacity" : 1800,
    "engineOffset":25,
    "engineSize":7,
    "itemCapacity":25,

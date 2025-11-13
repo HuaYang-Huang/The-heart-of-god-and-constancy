@@ -2,7 +2,7 @@
     "name":"幽灾",
 	"description":"[purple]于重组中诞生的巨型飞艇类单位，拥有及其强劲的火力和渎魂修复压制立场可修复可攻击",
     "envDisabled":0,
-	"type":"flying",
+	"type":"payload",
 	"range":450,
 	"flying":true,
 	"accel": 0.8,"drag": 0.4,
@@ -179,8 +179,8 @@
 	"mineTier":15,
 	"armor":125,
 	"targetAir": true,
-
-	"payloadCapacity":960,
+    "faceTarget": false,
+	"payloadCapacity": 20000,
 	"pickupUnits":true,
 	"vulnerableWithPayloads": true,
 	"weapons":[
