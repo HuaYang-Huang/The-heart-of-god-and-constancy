@@ -51,7 +51,7 @@
     "hasPower": true,
     "hasLiquids":true,
     "hasItems": true,
-    "itemCapacity": 30,
+    "itemCapacity": 100,
     "craftTime": 85,
     "updateEffectChance": 0.05,
     "updateEffect": "none",
