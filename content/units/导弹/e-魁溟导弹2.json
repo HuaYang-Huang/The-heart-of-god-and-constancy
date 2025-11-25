@@ -1,0 +1,84 @@
+{
+        "type": "missile",
+        "name":"魁溟导弹2",
+        "envDisabled":0,
+        "controller": "MissileAI",
+        "lowAltitude": true,
+        "speed": 11.8,
+        "rotateSpeed": 0.51,
+        "lifetime": 380,
+        "homingDelay": 2,
+        "isEnemy": false,
+        "allowedInPayloads": false,
+        "playerControllable": false,
+        "physics": false,
+        "useUnitCap": false,
+        "createWreck": false,
+        "createScorch": false,
+        "flying": true,
+        "hidden": false,
+        "health": 100,
+        "armor":5,
+        "hitSize": 4,
+        "outlineColor": "FFFFFFF",
+        "engineColor": "FEB380FF",
+        "trailColor": "FEB380FF",
+        "trailParam": 1,
+        "trailLength": 25,
+        "trailWidth": 1.9,
+        "missileAccelTime": 120,
+        "engineOffset":0,
+        "engineSize": 0,
+        "drawCell": false,
+        "maxRange": 5,
+        "parts": [
+            {
+    "type": "FlarePart",
+    "progress": {
+        "type": "life",
+        "op": "curve",
+        "interp": "pow3Out"
+    },
+        "y": 0,
+        "layer": 110,
+        "rotation": 45,
+        "color1": "FEB380FF",
+        "stroke": 6.5,
+        "radius": 0,
+        "radiusTo": 63
+            }
+    ],
+        "weapons": [
+            {
+        "name": "核弹",
+        "shootCone": 360,
+        "shootOnDeath": true,
+        "controllable": true,
+        "shootSound": "hongyv1",
+            "bullet": {
+        "type": "BasicBulletType",
+        "killShooter": true,
+        "instantDisappear": true,
+        "damage":80,
+        "buildingDamageMultiplier": 1.0,
+        "splashDamage": 130,
+        "splashDamageRadius": 70,
+        "despawnEffect":{
+        "type": "MultiEffect",
+	    "effects": [
+    {
+        "type": "WaveEffect",
+        "lifetime": 65,
+        "sizeFrom": 0,
+        "sizeTo": 90,
+        "strokeFrom": 7,
+        "strokeTo": 0,
+        "colorFrom": "FEB380FF",
+        "colorTo": "FEB380FF"
+    }
+            ]
+        }
+    }
+        }
+    ]
+}
