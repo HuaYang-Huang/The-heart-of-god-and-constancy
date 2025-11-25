@@ -663,7 +663,7 @@
     "unit": "GH-安逸",
     "spawnX": 0,
     "spawnY": -54,
-    "spawnTime": 310
+    "spawnTime": 550
         },{
 			"type": "ShieldRegenFieldAbility",
 			"amount": 150,
