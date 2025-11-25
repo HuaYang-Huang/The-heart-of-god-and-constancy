@@ -196,8 +196,8 @@
 	    "bullet":{
 	"type": "ShrapnelBulletType",
     "length": 890.00,
-    "damage": 4500.00,
-    "width": 105.00,
+    "damage": 80000.00,
+    "width": 255.00,
     "reloadMultiplier": 2.90,
     "serrationLenScl":215,
     "serrationSpaceOffset":80,
