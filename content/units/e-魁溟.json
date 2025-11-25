@@ -717,7 +717,6 @@
     "abilities": [
     {
         "type": "UnitSpawnAbility",
-        "layerOffset": -0.015,
     "unit": "e-魁恶",
     "spawnX": 0,
     "spawnY": -120,
