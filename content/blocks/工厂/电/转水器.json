@@ -29,7 +29,7 @@
     "itemDuration": 60,
     "consumes": {
         "liquids": [
-        "water/1"
+        "合化晶液/1"
         ]
     },
     "requirements": [
@@ -44,5 +44,5 @@
     ],
     "category": "crafting",
     "research": "合化晶液发电机",
-    "outputLiquid": "合化晶液/0.5"
+    "outputLiquid": "water/0.5"
 }
