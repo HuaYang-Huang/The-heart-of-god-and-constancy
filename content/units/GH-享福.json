@@ -16,7 +16,7 @@
     "mineTier": 15,
     "maxRange":280,
     "outlineColor": "20202CFF",
-    "health": 14200,
+    "health": 38200,
     "armor": 310,
     "immunities":["blasted","freezing","electrified","burning","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed","结晶徽章"],
         "weapons": [

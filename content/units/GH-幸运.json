@@ -15,7 +15,7 @@
     "mineTier": 15,
     "maxRange":250,
     "outlineColor": "20202CFF",
-    "health": 1660,
+    "health": 4220,
     "armor":80,
     "research": {
 	"parent": "GH-铮骨升级厂",

@@ -47,7 +47,7 @@
     "maxRange":210,
     "outlineColor": "20202CFF",
     "hitSize": 31,
-    "health": 1600,
+    "health": 6200,
     "hovering":true,
     "shadowElevation":0.1,
     "abilities": [

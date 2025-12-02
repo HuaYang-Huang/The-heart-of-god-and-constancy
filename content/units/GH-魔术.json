@@ -49,7 +49,7 @@
     "trailColor": "69E0C7FF",
     "trailLength": 0,
     "hitSize": 39,
-    "health": 4500,
+    "health": 12000,
     "payloadCapacity" : 2220,
     "parts": [
         {

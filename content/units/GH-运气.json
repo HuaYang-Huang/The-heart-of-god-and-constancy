@@ -15,7 +15,7 @@
     "mineTier": 15,
     "maxRange":220,
     "outlineColor": "20202CFF",
-    "health": 800,
+    "health": 2800,
     "armor":55,
     "research": {
 	"parent": "GH-泽明兵工厂",

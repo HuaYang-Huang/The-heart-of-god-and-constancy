@@ -2,7 +2,7 @@
 	"speed":0.95,
 	"hitSize":13.5,
 	"name": "复仇",
-	"health": 850,
+	"health": 1550,
 	"description":"武力强的陆兵",
 	"armor":30,
 	"type": "mech",

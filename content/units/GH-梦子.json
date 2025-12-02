@@ -40,7 +40,7 @@
     "trailColor": "69E0C7FF",
     "trailLength": 10.5,
     "hitSize": 10,
-    "health": 680,
+    "health": 1380,
     "faceTarget": false,
     "payloadCapacity" : 200,
     "weapons":[

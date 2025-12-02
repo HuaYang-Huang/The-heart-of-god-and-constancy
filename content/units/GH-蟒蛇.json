@@ -35,7 +35,7 @@
     "mineTier": 15,
     "outlineColor": "20202CFF",
     "hitSize": 9,
-    "health": 700,
+    "health": 1780,
     "hovering":true,
     "shadowElevation":0.1,
     "maxRange":120,

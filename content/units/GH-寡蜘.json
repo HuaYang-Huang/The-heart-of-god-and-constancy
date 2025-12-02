@@ -38,7 +38,7 @@
 	"outlineColor":"20202CFF",
     "omniMovement": true,
     "hitSize": 49,
-    "health": 14880,
+    "health": 18880,
 	"armor" : 250,
     "range" : 280,
     "speed": 0.8,

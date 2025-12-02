@@ -2,7 +2,7 @@
 	"speed":0.75,
 	"hitSize":39.5,
 	"name": "电巢",
-	"health": 19500,
+	"health": 42500,
 	"description":"改造后的t2机甲，提升了血量和护甲，武器伤害优秀和增加无人机",
 	"armor":125,
 	"type": "mech",

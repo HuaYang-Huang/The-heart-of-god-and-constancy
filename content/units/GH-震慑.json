@@ -52,7 +52,7 @@
 	"rotateSpeed":1.3,
 	"speed":1.2,
 	"flying": false,
-	"health":2150,
+	"health":4890,
 	"range":295,
 	"immunities": ["blasted","freezing","electrified","burning","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed","结晶徽章"],
 	"weapons": [
