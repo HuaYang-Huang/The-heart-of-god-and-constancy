@@ -13,7 +13,7 @@ Events.on(EventType.ClientLoadEvent, cons(e => {
 table.button("[green]Picture", run(() => {
     var dialog2 = new BaseDialog("[green]Picture");
     var table = new Table();
-    dialog2.cont.image(Core.atlas.find("神恒之心-图片5")).row();;
+    dialog2.cont.image(Core.atlas.find("神恒之心-图片6")).row();;
     dialog2.buttons.defaults().size(210, 64);
     dialog2.buttons.button("@close", run(() => {
         dialog2.hide();
@@ -36,4 +36,5 @@ table.button("[red]Problem", run(() => {
         return table;
         })()).grow().center().maxWidth(600);
     dialog.show();
+
 }));
