@@ -160,7 +160,7 @@
       ]  },
        "shootType" : {
         "speed": 3,
-			"damage":450,
+			"damage":500,
 			"lifetime" : 125,
 			"pierce": "true",
 			"pierceCap":5,
@@ -169,31 +169,73 @@
 			"knockback":0.8,
 			"width":25,
 			"height":25,
+			"shrinkX": 0,
+            "shrinkY": 0,
 			"sprite": "神恒之心-电磁弹",
 			"inaccuracy":1,
-			"lightningDamage":50,
+			"lightningDamage":250,
 			"lightning":5,
             "lightningLength":16,
-			"smokeEffect": {
-			"lifetime": 35
-		},
-        "shootEffect": "none",
+			"smokeEffect": "none",
+        "shootEffect": {
+        "type": "MultiEffect",
+	    "effects": [
+	{
+	    "type": "ParticleEffect",
+        "particles": 7,
+        "sizeFrom": 4.9,
+        "sizeTo": 0,
+        "length": 65,
+        "lifetime": 18,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "E1FFF9FF",
+        "colorTo": "E1FFF9FF",
+        "cone": 360
+	},{
+    "type": "ParticleEffect",
+    "particles": 11,
+    "length": 80,
+    "lifetime": 35,
+    "line": true,
+    "cone": 360,
+    "lenFrom": 11,
+    "lenTo": 11,
+    "strokeFrom": 5,
+    "strokeTo": 0,
+    "colorFrom": "E1FFF9FF",
+    "colorTo": "E1FFF9FF"
+    },{
+        "type": "WaveEffect",
+        "lifetime": 20,
+        "sizeFrom": 0,
+        "sizeTo": 43,
+        "strokeFrom": 6,
+        "strokeTo": 0,
+        "colorFrom": "E1FFF9FF",
+        "colorTo": "E1FFF9FF"
+    }
+	    ]
+	        },
         "hitEffect": "blastExplosion",
         "fragBullets": 8,
-        "fragVelocityMin": 8,
+        "fragVelocityMin": 3,
         "fragLifeMin": 1,
 	    "fragBullet": {
 	    "type": "BasicBulletType",
         "frontColor": "E1FFF9FF",
         "backColor": "E1FFF9FF",
         "sprite" : "神恒之心-电子",
+        "shrinkX": 0,
+        "shrinkY": 0,
 	    "height" : 20,
 	    "width" : 20,
 	    "lifetime": 100,
-	    "damage" : 150,
+	    "damage" : 200,
 	    "pierce": true,
 	    "pierceBuilding": true,
-	    "splashDamage" : 100,
+	    "splashDamage" : 110,
 	    "splashDamageRadius" : 40,	
         "hitEffect": "flakExplosion"
 	    },
@@ -208,13 +250,18 @@
         }
         },
 	"requirements": [
-		{ "item": "copper", "amount": 8800},
-		{ "item": "silicon", "amount": 6500 },
-		{ "item": "graphite", "amount": 3600 },
-		{ "item": "titanium", "amount": 6800 },
-		{ "item": "lead", "amount": 8800 }, 
-		{"item":"phase-fabric","amount":2850},
-		{ "item": "surge-alloy", "amount": 3500}
+		{ "item": "copper", "amount": 10500},
+		{ "item": "silicon", "amount": 12000 },
+		{ "item": "graphite", "amount": 9900 },
+		{ "item": "titanium", "amount": 10000 },
+		{ "item": "thorium", "amount": 10000 },
+		{ "item": "lead", "amount": 15000 }, 
+		{ "item":"phase-fabric", "amount":4550},
+		{ "item": "surge-alloy", "amount": 18500},
+		{ "item": "棱镜", "amount": 3580},
+		{ "item": "潜铁板", "amount": 4500},
+		{ "item": "潜合铁金板", "amount": 2180},
+		{ "item": "无遏板", "amount": 3550}
 		],
    "category": "turret",
    "research":"S.T.H"

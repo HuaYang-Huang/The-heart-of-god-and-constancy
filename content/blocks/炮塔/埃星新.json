@@ -3,9 +3,9 @@
 	"type": "itemTurret",
 	"description": "一个大型炮台，可以以高速发射大量带有特殊效果的子弹",
 	"health": 7800,
-	"rotateSpeed": 1,
+	"rotateSpeed": 1.5,
     "coolantMultiplier": 1.0,
-    "reload":10,
+    "reload":28,
     "ammoUseEffect": "casing3",
     "range": 450,
     "inaccuracy": 0,
@@ -23,7 +23,7 @@
         "width": 20,
         "pierce": "true",
         "lifetime": 70,
-        "damage": 650,
+        "damage": 185,
         "knockback": 2.0,
         "hitSize": 21,
         "frontColor": "C28590FF",
@@ -40,7 +40,17 @@
         "colorTo": "C28590FF",
         "cone": 15
         },
-        "shootEffect": "none",
+        "shootEffect": {
+        "type": "ParticleEffect",
+        "particles": 10,
+        "sizeFrom": 6,
+        "sizeTo": 0,
+        "length": 80,
+        "lifetime": 31,
+        "colorFrom": "565656FF",
+        "colorTo": "C28590FF",
+        "cone": 20
+        },
         "hitEffect": "blastExplosion",
         "fragBullets": 4,
         "fragVelocityMin": 4,
@@ -52,10 +62,10 @@
 	    "height" : 12,
 	    "width" : 12,
 	    "lifetime": 20,
-	    "damage" : 500,
+	    "damage" : 40,
 	    "pierce": true,
 	    "pierceBuilding": true,
-	    "splashDamage" : 30,
+	    "splashDamage" : 10,
 	    "splashDamageRadius" : 40,	
         "hitEffect": "flakExplosion"
 	    }
@@ -82,12 +92,22 @@
         "height": 39,
         "width": 20,
         "lifetime": 70,
-        "damage": 950,
+        "damage": 110,
         "knockback": 1.8,
         "hitSize": 21,
         "frontColor": "F3E979FF",
         "backColor": "ECD36FFF",
-        "shootEffect": "shootBig",
+        "shootEffect": {
+        "type": "ParticleEffect",
+        "particles": 10,
+        "sizeFrom": 6,
+        "sizeTo": 0,
+        "length": 80,
+        "lifetime": 31,
+        "colorFrom": "F3E979FF",
+        "colorTo": "F3E979FF",
+        "cone": 20
+        },
         "hitEffect": "blastExplosion",
         "status": {
         "name": "连锁电击",
@@ -95,8 +115,8 @@
         "reloadMultiplier": 0.9,
         "speedMultiplier": 0.9,
         "effectChance": 1.0,
-        "damage": 550,
-        "transitionDamage": 250,
+        "damage": 50,
+        "transitionDamage": 35,
         "affinities": ["wet", "shocked"],
         "effect": "absorb"
         }
@@ -104,7 +124,7 @@
         "metaglass": {
         "type": "BasicBulletType",
         "speed": 7,
-        "damage": 850,
+        "damage": 100,
         "knockback": 1.9,
         "hitSize": 21,
         "lifetime": 70,
@@ -113,7 +133,17 @@
         "frontColor": "FFFFFFFF",
         "backColor": "202328FF",
         "splashDamage": 48,
-        "shootEffect": "shootBig",
+        "shootEffect": {
+        "type": "ParticleEffect",
+        "particles": 10,
+        "sizeFrom": 6,
+        "sizeTo": 0,
+        "length": 80,
+        "lifetime": 31,
+        "colorFrom": "FFFFFFFF",
+        "colorTo": "FFFFFFFF",
+        "cone": 20
+        },
         "splashDamageRadius": 23,
         "statusDuration": 100,
         "hitEffect": {
@@ -181,12 +211,12 @@
         "width": 15,
         "fromColor": "FFFFFFFF",
         "toColor": "202328FF",
-        "damage": 800
+        "damage": 60
 		}
         },
 		"无能神核心": {
 			"speed": 7,
-			"damage":1,
+			"damage":780,
 			"pierce": "true",
 			"pierceCap":5,
 			"reloadMultiplier":0.5,
@@ -195,13 +225,23 @@
 			"width":11,
 			"height":44,
 			"inaccuracy":1,
-			"lightningDamage":2850,
+			"lightningDamage":350,
 			"lightning":4,
             "lightningLength":16,
 			"smokeEffect": {
 			"lifetime": 35
 		},
-        "shootEffect": "none",
+        "shootEffect": {
+        "type": "ParticleEffect",
+        "particles": 10,
+        "sizeFrom": 6,
+        "sizeTo": 0,
+        "length": 80,
+        "lifetime": 31,
+        "colorFrom": "99ffff",
+        "colorTo": "99ffff",
+        "cone": 20
+        },
         "hitEffect": "blastExplosion",
         "fragBullets": 4,
         "fragVelocityMin": 4,
@@ -213,21 +253,27 @@
 	    "height" : 12,
 	    "width" : 12,
 	    "lifetime": 70,
-	    "damage" : 1250,
+	    "damage" : 250,
 	    "pierce": true,
 	    "pierceBuilding": true,
-	    "splashDamage" : 750,
+	    "splashDamage" : 180,
 	    "splashDamageRadius" : 40,	
         "hitEffect": "flakExplosion"
 	    }
         }
     },  
 	"requirements": [
-        "thorium/1200",
-        "surge-alloy/600",
-        "titanium/1050",
-        "silicon/1500",
-        "plastanium/1250"
+	    "copper/8000",
+	    "lead/6890",
+        "thorium/6200",
+        "surge-alloy/10000",
+        "titanium/8550",
+        "silicon/4500",
+        "plastanium/3050",
+        "phase-fabric/1300",
+        "潜铁板/2380",
+        "潜合铁金板/850",
+        "棱镜/900"
 	],
 	"category": "turret",
 	"research": "t2气旋"

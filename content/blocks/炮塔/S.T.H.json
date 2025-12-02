@@ -4,37 +4,207 @@
     "size": 3,
     "health": 4250,
     "range" : 480,
+    "reload": 11,
     "description":"?????",
     "consumes": {
-        "power": 11.5
+        "power": 16.5
     },
             "shoot": {
-                "shots": 2,
-                "shotDelay": 4
+                "shots": 1,
+                "shotDelay": 0
                 },
         "ammoTypes" : {
         "surge-alloy" : {
     "type": "RailBulletType",
-    "shootEffect": "railShoot",
-    "length": 720,
+    "shootEffect": {
+        "type": "MultiEffect",
+	    "effects": [
+	{
+    "type": "ParticleEffect",
+    "particles": 16,
+    "length": 65,
+    "lifetime": 10,
+    "line": true,
+    "cone": 75,
+    "lenFrom": 7.5,
+    "lenTo": 7.5,
+    "strokeFrom": 2.5,
+    "strokeTo": 0,
+    "colorFrom": "FCF387FF",
+    "colorTo": "FCF387FF"
+    }
+	    ]
+	},
+    "length": 540,
     "pierceEffect": "railHit",
-    "trailEffect": "instTrail",
-    "hitEffect": "massiveExplosion",
+    "pointEffectSpace": 60,
+    "pointEffect": "railTrail",
+    "hitEffect": {
+        "type": "MultiEffect",
+	    "effects": [
+	{
+    "type": "ParticleEffect",
+    "particles": 7,
+    "length": 115,
+    "lifetime": 20,
+    "line": true,
+    "cone": 75,
+    "lenFrom": 15,
+    "lenTo": 15,
+    "strokeFrom": 7,
+    "strokeTo": 0,
+    "colorFrom": "FCF387FF",
+    "colorTo": "FCF387FF"
+    }
+	    ]
+	},
     "smokeEffect": "shootBig2",
-    "damage": 1550,
+    "damage": 520,
+    "buildingDamageMultiplier": 0.35,
     "pierceDamageFactor": 0.0,
-    "lifetime" : 2450,
+    "pierceBuilding": true,
+    "pierceCap": 4,
+    "pierce": true,
     "status" : "shocked"
+            },
+    "强化曼合金钢" : {
+    "type": "RailBulletType",
+    "shootEffect": {
+        "type": "MultiEffect",
+	    "effects": [
+	{
+    "type": "ParticleEffect",
+    "particles": 16,
+    "length": 65,
+    "lifetime": 10,
+    "line": true,
+    "cone": 75,
+    "lenFrom": 7.5,
+    "lenTo": 7.5,
+    "strokeFrom": 2.5,
+    "strokeTo": 0,
+    "colorFrom": "69E0C7FF",
+    "colorTo": "FCF387FF"
+    }
+	    ]
+	},
+    "length": 580,
+    "pierceEffect": "railHit",
+    "pointEffectSpace": 60,
+    "pointEffect": "railTrail",
+    "hitEffect": {
+        "type": "MultiEffect",
+	    "effects": [
+	{
+    "type": "ParticleEffect",
+    "particles": 7,
+    "length": 255,
+    "lifetime": 10,
+    "line": true,
+    "cone": 75,
+    "lenFrom": 15,
+    "lenTo": 15,
+    "strokeFrom": 7,
+    "strokeTo": 0,
+    "colorFrom": "69E0C7FF",
+    "colorTo": "FCF387FF"
+    }
+	    ]
+	},
+    "smokeEffect": "shootBig2",
+    "damage": 855,
+    "buildingDamageMultiplier": 0.25,
+    "pierceDamageFactor": 0.0,
+    "pierceBuilding": true,
+    "pierceCap":8,
+    "pierce": true,
+    "lightColor": "FCF387FF",
+    "lightningColor": "69E0C7FF",
+    "lightningDamage":35,
+    "lightning":5,
+    "lightningLength":3.5,
+    "status" : "2级变质麻痹"
+            },
+    "合化电晶" : {
+    "type": "RailBulletType",
+    "shootEffect": {
+        "type": "MultiEffect",
+	    "effects": [
+	{
+    "type": "ParticleEffect",
+    "particles": 16,
+    "length": 65,
+    "lifetime": 10,
+    "line": true,
+    "cone": 75,
+    "lenFrom": 7.5,
+    "lenTo": 7.5,
+    "strokeFrom": 2.5,
+    "strokeTo": 0,
+    "colorFrom": "69E0C7FF",
+    "colorTo": "69E0C7FF"
+    },{
+    "type": "WaveEffect",
+    "lifetime": 18,
+    "sizeFrom": 5,
+    "sizeTo": 59,
+    "strokeFrom":7,
+    "strokeTo": 0,
+    "colorFrom": "69E0C7FF",
+    "colorTo": "69E0C7FF"
+    }
+	    ]
+	},
+    "length": 470,
+    "pierceEffect": "none",
+    "pointEffectSpace": 60,
+    "pointEffect": "railTrail",
+    "hitEffect": {
+        "type": "MultiEffect",
+	    "effects": [
+	{
+        "type": "ParticleEffect",
+        "particles": 6,
+        "sizeFrom": 5,
+        "sizeTo": 0,
+        "length": 90,
+        "lifetime": 25,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C7FF",
+        "cone": 360
+    }
+	    ]
+	},
+    "smokeEffect": "shootBig2",
+    "damage": 300,
+    "buildingDamageMultiplier": 0.25,
+    "pierceDamageFactor": 0.0,
+    "pierceBuilding": true,
+    "pierceCap":15,
+    "pierce": true,
+    "lightColor": "FCF387FF",
+    "lightningColor": "69E0C7FF",
+    "lightningDamage":145,
+    "lightning":1,
+    "lightningLength":6.5,
+    "status" : "1级变质麻痹"
             }
         },
             "requirements" : [
-        "graphite/1850",
-        "silicon/4500",
-        "surge-alloy/2500",
-        "thorium/455",
-        "titanium/5000",
-        "phase-fabric/800",
-        "plastanium/1860"
+        "graphite/3150",
+        "silicon/8500",
+        "surge-alloy/18500",
+        "thorium/5055",
+        "titanium/5800",
+        "phase-fabric/3400",
+        "plastanium/3860",
+        "棱镜/1000",
+        "无遏板/910",
+        "潜铁板/2250",
+        "潜合铁金板/610"
     ],
 	        "category": "turret",
 	        "research": "cyclone"

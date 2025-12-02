@@ -4,38 +4,157 @@
     "category":"turret",
     "description":"?????",
     "requirements":[
-        "copper/100000",
-        "lead/100000",
+        "copper/80000",
+        "lead/70000",
         "silicon/99000",
-        "surge-alloy/88800",
+        "titanium/18500",
+        "thorium/22500",
+        "plastanium/7550",
+        "phase-fabric/5500",
+        "surge-alloy/100000",
         "无恒锭/40000",
         "无能神核心/25000"
     ],
 
     "consumes": {
-        "power": 355.5
+        "power": 1850.5
 },
     "ammoTypes": {
     "无恒锭":{
 		"type" : "PointBulletType",
-        "damage": 8500000,
+        "damage": 25000,
             "trailSpacing": 20.0,
             "speed": 500,
             "hitShake": 6.0,
             "ammoMultiplier": 1,
-            "shootEffect": "instShoot",
-            "hitEffect": "instHit",
-            "trailEffect": "instTrail",
+            "shootEffect": {
+        "type": "MultiEffect",
+	    "effects": [
+	{
+    "type": "ParticleEffect",
+    "particles": 24,
+    "length": 285,
+    "lifetime": 46,
+    "line": true,
+    "cone": 20,
+    "lenFrom": 12,
+    "lenTo": 12,
+    "strokeFrom": 5,
+    "strokeTo": 0,
+    "colorFrom": "F47EFFFF",
+    "colorTo": "F47EFFFF"
+    },{
+    "type": "ParticleEffect",
+    "particles": 28,
+    "length": 425,
+    "lifetime": 120,
+    "line": true,
+    "cone": 360,
+    "lenFrom": 28,
+    "lenTo": 0,
+    "strokeFrom": 5,
+    "strokeTo": 5,
+    "colorFrom": "F47EFFFF",
+    "colorTo": "F47EFFFF"
+    },{
+        "type": "WaveEffect",
+        "lifetime": 45,
+        "sizeFrom": 0,
+        "sizeTo": 280,
+        "strokeFrom": 6,
+        "strokeTo": 0,
+        "colorFrom": "F47EFFFF",
+        "colorTo": "F47EFFFF"
+    }
+	    ]
+	},
+            "hitEffect": {
+        "type": "MultiEffect",
+	    "effects": [
+	{
+    "type": "ParticleEffect",
+    "particles": 18,
+    "length": 455,
+    "lifetime": 186,
+    "line": true,
+    "cone": 50,
+    "lenFrom": 46,
+    "lenTo": 0,
+    "strokeFrom": 10,
+    "strokeTo": 2,
+    "colorFrom": "F47EFFFF",
+    "colorTo": "F47EFFFF"
+    },{
+        "type": "ParticleEffect",
+        "particles": 18,
+        "sizeFrom": 8.6,
+        "sizeTo": 0,
+        "length": 310,
+        "lifetime": 80,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "pow5In",
+        "colorFrom": "F47EFFFF",
+        "colorTo": "F47EFFFF",
+        "cone": 360
+    }
+	    ]
+	},
+            "trailEffect": "lightningShoot",
             "despawnEffect": "instBomb",
-            "smokeEffect": "smokeCloud"
+            "smokeEffect": "smokeCloud",
+            "fragBullets": 5,
+            "fragBullet": {
+        "type" : "PointBulletType",
+        "damage": 1800,
+        "splashDamageRadius": 30,
+		"splashDamage": 455,
+        "trailSpacing": 20.0,
+        "speed": 15,
+        "lifetime": 5.5,
+        "hitShake": 6.0,
+        "ammoMultiplier": 1,
+            "trailEffect": "lightningShoot",
+            "despawnEffect": "instBomb",
+            "smokeEffect": "smokeCloud",
+            "shootEffect": "none",
+            "hitEffect": {
+        "type": "MultiEffect",
+	    "effects": [
+	{
+    "type": "ParticleEffect",
+    "particles": 13,
+    "length": 105,
+    "lifetime": 45,
+    "line": true,
+    "cone": 360,
+    "lenFrom": 10,
+    "lenTo": 0,
+    "strokeFrom": 5,
+    "strokeTo": 0,
+    "colorFrom": "F47EFFFF",
+    "colorTo": "F47EFFFF"
+    },{
+        "type": "WaveEffect",
+        "lifetime": 30,
+        "sizeFrom": 0,
+        "sizeTo": 95,
+        "strokeFrom": 4.5,
+        "strokeTo": 0,
+        "colorFrom": "F47EFFFF",
+        "colorTo": "F47EFFFF"
+    }
+	    ]
+	}
+            }
         }
     },
     "size":15,
     "range":1500,
-    "shootCone":4500.00,
+    "shootCone":10.00,
     "health":285000,
     "inaccuracy":0.00,
     "rotateSpeed":1.20,
-   
-    "research":"空预"
+    "reload": 95,
+    "research":"S-涩莱"
 }
