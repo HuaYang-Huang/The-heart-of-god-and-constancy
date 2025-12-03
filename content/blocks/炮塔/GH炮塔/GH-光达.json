@@ -9,7 +9,7 @@
 	"reload": 30,
 	"targetGround": true,
 	"targetAir": true,
-	"range": 600,
+	"range": 950,
 	"inaccuracy": 0,
 	"rotateSpeed": 0,
 	"shootSound": "none",

@@ -6,7 +6,7 @@
     "size": 3,
     "armor": 45,
     "health": 7760,
-    "range": 380,
+    "range": 620,
     "reload": 5.5,
     "targetAir": true,
     "targetGround":true,
