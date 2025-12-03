@@ -104,5 +104,6 @@
 		    },
 	"size": 1,
 	"type": "Battery",
-	"category": "power"
+	"category": "power",
+	"research": "合化晶液发电机"
 }
