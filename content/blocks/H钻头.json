@@ -24,14 +24,14 @@
        }
 },
     "requirements": [
-        "silicon/50",
-		"copper/210",
+        "silicon/190",
+		"copper/350",
 		"lead/225",
-		"graphite/100",
+		"graphite/180",
 		"plastanium/35",
 		"titanium/75",
 		"thorium/85",
-		"surge-alloy/25"
+		"surge-alloy/55"
 ],
 "category": "production",
 "research":"mechanical-drill"
