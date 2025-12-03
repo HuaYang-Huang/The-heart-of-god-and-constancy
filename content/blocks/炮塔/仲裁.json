@@ -9,7 +9,7 @@
    "health":18920,
    "inaccuracy":1.18,
    "rotateSpeed":4.80,
-   "reload": 27,
+   "reload": 68,
    "description":"?????",
     "requirements":[
        {"item":"surge-alloy","amount":400},
@@ -55,14 +55,14 @@
 "ammoTypes": {
   "surge-alloy":{
     "type":"ArtilleryBulletType",
-    "splashDamageRadius":220,
-    "splashDamage":485,
+    "splashDamageRadius":100,
+    "splashDamage":95,
     "knockback":3.5,
     "speed":9,
     "homingPower":50,
 	"homingRange": 150,
     "lifetime":690,
-    "damage":685,
+    "damage":215,
 	"status":"shocked",
   	"statusDuration":120,
 	"width": 30,
