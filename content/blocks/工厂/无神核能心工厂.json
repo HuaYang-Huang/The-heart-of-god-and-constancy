@@ -6,7 +6,7 @@
 	"outputItem": {"item":"无能神核心","amount":5},
 	"liquidCapacity":200,
 	"itemCapacity": 100,
-	"size": 2,
+	"size": 4,
 	"hasPower": true,
 	"hasLiquids": true,
 	"hasItems": true,
