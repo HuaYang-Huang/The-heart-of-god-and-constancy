@@ -2,13 +2,13 @@
     "name":"神力修复器",
     "type":"MendProjector",
     "description":"是一个优秀的机器\n下面的都是飞机欢呼",
-    "reload":20,
-    "range":250,
-    "healPercent":3000,
-    "phaseBoost":15,
+    "reload"40,
+    "range":210,
+    "healPercent":1500,
+    "phaseBoost":5.5,
     "canOverdrive" : false,
     "consumes": {
-		"power": 65.5,
+		"power": 155.5,
 		"items":{
 		    "items": [
 	    {

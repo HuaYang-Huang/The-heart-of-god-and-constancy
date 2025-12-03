@@ -13,6 +13,6 @@
         "thorium/505"
     ],
     "maxNodes": 30,
-    "laserRange": 130,
+    "laserRange": 100,
     "research" : "power-node-large"
 }
