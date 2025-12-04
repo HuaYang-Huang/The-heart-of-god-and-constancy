@@ -1,0 +1,36 @@
+{
+    "type":"ShieldWall",
+    "name":"拟态伪金大墙",
+    "description":"?????",
+    "health":28500,
+    "size":2,
+    "requirements":[
+        "surge-alloy/1300",
+        "钢化棱镜/450",
+        "远古废料/640",
+        "无子核心/530",
+        "无遏板/430",
+        "合化电晶/655",
+        "恒化泵壳/250"
+    ],
+    "consumes": {
+		"power": 2.5
+	},
+    "canOverdrive": true,
+    "outputsPower":false,
+    "hasPower":true,
+    "consumesPower":true,
+    "conductivePower":true,
+    "insulated": false,
+    "absorbLasers": true,
+    "breakCooldown":30,
+    "regenSpeed":16,
+    "glowColor":"9C52FFFF",
+    "glowMag":1,
+    "shieldHealth":20000,
+    "armor":220,
+    "chanceDeflect":8,
+    "category":"defense",
+    "research":"拟态伪金墙",
+    "buildCostMultiplier":3
+}

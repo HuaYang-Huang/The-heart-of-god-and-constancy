@@ -1,0 +1,36 @@
+{
+    "type":"ShieldWall",
+    "name":"拟态伪金墙",
+    "description":"[purple]居然还带着万能功能，可惜要放在单位上就好了",
+    "health":12000,
+    "size":1,
+    "requirements":[
+        "surge-alloy/800",
+        "钢化棱镜/300",
+        "远古废料/320",
+        "无子核心/230",
+        "无遏板/230",
+        "合化电晶/315",
+        "恒化泵壳/100"
+    ],
+    "consumes": {
+		"power": 1
+	},
+    "canOverdrive": true,
+    "outputsPower":false,
+    "hasPower":true,
+    "consumesPower":true,
+    "conductivePower":true,
+    "insulated": false,
+    "absorbLasers": true,
+    "breakCooldown":25,
+    "regenSpeed":13,
+    "glowColor":"9C52FFFF",
+    "glowMag":1,
+    "shieldHealth":12500,
+    "armor":190,
+    "chanceDeflect":3,
+    "category":"defense",
+    "research":"合曼紫金墙",
+    "buildCostMultiplier":3
+}

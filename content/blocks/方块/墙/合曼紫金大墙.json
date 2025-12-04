@@ -1,0 +1,24 @@
+{
+    "type":"wall",
+    "name":"合曼紫金大墙",
+    "description":"?????",
+    "health": 31500,
+    "size":2,
+    "requirements":[
+        "surge-alloy/800",
+        "钢化棱镜/230",
+        "远古废料/430",
+        "粒子核心/300",
+        "潜合铁金板/280"
+    ],
+    "armor":340,
+    "buildCostMultiplier":3,
+    "insulated": false,
+    "absorbLasers": true,
+    "canOverdrive":false,
+    "lightningChance":0.15,
+    "lightningDamage":510,
+    "lightningLength":10,
+    "category": "defense",
+    "research": "合曼紫金墙"
+}

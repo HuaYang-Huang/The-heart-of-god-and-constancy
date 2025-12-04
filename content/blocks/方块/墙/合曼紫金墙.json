@@ -1,0 +1,32 @@
+{
+    "type":"wall",
+    "name":"合曼紫金墙",
+    "description":"[purple]那一刻，防御墙变成了新的时代和长城",
+    "health": 18000,
+    "size":1,
+    "requirements":[
+        "surge-alloy/500",
+        "钢化棱镜/100",
+        "远古废料/310",
+        "粒子核心/210",
+        "潜合铁金板/190"
+    ],
+    "armor":280,
+    "buildCostMultiplier":3,
+    "insulated": false,
+    "absorbLasers": true,
+    "canOverdrive":false,
+    "lightningChance":0.03,
+    "lightningDamage":500,
+    "lightningLength":13,
+    "category": "defense",
+    "research":{
+    "parent": "金钢悍墙",
+    "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "科技发展地"
+			}
+		]
+    }
+} 

@@ -1,0 +1,31 @@
+{
+    "type":"MendProjector",
+    "group":"walls",
+    "name":"电晶合曼金大墙",
+    "description":"?????",
+    "health": 40000,
+    "size":2,
+    "reload":25,
+    "range":1,
+    "healPercent":2100,
+    "phaseBoost":0,
+    "hasPower":false,
+    "phaseRangeBoost":0,
+    "requirements":[
+        "surge-alloy/1700",
+        "恒金板/230",
+        "粒子核心/460",
+        "无子核心/310",
+        "神子智慧核心/185",
+        "合化电晶/760",
+        "强化曼合金钢/140",
+        "无遏板/280"
+    ],
+    "armor":125,
+    "buildCostMultiplier":3,
+    "insulated": false,
+    "absorbLasers": true,
+    "canOverdrive":false,
+    "category": "defense",
+    "research": "电晶合曼金墙"
+}

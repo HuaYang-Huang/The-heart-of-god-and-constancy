@@ -1,0 +1,31 @@
+{
+    "type":"MendProjector",
+    "group":"walls",
+    "name":"电晶合曼金墙",
+    "description":"[purple]回血的墙，咱们有救了",
+    "health": 25000,
+    "size":1,
+    "reload":25,
+    "range":1,
+    "healPercent":1500,
+    "phaseBoost":0,
+    "hasPower":false,
+    "phaseRangeBoost":0,
+    "requirements":[
+        "surge-alloy/1000",
+        "恒金板/160",
+        "粒子核心/290",
+        "无子核心/190",
+        "神子智慧核心/75",
+        "合化电晶/450",
+        "强化曼合金钢/40",
+        "无遏板/165"
+    ],
+    "armor":100,
+    "buildCostMultiplier":3,
+    "insulated": false,
+    "absorbLasers": true,
+    "canOverdrive":false,
+    "category": "defense",
+    "research": "合曼紫金墙"
+} 

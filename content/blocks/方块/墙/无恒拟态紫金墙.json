@@ -1,0 +1,44 @@
+{
+    "type":"ShieldWall",
+    "name":"无恒拟态紫金墙",
+    "description":"[purple]造出来并不是墙，而是真正的星球防御圈",
+    "health":45000,
+    "size":1,
+    "requirements":[
+        "surge-alloy/2300",
+        "黑洞控制器/100",
+        "恒金板/160",
+        "强化曼合金钢/80",
+        "恒化泵壳/60",
+        "合化电晶/380",
+        "神子智慧核心/35"
+    ],
+    "canOverdrive": true,
+    "outputsPower":false,
+    "hasPower":false,
+    "consumesPower":true,
+    "conductivePower":true,
+    "insulated": false,
+    "absorbLasers": true,
+    "lightningChance":0.35,
+    "lightningDamage":300,
+    "lightningLength":18,
+    "breakCooldown":30,
+    "regenSpeed":15,
+    "glowColor":"9C52FFFF",
+    "glowMag":1,
+    "shieldHealth":35000,
+    "armor":420,
+    "chanceDeflect":15,
+    "category":"defense",
+    "research":{
+    "parent": "电晶合曼金悍墙",
+    "objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "环境管理地"
+			}
+		]
+    },
+    "buildCostMultiplier":3
+}
