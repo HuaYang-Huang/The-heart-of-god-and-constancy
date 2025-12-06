@@ -1,0 +1,217 @@
+{
+	"type": "PowerTurret",
+	"playerControllable": true,
+	"name": "量子光达",
+	"health": 10000,
+	"outlineColor": "20202CFF",
+	"description":"扫描敌人或入侵者",
+	"size": 4,
+	"reload": 100,
+	"targetGround": true,
+	"targetAir": true,
+	"range": 1380,
+	"inaccuracy": 0,
+	"rotateSpeed": 0,
+	"shootSound": "none",
+	"canOverdrive": false,
+	"customShadow": false,
+	"recoil": 0,
+	"shootY": 0,
+	"shootCone": 360,
+	"ammoUseEffect": "none",
+	"shootWarmupSpeed": 0.0287,
+    "minWarmup": 0.2180,
+	"requirements": [
+	"copper/855",
+	"lead/1000",
+	"graphite/655",
+	"silicon/1880",
+	"titanium/1100",
+	"合化电晶/300",
+	"棱镜/260",
+	"钢化棱镜/100",
+	"粒子核心/300",
+	"合化电晶/80",
+	"潜铁板/490",
+	"无遏板/270"
+	],
+	"category": "turret",
+	"research": {
+    "parent": "GH-光达",
+    "requirements": [
+    "copper/45000",
+	"lead/45800",
+	"graphite/30000",
+	"silicon/100000",
+	"titanium/85000",
+	"合化电晶/34580",
+	"棱镜/50000",
+	"钢化棱镜/21000",
+	"粒子核心/18000",
+	"合化电晶/10000",
+	"潜铁板/21000",
+	"无遏板/18500"
+    ]
+    },
+    
+	"consumes": {
+		"power": 1.5
+	},
+	"drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+		{
+		    "type": "DrawTurret",
+				"parts": [
+		    {
+		"type": "RegionPart",
+		"outline": true,
+		"suffix": "-top",
+        "progress": "reload",
+        "moveRot": 360,
+        "rotation": 0,
+        "mirror": false,
+        "color": "ffffff00",
+        "colorTo": "ffffffff",
+        "layerOffset": 0.002
+		},{
+        "type": "RegionPart",
+        "colorTo": "69E0C7FF",
+        "color": "69E0C700",
+        "progress": "reload",
+        "blending": "additive",
+        "moveRot": 360,
+        "rotation": 0,
+        "layerOffset": 0.002,
+        "x": 0,
+        "y": 0,
+        "moveY": 0,
+        "moveX": 0,
+        "outline": false,
+        "suffix": "-wing1-glow"
+        },{
+		"type": "RegionPart",
+		"outline": true,
+		"suffix": "-wing1",
+        "progress": "reload",
+        "moveRot": 360,
+        "rotation": 0,
+        "mirror": false,
+        "color": "ffffff00",
+        "colorTo": "ffffffff",
+        "layerOffset": 0.001,
+        "x": 0,
+        "y": 0,
+        "moveY": 0,
+        "moveX": 0
+		},{
+        "type": "RegionPart",
+        "colorTo": "69E0C7FF",
+        "color": "69E0C700",
+        "progress": "reload",
+        "blending": "additive",
+        "moveRot": 360,
+        "rotation": 0,
+        "layerOffset": 0.002,
+        "x": 0,
+        "y": 0,
+        "moveY": 0,
+        "moveX": 0,
+        "outline": false,
+        "suffix": "-wing2-glow"
+        },{
+		"type": "RegionPart",
+		"outline": true,
+		"suffix": "-wing2",
+        "progress": "reload",
+        "moveRot": 360,
+        "rotation": 0,
+        "mirror": false,
+        "color": "ffffff00",
+        "colorTo": "ffffffff",
+        "layerOffset": 0.001,
+        "x": 0,
+        "y": 0,
+        "moveY": 0,
+        "moveX": 0
+		},{
+        "type":"ShapePart",
+        "y": 0,
+        "x": 0,
+        "color":"69E0C7FF",
+        "mirror": false,
+        "circle":true,
+        "hollow":true,
+        "stroke":0,
+        "strokeTo":8.0,
+        "radius":1380,
+        "radiusTo": 1380,
+        "layer": 110
+        }
+			]
+		},
+		"DrawDefault",
+			{
+				"type": "DrawRegion",
+				"suffix": "-1",
+				"spinSprite": true,
+				"rotateSpeed": 0.8
+			}
+		]
+	},
+	"shootType": {
+		"type": "BasicBulletType",
+		"shootEffect":"none",
+		"damage": 0,
+		"speed": 0,
+		"instantDisappear": true,
+		"ammoMultiplier": 1,
+		"splashDamageRadius": 1380,
+		"splashDamage": 55,
+		"buildingDamageMultiplier": 0,
+		"status":"良化雷达警告",
+        "statusDuration": 300,
+		"hitEffect": "none",
+		"despawnEffect": {
+		"type": "MultiEffect",
+	    "effects": [
+    {
+		"type": "ParticleEffect",
+	    "particles": 1,
+	    "lifetime": 180,
+	    "spin":0,
+	    "region":"神恒之心-empty-rhombus",
+	    "length":0
+	    "sizeFrom": 0,
+	    "sizeTo": 320.0,
+	    "colorFrom": "69E0C7FF",
+	    "colorTo": "69E0C700",
+	    "cone":360
+	},{
+        "type": "ParticleEffect",
+        "particles": 1,
+        "sizeFrom": 0,
+        "sizeTo": 1380,
+        "length": 0,
+        "lifetime": 340,
+        "lightOpacity": 0,
+        "interp": "circleOut",
+        "sizeInterp": "circleOut",
+        "colorFrom": "69E0C7FF",
+        "colorTo": "69E0C700",
+        "cone": 360
+	},{
+        "type": "WaveEffect",
+        "lifetime": 400,
+        "sizeFrom": 1510,
+        "sizeTo": 1380,
+        "strokeFrom": 0,
+        "strokeTo": 8,
+        "colorFrom": "69E0C700",
+        "colorTo": "69E0C7FF"
+    }
+		    ]
+		},
+		"smokeEffect":"none"
+	}
+}
