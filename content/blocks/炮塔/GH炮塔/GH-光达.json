@@ -62,8 +62,8 @@
         "hollow":true,
         "stroke":0,
         "strokeTo":8.0,
-        "radius":600,
-        "radiusTo": 600,
+        "radius":950,
+        "radiusTo": 950,
         "layer": 110
         }
 			]
@@ -84,7 +84,7 @@
 		"speed": 0,
 		"instantDisappear": true,
 		"ammoMultiplier": 1,
-		"splashDamageRadius": 600,
+		"splashDamageRadius": 950,
 		"splashDamage": 25,
 		"buildingDamageMultiplier": 0,
 		"status":"雷达警告",
