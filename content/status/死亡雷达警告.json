@@ -1,0 +1,17 @@
+{
+	"name":"死亡雷达警告",
+	"description":"?????",
+	"damage": 0.15,
+	"damageMultiplier":0.62,
+	"speedMultiplier":0.36,
+	"reloadMultiplier":0.75,
+	"affinities": [
+    "1级变质麻痹",
+    "2级变质麻痹",
+    "辐射病",
+    "国耻为杀",
+    "强化故障麻痹",
+    "相位混乱"
+    ],
+    "transitionDamage": 70
+}

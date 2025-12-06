@@ -1,0 +1,17 @@
+{
+	"name":"威胁性雷达警告",
+	"description":"?????",
+	"damage": 0.28,
+	"damageMultiplier":0.60,
+	"speedMultiplier":0.35,
+	"reloadMultiplier":0.70,
+	"affinities": [
+    "1级变质麻痹",
+    "2级变质麻痹",
+    "辐射病",
+    "国耻为杀",
+    "强化故障麻痹",
+    "相位混乱"
+    ],
+    "transitionDamage": 85
+}

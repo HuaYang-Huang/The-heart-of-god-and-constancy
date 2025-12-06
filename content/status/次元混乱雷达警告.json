@@ -1,0 +1,23 @@
+{
+	"name":"次元混乱雷达警告",
+	"description":"[purple]你猜我为什么被宇宙之外害怕起来呢？",
+	"damage": 1.85,
+	"damageMultiplier":0.50,
+	"speedMultiplier":0.25,
+	"reloadMultiplier":0.55,
+	"affinities": [
+    "1级变质麻痹",
+    "2级变质麻痹",
+    "辐射病",
+    "国耻为杀",
+    "强化故障麻痹",
+    "相位混乱",
+    "雷达警告",
+    "良化雷达警告",
+    "强化雷达警告",
+    "病毒性雷达警告",
+    "死亡雷达警告",
+    "威胁性雷达警告"
+    ],
+    "transitionDamage": 110
+}

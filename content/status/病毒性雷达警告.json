@@ -1,0 +1,16 @@
+{
+	"name":"病毒性雷达警告",
+	"description":"?????",
+	"damageMultiplier":0.65,
+	"speedMultiplier":0.42,
+	"reloadMultiplier":0.75,
+	"affinities": [
+    "1级变质麻痹",
+    "2级变质麻痹",
+    "辐射病",
+    "国耻为杀",
+    "强化故障麻痹",
+    "相位混乱"
+    ],
+    "transitionDamage": 55
+}

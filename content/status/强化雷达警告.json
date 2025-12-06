@@ -1,0 +1,7 @@
+{
+	"name":"强化雷达警告",
+	"description":"?????",
+	"damageMultiplier":0.70,
+	"speedMultiplier":0.42,
+	"reloadMultiplier":0.80
+}
