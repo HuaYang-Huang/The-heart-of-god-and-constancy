@@ -1,0 +1,37 @@
+{
+	"name": "轨道抽水机",
+	"type": "SolidPump",
+	"health": 2500,
+	"size": 3,
+	"hasPower": true,
+	"hasLiquids": true,
+	"liquidCapacity": 6000,
+	"requirements": [
+	    "copper/10000",
+	    "lead/10000",
+		"titanium/8505",
+		"thorium/8505",
+		"surge-alloy/15000",
+		"silicon/8550",
+		"metaglass/4560",
+		"棱镜/2805",
+		"钢化棱镜/1500",
+		"粒子核心/1150",
+		"无子核心/590",
+		"潜铁板/1000",
+		"潜合铁金板/685",
+		"无遏板/8100",
+		"恒化泵壳/350",
+		"合化电晶/800"
+	],
+	"consumes": {
+		"power": 85.5
+	},
+	"pumpAmount": 10.550,
+	"rotateSpeed": 2.4,
+	"result": "water",
+	"baseEfficiency": 5.65,
+	"attribute": "water",
+	"category": "production",
+	"research": "弧光钻头"
+}

@@ -1,0 +1,28 @@
+{
+	"name": "大型抽水机",
+	"type": "SolidPump",
+	"health": 2500,
+	"size": 3,
+	"hasPower": true,
+	"hasLiquids": true,
+	"liquidCapacity": 180,
+	"requirements": [
+		"titanium/305",
+		"thorium/305",
+		"surge-alloy/100",
+		"silicon/520",
+		"metaglass/340",
+		"棱镜/95",
+		"粒子核心/25"
+	],
+	"consumes": {
+		"power": 5.5
+	},
+	"pumpAmount": 0.450,
+	"rotateSpeed": 1.2,
+	"result": "water",
+	"baseEfficiency": 1.25,
+	"attribute": "water",
+	"category": "production",
+	"research": "water-extractor"
+}
