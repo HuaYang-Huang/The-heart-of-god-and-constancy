@@ -1,6 +1,7 @@
 {
     "name":"远古废料矿",
 "type":"OreBlock",
+"variants":2,
 "playerUnmineable":true,
 "itemDrop":"远古废料",
 "mapColor":"E8D174FF",
