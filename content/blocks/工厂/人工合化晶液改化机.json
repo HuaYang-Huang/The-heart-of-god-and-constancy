@@ -1,0 +1,33 @@
+{
+   "type":"GenericCrafter",
+   "name":"人工合化晶液改化机",
+   "category":"crafting",
+   "requirements":[
+      "surge-alloy/1500",
+      "titanium/700",
+      "plastanium/580",
+      "silicon/2000",
+      "phase-fabric/400",
+      "metaglass/780",
+      "棱镜/320",
+      "粒子核心/450",
+      "潜铁板/600",
+      "潜合铁金板/250"
+    ],
+   "outputLiquid":"合化晶液/0.5",
+   "craftTime":120,
+   "liquidCapacity":300,
+   "size":5,
+   "health":5000,
+   "hasPower":true,
+   "hasLiquids":true,
+   "rotate": false,
+    "solid": true,
+   "consumes":{
+    "power":12.00,
+    "item":"粒子核心",
+    "liquid":"cryofluid/1.5"
+    },
+
+   "research":"棱镜工厂"
+}

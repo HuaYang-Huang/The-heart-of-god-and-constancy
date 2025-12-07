@@ -1,0 +1,63 @@
+{
+    "name":"碳化物改化机",
+    "description":"资源改化碳化物\n[red]某个原因bug导致不能用e星内容造工厂，但我想问一下，为什么不让模组星球造原版内容啊！？？？？？臭猫！快给我滚回去改代码啊！！！！",
+    "type":"GenericCrafter",
+    "itemCapacity":60,
+    "health":8600,
+    "size":4,
+    "hasPower":true,
+    "hasItems":true,
+    "hasLiquids": true,
+    "liquidCapacity":120,
+    "craftTime":80,
+    "updateEffect":"none",
+    "craftEffect":"none",
+    "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+    {
+        "type": "DrawRegion",
+        "suffix": "-bottom"
+    },{
+			"type": "DrawLiquidRegion",
+			"drawLiquid": "water"
+		},{
+        "type": "DrawDefault"
+    },{
+        "type": "DrawGlowRegion",
+        "color": "C9A5C8FF",
+        "glowScale": 14,
+        "glowIntensity": 1,
+        "suffix": "-glow1"
+    }
+        ]
+    },
+    "requirements": [
+    "copper/1850",
+    "lead/1850",
+    "silicon/280",
+    "潜铁板/420",
+    "tungsten/990",
+    "surge-alloy/3000",
+    "粒子核心/85",
+    "无子核心/100"
+    ],
+    "category": "crafting",
+    "outputItems": [
+    "oxide/5"
+    ],
+    "consumes":{
+    "power":25.0,
+    "items": {
+    "items": [
+            "tungsten/5",
+            "surge-alloy/3"
+        ]
+},
+    "liquid":{
+               "liquid":"water",
+               "amount":1.5
+         }
+    },
+    "research": "氧化物改化机"
+}
