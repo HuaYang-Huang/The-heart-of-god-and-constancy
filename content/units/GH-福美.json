@@ -1939,6 +1939,20 @@
 		}
 			]
 		},
+		        "lineEffect":{
+		    "type": "MultiEffect",
+		"effects": [
+		    {
+		"type": "WrapEffect",
+        "effect": "chainLightning",
+        "color": "69E0C7FF"
+		},{
+		"type": "WrapEffect",
+        "effect": "chainEmp",
+        "color": "69E0C7FF"
+		}
+		    ]
+		},
 				"buildingDamageMultiplier": 1.00,
 				"damage": 450,
 				"lifetime": 38,
@@ -2006,6 +2020,20 @@
 		"cone": 0
 		}
 			]
+		},
+		"lineEffect":{
+		    "type": "MultiEffect",
+		"effects": [
+		    {
+		"type": "WrapEffect",
+        "effect": "chainLightning",
+        "color": "69E0C7FF"
+		},{
+		"type": "WrapEffect",
+        "effect": "chainEmp",
+        "color": "69E0C7FF"
+		}
+		    ]
 		},
 				"buildingDamageMultiplier": 1.00,
 				"damage": 250,
@@ -2090,6 +2118,20 @@
 		}
 			]
 		},
+		"lineEffect":{
+		    "type": "MultiEffect",
+		"effects": [
+		    {
+		"type": "WrapEffect",
+        "effect": "chainLightning",
+        "color": "69E0C7FF"
+		},{
+		"type": "WrapEffect",
+        "effect": "chainEmp",
+        "color": "69E0C7FF"
+		}
+		    ]
+		},
 				"buildingDamageMultiplier": 1.00,
 				"damage": 450,
 				"lifetime": 38,
@@ -2157,6 +2199,20 @@
 		"cone": 0
 		}
 			]
+		},
+		"lineEffect":{
+		    "type": "MultiEffect",
+		"effects": [
+		    {
+		"type": "WrapEffect",
+        "effect": "chainLightning",
+        "color": "69E0C7FF"
+		},{
+		"type": "WrapEffect",
+        "effect": "chainEmp",
+        "color": "69E0C7FF"
+		}
+		    ]
 		},
 				"buildingDamageMultiplier": 1.00,
 				"damage": 250,
