@@ -44,7 +44,7 @@
     "shootType": {
     "type": "PointLaserBulletType",
     "status": "freezing",
-    "damage": 5000,
+    "damage": 160,
     "drawSize": 1500,
     "beamEffect": {
     "type": "multiEffect",
@@ -73,8 +73,8 @@
             }
         ]
     },
-    "splashDamageRadius": 40,
-    "splashDamage": 500,
+    "splashDamageRadius": 180,
+    "splashDamage": 100,
     "color": "69E0C7FF"
     },
     "requirements": [
