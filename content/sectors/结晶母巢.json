@@ -1,0 +1,17 @@
+{
+"localizedName": "结晶母巢",
+	"description": "遗兵和恩人正在生活中的地方",
+    "planet":"神歆堕星",
+    "sector":48,
+    "captureWave":100,
+    "difficulty":2,
+    "research": {
+		"parent": "环境管理地",
+	"objectives": [
+            {
+		"type": "SectorComplete",
+		"preset": "环境管理地"
+		    }
+		]
+	}
+}
