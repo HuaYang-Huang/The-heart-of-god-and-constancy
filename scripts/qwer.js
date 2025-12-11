@@ -8,7 +8,7 @@ Events.on(EventType.ClientLoadEvent, cons(e => {
     })).size(210, 64);
     dialog.cont.pane((() => {
         var table = new Table();   
-         table.add("[blue]            —————联系方式—————\n[white] 老群死了，建立新群\n 神恒之心模组群(摸鱼) : 853399625 (QQ)\n Discord: https://discord.gg/Whed8yUGkU\n Github: https://github.com/HuaYang-Huang/The-heart-of-god-and-constancy.git\n[green]特别感谢:\n提供js代码：ZXS").left().growX().wrap().width(600).maxWidth(1000).pad(4).labelAlign(Align.left);
+         table.add("[blue]            —————联系方式—————\n[white] 老群死了，建立新群\n 神恒之心模组群(摸鱼) : 853399625 (QQ)\n Discord: https://discord.gg/Whed8yUGkU\n Github: https://github.com/HuaYang-Huang/The-heart-of-god-and-constancy\n[green]特别感谢:\n提供js代码：ZXS").left().growX().wrap().width(600).maxWidth(1000).pad(4).labelAlign(Align.left);
         table.row();
 table.button("[green]Picture", run(() => {
     var dialog2 = new BaseDialog("[green]Picture");
