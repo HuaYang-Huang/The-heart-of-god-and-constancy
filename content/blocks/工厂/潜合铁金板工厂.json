@@ -32,7 +32,7 @@
         {"item":"graphite", "amount":750},
         { "item":"silicon", "amount":850},
         {"item":"titanium","amount":1500},
-        {"item":"潜铁板","amount":350}
+        {"item":"潜铁板","amount":80}
 		],
 	"category": "crafting",
 	"research": "潜铁板工厂"
