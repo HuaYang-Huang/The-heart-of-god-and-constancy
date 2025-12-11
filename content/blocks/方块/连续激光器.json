@@ -33,7 +33,7 @@
 		"hitSize": 8,
 		"length":1440,
 		"damage": 100, 
-		"colors":["835cc3","bc93ff","000000ff"]	,
+		"colors":["835cc3","bc93ff","000000ff"],
 		"fragBullets":1,
 		"fragBullet":{
 			"type": "ContinuousFlameBulletType",
