@@ -808,5 +808,28 @@
         "despawnEffect": "none",
         "smokeEffect":"none"
     }
-        ]
+        ],
+        "research": {
+	"parent": "GH-陆军组装机",
+	"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "环境管理地"
+			}
+	    ],
+	"requirements": [
+	"copper/825000",
+	"lead/10020",
+	"silicon/20",
+	"thorium/10000",
+	"graphite/8500",
+	"titanium/18045",
+	"beryllium/4890",
+	"棱镜/4260",
+	"无遏板/2000",
+	"潜铁板/1800",
+	"粒子核心/785",
+	"无子核心/350"
+	    ]
+	}
 }

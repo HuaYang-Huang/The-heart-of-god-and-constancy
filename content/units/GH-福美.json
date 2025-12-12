@@ -20,6 +20,34 @@
     "outlineColor": "20202CFF",
     "health": 75800,
     "armor": 485,
+    "research": {
+	"parent": "GH-享福",
+	"objectives": [
+			{
+				"type": "SectorComplete",
+				"preset": "环境管理地"
+			}
+	    ],
+	"requirements": [
+	"copper/88000",
+	"lead/45000",
+	"silicon/66580",
+	"thorium/50000",
+	"graphite/40085",
+	"titanium/82565",
+	"棱镜/15000",
+	"钢化棱镜/5580",
+	"无遏板/12000",
+	"潜合铁金板/6500",
+	"粒子核心/13000",
+	"无子核心/6500",
+	"神子智慧核心/2580",
+	"合化电晶/4880",
+	"恒化泵壳/3580",
+	"强化曼合金钢/4000",
+	"恒金板/1850"
+	    ]
+	},
     "immunities":["blasted","freezing","electrified","burning","melting","muddy","sapped","shocked","slow","tarred","unmoving","wet","spore-slowed","corroded","disarmed","结晶徽章"],
     "weapons": [
 	{
