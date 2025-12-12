@@ -1,0 +1,83 @@
+{
+    "type": "UnitAssembler",
+    "name": "海军组装机",
+    "description": "造海军单位",
+    "health": 2700,
+    "size": 3,
+    "armor":80,
+    "research": {
+	"parent": "GH-铮骨升级厂",
+	"objectives": [
+		{
+	"type": "SectorComplete",
+	"preset": "一联三路"
+		}
+	],
+	"requirements": [
+	"copper/10000",
+	"lead/10000",
+	"silicon/12800",
+	"thorium/1000",
+	"graphite/1000",
+	"titanium/500",
+	"plastanium/80",
+	"surge-alloy/200",
+	"phase-fabric/4580",
+	"棱镜/800",
+	"无遏板/3000",
+	"潜铁板/110",
+	"粒子核心/310",
+	"无子核心/180",
+	"钢化棱镜/85"
+	    ]
+	},
+    "droneType": "GH-花廊",
+    "liquidCapacity": 300,
+    "consumes": {
+        "power": 5,
+        "liquid": {
+            "liquid": "water",
+            "amount": 0.9
+        }
+    },
+    "areaSize": 9,
+    "plans": [
+        {
+            "unit": "GH-享福",
+            "time": 600,
+            "requirements": [
+                "神恒之心-GH-运气/1",
+                "神恒之心-GH-跃光/1",
+                "神恒之心-GH-崩溃/1",
+                "神恒之心-泰合大墙/2"
+            ]
+        },{
+            "unit": "GH-福美",
+            "time": 600,
+            "requirements": [
+                "神恒之心-GH-幸运/1",
+                "神恒之心-GH-光达/1",
+                "神恒之心-GH-跃光/2",
+                "神恒之心-泰合大墙/5"
+                "神恒之心-强塑钢大墙/3"
+            ]
+        }
+    ],
+    "requirements": [
+        "graphite/200",
+        "surge-alloy/1000",
+        "copper/210",
+        "lead/100",
+        "thorium/80",
+        "silicon/190",
+        "plastanium/140",
+        "phase-fabric/50",
+        "潜铁板/25",
+        "棱镜/45",
+        "无遏板/30",
+        "粒子核心/100",
+        "无子核心/20"
+    ],
+    "category": "units",
+    "canOverdrive": false
+}
