@@ -6,6 +6,8 @@
   "main": "ACD.ACD",
   "java": true,
   "version":"1.10",
-  "minGameVersion":"150",
-  "hidden": true
+  "minGameVersion":"154",
+  "hidden": true,
+  "dependencies":[
+    ]
 }
