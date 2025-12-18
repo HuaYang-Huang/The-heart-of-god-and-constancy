@@ -25,7 +25,7 @@ table.button("[red]Problem", run(() => {
     var table = new Table();
     
     var t = new Table();
-	t.add("[red]机翻完成\nMachine turning complete\n\n\n对你们玩模组才告诉你，对不起你们等待玩新版好长时间，我希望你们能理解吧\nI didn't tell you until you played the module. I'm sorry you waited for a long time to play the new version. I hope you can understand.");
+	t.add("[red]机翻完成\nMachine turning complete\n\n\n对你们玩模组才告诉你，对不起你们等待玩新版好长时间，我希望你们能理解吧\nI didn't tell you until you played the module. I'm sorry you waited for a long time to play the new version. I hope you can understand.\n你玩的时候会发现少了几个内容不能做出来，是acd文件不确定没写还是路径问题\nWhen you play, you will find that there are a few things missing that you can't make. Is it because the acd file is not written or the path problem.");
     dialog2.cont.add(new ScrollPane(t)).size(1500, 600).row();
     dialog2.buttons.defaults().size(620, 64);
     dialog2.buttons.button("@close", run(() => {
