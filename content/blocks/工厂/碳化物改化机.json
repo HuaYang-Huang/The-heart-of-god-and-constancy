@@ -1,6 +1,6 @@
 {
     "name":"碳化物改化机",
-    "description":"资源改化碳化物\n[red]某个原因bug导致不能用e星内容造工厂，但我想问一下，为什么不让模组星球造原版内容啊！？？？？？臭猫！快给我滚回去改代码啊！！！！",
+    "description":"资源改化碳化物",
     "type":"GenericCrafter",
     "itemCapacity":60,
     "health":8600,
@@ -44,7 +44,7 @@
     ],
     "category": "crafting",
     "outputItems": [
-    "oxide/5"
+    "carbide/5"
     ],
     "consumes":{
     "power":25.0,
