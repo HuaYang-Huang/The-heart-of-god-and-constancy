@@ -1,5 +1,6 @@
 {
 	"type": "GenericCrafter",
+	"shownPlanets": ["erekir","神歆堕星"],
 	"name": "量子电弧硅炉",
 	"health": 55800,
 	"armor": 150,

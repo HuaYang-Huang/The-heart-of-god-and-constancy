@@ -1,5 +1,6 @@
 {
     "name":"量子氧化反应堆",
+    "shownPlanets": ["erekir","神歆堕星"],
     "description":"[purple]氧化物？反应堆，两者合起来有什么作用？",
     "type":"GenericCrafter",
     "itemCapacity":10000,

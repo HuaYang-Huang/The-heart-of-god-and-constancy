@@ -1,5 +1,6 @@
 {
 	"type": "GenericCrafter",
+	"shownPlanets": ["erekir","神歆堕星"],
 	"name": "大型电解机",
 	"description": "将水电解",
 	"health":1540,

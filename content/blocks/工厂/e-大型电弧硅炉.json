@@ -1,5 +1,6 @@
 {
 	"type": "GenericCrafter",
+	"shownPlanets": ["erekir","神歆堕星"],
 	"name": "大型电弧硅炉",
 	"description":"?????",
 	"outputItem": "silicon/10",

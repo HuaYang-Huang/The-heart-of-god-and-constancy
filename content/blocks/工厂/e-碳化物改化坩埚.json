@@ -1,5 +1,6 @@
 {
     "name":"碳化物改化坩埚",
+    "shownPlanets": ["erekir","神歆堕星"],
     "type": "HeatProducer",
 	"health": 85000,
 	"armor": 140,

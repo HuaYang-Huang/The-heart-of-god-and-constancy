@@ -1,5 +1,6 @@
 {
     "name":"大型氧化室",
+    "shownPlanets": ["erekir","神歆堕星"],
     "type": "HeatProducer",
 	"health": 1860,
 	"description": "?????",

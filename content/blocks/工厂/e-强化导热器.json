@@ -1,5 +1,6 @@
 {
     "name":"强化导热器",
+    "shownPlanets": ["erekir","神歆堕星"],
 	"type": "HeatProducer",
 	"description":"热爱热电，不怕冷冻",
 	"size": 2,

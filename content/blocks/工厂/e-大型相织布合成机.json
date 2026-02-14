@@ -1,5 +1,6 @@
 {
   "name":"大型相织布合成机",
+  "shownPlanets": ["erekir","神歆堕星"],
   "type":"HeatCrafter",
   "description":"强化布厂，价格不变",
   "itemCapacity":60,

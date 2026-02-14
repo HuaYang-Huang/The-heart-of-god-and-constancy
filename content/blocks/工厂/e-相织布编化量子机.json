@@ -1,5 +1,6 @@
 {
   "name":"相织布编化量子机",
+  "shownPlanets": ["erekir","神歆堕星"],
   "type":"HeatCrafter",
   "description":"[purple]你用来这些干嘛？是不是来可以传送还是制造虫洞？啊？",
   "itemCapacity":10000,
