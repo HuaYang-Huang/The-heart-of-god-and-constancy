@@ -1,0 +1,14 @@
+{
+    "size": 5,
+    "health": 57000,
+    "armor": 580
+    "update": true,
+    "solid": true,
+    "hasItems": true,
+    "configurable": true,
+    "category": "distribution",
+    "requirements": [
+        "copper/1",
+    ],
+    "research": "花"
+}
