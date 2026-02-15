@@ -1,0 +1,11 @@
+{
+"name":"氧化物矿",
+"type":"OreBlock",
+"playerUnmineable":true,
+"itemDrop":"oxide",
+"mapColor":"E4FFD6FF",
+"useColor":true,
+"oreDefault":true,
+"oreThreshold":0.8,
+"oreScale":25
+}
